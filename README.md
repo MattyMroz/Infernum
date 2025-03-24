@@ -3,7 +3,7 @@ Infernum The Game
 
 Unity 6000.0.42f1
 
-1. Poruszanie 2 postaci / dzielony ekran
+1. Poruszanie 2 postaci / dzielony ekran - DONE
 2. Mapa politechniki / granice(boundaries)
 3. Statysyki i potrzeby postaci
 4. Elementy(budynki) na mapie do oddziaływania na punkt 3 (sale wykładowe, egzaminy, silownia, akademik, chińskie)
