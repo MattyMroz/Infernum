@@ -3,6 +3,8 @@ Infernum The Game
 
 Unity 6000.0.42f1
 
+Używajcie nowych scen do edytowania np. mapy, żeby uniknąć konfliktów.
+
 1. Poruszanie 2 postaci / dzielony ekran - DONE
 2. Mapa politechniki / granice(boundaries)
 3. Statysyki i potrzeby postaci
