@@ -4,11 +4,11 @@ public class Interactable : MonoBehaviour
 {
     public virtual void React()
     {
-        Debug.Log("yuh");
+        return;
     }
 
-    public virtual void React(Transform player)
+    public virtual void React(GameObject player)
     {
-
+        return;
     }
 }

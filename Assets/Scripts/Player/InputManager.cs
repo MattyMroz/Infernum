@@ -10,9 +10,12 @@ public class InputManager : MonoBehaviour
     [Header("Layers")]
     public LayerMask layer_mask;
 
+    private Player _player_script;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _player_script = GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -28,18 +31,24 @@ public class InputManager : MonoBehaviour
 
             RaycastHit2D hit;
 
-            hit = Physics2D.CircleCast(transform.position, 5f, Vector2.zero, 1f, layer_mask);
+            hit = Physics2D.CircleCast(transform.position, 2.5f, Vector2.zero, 1f, layer_mask);
             if (hit)
             {
-                
+                if (_player_script.Endurance <= 0) return;
+
                 Interactable interact_script = hit.transform.GetComponent<Interactable>();
+
+                Debug.Log(hit.transform.tag);
 
                 switch (hit.transform.tag)
                 {
                     case "Teleport":
-                        interact_script.React(transform);
+
+                        interact_script.React(transform.gameObject);
+
                         break;
                     default:
+                        interact_script.React(transform.gameObject);
                         break;
                 }
             }

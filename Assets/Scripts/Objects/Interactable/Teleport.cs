@@ -5,10 +5,9 @@ public class Teleport : Interactable
 
     [SerializeField] Transform other;
 
-    public override void React(Transform player)
+    public override void React(GameObject player)
     {
-        base.React(player);
-
-        player.position = other.position;
+        player.transform.position = other.position;
+        player.GetComponent<Player>().DecreaseEndurance(1);
     }
 }
