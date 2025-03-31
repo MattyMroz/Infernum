@@ -1,19 +1,12 @@
 using UnityEngine;
 
 
-struct BeerStats {
-
-    public int wisdom_decrease;
-    public int endurance_increase;
-}
-
 public class Player : MonoBehaviour
 {
     [Header("Stats")]
     [SerializeField] int wisdom;
     [SerializeField] int hunger;
     [SerializeField] int endurance;
-    [SerializeField] BeerStats beer_stats;
 
     public int Wisdom { get { return wisdom; } set { wisdom = value; } }
     public int Endurance { get { return endurance; } set { endurance = value; } }
