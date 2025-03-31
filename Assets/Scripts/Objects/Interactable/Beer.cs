@@ -1,3 +1,5 @@
+using JetBrains.Annotations;
+using System.Collections;
 using UnityEngine;
 
 public class Beer : Interactable
@@ -8,5 +10,7 @@ public class Beer : Interactable
     public override void React(GameObject player)
     {
         player.GetComponent<Player>().DrinkBeer(wisdom_decrease, endurance_increase);
+
+        StartCoroutine(Wait(1));
     }
 }

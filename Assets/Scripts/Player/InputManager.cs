@@ -38,6 +38,8 @@ public class InputManager : MonoBehaviour
 
                 Interactable interact_script = hit.transform.GetComponent<Interactable>();
 
+                if (interact_script.used) return;
+
                 Debug.Log(hit.transform.tag);
 
                 switch (hit.transform.tag)
