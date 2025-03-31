@@ -6,5 +6,7 @@ public class Chinese : Interactable
     public override void React(GameObject player)
     {
         player.GetComponent<Player>().IncreaseEndurance(increase_endurance);
+
+        StartCoroutine(Wait(1));
     }
 }
