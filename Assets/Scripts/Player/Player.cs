@@ -18,12 +18,6 @@ public class Player : MonoBehaviour
     public int Wisdom { get { return wisdom; } set { wisdom = value; } }
     public int Endurance { get { return endurance; } set { endurance = value; } }
 
-    private void InitBeer()
-    {
-        beer_stats.wisdom_decrease = 5;
-        beer_stats.endurance_increase = 10;
-    }
-
     private void InitStats()
     {
         wisdom = 5;
@@ -33,7 +27,6 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InitBeer();
         InitStats();
     }
 
@@ -63,9 +56,9 @@ public class Player : MonoBehaviour
         endurance -= endurance > 0 ? amount : 0;
     }
 
-    public void DrinkBeer()
+    public void DrinkBeer(int wisdom_decrease, int endurance_increase)
     {
-        wisdom -= wisdom > 0 ? beer_stats.wisdom_decrease : 0;
-        endurance += beer_stats.endurance_increase;
+        wisdom -= wisdom > 0 ? wisdom_decrease : 0;
+        endurance += endurance_increase;
     }
 }

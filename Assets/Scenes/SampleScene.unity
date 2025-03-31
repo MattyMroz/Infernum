@@ -355,6 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c950c38497a6dcc439b42585a0871f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endurance_increase: 10
+  wisdom_decrease: 5
 --- !u!212 &177833710
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1705,6 +1707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf0eb4240615d64c9a6d26c94de5fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endurance_increase: 10
 --- !u!58 &2035445398
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1832,7 +1835,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.99410534, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.09412671, g: 0.09433961, b: 0.06719472, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
