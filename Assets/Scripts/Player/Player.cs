@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     public int Wisdom { get { return wisdom; } set { wisdom = value; } }
     public int Endurance { get { return endurance; } set { endurance = value; } }
+    public int Hunger { get { return hunger; } set { hunger = value; } } //Using in DisplayStats
 
     private void InitStats()
     {
