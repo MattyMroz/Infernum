@@ -7,7 +7,7 @@ Używajcie nowych scen do edytowania np. mapy, żeby uniknąć konfliktów.
 
 1. Poruszanie 2 postaci / dzielony ekran - DONE
 2. Mapa politechniki / granice(boundaries)
-3. Statysyki i potrzeby postaci - dodane endurance, wisdom
-4. Elementy(budynki) na mapie do oddziaływania na punkt 3 (sale wykładowe, egzaminy, silownia, akademik, chińskie) - dodane piwo
+3. Statysyki i potrzeby postaci - dodane endurance, wisdom - statystyki wyswietlaja sie na ekranie pod przyciskiem
+4. Elementy(budynki) na mapie do oddziaływania na punkt 3 (sale wykładowe, egzaminy, silownia, akademik, chińskie) - dodane piwo, chinskie
 5. Upływ czasu i zakończenie gry.
 6. Minigry oraz random encouters(może)
