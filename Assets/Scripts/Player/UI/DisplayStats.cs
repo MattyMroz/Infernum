@@ -9,12 +9,14 @@ public class DisplayStats : MonoBehaviour
     // player script
     [SerializeField] private GameObject player;
     private Player _player_script;
+    private Rigidbody2D _rb;
 
     public KeyCode display;
 
     private void Start()
     {
         _player_script = player.GetComponent<Player>();
+        _rb = player.GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -29,6 +31,7 @@ public class DisplayStats : MonoBehaviour
         if (Input.GetKey(display))
         {
             player.GetComponent<Movement>().enabled = false;
+            _rb.bodyType = RigidbodyType2D.Static;
 
             panel.SetActive(true);
 
@@ -40,6 +43,8 @@ public class DisplayStats : MonoBehaviour
         else
         {
             player.GetComponent<Movement>().enabled = true;
+            _rb.bodyType = RigidbodyType2D.Dynamic;
+
             panel.SetActive(false);
         }
     }
