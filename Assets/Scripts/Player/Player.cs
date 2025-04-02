@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     {
         
     }
-
+    
     public void IncreaseWisdom(int amount)
     {
         wisdom += amount;
