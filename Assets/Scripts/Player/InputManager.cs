@@ -31,14 +31,14 @@ public class InputManager : MonoBehaviour
 
             RaycastHit2D hit;
 
-            hit = Physics2D.CircleCast(transform.position, 2.5f, Vector2.zero, 1f, layer_mask);
+            hit = Physics2D.CircleCast(transform.position, 1f, Vector2.zero, 1f, layer_mask);
             if (hit)
             {
                 if (_player_script.Endurance <= 0) return;
 
                 Interactable interact_script = hit.transform.GetComponent<Interactable>();
 
-                if (interact_script.used) return;
+                if (interact_script.used[_player_script.id]) return;
 
                 Debug.Log(hit.transform.tag);
 

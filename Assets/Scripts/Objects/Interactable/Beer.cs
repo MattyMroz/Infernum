@@ -11,6 +11,6 @@ public class Beer : Interactable
     {
         player.GetComponent<Player>().DrinkBeer(wisdom_decrease, endurance_increase);
 
-        StartCoroutine(Wait(1));
+        StartCoroutine(Wait(1, player.GetComponent<Player>().id));
     }
 }

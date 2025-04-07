@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Teleport
   - Beer
+  - Exam
   layers:
   - Default
   - TransparentFX

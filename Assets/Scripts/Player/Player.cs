@@ -1,12 +1,21 @@
+using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 
 public class Player : MonoBehaviour
 {
+    public int id;
+
     [Header("Stats")]
     [SerializeField] int wisdom;
     [SerializeField] int hunger;
     [SerializeField] int endurance;
+    public int[] exams_knowledge = new int[(int)ExamType.NR_TYPES]; // Math, IT, Programming, Graphics, Electrotechnics
+
+    public List<Exam> passed_exams;
+    public Exams player_exams;
+    
 
     public int Wisdom { get { return wisdom; } set { wisdom = value; } }
     public int Endurance { get { return endurance; } set { endurance = value; } }
@@ -15,6 +24,10 @@ public class Player : MonoBehaviour
     private void InitStats()
     {
         wisdom = 5;
+
+        for (int i = 0; i < (int)ExamType.NR_TYPES; i++)
+            exams_knowledge[i] = 5;
+
         hunger = 0;
         endurance = 5;
     }
@@ -54,5 +67,35 @@ public class Player : MonoBehaviour
     {
         wisdom -= wisdom > 0 ? wisdom_decrease : 0;
         endurance += endurance_increase;
+    }
+
+    public void TakeExam(Exam exam)
+    {
+
+        int chance = Random.Range(1, 21); // Max value is exclusive
+        int overallScore = chance;
+
+        for (int i = 0; i < exam.exam_types.Count; i++)
+        {
+            overallScore += exams_knowledge[(int)exam.exam_types[i]];
+
+            if (overallScore >= exam.score_to_pass)
+            {
+
+                if (overallScore > exam.max_score)
+                    overallScore = exam.max_score;
+
+                Exam passedExam = exam;
+                passedExam.score = overallScore;
+                passedExam.passed = true;
+
+                passed_exams.Add(passedExam);
+                player_exams.exams.RemoveAt(passedExam.id);
+
+                player_exams.SetListText();
+
+                break;
+            }
+        }
     }
 }

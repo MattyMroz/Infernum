@@ -7,6 +7,6 @@ public class Chinese : Interactable
     {
         player.GetComponent<Player>().IncreaseEndurance(increase_endurance);
 
-        StartCoroutine(Wait(1));
+        StartCoroutine(Wait(1, player.GetComponent<Player>().id));
     }
 }

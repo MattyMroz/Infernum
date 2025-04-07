@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public bool used;
+    public bool[] used = new bool[2];
 
     public virtual void React()
     {
@@ -15,10 +15,10 @@ public class Interactable : MonoBehaviour
         return;
     }
 
-    public IEnumerator Wait(int seconds)
+    public IEnumerator Wait(int seconds, int player_id)
     {
-        used = true;
+        used[player_id] = true;
         yield return new WaitForSeconds(seconds);
-        used = false;
+        used[player_id] = false;
     }
 }
