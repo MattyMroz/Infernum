@@ -3157,11 +3157,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   used: 0000
   exam_types: 0400000002000000
-  score: 0
   score_to_pass: 0
-  max_score: 0
-  passed: 0
-  failed: 0
+  max_score: 100
+  score: 1e00000000000000
+  passed: 0000
+  failed: 0000
 --- !u!1 &1374791959
 GameObject:
   m_ObjectHideFlags: 0

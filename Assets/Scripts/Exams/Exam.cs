@@ -11,9 +11,10 @@ public class Exam : Interactable
     public int id { get; private set; }
     public string exam_name { get; private set; }
     public List<ExamType> exam_types;
-    public int score, score_to_pass, max_score;
+    public int score_to_pass, max_score;
+    public int[] score = new int[2];
     public int ects { get; private set; }
-    public bool passed, failed;
+    public bool[] passed = new bool[2], failed = new bool[2];
 
     private void Start()
     {

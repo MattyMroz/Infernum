@@ -85,17 +85,17 @@ public class Player : MonoBehaviour
                 if (overallScore > exam.max_score)
                     overallScore = exam.max_score;
 
-                Exam passedExam = exam;
-                passedExam.score = overallScore;
-                passedExam.passed = true;
-
-                passed_exams.Add(passedExam);
-                player_exams.exams.RemoveAt(passedExam.id);
-
+                exam.passed[id] = true;
                 player_exams.SetListText();
 
                 break;
             }
+            else
+            {
+                exam.failed[id] = true;
+            }
+
+            exam.score[id] = overallScore;
         }
     }
 }
