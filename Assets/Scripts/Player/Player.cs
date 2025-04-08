@@ -15,7 +15,8 @@ public class Player : MonoBehaviour
 
     public List<Exam> passed_exams;
     public Exams player_exams;
-    
+
+    public GameObject current_map_bounds;
 
     public int Wisdom { get { return wisdom; } set { wisdom = value; } }
     public int Endurance { get { return endurance; } set { endurance = value; } }
@@ -96,6 +97,14 @@ public class Player : MonoBehaviour
             }
 
             exam.score[id] = overallScore;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("MapBounds"))
+        {
+            current_map_bounds = collision.gameObject;
         }
     }
 }
