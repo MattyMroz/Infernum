@@ -15,7 +15,7 @@ public class Exams : MonoBehaviour
     void Start()
     {
         InitExams();
-        SetListText();
+        //SetListText();
     }
 
     private void InitExams()

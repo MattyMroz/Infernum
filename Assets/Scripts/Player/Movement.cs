@@ -63,4 +63,9 @@ public class Movement : MonoBehaviour
     {
         _rb.linearVelocity = _velocity * move_speed;
     }
+
+    public void ResetVelocity()
+    {
+        _velocity = Vector2.zero;
+    }
 }
