@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEditor.Rendering.Universal;
 using UnityEngine;
 
 public class DisplayExams : MonoBehaviour
@@ -34,6 +35,7 @@ public class DisplayExams : MonoBehaviour
     {
         if (Input.GetKey(display))
         {
+            player.GetComponent<Movement>().ResetVelocity();
             player.GetComponent<Movement>().enabled = false;
             _rb.bodyType = RigidbodyType2D.Static;
 
@@ -45,20 +47,27 @@ public class DisplayExams : MonoBehaviour
 
             for (int i = 0; i < exam_script.exams.Count; i++)
             {
-                int score = exam_script.exams[i].score[0];
+                int score = exam_script.exams[i].score[_player_script.id];
+                Debug.Log(score);
                 float ocena;
-
-                switch (score / 10)
+                score /= 10;
+                switch (score)
                 {
-                    case >= 9: ocena = 5.0f; break;
+                    case 9: ocena = 5.0f; break;
                     case 8: ocena = 4.5f; break;
                     case 7: ocena = 4.0f; break;
                     case 6: ocena = 3.5f; break;
                     case 5: ocena = 3.0f; break;
                     default: ocena = 2.0f; break;
                 }
-
-                grade.text += (ocena % 1 == 0 ? ((int)ocena).ToString() : ocena.ToString("0.0")) + "\n";
+                if (score == 0 && !exam_script.exams[i].failed[_player_script.id])
+                {
+                    grade.text += "\n";
+                }
+                else
+                {
+                    grade.text += (ocena % 1 == 0 ? ((int)ocena).ToString() : ocena.ToString("0.0")) + "\n";
+                }
             }
         }
         else

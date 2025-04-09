@@ -25,11 +25,12 @@ public class DisplayStats : MonoBehaviour
     }
 
 
-
+    // Nadpisuje wylaczanie movementu w DisplayExams - ?
     private void Display()
     {
         if (Input.GetKey(display))
         {
+            player.GetComponent<Movement>().ResetVelocity();
             player.GetComponent<Movement>().enabled = false;
             _rb.bodyType = RigidbodyType2D.Static;
 
