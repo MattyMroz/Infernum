@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 7adf20419c473524d8b94acfb1f6c40e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1970469037345011613
+    second: sprSubwayDoor_strip13_0
+  - first:
+      213: 7916646396482621017
+    second: sprSubwayDoor_strip13_1
+  - first:
+      213: -7237721457476187634
+    second: sprSubwayDoor_strip13_2
+  - first:
+      213: 492465014187212763
+    second: sprSubwayDoor_strip13_3
+  - first:
+      213: -7012837960696865669
+    second: sprSubwayDoor_strip13_4
+  - first:
+      213: -4551275926950733388
+    second: sprSubwayDoor_strip13_5
+  - first:
+      213: 9161914257253416053
+    second: sprSubwayDoor_strip13_6
+  - first:
+      213: -577641009082101295
+    second: sprSubwayDoor_strip13_7
+  - first:
+      213: -8657474160117207836
+    second: sprSubwayDoor_strip13_8
+  - first:
+      213: 1462623434641274780
+    second: sprSubwayDoor_strip13_9
+  - first:
+      213: 1520959229281605313
+    second: sprSubwayDoor_strip13_10
+  - first:
+      213: -8491769552812146337
+    second: sprSubwayDoor_strip13_11
+  - first:
+      213: -3559707448963099268
+    second: sprSubwayDoor_strip13_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 19
+        width: 6
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97fad34623885b10800000000000000
+      internalID: 1970469037345011613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 19
+        width: 6
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e09b214f39ddd60800000000000000
+      internalID: 7916646396482621017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 19
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ac8e77ea27e8b90800000000000000
+      internalID: -7237721457476187634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 19
+        width: 8
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfbfea325695d600800000000000000
+      internalID: 492465014187212763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 19
+        width: 9
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cd945c7056dae90800000000000000
+      internalID: -7012837960696865669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 19
+        width: 9
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9905b78ae96d0c0800000000000000
+      internalID: -4551275926950733388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 17
+        width: 9
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c3d2e9978a52f70800000000000000
+      internalID: 9161914257253416053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 15
+        width: 9
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d196fd009ecbf7f0800000000000000
+      internalID: -577641009082101295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_8
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 13
+        width: 9
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec2712ee197ad780800000000000000
+      internalID: -8657474160117207836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_9
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 11
+        width: 9
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9774f5b3484c4410800000000000000
+      internalID: 1462623434641274780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_10
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 9
+        width: 9
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c69e235c588b1510800000000000000
+      internalID: 1520959229281605313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 6
+        width: 9
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f518722459c272a80800000000000000
+      internalID: -8491769552812146337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprSubwayDoor_strip13_12
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 4
+        width: 9
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c751e307fe0699ec0800000000000000
+      internalID: -3559707448963099268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprSubwayDoor_strip13_0: 1970469037345011613
+      sprSubwayDoor_strip13_1: 7916646396482621017
+      sprSubwayDoor_strip13_10: 1520959229281605313
+      sprSubwayDoor_strip13_11: -8491769552812146337
+      sprSubwayDoor_strip13_12: -3559707448963099268
+      sprSubwayDoor_strip13_2: -7237721457476187634
+      sprSubwayDoor_strip13_3: 492465014187212763
+      sprSubwayDoor_strip13_4: -7012837960696865669
+      sprSubwayDoor_strip13_5: -4551275926950733388
+      sprSubwayDoor_strip13_6: 9161914257253416053
+      sprSubwayDoor_strip13_7: -577641009082101295
+      sprSubwayDoor_strip13_8: -8657474160117207836
+      sprSubwayDoor_strip13_9: 1462623434641274780
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

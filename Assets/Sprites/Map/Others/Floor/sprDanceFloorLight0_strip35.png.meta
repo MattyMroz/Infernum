@@ -1,0 +1,994 @@
+fileFormatVersion: 2
+guid: 9cf0c901b03b9eb42804e9426e45d5fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3388332328761843478
+    second: sprDanceFloorLight0_strip35_0
+  - first:
+      213: 3512887655173794059
+    second: sprDanceFloorLight0_strip35_1
+  - first:
+      213: 8293028023520216491
+    second: sprDanceFloorLight0_strip35_2
+  - first:
+      213: -3631592321049254229
+    second: sprDanceFloorLight0_strip35_3
+  - first:
+      213: -197786366625163340
+    second: sprDanceFloorLight0_strip35_4
+  - first:
+      213: -755273481944851911
+    second: sprDanceFloorLight0_strip35_5
+  - first:
+      213: 7282205082860681395
+    second: sprDanceFloorLight0_strip35_6
+  - first:
+      213: 5048543238344833708
+    second: sprDanceFloorLight0_strip35_7
+  - first:
+      213: -7377515440820223099
+    second: sprDanceFloorLight0_strip35_8
+  - first:
+      213: 1122282002388360619
+    second: sprDanceFloorLight0_strip35_9
+  - first:
+      213: 2028242385695573130
+    second: sprDanceFloorLight0_strip35_10
+  - first:
+      213: 3664287689958484354
+    second: sprDanceFloorLight0_strip35_11
+  - first:
+      213: -8155112706913038734
+    second: sprDanceFloorLight0_strip35_12
+  - first:
+      213: -605767393446203113
+    second: sprDanceFloorLight0_strip35_13
+  - first:
+      213: -632869977759072828
+    second: sprDanceFloorLight0_strip35_14
+  - first:
+      213: 3261978439946776507
+    second: sprDanceFloorLight0_strip35_15
+  - first:
+      213: 5241022140872178060
+    second: sprDanceFloorLight0_strip35_16
+  - first:
+      213: -204377981965879363
+    second: sprDanceFloorLight0_strip35_17
+  - first:
+      213: 3618343385708642955
+    second: sprDanceFloorLight0_strip35_18
+  - first:
+      213: 7426579055468567435
+    second: sprDanceFloorLight0_strip35_19
+  - first:
+      213: -4653419382411768484
+    second: sprDanceFloorLight0_strip35_20
+  - first:
+      213: -5193181004259498113
+    second: sprDanceFloorLight0_strip35_21
+  - first:
+      213: 8481346209286496086
+    second: sprDanceFloorLight0_strip35_22
+  - first:
+      213: -1176056014523247416
+    second: sprDanceFloorLight0_strip35_23
+  - first:
+      213: 2718184548291769145
+    second: sprDanceFloorLight0_strip35_24
+  - first:
+      213: -7678906598945768557
+    second: sprDanceFloorLight0_strip35_25
+  - first:
+      213: -3033526111223028348
+    second: sprDanceFloorLight0_strip35_26
+  - first:
+      213: 8489581572128592259
+    second: sprDanceFloorLight0_strip35_27
+  - first:
+      213: -2293375443159944491
+    second: sprDanceFloorLight0_strip35_28
+  - first:
+      213: 4715373450716355866
+    second: sprDanceFloorLight0_strip35_29
+  - first:
+      213: -7470350489382827253
+    second: sprDanceFloorLight0_strip35_30
+  - first:
+      213: 610210566726273425
+    second: sprDanceFloorLight0_strip35_31
+  - first:
+      213: 1076949446485133618
+    second: sprDanceFloorLight0_strip35_32
+  - first:
+      213: -2155091226596135363
+    second: sprDanceFloorLight0_strip35_33
+  - first:
+      213: 1403441693654881396
+    second: sprDanceFloorLight0_strip35_34
+  - first:
+      213: -1737375316693768467
+    second: sprDanceFloorLight0_strip35_35
+  - first:
+      213: 605910235404555070
+    second: sprDanceFloorLight0_strip35_36
+  - first:
+      213: -5316118495150190100
+    second: sprDanceFloorLight0_strip35_37
+  - first:
+      213: -4218963336075720708
+    second: sprDanceFloorLight0_strip35_38
+  - first:
+      213: 3842961282502078123
+    second: sprDanceFloorLight0_strip35_39
+  - first:
+      213: -5612951065566044473
+    second: sprDanceFloorLight0_strip35_40
+  - first:
+      213: 4638797343947480295
+    second: sprDanceFloorLight0_strip35_41
+  - first:
+      213: -5431227405220827298
+    second: sprDanceFloorLight0_strip35_42
+  - first:
+      213: -4459724573813834293
+    second: sprDanceFloorLight0_strip35_43
+  - first:
+      213: -8462346185875348553
+    second: sprDanceFloorLight0_strip35_44
+  - first:
+      213: 6472717255456671081
+    second: sprDanceFloorLight0_strip35_45
+  - first:
+      213: -3021122897608074138
+    second: sprDanceFloorLight0_strip35_46
+  - first:
+      213: -2323368655515279307
+    second: sprDanceFloorLight0_strip35_47
+  - first:
+      213: 3673385237922911653
+    second: sprDanceFloorLight0_strip35_48
+  - first:
+      213: -2304316450622853489
+    second: sprDanceFloorLight0_strip35_49
+  - first:
+      213: -2329171923604040167
+    second: sprDanceFloorLight0_strip35_50
+  - first:
+      213: -2029276601260060845
+    second: sprDanceFloorLight0_strip35_51
+  - first:
+      213: -3446040567708760699
+    second: sprDanceFloorLight0_strip35_52
+  - first:
+      213: -5240685136002094910
+    second: sprDanceFloorLight0_strip35_53
+  - first:
+      213: -2857867047586677147
+    second: sprDanceFloorLight0_strip35_54
+  - first:
+      213: 1888003417084598686
+    second: sprDanceFloorLight0_strip35_55
+  - first:
+      213: -805523331308768596
+    second: sprDanceFloorLight0_strip35_56
+  - first:
+      213: 2520366830285437353
+    second: sprDanceFloorLight0_strip35_57
+  - first:
+      213: -1581605575633050110
+    second: sprDanceFloorLight0_strip35_58
+  - first:
+      213: 8197498895571469577
+    second: sprDanceFloorLight0_strip35_59
+  - first:
+      213: 8828234889691613741
+    second: sprDanceFloorLight0_strip35_60
+  - first:
+      213: 3867105698474995454
+    second: sprDanceFloorLight0_strip35_61
+  - first:
+      213: 7601301520764733093
+    second: sprDanceFloorLight0_strip35_62
+  - first:
+      213: 5390952616797234691
+    second: sprDanceFloorLight0_strip35_63
+  - first:
+      213: 4218935057039416554
+    second: sprDanceFloorLight0_strip35_64
+  - first:
+      213: 3928039719082564341
+    second: sprDanceFloorLight0_strip35_65
+  - first:
+      213: -7406295503920599872
+    second: sprDanceFloorLight0_strip35_66
+  - first:
+      213: -6710764909268066897
+    second: sprDanceFloorLight0_strip35_67
+  - first:
+      213: 4455420231524397557
+    second: sprDanceFloorLight0_strip35_68
+  - first:
+      213: 1486837804222022680
+    second: sprDanceFloorLight0_strip35_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0ad2bf2b93af0d0800000000000000
+      internalID: -3388332328761843478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b092d76d5b840c030800000000000000
+      internalID: 3512887655173794059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5484e8c01c61370800000000000000
+      internalID: 8293028023520216491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6a2d6660ef99dc0800000000000000
+      internalID: -3631592321049254229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b754e3f852514df0800000000000000
+      internalID: -197786366625163340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a976015cab485f0800000000000000
+      internalID: -755273481944851911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b87479a0f69f0560800000000000000
+      internalID: 7282205082860681395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa7eb2b357001640800000000000000
+      internalID: 5048543238344833708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58383f85bcccd9990800000000000000
+      internalID: -7377515440820223099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad1c2af885239f00800000000000000
+      internalID: 1122282002388360619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8486c524b3c52c10800000000000000
+      internalID: 2028242385695573130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289efc26d3a2ad230800000000000000
+      internalID: 3664287689958484354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e8c21633833de80800000000000000
+      internalID: -8155112706913038734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711ff11e3c1e797f0800000000000000
+      internalID: -605767393446203113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd39aabb189737f0800000000000000
+      internalID: -632869977759072828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_15
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfa202cb10e44d20800000000000000
+      internalID: 3261978439946776507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89b4a67ed9dbb840800000000000000
+      internalID: 5241022140872178060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_17
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db73309ee47e92df0800000000000000
+      internalID: -204377981965879363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_18
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b824c847320f63230800000000000000
+      internalID: 3618343385708642955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_19
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b5f81ad42801760800000000000000
+      internalID: 7426579055468567435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_20
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5dcd600abbbb6fb0800000000000000
+      internalID: -4653419382411768484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f776eca246d1ee7b0800000000000000
+      internalID: -5193181004259498113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f90a5f07bc3b570800000000000000
+      internalID: 8481346209286496086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_23
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4516a294fcdafe0800000000000000
+      internalID: -1176056014523247416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_24
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933f2e2f17ee8b520800000000000000
+      internalID: 2718184548291769145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_25
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b3f62022b0f6590800000000000000
+      internalID: -7678906598945768557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_26
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485edabf210c6e5d0800000000000000
+      internalID: -3033526111223028348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_27
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3815d6ac57d01d570800000000000000
+      internalID: 8489581572128592259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDanceFloorLight0_strip35_28
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2f8dd6f2b4c20e0800000000000000
+      internalID: -2293375443159944491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7b4f588734c35ad46847e9e0bcdb02a7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprDanceFloorLight0_strip35_0: -3388332328761843478
+      sprDanceFloorLight0_strip35_1: 3512887655173794059
+      sprDanceFloorLight0_strip35_10: 2028242385695573130
+      sprDanceFloorLight0_strip35_11: 3664287689958484354
+      sprDanceFloorLight0_strip35_12: -8155112706913038734
+      sprDanceFloorLight0_strip35_13: -605767393446203113
+      sprDanceFloorLight0_strip35_14: -632869977759072828
+      sprDanceFloorLight0_strip35_15: 3261978439946776507
+      sprDanceFloorLight0_strip35_16: 5241022140872178060
+      sprDanceFloorLight0_strip35_17: -204377981965879363
+      sprDanceFloorLight0_strip35_18: 3618343385708642955
+      sprDanceFloorLight0_strip35_19: 7426579055468567435
+      sprDanceFloorLight0_strip35_2: 8293028023520216491
+      sprDanceFloorLight0_strip35_20: -4653419382411768484
+      sprDanceFloorLight0_strip35_21: -5193181004259498113
+      sprDanceFloorLight0_strip35_22: 8481346209286496086
+      sprDanceFloorLight0_strip35_23: -1176056014523247416
+      sprDanceFloorLight0_strip35_24: 2718184548291769145
+      sprDanceFloorLight0_strip35_25: -7678906598945768557
+      sprDanceFloorLight0_strip35_26: -3033526111223028348
+      sprDanceFloorLight0_strip35_27: 8489581572128592259
+      sprDanceFloorLight0_strip35_28: -2293375443159944491
+      sprDanceFloorLight0_strip35_3: -3631592321049254229
+      sprDanceFloorLight0_strip35_4: -197786366625163340
+      sprDanceFloorLight0_strip35_5: -755273481944851911
+      sprDanceFloorLight0_strip35_6: 7282205082860681395
+      sprDanceFloorLight0_strip35_7: 5048543238344833708
+      sprDanceFloorLight0_strip35_8: -7377515440820223099
+      sprDanceFloorLight0_strip35_9: 1122282002388360619
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

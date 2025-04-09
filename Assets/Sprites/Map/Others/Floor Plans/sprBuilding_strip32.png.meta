@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 54b6cfc0e71b95b418ab2d710659bacb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4053728903970228485
+    second: sprBuilding_strip32_0
+  - first:
+      213: 2810626100467695283
+    second: sprBuilding_strip32_1
+  - first:
+      213: 4194217921730952823
+    second: sprBuilding_strip32_2
+  - first:
+      213: 4891102494427656981
+    second: sprBuilding_strip32_3
+  - first:
+      213: 2256463137918592654
+    second: sprBuilding_strip32_4
+  - first:
+      213: -8196533860798514842
+    second: sprBuilding_strip32_5
+  - first:
+      213: -5982924901102669619
+    second: sprBuilding_strip32_6
+  - first:
+      213: -384756258801700047
+    second: sprBuilding_strip32_7
+  - first:
+      213: 615878650973033099
+    second: sprBuilding_strip32_8
+  - first:
+      213: 3122823564675110327
+    second: sprBuilding_strip32_9
+  - first:
+      213: -4647043805394314980
+    second: sprBuilding_strip32_10
+  - first:
+      213: 894486420668414385
+    second: sprBuilding_strip32_11
+  - first:
+      213: -9121799687861394927
+    second: sprBuilding_strip32_12
+  - first:
+      213: -8462437903914061799
+    second: sprBuilding_strip32_13
+  - first:
+      213: -8545672013120398697
+    second: sprBuilding_strip32_14
+  - first:
+      213: -6356742915300456397
+    second: sprBuilding_strip32_15
+  - first:
+      213: 1675791568419995031
+    second: sprBuilding_strip32_16
+  - first:
+      213: 4262471139864236245
+    second: sprBuilding_strip32_17
+  - first:
+      213: -5967688517172799400
+    second: sprBuilding_strip32_18
+  - first:
+      213: 8408600314384805912
+    second: sprBuilding_strip32_19
+  - first:
+      213: -2142990621044305079
+    second: sprBuilding_strip32_20
+  - first:
+      213: -6087661450564726954
+    second: sprBuilding_strip32_21
+  - first:
+      213: -3477477827737733871
+    second: sprBuilding_strip32_22
+  - first:
+      213: -5814230479114826204
+    second: sprBuilding_strip32_23
+  - first:
+      213: 756736224863866843
+    second: sprBuilding_strip32_24
+  - first:
+      213: -1480471951877906855
+    second: sprBuilding_strip32_25
+  - first:
+      213: -5295042875182195478
+    second: sprBuilding_strip32_26
+  - first:
+      213: -6703204930967544353
+    second: sprBuilding_strip32_27
+  - first:
+      213: 7713730952307524946
+    second: sprBuilding_strip32_28
+  - first:
+      213: 8452087542652616780
+    second: sprBuilding_strip32_29
+  - first:
+      213: 1352766772242626419
+    second: sprBuilding_strip32_30
+  - first:
+      213: 2103813137658958270
+    second: sprBuilding_strip32_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprBuilding_strip32_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 26
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6fe171a034eb7c0800000000000000
+      internalID: -4053728903970228485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 26
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be71da0c89510720800000000000000
+      internalID: 2810626100467695283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_2
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 26
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77eb9575afad43a30800000000000000
+      internalID: 4194217921730952823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 26
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5133364fdcfa0e340800000000000000
+      internalID: 4891102494427656981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_4
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 26
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86a668c441905f10800000000000000
+      internalID: 2256463137918592654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_5
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 26
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669b4a571ef004e80800000000000000
+      internalID: -8196533860798514842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_6
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 26
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0bfe7508168fca0800000000000000
+      internalID: -5982924901102669619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_7
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 26
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133340d983219aaf0800000000000000
+      internalID: -384756258801700047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_8
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 26
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b829ef7be5a0c8800800000000000000
+      internalID: 615878650973033099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_9
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 26
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5dda49c7f765b20800000000000000
+      internalID: 3122823564675110327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_10
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 26
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19dac3b742628fb0800000000000000
+      internalID: -4647043805394314980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_11
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 26
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9f95019aad96c00800000000000000
+      internalID: 894486420668414385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_12
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 26
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112a0c4638bd86180800000000000000
+      internalID: -9121799687861394927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_13
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 26
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910b663ff816f8a80800000000000000
+      internalID: -8462437903914061799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_14
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 26
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a16fab49ca76980800000000000000
+      internalID: -8545672013120398697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_15
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 26
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338090d7fff48c7a0800000000000000
+      internalID: -6356742915300456397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_16
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 26
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79db4418d8b914710800000000000000
+      internalID: 1675791568419995031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_17
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 26
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d056fc0be6572b30800000000000000
+      internalID: 4262471139864236245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_18
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 26
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858dcbb69e28e2da0800000000000000
+      internalID: -5967688517172799400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_19
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 26
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810f42d6f6951b470800000000000000
+      internalID: 8408600314384805912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_20
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 26
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94319ab52619242e0800000000000000
+      internalID: -2142990621044305079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_21
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 26
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f004e1a28448ba0800000000000000
+      internalID: -6087661450564726954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_22
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 26
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115356317548dbfc0800000000000000
+      internalID: -3477477827737733871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_23
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 26
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e8c123f24bf4fa0800000000000000
+      internalID: -5814230479114826204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_24
+      rect:
+        serializedVersion: 2
+        x: 2803
+        y: 14
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf4eaf4697708a00800000000000000
+      internalID: 756736224863866843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_25
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 14
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e53688a9e447be0800000000000000
+      internalID: -1480471951877906855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_26
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 14
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec5d423f8a3486b0800000000000000
+      internalID: -5295042875182195478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_27
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 14
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd580161ae69f2a0800000000000000
+      internalID: -6703204930967544353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_28
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 14
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255c9399e6dac0b60800000000000000
+      internalID: 7713730952307524946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_29
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 14
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c404056c6d8db4570800000000000000
+      internalID: 8452087542652616780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_30
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 14
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377397b463ef5c210800000000000000
+      internalID: 1352766772242626419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBuilding_strip32_31
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 14
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb156f7f6ee323d10800000000000000
+      internalID: 2103813137658958270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprBuilding_strip32_0: -4053728903970228485
+      sprBuilding_strip32_1: 2810626100467695283
+      sprBuilding_strip32_10: -4647043805394314980
+      sprBuilding_strip32_11: 894486420668414385
+      sprBuilding_strip32_12: -9121799687861394927
+      sprBuilding_strip32_13: -8462437903914061799
+      sprBuilding_strip32_14: -8545672013120398697
+      sprBuilding_strip32_15: -6356742915300456397
+      sprBuilding_strip32_16: 1675791568419995031
+      sprBuilding_strip32_17: 4262471139864236245
+      sprBuilding_strip32_18: -5967688517172799400
+      sprBuilding_strip32_19: 8408600314384805912
+      sprBuilding_strip32_2: 4194217921730952823
+      sprBuilding_strip32_20: -2142990621044305079
+      sprBuilding_strip32_21: -6087661450564726954
+      sprBuilding_strip32_22: -3477477827737733871
+      sprBuilding_strip32_23: -5814230479114826204
+      sprBuilding_strip32_24: 756736224863866843
+      sprBuilding_strip32_25: -1480471951877906855
+      sprBuilding_strip32_26: -5295042875182195478
+      sprBuilding_strip32_27: -6703204930967544353
+      sprBuilding_strip32_28: 7713730952307524946
+      sprBuilding_strip32_29: 8452087542652616780
+      sprBuilding_strip32_3: 4891102494427656981
+      sprBuilding_strip32_30: 1352766772242626419
+      sprBuilding_strip32_31: 2103813137658958270
+      sprBuilding_strip32_4: 2256463137918592654
+      sprBuilding_strip32_5: -8196533860798514842
+      sprBuilding_strip32_6: -5982924901102669619
+      sprBuilding_strip32_7: -384756258801700047
+      sprBuilding_strip32_8: 615878650973033099
+      sprBuilding_strip32_9: 3122823564675110327
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

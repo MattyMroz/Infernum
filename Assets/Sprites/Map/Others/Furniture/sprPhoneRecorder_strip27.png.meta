@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 7e9d72900796b4a4386cf0dd3dc7096f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7016695018174864752
+    second: sprPhoneRecorder_strip27_0
+  - first:
+      213: 3909029434656334172
+    second: sprPhoneRecorder_strip27_1
+  - first:
+      213: -1628991240349445045
+    second: sprPhoneRecorder_strip27_2
+  - first:
+      213: 4808230793549751504
+    second: sprPhoneRecorder_strip27_3
+  - first:
+      213: 5875076534923586353
+    second: sprPhoneRecorder_strip27_4
+  - first:
+      213: 8140408963771746901
+    second: sprPhoneRecorder_strip27_5
+  - first:
+      213: -4389758629861859970
+    second: sprPhoneRecorder_strip27_6
+  - first:
+      213: 7072141607776731807
+    second: sprPhoneRecorder_strip27_7
+  - first:
+      213: -8783672731336108747
+    second: sprPhoneRecorder_strip27_8
+  - first:
+      213: 5458403871509055584
+    second: sprPhoneRecorder_strip27_9
+  - first:
+      213: -4791742313720359070
+    second: sprPhoneRecorder_strip27_10
+  - first:
+      213: 3380454452071077047
+    second: sprPhoneRecorder_strip27_11
+  - first:
+      213: -8864628711241651232
+    second: sprPhoneRecorder_strip27_12
+  - first:
+      213: -3412006135474716429
+    second: sprPhoneRecorder_strip27_13
+  - first:
+      213: 7369083278246744028
+    second: sprPhoneRecorder_strip27_14
+  - first:
+      213: -6652829188091527678
+    second: sprPhoneRecorder_strip27_15
+  - first:
+      213: 8702646277116322868
+    second: sprPhoneRecorder_strip27_16
+  - first:
+      213: 2371458600750248414
+    second: sprPhoneRecorder_strip27_17
+  - first:
+      213: -317085510285678534
+    second: sprPhoneRecorder_strip27_18
+  - first:
+      213: 1502743843640271717
+    second: sprPhoneRecorder_strip27_19
+  - first:
+      213: -8263281162331060745
+    second: sprPhoneRecorder_strip27_20
+  - first:
+      213: 4192534875349208367
+    second: sprPhoneRecorder_strip27_21
+  - first:
+      213: 6784268276826140870
+    second: sprPhoneRecorder_strip27_22
+  - first:
+      213: -5752473845058005682
+    second: sprPhoneRecorder_strip27_23
+  - first:
+      213: -1136071854238104947
+    second: sprPhoneRecorder_strip27_24
+  - first:
+      213: 7434100567607027592
+    second: sprPhoneRecorder_strip27_25
+  - first:
+      213: 3423086774081026563
+    second: sprPhoneRecorder_strip27_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07dd09761fe406160800000000000000
+      internalID: 7016695018174864752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51ac355f89af3630800000000000000
+      internalID: 3909029434656334172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b449fb00919a469e0800000000000000
+      internalID: -1628991240349445045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4a0af7e644ab240800000000000000
+      internalID: 4808230793549751504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b6a542bf6788150800000000000000
+      internalID: 5875076534923586353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a4504a2da88f070800000000000000
+      internalID: 8140408963771746901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7dd069b8c17413c0800000000000000
+      internalID: -4389758629861859970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92cacc825b452260800000000000000
+      internalID: 7072141607776731807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5351d6150302a1680800000000000000
+      internalID: -8783672731336108747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_9
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0680ae9b66520cb40800000000000000
+      internalID: 5458403871509055584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2675d7fd0cf408db0800000000000000
+      internalID: -4791742313720359070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_11
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4951be969c9ee20800000000000000
+      internalID: 3380454452071077047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_12
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb66b867238af480800000000000000
+      internalID: -8864628711241651232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_13
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f083935f7e16a0d0800000000000000
+      internalID: -3412006135474716429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_14
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf0b20d23e344660800000000000000
+      internalID: 7369083278246744028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_15
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e34740a176ca3a0800000000000000
+      internalID: -6652829188091527678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_16
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434e4613ea206c870800000000000000
+      internalID: 8702646277116322868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_17
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed17349680d19e020800000000000000
+      internalID: 2371458600750248414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_18
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38affb886c799bf0800000000000000
+      internalID: -317085510285678534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_19
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563659c5091dad410800000000000000
+      internalID: 1502743843640271717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_20
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f58418409de25d80800000000000000
+      internalID: -8263281162331060745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_21
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d40a19140ee2a30800000000000000
+      internalID: 4192534875349208367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_22
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c07c2d9d00962e50800000000000000
+      internalID: 6784268276826140870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_23
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45979d048b1b20b0800000000000000
+      internalID: -5752473845058005682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_24
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8281d0faacdb30f0800000000000000
+      internalID: -1136071854238104947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_25
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8872fb4241b3b2760800000000000000
+      internalID: 7434100567607027592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPhoneRecorder_strip27_26
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 4
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30aff64e84f318f20800000000000000
+      internalID: 3423086774081026563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprPhoneRecorder_strip27_0: 7016695018174864752
+      sprPhoneRecorder_strip27_1: 3909029434656334172
+      sprPhoneRecorder_strip27_10: -4791742313720359070
+      sprPhoneRecorder_strip27_11: 3380454452071077047
+      sprPhoneRecorder_strip27_12: -8864628711241651232
+      sprPhoneRecorder_strip27_13: -3412006135474716429
+      sprPhoneRecorder_strip27_14: 7369083278246744028
+      sprPhoneRecorder_strip27_15: -6652829188091527678
+      sprPhoneRecorder_strip27_16: 8702646277116322868
+      sprPhoneRecorder_strip27_17: 2371458600750248414
+      sprPhoneRecorder_strip27_18: -317085510285678534
+      sprPhoneRecorder_strip27_19: 1502743843640271717
+      sprPhoneRecorder_strip27_2: -1628991240349445045
+      sprPhoneRecorder_strip27_20: -8263281162331060745
+      sprPhoneRecorder_strip27_21: 4192534875349208367
+      sprPhoneRecorder_strip27_22: 6784268276826140870
+      sprPhoneRecorder_strip27_23: -5752473845058005682
+      sprPhoneRecorder_strip27_24: -1136071854238104947
+      sprPhoneRecorder_strip27_25: 7434100567607027592
+      sprPhoneRecorder_strip27_26: 3423086774081026563
+      sprPhoneRecorder_strip27_3: 4808230793549751504
+      sprPhoneRecorder_strip27_4: 5875076534923586353
+      sprPhoneRecorder_strip27_5: 8140408963771746901
+      sprPhoneRecorder_strip27_6: -4389758629861859970
+      sprPhoneRecorder_strip27_7: 7072141607776731807
+      sprPhoneRecorder_strip27_8: -8783672731336108747
+      sprPhoneRecorder_strip27_9: 5458403871509055584
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

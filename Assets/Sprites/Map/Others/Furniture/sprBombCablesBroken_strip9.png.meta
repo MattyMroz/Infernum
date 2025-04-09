@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 34b93f8b893775443be431bcec510069
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2583955835939937541
+    second: sprBombCablesBroken_strip9_0
+  - first:
+      213: 8734666137702783179
+    second: sprBombCablesBroken_strip9_1
+  - first:
+      213: 8883672046865477585
+    second: sprBombCablesBroken_strip9_2
+  - first:
+      213: 5776478301687714595
+    second: sprBombCablesBroken_strip9_3
+  - first:
+      213: -1330754058911920611
+    second: sprBombCablesBroken_strip9_4
+  - first:
+      213: 3913996527235063348
+    second: sprBombCablesBroken_strip9_5
+  - first:
+      213: -2057703155981610005
+    second: sprBombCablesBroken_strip9_6
+  - first:
+      213: 3545883145809197483
+    second: sprBombCablesBroken_strip9_7
+  - first:
+      213: -7750256199223514194
+    second: sprBombCablesBroken_strip9_8
+  - first:
+      213: -2230984128452863470
+    second: sprBombCablesBroken_strip9_9
+  - first:
+      213: 3860972225468894669
+    second: sprBombCablesBroken_strip9_10
+  - first:
+      213: 2668833777851071002
+    second: sprBombCablesBroken_strip9_11
+  - first:
+      213: -4234801242798887150
+    second: sprBombCablesBroken_strip9_12
+  - first:
+      213: -8753225235200093816
+    second: sprBombCablesBroken_strip9_13
+  - first:
+      213: 7985214158049646849
+    second: sprBombCablesBroken_strip9_14
+  - first:
+      213: -7858559484821177721
+    second: sprBombCablesBroken_strip9_15
+  - first:
+      213: -3006490138351508307
+    second: sprBombCablesBroken_strip9_16
+  - first:
+      213: -2589764846394182311
+    second: sprBombCablesBroken_strip9_17
+  - first:
+      213: 162746661773241972
+    second: sprBombCablesBroken_strip9_18
+  - first:
+      213: 7750065440075836127
+    second: sprBombCablesBroken_strip9_19
+  - first:
+      213: 4273017639088966338
+    second: sprBombCablesBroken_strip9_20
+  - first:
+      213: -6670566698447493563
+    second: sprBombCablesBroken_strip9_21
+  - first:
+      213: 221591432997962647
+    second: sprBombCablesBroken_strip9_22
+  - first:
+      213: 1712204351137015800
+    second: sprBombCablesBroken_strip9_23
+  - first:
+      213: 4481831028264030866
+    second: sprBombCablesBroken_strip9_24
+  - first:
+      213: -7685471967864735392
+    second: sprBombCablesBroken_strip9_25
+  - first:
+      213: 7127379296956854327
+    second: sprBombCablesBroken_strip9_26
+  - first:
+      213: -7499254240261070840
+    second: sprBombCablesBroken_strip9_27
+  - first:
+      213: -836164014934895554
+    second: sprBombCablesBroken_strip9_28
+  - first:
+      213: -9096762525921615033
+    second: sprBombCablesBroken_strip9_29
+  - first:
+      213: 2621546993533535883
+    second: sprBombCablesBroken_strip9_30
+  - first:
+      213: -1281943079157852217
+    second: sprBombCablesBroken_strip9_31
+  - first:
+      213: -221171315609802654
+    second: sprBombCablesBroken_strip9_32
+  - first:
+      213: -3445933105542104333
+    second: sprBombCablesBroken_strip9_33
+  - first:
+      213: -2493311253736356604
+    second: sprBombCablesBroken_strip9_34
+  - first:
+      213: -3843667524221583389
+    second: sprBombCablesBroken_strip9_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2a08b8bd1f32cd0800000000000000
+      internalID: -2583955835939937541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 66
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc85861f294c73970800000000000000
+      internalID: 8734666137702783179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_2
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 66
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dfeb7ea8a4294b70800000000000000
+      internalID: 8883672046865477585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 67
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32319d8096c2a2050800000000000000
+      internalID: 5776478301687714595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_4
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 67
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e452beb36388de0800000000000000
+      internalID: -1330754058911920611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_5
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 67
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e55f1ba1f415630800000000000000
+      internalID: 3913996527235063348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_6
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 66
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3148eb1e19173e0800000000000000
+      internalID: -2057703155981610005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_7
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 67
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba970092fe1853130800000000000000
+      internalID: 3545883145809197483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_8
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 67
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab6307ac0f817490800000000000000
+      internalID: -7750256199223514194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a580461c3f901e0800000000000000
+      internalID: -2230984128452863470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd09b268cde49530800000000000000
+      internalID: 3860972225468894669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 24
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a706d4e2a990520800000000000000
+      internalID: 2668833777851071002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_12
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21fe694e4b6fa35c0800000000000000
+      internalID: -4234801242798887150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_13
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881d9e0760c468680800000000000000
+      internalID: -8753225235200093816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_14
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 24
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10918f128fd21de60800000000000000
+      internalID: 7985214158049646849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_15
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78af4f4f8c9c0f290800000000000000
+      internalID: -7858559484821177721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_16
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4e7d2f52dc646d0800000000000000
+      internalID: -3006490138351508307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_17
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 24
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95571e6e79e4f0cd0800000000000000
+      internalID: -2589764846394182311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_18
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47eef530a31324200800000000000000
+      internalID: 162746661773241972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_19
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda60c5c473cd8b60800000000000000
+      internalID: 7750065440075836127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_20
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 24
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca40e047eecc4b30800000000000000
+      internalID: 4273017639088966338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_21
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546ac701ee26d63a0800000000000000
+      internalID: -6670566698447493563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_22
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7930d19fb30431300800000000000000
+      internalID: 221591432997962647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_23
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 23
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7666429c8f2c710800000000000000
+      internalID: 1712204351137015800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_24
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292500f0399a23e30800000000000000
+      internalID: 4481831028264030866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_25
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0693330f6f7b75590800000000000000
+      internalID: -7685471967864735392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_26
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 22
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730369645b989e260800000000000000
+      internalID: 7127379296956854327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_27
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800a5e0500c4de790800000000000000
+      internalID: -7499254240261070840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_28
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3457d332495564f0800000000000000
+      internalID: -836164014934895554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_29
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 24
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7436b5cedaec1c180800000000000000
+      internalID: -9096762525921615033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_30
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b864f8fd91b916420800000000000000
+      internalID: 2621546993533535883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_31
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c79680cf8f953ee0800000000000000
+      internalID: -1281943079157852217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_32
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 24
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268629a3cdd3eecf0800000000000000
+      internalID: -221171315609802654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_33
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 8
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa776c09169d20d0800000000000000
+      internalID: -3445933105542104333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_34
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4058f86ff9af56dd0800000000000000
+      internalID: -2493311253736356604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBombCablesBroken_strip9_35
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 24
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef311850cc88aac0800000000000000
+      internalID: -3843667524221583389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprBombCablesBroken_strip9_0: -2583955835939937541
+      sprBombCablesBroken_strip9_1: 8734666137702783179
+      sprBombCablesBroken_strip9_10: 3860972225468894669
+      sprBombCablesBroken_strip9_11: 2668833777851071002
+      sprBombCablesBroken_strip9_12: -4234801242798887150
+      sprBombCablesBroken_strip9_13: -8753225235200093816
+      sprBombCablesBroken_strip9_14: 7985214158049646849
+      sprBombCablesBroken_strip9_15: -7858559484821177721
+      sprBombCablesBroken_strip9_16: -3006490138351508307
+      sprBombCablesBroken_strip9_17: -2589764846394182311
+      sprBombCablesBroken_strip9_18: 162746661773241972
+      sprBombCablesBroken_strip9_19: 7750065440075836127
+      sprBombCablesBroken_strip9_2: 8883672046865477585
+      sprBombCablesBroken_strip9_20: 4273017639088966338
+      sprBombCablesBroken_strip9_21: -6670566698447493563
+      sprBombCablesBroken_strip9_22: 221591432997962647
+      sprBombCablesBroken_strip9_23: 1712204351137015800
+      sprBombCablesBroken_strip9_24: 4481831028264030866
+      sprBombCablesBroken_strip9_25: -7685471967864735392
+      sprBombCablesBroken_strip9_26: 7127379296956854327
+      sprBombCablesBroken_strip9_27: -7499254240261070840
+      sprBombCablesBroken_strip9_28: -836164014934895554
+      sprBombCablesBroken_strip9_29: -9096762525921615033
+      sprBombCablesBroken_strip9_3: 5776478301687714595
+      sprBombCablesBroken_strip9_30: 2621546993533535883
+      sprBombCablesBroken_strip9_31: -1281943079157852217
+      sprBombCablesBroken_strip9_32: -221171315609802654
+      sprBombCablesBroken_strip9_33: -3445933105542104333
+      sprBombCablesBroken_strip9_34: -2493311253736356604
+      sprBombCablesBroken_strip9_35: -3843667524221583389
+      sprBombCablesBroken_strip9_4: -1330754058911920611
+      sprBombCablesBroken_strip9_5: 3913996527235063348
+      sprBombCablesBroken_strip9_6: -2057703155981610005
+      sprBombCablesBroken_strip9_7: 3545883145809197483
+      sprBombCablesBroken_strip9_8: -7750256199223514194
+      sprBombCablesBroken_strip9_9: -2230984128452863470
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
