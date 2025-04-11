@@ -6,6 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public int id;
+    public string player_name;
 
     [Header("Stats")]
     [SerializeField] int wisdom;
