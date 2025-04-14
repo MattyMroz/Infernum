@@ -8,7 +8,7 @@ public class Time : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI statsText;
 
-    private const float multiplier = (60 * 8) / 3;
+    private const float multiplier = (60 * 8) / 3; //8 hours in 3 minutes -> 60 minutes * 8 hours / 3 minutes
     private readonly System.TimeSpan startTime = new System.TimeSpan(8, 0, 0); // 8:00
     private int days;
 
