@@ -82,7 +82,7 @@ public class DisplayExams : MonoBehaviour
                 }
             }
         }
-        else if (displayActive)
+        else if(Input.GetKeyUp(display) && displayActive)
         {
             displayActive = false;
 

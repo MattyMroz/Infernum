@@ -25,7 +25,6 @@ public class DisplayStats : MonoBehaviour
     }
 
 
-    // Nadpisuje wylaczanie movementu w DisplayExams - ?
     private void Display()
     {
         if (Input.GetKey(display))
@@ -41,7 +40,7 @@ public class DisplayStats : MonoBehaviour
                 "Hunger: " + _player_script.Hunger + "\n" +
                 "Endurance: " + _player_script.Endurance;
         }
-        else
+        else if (Input.GetKeyUp(display))
         {
             player.GetComponent<Movement>().enabled = true;
             _rb.bodyType = RigidbodyType2D.Dynamic;
