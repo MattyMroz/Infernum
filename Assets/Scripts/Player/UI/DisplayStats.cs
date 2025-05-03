@@ -3,7 +3,21 @@ using UnityEngine;
 
 public class DisplayStats : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI statsText;
+    [SerializeField] TextMeshProUGUI Name;
+    [SerializeField] TextMeshProUGUI AccountBalance;
+    [SerializeField] TextMeshProUGUI Strikes;
+    [SerializeField] TextMeshProUGUI ECTS;
+    [SerializeField] TextMeshProUGUI Day;
+    [SerializeField] TextMeshProUGUI TimeDisplay;
+    [SerializeField] TextMeshProUGUI Endurance;
+    [SerializeField] TextMeshProUGUI Sanity;
+    // Lvl
+    // NxtLvl
+
+    TimeDisplay.text = Time.timer;
+
+
+    /*[SerializeField] TextMeshProUGUI statsText;
     [SerializeField] private GameObject panel;
 
     // player script
@@ -47,5 +61,5 @@ public class DisplayStats : MonoBehaviour
 
             panel.SetActive(false);
         }
-    }
+    }*/
 }
