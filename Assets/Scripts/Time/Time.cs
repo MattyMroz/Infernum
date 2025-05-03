@@ -3,6 +3,8 @@ using TMPro;
 
 public class Time : MonoBehaviour
 {
+     private static Time instance;
+
     public static float timer;
     public static bool timeStarted = true;
 
@@ -10,7 +12,8 @@ public class Time : MonoBehaviour
 
     private const float multiplier = (60 * 8) / 3; //8 hours in 3 minutes -> 60 minutes * 8 hours / 3 minutes
     private readonly System.TimeSpan startTime = new System.TimeSpan(8, 0, 0); // 8:00
-    private int days;
+    [SerializeField] private int days;
+    [SerializeField] private string the_time;
 
     void Update()
     {
@@ -47,7 +50,18 @@ public class Time : MonoBehaviour
         }
 
         // display time in hh:mm
-        statsText.text = "Day: " + days + "\n" +
+       statsText.text = "Day: " + days + "\n" +
                          "Time: " + simulatedTime.ToString(@"hh\:mm");
+
+        the_time = simulatedTime.ToString(@"hh\:mm");
     }
+
+
+    void Awake()
+    {
+        instance = this;
+    }
+
+public static int Days => instance.days;
+public static string Time_now => instance.the_time;
 }

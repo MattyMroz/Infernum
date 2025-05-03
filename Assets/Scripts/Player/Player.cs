@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     [SerializeField] int wisdom;
     [SerializeField] int hunger;
     [SerializeField] int endurance;
+
+    [SerializeField] public int accountBalance = 50;
+
     public int[] exams_knowledge = new int[(int)ExamType.NR_TYPES]; // Math, IT, Programming, Graphics, Electrotechnics
 
     public List<Exam> passed_exams;
