@@ -21,9 +21,7 @@ public class InputName : MonoBehaviour
 
     public void OnNameEntered(string input)
     {
-
         enteredName = input;
-
 
         greetingText.text = "Witaj, " + enteredName + "!";
 

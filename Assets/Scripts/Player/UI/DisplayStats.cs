@@ -15,7 +15,7 @@ public class DisplayStats : MonoBehaviour
 
     [SerializeField] GameObject panel;
     [SerializeField] GameObject player;
-    [SerializeField] KeyCode displayKey = KeyCode.Tab;
+    [SerializeField] KeyCode displayKey;
 
     private Player _player;
     private Rigidbody2D _rb;
