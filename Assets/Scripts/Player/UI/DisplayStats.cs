@@ -12,10 +12,13 @@ public class DisplayStats : MonoBehaviour
     [SerializeField] TextMeshProUGUI TimeDisplay;
     [SerializeField] TextMeshProUGUI Endurance;
     [SerializeField] TextMeshProUGUI Sanity;
+    [SerializeField] TextMeshProUGUI Lvl;
+    [SerializeField] TextMeshProUGUI NextLvl;
 
     [SerializeField] GameObject panel;
     [SerializeField] GameObject player;
     [SerializeField] KeyCode displayKey;
+
 
     private Player _player;
     private Rigidbody2D _rb;
@@ -73,5 +76,21 @@ public class DisplayStats : MonoBehaviour
 
         Day.text = Time.Days.ToString();
         TimeDisplay.text = Time.Time_now;
+
+        // Level
+        Lvl.text = "";
+        NextLvl.text = "";
+
+        for (int i = 0; i < _player.exams_knowledge.Length && i < 5; i++)
+        {
+            int knowledge = _player.exams_knowledge[i];
+            int level = knowledge / 100;
+            int toNext = 100 - (knowledge % 100);
+            if (toNext == 100) toNext = 0;
+
+            Lvl.text += level.ToString() + '\n';
+            NextLvl.text += toNext.ToString() + '\n';
+        }
+
     }
 }
