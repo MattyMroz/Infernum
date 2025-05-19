@@ -52,7 +52,7 @@ public class MathMinigame : MonoBehaviour
         }
     }
 
-    /* ---------- LOGIKA ► GENEROWANIE ---------- */
+
     void GenerateNumber()
     {
         randomNumber = Random.Range(1_000_000, 10_000_000);
@@ -86,8 +86,9 @@ public class MathMinigame : MonoBehaviour
     private void UpdateHud()
     {
         int lvl = _playerScript.exams_knowledge[0] / 100;
-        DisplayLvl.text = $"Level: {lvl}";
-        DisplayExp.text = $"Exp: {_playerScript.exams_knowledge[0]}/100";
+        DisplayLvl.text = $"{lvl}";
+        int exp = _playerScript.exams_knowledge[0] % 100;
+        DisplayExp.text = $"{exp} / 100";
     }
 
     public void FocusInput() => inputField.ActivateInputField();
