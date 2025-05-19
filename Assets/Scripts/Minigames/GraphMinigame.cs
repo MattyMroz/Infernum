@@ -1,6 +1,8 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using System.Collections;
 
 public class GraphMinigame : MonoBehaviour
 {
@@ -25,9 +27,12 @@ public class GraphMinigame : MonoBehaviour
     private Player _playerScript;
 
 
-    private void Start()
+    private IEnumerator Start()
     {
         _playerScript = _player.GetComponent<Player>();
+
+        yield return null;
+
         GenerateCombo();
         UpdateHud();
     }
