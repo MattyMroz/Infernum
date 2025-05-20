@@ -1,52 +1,109 @@
-using TMPro;
+﻿using TMPro;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class DisplayStats : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI statsText;
-    [SerializeField] private GameObject panel;
+    [SerializeField] TextMeshProUGUI Name;
+    [SerializeField] TextMeshProUGUI AccountBalance;
+    [SerializeField] TextMeshProUGUI AllExams; // zamiast Strikes
+    [SerializeField] TextMeshProUGUI ECTS;
+    [SerializeField] TextMeshProUGUI Day;
+    [SerializeField] TextMeshProUGUI TimeDisplay;
+    [SerializeField] TextMeshProUGUI Endurance;
+    [SerializeField] TextMeshProUGUI Sanity;
+    [SerializeField] TextMeshProUGUI Lvl;
+    [SerializeField] TextMeshProUGUI NextLvl;
 
-    // player script
-    [SerializeField] private GameObject player;
-    private Player _player_script;
+    [SerializeField] GameObject panel;
+    [SerializeField] GameObject player;
+    [SerializeField] KeyCode displayKey;
+
+
+    private Player _player;
     private Rigidbody2D _rb;
 
-    public KeyCode display;
-
-    private void Start()
+    private IEnumerator Start()     
     {
-        _player_script = player.GetComponent<Player>();
+        _player = player.GetComponent<Player>();
         _rb = player.GetComponent<Rigidbody2D>();
+        panel.SetActive(false);
+
+        yield return null;          
+
+        UpdateStatsUI();
     }
 
-    private void Update()
+    void Update()
     {
-        Display();
-    }
-
-
-    // Nadpisuje wylaczanie movementu w DisplayExams - ?
-    private void Display()
-    {
-        if (Input.GetKey(display))
+        if (Input.GetKey(displayKey))
         {
             player.GetComponent<Movement>().ResetVelocity();
             player.GetComponent<Movement>().enabled = false;
             _rb.bodyType = RigidbodyType2D.Static;
 
             panel.SetActive(true);
-
-            statsText.text =
-                "Wisdom: " + _player_script.Wisdom + "\n" +
-                "Hunger: " + _player_script.Hunger + "\n" +
-                "Endurance: " + _player_script.Endurance;
+            UpdateStatsUI();
         }
-        else
+        else if (Input.GetKeyUp(displayKey))
         {
             player.GetComponent<Movement>().enabled = true;
             _rb.bodyType = RigidbodyType2D.Dynamic;
-
             panel.SetActive(false);
         }
+    }
+
+    private void UpdateStatsUI()
+    {
+        Name.text = _player.player_name;
+        AccountBalance.text = "$" + _player.accountBalance.ToString();
+        Endurance.text = _player.Endurance.ToString() + "\\100";
+        Sanity.text = _player.Wisdom.ToString() + "\\100";
+
+        // EGZAMINY + ETCS
+        int passedExams = 0;
+        int ects = 0;
+
+        int totalExams = (_player.player_exams != null && _player.player_exams.exams != null) ? _player.player_exams.exams.Count : 0;
+
+        if (totalExams > 0)
+        {
+            foreach (var exam in _player.player_exams.exams)         
+            {
+                if (exam.passed.Length > _player.id && exam.passed[_player.id])
+                {                                                   
+                    passedExams++;
+                    ects += exam.ects;                              
+                }
+            }
+        }
+
+        AllExams.text = $"{passedExams}/{totalExams}";
+        ECTS.text = $"{ects}/30";
+
+
+        // Czas i dzień
+        int day = Time.Days;
+
+        Day.text = Time.Days.ToString();
+        TimeDisplay.text = Time.Time_now;
+
+        // Level
+        Lvl.text = "";
+        NextLvl.text = "";
+
+        for (int i = 0; i < _player.exams_knowledge.Length && i < 5; i++)
+        {
+            int knowledge = _player.exams_knowledge[i];
+            int level = knowledge / 100;
+
+            int remainder = knowledge % 100;
+            int toNext = remainder == 0 ? (knowledge == 0 ? 100 : 0) : 100 - remainder;
+
+            Lvl.text += level.ToString() + '\n';
+            NextLvl.text += toNext.ToString() + '\n';
+        }
+
     }
 }

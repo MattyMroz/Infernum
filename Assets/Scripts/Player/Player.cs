@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     [SerializeField] int wisdom;
     [SerializeField] int hunger;
     [SerializeField] int endurance;
+
+    [SerializeField] public int accountBalance = 0;
+
     public int[] exams_knowledge = new int[(int)ExamType.NR_TYPES]; // Math, IT, Programming, Graphics, Electrotechnics
 
     public List<Exam> passed_exams;
@@ -71,6 +74,15 @@ public class Player : MonoBehaviour
         endurance += endurance_increase;
     }
 
+    public void SearchTrash()
+    {
+        int chance = Random.Range(1,101);
+
+        if (chance <= 80)
+        {
+            accountBalance += Random.Range(1, 11);
+        }
+    }
     public void TakeExam(Exam exam)
     {
 
@@ -88,7 +100,7 @@ public class Player : MonoBehaviour
                     overallScore = exam.max_score;
 
                 exam.passed[id] = true;
-                player_exams.SetListText();
+                //player_exams.SetListText();
 
                 break;
             }
