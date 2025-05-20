@@ -9601,15 +9601,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 1608602413}
-  displayKeys: {fileID: 906547346}
   displayLvl: {fileID: 855578882}
   displayExp: {fileID: 827805517}
   playArea: {fileID: 866629971}
   _player: {fileID: 920649270}
-  ball: {fileID: 0}
-  liftForce: 450
+  ball: {fileID: 1924826033}
+  liftForce: 1800
   gravity: 900
   expPerSec: 5
+  knowledgeIndex: 1
 --- !u!1 &1447459713
 GameObject:
   m_ObjectHideFlags: 0
@@ -12120,7 +12120,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1924826033
 MonoBehaviour:
@@ -12142,7 +12142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
