@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      graf_minigame_gui_player_1_0: -5172007962597148037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
