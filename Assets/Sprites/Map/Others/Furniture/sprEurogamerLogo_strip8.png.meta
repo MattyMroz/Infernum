@@ -1,0 +1,3653 @@
+fileFormatVersion: 2
+guid: 61809b529bf1a8744a9176ee5c45c75c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8976038520603711370
+    second: sprEurogamerLogo_strip8_0
+  - first:
+      213: 8226846116181880089
+    second: sprEurogamerLogo_strip8_1
+  - first:
+      213: -4476058365461062980
+    second: sprEurogamerLogo_strip8_2
+  - first:
+      213: -2701132465978316165
+    second: sprEurogamerLogo_strip8_3
+  - first:
+      213: 7253463465250813790
+    second: sprEurogamerLogo_strip8_4
+  - first:
+      213: -3479179138081767575
+    second: sprEurogamerLogo_strip8_5
+  - first:
+      213: 8299808393495335096
+    second: sprEurogamerLogo_strip8_6
+  - first:
+      213: 7710940871374368907
+    second: sprEurogamerLogo_strip8_7
+  - first:
+      213: -5753786232390674405
+    second: sprEurogamerLogo_strip8_8
+  - first:
+      213: -2649366054927516621
+    second: sprEurogamerLogo_strip8_9
+  - first:
+      213: 657502040805887448
+    second: sprEurogamerLogo_strip8_10
+  - first:
+      213: 3726671894443305498
+    second: sprEurogamerLogo_strip8_11
+  - first:
+      213: 2309197602102802289
+    second: sprEurogamerLogo_strip8_12
+  - first:
+      213: 2874620393542806980
+    second: sprEurogamerLogo_strip8_13
+  - first:
+      213: -822760471365864867
+    second: sprEurogamerLogo_strip8_14
+  - first:
+      213: 932267144386480065
+    second: sprEurogamerLogo_strip8_15
+  - first:
+      213: -3194052825308517450
+    second: sprEurogamerLogo_strip8_16
+  - first:
+      213: -4208099636979313931
+    second: sprEurogamerLogo_strip8_17
+  - first:
+      213: 3837827361376697422
+    second: sprEurogamerLogo_strip8_18
+  - first:
+      213: -1079712904797346957
+    second: sprEurogamerLogo_strip8_19
+  - first:
+      213: 7081797983584199890
+    second: sprEurogamerLogo_strip8_20
+  - first:
+      213: -4674684293413324912
+    second: sprEurogamerLogo_strip8_21
+  - first:
+      213: 3025093405040013304
+    second: sprEurogamerLogo_strip8_22
+  - first:
+      213: -3001775008798570704
+    second: sprEurogamerLogo_strip8_23
+  - first:
+      213: -4387981809846367633
+    second: sprEurogamerLogo_strip8_24
+  - first:
+      213: -8861028057945077793
+    second: sprEurogamerLogo_strip8_25
+  - first:
+      213: 8273113682608811475
+    second: sprEurogamerLogo_strip8_26
+  - first:
+      213: -4705488679851394481
+    second: sprEurogamerLogo_strip8_27
+  - first:
+      213: 6087419923506253686
+    second: sprEurogamerLogo_strip8_28
+  - first:
+      213: 5200627672523310231
+    second: sprEurogamerLogo_strip8_29
+  - first:
+      213: -7162678399054765899
+    second: sprEurogamerLogo_strip8_30
+  - first:
+      213: 537714351452812618
+    second: sprEurogamerLogo_strip8_31
+  - first:
+      213: 7461041113510480712
+    second: sprEurogamerLogo_strip8_32
+  - first:
+      213: -1727581437994784470
+    second: sprEurogamerLogo_strip8_33
+  - first:
+      213: -8855784738524663535
+    second: sprEurogamerLogo_strip8_34
+  - first:
+      213: 4911202901948525083
+    second: sprEurogamerLogo_strip8_35
+  - first:
+      213: -1003726324608706443
+    second: sprEurogamerLogo_strip8_36
+  - first:
+      213: -2505750642417119556
+    second: sprEurogamerLogo_strip8_37
+  - first:
+      213: 8066100690834917006
+    second: sprEurogamerLogo_strip8_38
+  - first:
+      213: 2125768023924383363
+    second: sprEurogamerLogo_strip8_39
+  - first:
+      213: 5009605520348657858
+    second: sprEurogamerLogo_strip8_40
+  - first:
+      213: -5378077684476175935
+    second: sprEurogamerLogo_strip8_41
+  - first:
+      213: -4788184278521680343
+    second: sprEurogamerLogo_strip8_42
+  - first:
+      213: -563806204226745570
+    second: sprEurogamerLogo_strip8_43
+  - first:
+      213: 2085854534208810814
+    second: sprEurogamerLogo_strip8_44
+  - first:
+      213: 5085411502537239748
+    second: sprEurogamerLogo_strip8_45
+  - first:
+      213: 2941607320067342104
+    second: sprEurogamerLogo_strip8_46
+  - first:
+      213: -6130406376831374331
+    second: sprEurogamerLogo_strip8_47
+  - first:
+      213: -7648662252431778836
+    second: sprEurogamerLogo_strip8_48
+  - first:
+      213: -5352627853247278404
+    second: sprEurogamerLogo_strip8_49
+  - first:
+      213: -686618592569163674
+    second: sprEurogamerLogo_strip8_50
+  - first:
+      213: 3779054372224368642
+    second: sprEurogamerLogo_strip8_51
+  - first:
+      213: -4079806580114489363
+    second: sprEurogamerLogo_strip8_52
+  - first:
+      213: 3204157979529582634
+    second: sprEurogamerLogo_strip8_53
+  - first:
+      213: 5766002766929341283
+    second: sprEurogamerLogo_strip8_54
+  - first:
+      213: 1173916231586824016
+    second: sprEurogamerLogo_strip8_55
+  - first:
+      213: 7994419581043982164
+    second: sprEurogamerLogo_strip8_56
+  - first:
+      213: -4534123224049698625
+    second: sprEurogamerLogo_strip8_57
+  - first:
+      213: 2218310250635061204
+    second: sprEurogamerLogo_strip8_58
+  - first:
+      213: -940156626553890236
+    second: sprEurogamerLogo_strip8_59
+  - first:
+      213: -8400015963218976921
+    second: sprEurogamerLogo_strip8_60
+  - first:
+      213: 4758230206290456440
+    second: sprEurogamerLogo_strip8_61
+  - first:
+      213: 1346177362691541053
+    second: sprEurogamerLogo_strip8_62
+  - first:
+      213: -1950991737503749860
+    second: sprEurogamerLogo_strip8_63
+  - first:
+      213: -3093464311926803585
+    second: sprEurogamerLogo_strip8_64
+  - first:
+      213: 870116729558203078
+    second: sprEurogamerLogo_strip8_65
+  - first:
+      213: -6508435635549136787
+    second: sprEurogamerLogo_strip8_66
+  - first:
+      213: -8511439594795525409
+    second: sprEurogamerLogo_strip8_67
+  - first:
+      213: -8785834058534908349
+    second: sprEurogamerLogo_strip8_68
+  - first:
+      213: 7300118926958563088
+    second: sprEurogamerLogo_strip8_69
+  - first:
+      213: -7211058659788273987
+    second: sprEurogamerLogo_strip8_70
+  - first:
+      213: 1612107075082487954
+    second: sprEurogamerLogo_strip8_71
+  - first:
+      213: -2586072485696507698
+    second: sprEurogamerLogo_strip8_72
+  - first:
+      213: -5342678374685188839
+    second: sprEurogamerLogo_strip8_73
+  - first:
+      213: -4921680425617702599
+    second: sprEurogamerLogo_strip8_74
+  - first:
+      213: 6933669634450312362
+    second: sprEurogamerLogo_strip8_75
+  - first:
+      213: -2923167962631652346
+    second: sprEurogamerLogo_strip8_76
+  - first:
+      213: 260355101674016553
+    second: sprEurogamerLogo_strip8_77
+  - first:
+      213: -8776419250593646307
+    second: sprEurogamerLogo_strip8_78
+  - first:
+      213: 5837320120564857349
+    second: sprEurogamerLogo_strip8_79
+  - first:
+      213: -1859227489699885311
+    second: sprEurogamerLogo_strip8_80
+  - first:
+      213: -6861098816484637442
+    second: sprEurogamerLogo_strip8_81
+  - first:
+      213: -4480243808211857482
+    second: sprEurogamerLogo_strip8_82
+  - first:
+      213: 6136079331801239409
+    second: sprEurogamerLogo_strip8_83
+  - first:
+      213: 8120099054862954806
+    second: sprEurogamerLogo_strip8_84
+  - first:
+      213: 393308453356488805
+    second: sprEurogamerLogo_strip8_85
+  - first:
+      213: 5700222417799096674
+    second: sprEurogamerLogo_strip8_86
+  - first:
+      213: -2391621029378935220
+    second: sprEurogamerLogo_strip8_87
+  - first:
+      213: -8453857116979034328
+    second: sprEurogamerLogo_strip8_88
+  - first:
+      213: -4275338510506842300
+    second: sprEurogamerLogo_strip8_89
+  - first:
+      213: -1331575120935003433
+    second: sprEurogamerLogo_strip8_90
+  - first:
+      213: 1149309150834358296
+    second: sprEurogamerLogo_strip8_91
+  - first:
+      213: -7532757360073578683
+    second: sprEurogamerLogo_strip8_92
+  - first:
+      213: 9033745662313078873
+    second: sprEurogamerLogo_strip8_93
+  - first:
+      213: -633651444377387477
+    second: sprEurogamerLogo_strip8_94
+  - first:
+      213: -157575340756168679
+    second: sprEurogamerLogo_strip8_95
+  - first:
+      213: -4619851606410545435
+    second: sprEurogamerLogo_strip8_96
+  - first:
+      213: -3874247507164624977
+    second: sprEurogamerLogo_strip8_97
+  - first:
+      213: 535885946703593116
+    second: sprEurogamerLogo_strip8_98
+  - first:
+      213: -5261089496572140895
+    second: sprEurogamerLogo_strip8_99
+  - first:
+      213: -1466045434816534598
+    second: sprEurogamerLogo_strip8_100
+  - first:
+      213: -3226135663833197747
+    second: sprEurogamerLogo_strip8_101
+  - first:
+      213: -5843524917167388785
+    second: sprEurogamerLogo_strip8_102
+  - first:
+      213: 1268090993476654933
+    second: sprEurogamerLogo_strip8_103
+  - first:
+      213: 2884900528010002438
+    second: sprEurogamerLogo_strip8_104
+  - first:
+      213: -9043317969104555008
+    second: sprEurogamerLogo_strip8_105
+  - first:
+      213: -1097257213513265174
+    second: sprEurogamerLogo_strip8_106
+  - first:
+      213: -3543950202075329232
+    second: sprEurogamerLogo_strip8_107
+  - first:
+      213: 5978626506168034967
+    second: sprEurogamerLogo_strip8_108
+  - first:
+      213: -523018730164294815
+    second: sprEurogamerLogo_strip8_109
+  - first:
+      213: -1969508829794092751
+    second: sprEurogamerLogo_strip8_110
+  - first:
+      213: -7259714539920311961
+    second: sprEurogamerLogo_strip8_111
+  - first:
+      213: -5296849588650801526
+    second: sprEurogamerLogo_strip8_112
+  - first:
+      213: -5491050965026079081
+    second: sprEurogamerLogo_strip8_113
+  - first:
+      213: -567125975140295657
+    second: sprEurogamerLogo_strip8_114
+  - first:
+      213: 2271672086686100806
+    second: sprEurogamerLogo_strip8_115
+  - first:
+      213: -1306259808944024855
+    second: sprEurogamerLogo_strip8_116
+  - first:
+      213: 9112044184489313084
+    second: sprEurogamerLogo_strip8_117
+  - first:
+      213: -9128690313534006760
+    second: sprEurogamerLogo_strip8_118
+  - first:
+      213: 882895843697259344
+    second: sprEurogamerLogo_strip8_119
+  - first:
+      213: 8859568966136437154
+    second: sprEurogamerLogo_strip8_120
+  - first:
+      213: 7756339317932069381
+    second: sprEurogamerLogo_strip8_121
+  - first:
+      213: -4052568656946050728
+    second: sprEurogamerLogo_strip8_122
+  - first:
+      213: 3284250771210663849
+    second: sprEurogamerLogo_strip8_123
+  - first:
+      213: 6326741160049181782
+    second: sprEurogamerLogo_strip8_124
+  - first:
+      213: 963209215569278180
+    second: sprEurogamerLogo_strip8_125
+  - first:
+      213: -8172141453834594771
+    second: sprEurogamerLogo_strip8_126
+  - first:
+      213: -3397803388129157807
+    second: sprEurogamerLogo_strip8_127
+  - first:
+      213: -2225800036982594833
+    second: sprEurogamerLogo_strip8_128
+  - first:
+      213: 7561582354457281733
+    second: sprEurogamerLogo_strip8_129
+  - first:
+      213: 8337415194939326200
+    second: sprEurogamerLogo_strip8_130
+  - first:
+      213: 2787676038790939551
+    second: sprEurogamerLogo_strip8_131
+  - first:
+      213: 7866682858541413269
+    second: sprEurogamerLogo_strip8_132
+  - first:
+      213: -1596079994837355487
+    second: sprEurogamerLogo_strip8_133
+  - first:
+      213: 3793278625021831531
+    second: sprEurogamerLogo_strip8_134
+  - first:
+      213: 8545063367698827063
+    second: sprEurogamerLogo_strip8_135
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a879ec63a7b419c70800000000000000
+      internalID: 8976038520603711370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91da2d874f0ab2270800000000000000
+      internalID: 8226846116181880089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba17ccb1a8d1e1c0800000000000000
+      internalID: -4476058365461062980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a661a5556a38ad0800000000000000
+      internalID: -2701132465978316165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e577c85579a79a460800000000000000
+      internalID: 7253463465250813790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fbfa4e10977bfc0800000000000000
+      internalID: -3479179138081767575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0581672c7de2370800000000000000
+      internalID: 8299808393495335096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b807f424ed3c20b60800000000000000
+      internalID: 7710940871374368907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1812d018e17620b0800000000000000
+      internalID: -5753786232390674405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c31182c9f8b3bd0800000000000000
+      internalID: -2649366054927516621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd445d5f9aef1900800000000000000
+      internalID: 657502040805887448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1aa9bed75cc7b330800000000000000
+      internalID: 3726671894443305498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_12
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17775850cfaeb0020800000000000000
+      internalID: 2309197602102802289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_13
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd663d7404b4e720800000000000000
+      internalID: 2874620393542806980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d523101e5b7f494f0800000000000000
+      internalID: -822760471365864867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_15
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 19
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c78ce8470410fc00800000000000000
+      internalID: 932267144386480065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_16
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb27a1d0e17ca3d0800000000000000
+      internalID: -3194052825308517450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2d566fca3d995c0800000000000000
+      internalID: -4208099636979313931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4cf128c6a3b24530800000000000000
+      internalID: 3837827361376697422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373262a65d61401f0800000000000000
+      internalID: -1079712904797346957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_20
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d42d9ebeb9974260800000000000000
+      internalID: 7081797983584199890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0973006176f202fb0800000000000000
+      internalID: -4674684293413324912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_22
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff69cb9c6a4bf920800000000000000
+      internalID: 3025093405040013304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0378ae8988d8756d0800000000000000
+      internalID: -3001775008798570704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_24
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a4b3fdac1ca13c0800000000000000
+      internalID: -4387981809846367633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_25
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd70a65dded470580800000000000000
+      internalID: -8861028057945077793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_26
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd625ebf0100d270800000000000000
+      internalID: 8273113682608811475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_27
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 19
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4af5d6f9feb2beb0800000000000000
+      internalID: -4705488679851394481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_28
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fc93bfa2cda7450800000000000000
+      internalID: 6087419923506253686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_29
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79481d560575c2840800000000000000
+      internalID: 5200627672523310231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_30
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b02aff02fd099c90800000000000000
+      internalID: -7162678399054765899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_31
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4579fc8a58567700800000000000000
+      internalID: 537714351452812618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_32
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b8069cc51fa8760800000000000000
+      internalID: 7461041113510480712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_33
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2923c3d5d56608e0800000000000000
+      internalID: -1727581437994784470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11179e443bee91580800000000000000
+      internalID: -8855784738524663535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_35
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a6286c409182440800000000000000
+      internalID: 4911202901948525083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_36
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5785df9c93c0212f0800000000000000
+      internalID: -1003726324608706443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_37
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe45071119c93dd0800000000000000
+      internalID: -2505750642417119556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_38
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e868fbf97db80ff60800000000000000
+      internalID: 8066100690834917006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_39
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 19
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e95e441ce308d10800000000000000
+      internalID: 2125768023924383363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_40
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8b731cda1b58540800000000000000
+      internalID: 5009605520348657858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_41
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9975a17da3d55b0800000000000000
+      internalID: -5378077684476175935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_42
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92eea9f74c3fc8db0800000000000000
+      internalID: -4788184278521680343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_43
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b47e29e35fc28f0800000000000000
+      internalID: -563806204226745570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_44
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f67a4c5a172fc10800000000000000
+      internalID: 2085854534208810814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_45
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccea6161d2039640800000000000000
+      internalID: 5085411502537239748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_46
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f7d45b540b2d820800000000000000
+      internalID: 2941607320067342104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_47
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c2d2c61eb6ceaa0800000000000000
+      internalID: -6130406376831374331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_48
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb5ddca43e7ad590800000000000000
+      internalID: -7648662252431778836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_49
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb29550b355a7b5b0800000000000000
+      internalID: -5352627853247278404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_50
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6608cb52704a876f0800000000000000
+      internalID: -686618592569163674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_51
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 19
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2000253ede5e17430800000000000000
+      internalID: 3779054372224368642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_52
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def79f7f78d9167c0800000000000000
+      internalID: -4079806580114489363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28181eb4b4777c20800000000000000
+      internalID: 3204157979529582634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_54
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b2eb887f4f40050800000000000000
+      internalID: 5766002766929341283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_55
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f3ccbc7969a4010800000000000000
+      internalID: 1173916231586824016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_56
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fbd81b042e1fe60800000000000000
+      internalID: 7994419581043982164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_57
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb83ba653fe8311c0800000000000000
+      internalID: -4534123224049698625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_58
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7e5ba7b6509ce10800000000000000
+      internalID: 2218310250635061204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_59
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a96018784e3f2f0800000000000000
+      internalID: -940156626553890236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_60
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fd8b49cf52d6b80800000000000000
+      internalID: -8400015963218976921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_61
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87fe9759921a80240800000000000000
+      internalID: 4758230206290456440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_62
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38c6e3dd259ea210800000000000000
+      internalID: 1346177362691541053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_63
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 19
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19ed5ef95face4e0800000000000000
+      internalID: -1950991737503749860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_64
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f733142299ec115d0800000000000000
+      internalID: -3093464311926803585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_65
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6caf0723e86431c00800000000000000
+      internalID: 870116729558203078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_66
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68999bc5446da5a0800000000000000
+      internalID: -6508435635549136787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_67
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda9409b8ca41e980800000000000000
+      internalID: -8511439594795525409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_68
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e8f7d1972721680800000000000000
+      internalID: -8785834058534908349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_69
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f88738c7b3f4560800000000000000
+      internalID: 7300118926958563088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_70
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6c0d0da5c2deb90800000000000000
+      internalID: -7211058659788273987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_71
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2988f2ee7da5f5610800000000000000
+      internalID: 1612107075082487954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_72
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0f5ae96cc6c1cd0800000000000000
+      internalID: -2586072485696507698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_73
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d5abf235efad5b0800000000000000
+      internalID: -5342678374685188839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_74
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9314015aabda2bbb0800000000000000
+      internalID: -4921680425617702599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_75
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 19
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacc25fdbc7593060800000000000000
+      internalID: 6933669634450312362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_76
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cb980c932de67d0800000000000000
+      internalID: -2923167962631652346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_77
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f8db6e597fc9300800000000000000
+      internalID: 260355101674016553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_78
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d193778e035e33680800000000000000
+      internalID: -8776419250593646307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_79
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a3282e8b3520150800000000000000
+      internalID: 5837320120564857349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_80
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f0ccfd272b236e0800000000000000
+      internalID: -1859227489699885311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_81
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef484926afa78c0a0800000000000000
+      internalID: -6861098816484637442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_82
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf83686ef9f2d1c0800000000000000
+      internalID: -4480243808211857482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_83
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f01a554abb72550800000000000000
+      internalID: 6136079331801239409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_84
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631771a711360b070800000000000000
+      internalID: 8120099054862954806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_85
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568c87954ff457500800000000000000
+      internalID: 393308453356488805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_86
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26922a186124b1f40800000000000000
+      internalID: 5700222417799096674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_87
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 19
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46b38a58514fced0800000000000000
+      internalID: -2391621029378935220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_88
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8278e881ebdddaa80800000000000000
+      internalID: -8453857116979034328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_89
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44721b2c642faa4c0800000000000000
+      internalID: -4275338510506842300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_90
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dadbe48b7b458de0800000000000000
+      internalID: -1331575120935003433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_91
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8187698559a23ff00800000000000000
+      internalID: 1149309150834358296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_92
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 20
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547ea9d5715467790800000000000000
+      internalID: -7532757360073578683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_93
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950a56921df4e5d70800000000000000
+      internalID: 9033745662313078873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_94
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ef87a5e51d437f0800000000000000
+      internalID: -633651444377387477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_95
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9101edcff0e20ddf0800000000000000
+      internalID: -157575340756168679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_96
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6b1e4e07df2efb0800000000000000
+      internalID: -4619851606410545435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_97
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7828b3b68eb3ac0800000000000000
+      internalID: -3874247507164624977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_98
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 8
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e3465ed69df6700800000000000000
+      internalID: 535885946703593116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_99
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a267413afadcf6b0800000000000000
+      internalID: -5261089496572140895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_100
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab76d29c17f87abe0800000000000000
+      internalID: -1466045434816534598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_101
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43d000e4b67a33d0800000000000000
+      internalID: -3226135663833197747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_102
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8708145c01a7eea0800000000000000
+      internalID: -5843524917167388785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_103
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 8
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5575c093a0a299110800000000000000
+      internalID: 1268090993476654933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_104
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6008f50deb9390820800000000000000
+      internalID: 2884900528010002438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_105
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004bd9c783eaf7280800000000000000
+      internalID: -9043317969104555008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_106
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef8e49b062c5c0f0800000000000000
+      internalID: -1097257213513265174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_107
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d40af511c51dec0800000000000000
+      internalID: -3543950202075329232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_108
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 8
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79661e8912958f250800000000000000
+      internalID: 5978626506168034967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_109
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b6ea96c3dddb8f0800000000000000
+      internalID: -523018730164294815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_110
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139b02a7726eaa4e0800000000000000
+      internalID: -1969508829794092751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_111
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769bf4de610504b90800000000000000
+      internalID: -7259714539920311961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_112
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a868bcfec5fcd76b0800000000000000
+      internalID: -5296849588650801526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_113
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 8
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79efd0a7d3edbc3b0800000000000000
+      internalID: -5491050965026079081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_114
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c9ddc2ee92128f0800000000000000
+      internalID: -567125975140295657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_115
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d681d1ab9968f10800000000000000
+      internalID: 2271672086686100806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_116
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e29587ef9b3fdde0800000000000000
+      internalID: -1306259808944024855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_117
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33462a78eb747e70800000000000000
+      internalID: 9112044184489313084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_118
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 8
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a91459680605180800000000000000
+      internalID: -9128690313534006760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_119
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0537e31971da04c00800000000000000
+      internalID: 882895843697259344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_120
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a913a1e80383fa70800000000000000
+      internalID: 8859568966136437154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_121
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5029cbac38d04ab60800000000000000
+      internalID: 7756339317932069381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_122
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85949d6274262c7c0800000000000000
+      internalID: -4052568656946050728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_123
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 8
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7705bfca0049d20800000000000000
+      internalID: 3284250771210663849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_124
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654039680991dc750800000000000000
+      internalID: 6326741160049181782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_125
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4b362ada10e5d00800000000000000
+      internalID: 963209215569278180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_126
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26d1f545a8b69e80800000000000000
+      internalID: -8172141453834594771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_127
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d51f122d398d0d0800000000000000
+      internalID: -3397803388129157807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_128
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 8
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2e99eb8ae5c11e0800000000000000
+      internalID: -2225800036982594833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_129
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4c941a61320f860800000000000000
+      internalID: 7561582354457281733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_130
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe7d4f32f274b370800000000000000
+      internalID: 8337415194939326200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_131
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9380096690dfa620800000000000000
+      internalID: 2787676038790939551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_132
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593f30061621c2d60800000000000000
+      internalID: 7866682858541413269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_133
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 8
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124bc9a73b599d9e0800000000000000
+      internalID: -1596079994837355487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_134
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 11
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b692282dfce64a430800000000000000
+      internalID: 3793278625021831531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprEurogamerLogo_strip8_135
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73744e6fbd9269670800000000000000
+      internalID: 8545063367698827063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprEurogamerLogo_strip8_0: 8976038520603711370
+      sprEurogamerLogo_strip8_1: 8226846116181880089
+      sprEurogamerLogo_strip8_10: 657502040805887448
+      sprEurogamerLogo_strip8_100: -1466045434816534598
+      sprEurogamerLogo_strip8_101: -3226135663833197747
+      sprEurogamerLogo_strip8_102: -5843524917167388785
+      sprEurogamerLogo_strip8_103: 1268090993476654933
+      sprEurogamerLogo_strip8_104: 2884900528010002438
+      sprEurogamerLogo_strip8_105: -9043317969104555008
+      sprEurogamerLogo_strip8_106: -1097257213513265174
+      sprEurogamerLogo_strip8_107: -3543950202075329232
+      sprEurogamerLogo_strip8_108: 5978626506168034967
+      sprEurogamerLogo_strip8_109: -523018730164294815
+      sprEurogamerLogo_strip8_11: 3726671894443305498
+      sprEurogamerLogo_strip8_110: -1969508829794092751
+      sprEurogamerLogo_strip8_111: -7259714539920311961
+      sprEurogamerLogo_strip8_112: -5296849588650801526
+      sprEurogamerLogo_strip8_113: -5491050965026079081
+      sprEurogamerLogo_strip8_114: -567125975140295657
+      sprEurogamerLogo_strip8_115: 2271672086686100806
+      sprEurogamerLogo_strip8_116: -1306259808944024855
+      sprEurogamerLogo_strip8_117: 9112044184489313084
+      sprEurogamerLogo_strip8_118: -9128690313534006760
+      sprEurogamerLogo_strip8_119: 882895843697259344
+      sprEurogamerLogo_strip8_12: 2309197602102802289
+      sprEurogamerLogo_strip8_120: 8859568966136437154
+      sprEurogamerLogo_strip8_121: 7756339317932069381
+      sprEurogamerLogo_strip8_122: -4052568656946050728
+      sprEurogamerLogo_strip8_123: 3284250771210663849
+      sprEurogamerLogo_strip8_124: 6326741160049181782
+      sprEurogamerLogo_strip8_125: 963209215569278180
+      sprEurogamerLogo_strip8_126: -8172141453834594771
+      sprEurogamerLogo_strip8_127: -3397803388129157807
+      sprEurogamerLogo_strip8_128: -2225800036982594833
+      sprEurogamerLogo_strip8_129: 7561582354457281733
+      sprEurogamerLogo_strip8_13: 2874620393542806980
+      sprEurogamerLogo_strip8_130: 8337415194939326200
+      sprEurogamerLogo_strip8_131: 2787676038790939551
+      sprEurogamerLogo_strip8_132: 7866682858541413269
+      sprEurogamerLogo_strip8_133: -1596079994837355487
+      sprEurogamerLogo_strip8_134: 3793278625021831531
+      sprEurogamerLogo_strip8_135: 8545063367698827063
+      sprEurogamerLogo_strip8_14: -822760471365864867
+      sprEurogamerLogo_strip8_15: 932267144386480065
+      sprEurogamerLogo_strip8_16: -3194052825308517450
+      sprEurogamerLogo_strip8_17: -4208099636979313931
+      sprEurogamerLogo_strip8_18: 3837827361376697422
+      sprEurogamerLogo_strip8_19: -1079712904797346957
+      sprEurogamerLogo_strip8_2: -4476058365461062980
+      sprEurogamerLogo_strip8_20: 7081797983584199890
+      sprEurogamerLogo_strip8_21: -4674684293413324912
+      sprEurogamerLogo_strip8_22: 3025093405040013304
+      sprEurogamerLogo_strip8_23: -3001775008798570704
+      sprEurogamerLogo_strip8_24: -4387981809846367633
+      sprEurogamerLogo_strip8_25: -8861028057945077793
+      sprEurogamerLogo_strip8_26: 8273113682608811475
+      sprEurogamerLogo_strip8_27: -4705488679851394481
+      sprEurogamerLogo_strip8_28: 6087419923506253686
+      sprEurogamerLogo_strip8_29: 5200627672523310231
+      sprEurogamerLogo_strip8_3: -2701132465978316165
+      sprEurogamerLogo_strip8_30: -7162678399054765899
+      sprEurogamerLogo_strip8_31: 537714351452812618
+      sprEurogamerLogo_strip8_32: 7461041113510480712
+      sprEurogamerLogo_strip8_33: -1727581437994784470
+      sprEurogamerLogo_strip8_34: -8855784738524663535
+      sprEurogamerLogo_strip8_35: 4911202901948525083
+      sprEurogamerLogo_strip8_36: -1003726324608706443
+      sprEurogamerLogo_strip8_37: -2505750642417119556
+      sprEurogamerLogo_strip8_38: 8066100690834917006
+      sprEurogamerLogo_strip8_39: 2125768023924383363
+      sprEurogamerLogo_strip8_4: 7253463465250813790
+      sprEurogamerLogo_strip8_40: 5009605520348657858
+      sprEurogamerLogo_strip8_41: -5378077684476175935
+      sprEurogamerLogo_strip8_42: -4788184278521680343
+      sprEurogamerLogo_strip8_43: -563806204226745570
+      sprEurogamerLogo_strip8_44: 2085854534208810814
+      sprEurogamerLogo_strip8_45: 5085411502537239748
+      sprEurogamerLogo_strip8_46: 2941607320067342104
+      sprEurogamerLogo_strip8_47: -6130406376831374331
+      sprEurogamerLogo_strip8_48: -7648662252431778836
+      sprEurogamerLogo_strip8_49: -5352627853247278404
+      sprEurogamerLogo_strip8_5: -3479179138081767575
+      sprEurogamerLogo_strip8_50: -686618592569163674
+      sprEurogamerLogo_strip8_51: 3779054372224368642
+      sprEurogamerLogo_strip8_52: -4079806580114489363
+      sprEurogamerLogo_strip8_53: 3204157979529582634
+      sprEurogamerLogo_strip8_54: 5766002766929341283
+      sprEurogamerLogo_strip8_55: 1173916231586824016
+      sprEurogamerLogo_strip8_56: 7994419581043982164
+      sprEurogamerLogo_strip8_57: -4534123224049698625
+      sprEurogamerLogo_strip8_58: 2218310250635061204
+      sprEurogamerLogo_strip8_59: -940156626553890236
+      sprEurogamerLogo_strip8_6: 8299808393495335096
+      sprEurogamerLogo_strip8_60: -8400015963218976921
+      sprEurogamerLogo_strip8_61: 4758230206290456440
+      sprEurogamerLogo_strip8_62: 1346177362691541053
+      sprEurogamerLogo_strip8_63: -1950991737503749860
+      sprEurogamerLogo_strip8_64: -3093464311926803585
+      sprEurogamerLogo_strip8_65: 870116729558203078
+      sprEurogamerLogo_strip8_66: -6508435635549136787
+      sprEurogamerLogo_strip8_67: -8511439594795525409
+      sprEurogamerLogo_strip8_68: -8785834058534908349
+      sprEurogamerLogo_strip8_69: 7300118926958563088
+      sprEurogamerLogo_strip8_7: 7710940871374368907
+      sprEurogamerLogo_strip8_70: -7211058659788273987
+      sprEurogamerLogo_strip8_71: 1612107075082487954
+      sprEurogamerLogo_strip8_72: -2586072485696507698
+      sprEurogamerLogo_strip8_73: -5342678374685188839
+      sprEurogamerLogo_strip8_74: -4921680425617702599
+      sprEurogamerLogo_strip8_75: 6933669634450312362
+      sprEurogamerLogo_strip8_76: -2923167962631652346
+      sprEurogamerLogo_strip8_77: 260355101674016553
+      sprEurogamerLogo_strip8_78: -8776419250593646307
+      sprEurogamerLogo_strip8_79: 5837320120564857349
+      sprEurogamerLogo_strip8_8: -5753786232390674405
+      sprEurogamerLogo_strip8_80: -1859227489699885311
+      sprEurogamerLogo_strip8_81: -6861098816484637442
+      sprEurogamerLogo_strip8_82: -4480243808211857482
+      sprEurogamerLogo_strip8_83: 6136079331801239409
+      sprEurogamerLogo_strip8_84: 8120099054862954806
+      sprEurogamerLogo_strip8_85: 393308453356488805
+      sprEurogamerLogo_strip8_86: 5700222417799096674
+      sprEurogamerLogo_strip8_87: -2391621029378935220
+      sprEurogamerLogo_strip8_88: -8453857116979034328
+      sprEurogamerLogo_strip8_89: -4275338510506842300
+      sprEurogamerLogo_strip8_9: -2649366054927516621
+      sprEurogamerLogo_strip8_90: -1331575120935003433
+      sprEurogamerLogo_strip8_91: 1149309150834358296
+      sprEurogamerLogo_strip8_92: -7532757360073578683
+      sprEurogamerLogo_strip8_93: 9033745662313078873
+      sprEurogamerLogo_strip8_94: -633651444377387477
+      sprEurogamerLogo_strip8_95: -157575340756168679
+      sprEurogamerLogo_strip8_96: -4619851606410545435
+      sprEurogamerLogo_strip8_97: -3874247507164624977
+      sprEurogamerLogo_strip8_98: 535885946703593116
+      sprEurogamerLogo_strip8_99: -5261089496572140895
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

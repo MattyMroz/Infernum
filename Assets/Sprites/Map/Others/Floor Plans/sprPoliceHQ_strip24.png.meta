@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 074ab868f1ccdfb48b1805d65176abb7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 832939565949709369
+    second: sprPoliceHQ_strip24_0
+  - first:
+      213: 4582953577688018797
+    second: sprPoliceHQ_strip24_1
+  - first:
+      213: -4684998007313292882
+    second: sprPoliceHQ_strip24_2
+  - first:
+      213: 8655240899833713563
+    second: sprPoliceHQ_strip24_3
+  - first:
+      213: 4127781356801524208
+    second: sprPoliceHQ_strip24_4
+  - first:
+      213: 3028728765038179198
+    second: sprPoliceHQ_strip24_5
+  - first:
+      213: 6515524222245463928
+    second: sprPoliceHQ_strip24_6
+  - first:
+      213: -4012370493994712493
+    second: sprPoliceHQ_strip24_7
+  - first:
+      213: -2624281305721024377
+    second: sprPoliceHQ_strip24_8
+  - first:
+      213: -2656892758442117934
+    second: sprPoliceHQ_strip24_9
+  - first:
+      213: 140156988637265420
+    second: sprPoliceHQ_strip24_10
+  - first:
+      213: 8766704047627776216
+    second: sprPoliceHQ_strip24_11
+  - first:
+      213: 506600735342954990
+    second: sprPoliceHQ_strip24_12
+  - first:
+      213: -3186159126537243282
+    second: sprPoliceHQ_strip24_13
+  - first:
+      213: 1505423778679237815
+    second: sprPoliceHQ_strip24_14
+  - first:
+      213: 8688440704798925628
+    second: sprPoliceHQ_strip24_15
+  - first:
+      213: 5049557494589628502
+    second: sprPoliceHQ_strip24_16
+  - first:
+      213: -7540205364114558818
+    second: sprPoliceHQ_strip24_17
+  - first:
+      213: 1798924711282546911
+    second: sprPoliceHQ_strip24_18
+  - first:
+      213: 6772763374546237829
+    second: sprPoliceHQ_strip24_19
+  - first:
+      213: 1585699903332337427
+    second: sprPoliceHQ_strip24_20
+  - first:
+      213: 6656095993419899135
+    second: sprPoliceHQ_strip24_21
+  - first:
+      213: 2954105593864529053
+    second: sprPoliceHQ_strip24_22
+  - first:
+      213: 8498920621961790324
+    second: sprPoliceHQ_strip24_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 38
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93cecc34f123f8b00800000000000000
+      internalID: 832939565949709369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 38
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f23345ffbe99f30800000000000000
+      internalID: 4582953577688018797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 38
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1ada0722b8bfeb0800000000000000
+      internalID: -4684998007313292882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_3
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 38
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b935500bdb79d1870800000000000000
+      internalID: 8655240899833713563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_4
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 38
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f182aa2643d84930800000000000000
+      internalID: 4127781356801524208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_5
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 38
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73bb11d3c4380a20800000000000000
+      internalID: 3028728765038179198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_6
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 38
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877e46862cacb6a50800000000000000
+      internalID: 6515524222245463928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_7
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 38
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352cf2e4b423158c0800000000000000
+      internalID: -4012370493994712493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_8
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 26
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780dcc57e0ea49bd0800000000000000
+      internalID: -2624281305721024377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_9
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 26
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4ffbeec12d02bd0800000000000000
+      internalID: -2656892758442117934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_10
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 26
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e3380e900f1f100800000000000000
+      internalID: 140156988637265420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_11
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 26
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d035d122e699a970800000000000000
+      internalID: 8766704047627776216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_12
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 26
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee981194faec70700800000000000000
+      internalID: 506600735342954990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_13
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 26
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65f0e8c72d78c3d0800000000000000
+      internalID: -3186159126537243282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_14
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 26
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc2a9c53f654e410800000000000000
+      internalID: 1505423778679237815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_15
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 26
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33a595a9ca839870800000000000000
+      internalID: 8688440704798925628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_16
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 22
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6502de1a9c1a31640800000000000000
+      internalID: 5049557494589628502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_17
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 22
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90f47acb2fcb5790800000000000000
+      internalID: -7540205364114558818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_18
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 22
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd81ba96e7017f810800000000000000
+      internalID: 1798924711282546911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_19
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 22
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589ba9fc760bdfd50800000000000000
+      internalID: 6772763374546237829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_20
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 22
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317ce7229a9810610800000000000000
+      internalID: 1585699903332337427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_21
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 22
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0a1be5a043f5c50800000000000000
+      internalID: 6656095993419899135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_22
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 22
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d942a47d2671ff820800000000000000
+      internalID: 2954105593864529053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceHQ_strip24_23
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 22
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4734646c64b32f570800000000000000
+      internalID: 8498920621961790324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprPoliceHQ_strip24_0: 832939565949709369
+      sprPoliceHQ_strip24_1: 4582953577688018797
+      sprPoliceHQ_strip24_10: 140156988637265420
+      sprPoliceHQ_strip24_11: 8766704047627776216
+      sprPoliceHQ_strip24_12: 506600735342954990
+      sprPoliceHQ_strip24_13: -3186159126537243282
+      sprPoliceHQ_strip24_14: 1505423778679237815
+      sprPoliceHQ_strip24_15: 8688440704798925628
+      sprPoliceHQ_strip24_16: 5049557494589628502
+      sprPoliceHQ_strip24_17: -7540205364114558818
+      sprPoliceHQ_strip24_18: 1798924711282546911
+      sprPoliceHQ_strip24_19: 6772763374546237829
+      sprPoliceHQ_strip24_2: -4684998007313292882
+      sprPoliceHQ_strip24_20: 1585699903332337427
+      sprPoliceHQ_strip24_21: 6656095993419899135
+      sprPoliceHQ_strip24_22: 2954105593864529053
+      sprPoliceHQ_strip24_23: 8498920621961790324
+      sprPoliceHQ_strip24_3: 8655240899833713563
+      sprPoliceHQ_strip24_4: 4127781356801524208
+      sprPoliceHQ_strip24_5: 3028728765038179198
+      sprPoliceHQ_strip24_6: 6515524222245463928
+      sprPoliceHQ_strip24_7: -4012370493994712493
+      sprPoliceHQ_strip24_8: -2624281305721024377
+      sprPoliceHQ_strip24_9: -2656892758442117934
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 4f44c894a52269e438eea88f82861822
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -740894354908241246
+    second: sprOffice_strip24_0
+  - first:
+      213: -6177956863450580803
+    second: sprOffice_strip24_1
+  - first:
+      213: -6933562126465931188
+    second: sprOffice_strip24_2
+  - first:
+      213: -4534311917523306788
+    second: sprOffice_strip24_3
+  - first:
+      213: -4600037196580541403
+    second: sprOffice_strip24_4
+  - first:
+      213: 4750897326828198161
+    second: sprOffice_strip24_5
+  - first:
+      213: 4322976884504871933
+    second: sprOffice_strip24_6
+  - first:
+      213: 2781187963259942165
+    second: sprOffice_strip24_7
+  - first:
+      213: 2494268162056536451
+    second: sprOffice_strip24_8
+  - first:
+      213: -3460385902075785465
+    second: sprOffice_strip24_9
+  - first:
+      213: 6481985238674207975
+    second: sprOffice_strip24_10
+  - first:
+      213: 3334922201384586248
+    second: sprOffice_strip24_11
+  - first:
+      213: -7577655610281509077
+    second: sprOffice_strip24_12
+  - first:
+      213: 838139812093266896
+    second: sprOffice_strip24_13
+  - first:
+      213: 9153218137506579576
+    second: sprOffice_strip24_14
+  - first:
+      213: 7389093917767643432
+    second: sprOffice_strip24_15
+  - first:
+      213: 2987578479937115007
+    second: sprOffice_strip24_16
+  - first:
+      213: -2241659834006294169
+    second: sprOffice_strip24_17
+  - first:
+      213: 3549408450460070842
+    second: sprOffice_strip24_18
+  - first:
+      213: -4826854969444984859
+    second: sprOffice_strip24_19
+  - first:
+      213: -4027235673997519596
+    second: sprOffice_strip24_20
+  - first:
+      213: 5235851152940016499
+    second: sprOffice_strip24_21
+  - first:
+      213: 6986243088607245587
+    second: sprOffice_strip24_22
+  - first:
+      213: 201750022143126479
+    second: sprOffice_strip24_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprOffice_strip24_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a22a977280d7b5f0800000000000000
+      internalID: -740894354908241246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8775407fc734aa0800000000000000
+      internalID: -6177956863450580803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_2
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4865e74bf907cf90800000000000000
+      internalID: -6933562126465931188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6f337b553e211c0800000000000000
+      internalID: -4534311917523306788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cab30ba826920c0800000000000000
+      internalID: -4600037196580541403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_5
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11992f982f39ee140800000000000000
+      internalID: 4750897326828198161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_6
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df34325829c4efb30800000000000000
+      internalID: 4322976884504871933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_7
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51573bb97b3c89620800000000000000
+      internalID: 2781187963259942165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_8
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 0
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38142fd9dab6d9220800000000000000
+      internalID: 2494268162056536451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_9
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 6
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70fc0012b5d3affc0800000000000000
+      internalID: -3460385902075785465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_10
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 6
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e470864b33a4f950800000000000000
+      internalID: 6481985238674207975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_11
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 6
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c871fa216084e20800000000000000
+      internalID: 3334922201384586248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_12
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 6
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fbceede52c6d690800000000000000
+      internalID: -7577655610281509077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_13
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 6
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db8eebe7bba1ab00800000000000000
+      internalID: 838139812093266896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_14
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 6
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8740eb57663c60f70800000000000000
+      internalID: 9153218137506579576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_15
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 6
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8213a84e4c55b8660800000000000000
+      internalID: 7389093917767643432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_16
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 6
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73d0437cc2067920800000000000000
+      internalID: 2987578479937115007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_17
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 6
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7613bcef14604e0e0800000000000000
+      internalID: -2241659834006294169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_18
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 6
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3317c1e28024130800000000000000
+      internalID: 3549408450460070842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_19
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 6
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e717e3aaf0930db0800000000000000
+      internalID: -4826854969444984859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_20
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 6
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415d890ed726c18c0800000000000000
+      internalID: -4027235673997519596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_21
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 6
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3732fc302ea79a840800000000000000
+      internalID: 5235851152940016499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_22
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 6
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31576fa031f14f060800000000000000
+      internalID: 6986243088607245587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprOffice_strip24_23
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 6
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcba4438392ccc200800000000000000
+      internalID: 201750022143126479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprOffice_strip24_0: -740894354908241246
+      sprOffice_strip24_1: -6177956863450580803
+      sprOffice_strip24_10: 6481985238674207975
+      sprOffice_strip24_11: 3334922201384586248
+      sprOffice_strip24_12: -7577655610281509077
+      sprOffice_strip24_13: 838139812093266896
+      sprOffice_strip24_14: 9153218137506579576
+      sprOffice_strip24_15: 7389093917767643432
+      sprOffice_strip24_16: 2987578479937115007
+      sprOffice_strip24_17: -2241659834006294169
+      sprOffice_strip24_18: 3549408450460070842
+      sprOffice_strip24_19: -4826854969444984859
+      sprOffice_strip24_2: -6933562126465931188
+      sprOffice_strip24_20: -4027235673997519596
+      sprOffice_strip24_21: 5235851152940016499
+      sprOffice_strip24_22: 6986243088607245587
+      sprOffice_strip24_23: 201750022143126479
+      sprOffice_strip24_3: -4534311917523306788
+      sprOffice_strip24_4: -4600037196580541403
+      sprOffice_strip24_5: 4750897326828198161
+      sprOffice_strip24_6: 4322976884504871933
+      sprOffice_strip24_7: 2781187963259942165
+      sprOffice_strip24_8: 2494268162056536451
+      sprOffice_strip24_9: -3460385902075785465
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

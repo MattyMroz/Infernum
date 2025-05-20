@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 4e6a148ce446ec449b18c7240884e35d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4950518381409092917
+    second: sprPoliceFrontDesk_strip11_0
+  - first:
+      213: 2162477527340437821
+    second: sprPoliceFrontDesk_strip11_1
+  - first:
+      213: 1972281279741776730
+    second: sprPoliceFrontDesk_strip11_2
+  - first:
+      213: 2762955075820242795
+    second: sprPoliceFrontDesk_strip11_3
+  - first:
+      213: -3979718389424518254
+    second: sprPoliceFrontDesk_strip11_4
+  - first:
+      213: -908804067978956383
+    second: sprPoliceFrontDesk_strip11_5
+  - first:
+      213: -3287574086605089923
+    second: sprPoliceFrontDesk_strip11_6
+  - first:
+      213: -4963330515677390389
+    second: sprPoliceFrontDesk_strip11_7
+  - first:
+      213: -5200218143138564033
+    second: sprPoliceFrontDesk_strip11_8
+  - first:
+      213: 5156058513171688292
+    second: sprPoliceFrontDesk_strip11_9
+  - first:
+      213: -5670079661422891063
+    second: sprPoliceFrontDesk_strip11_10
+  - first:
+      213: -4376536319252796274
+    second: sprPoliceFrontDesk_strip11_11
+  - first:
+      213: 2491511776756963201
+    second: sprPoliceFrontDesk_strip11_12
+  - first:
+      213: 8849336756258872615
+    second: sprPoliceFrontDesk_strip11_13
+  - first:
+      213: -3632154681476453647
+    second: sprPoliceFrontDesk_strip11_14
+  - first:
+      213: -850942093708501805
+    second: sprPoliceFrontDesk_strip11_15
+  - first:
+      213: 492647992189901574
+    second: sprPoliceFrontDesk_strip11_16
+  - first:
+      213: 4742660126093858880
+    second: sprPoliceFrontDesk_strip11_17
+  - first:
+      213: 4027293816572050760
+    second: sprPoliceFrontDesk_strip11_18
+  - first:
+      213: 6823591295763765264
+    second: sprPoliceFrontDesk_strip11_19
+  - first:
+      213: 992906775213891264
+    second: sprPoliceFrontDesk_strip11_20
+  - first:
+      213: -4357392311970791046
+    second: sprPoliceFrontDesk_strip11_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcab116d2c93c4bb0800000000000000
+      internalID: -4950518381409092917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3154e39ad9a20e10800000000000000
+      internalID: 2162477527340437821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_2
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a535924df53fe5b10800000000000000
+      internalID: 1972281279741776730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_3
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67c0a0b00df75620800000000000000
+      internalID: 2762955075820242795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_4
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b0344d53335c8c0800000000000000
+      internalID: -3979718389424518254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_5
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a13fa5e3874363f0800000000000000
+      internalID: -908804067978956383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_6
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73df1b59c03062d0800000000000000
+      internalID: -3287574086605089923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_7
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9513e5135be1bb0800000000000000
+      internalID: -4963330515677390389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_8
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f383fa7962d15d7b0800000000000000
+      internalID: -5200218143138564033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_9
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b2ab656effd8740800000000000000
+      internalID: 5156058513171688292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_10
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 66
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfa8bcd694df41b0800000000000000
+      internalID: -5670079661422891063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c6750d76b6343c0800000000000000
+      internalID: -4376536319252796274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1871d47a2c0a39220800000000000000
+      internalID: 2491511776756963201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_13
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d1e9ed4e82fca70800000000000000
+      internalID: 8849336756258872615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_14
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fae259af8ef79dc0800000000000000
+      internalID: -3632154681476453647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_15
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcd31c9ca8d034f0800000000000000
+      internalID: -850942093708501805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_16
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bd9cd1dbc36d600800000000000000
+      internalID: 492647992189901574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_17
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048db3ac14051d140800000000000000
+      internalID: 4742660126093858880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_18
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d77ee7362d3e730800000000000000
+      internalID: 4027293816572050760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_19
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018527c612442be50800000000000000
+      internalID: 6823591295763765264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_20
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ced3bf837387cd00800000000000000
+      internalID: 992906775213891264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoliceFrontDesk_strip11_21
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 0
+        width: 194
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7186f957ce6783c0800000000000000
+      internalID: -4357392311970791046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprPoliceFrontDesk_strip11_0: -4950518381409092917
+      sprPoliceFrontDesk_strip11_1: 2162477527340437821
+      sprPoliceFrontDesk_strip11_10: -5670079661422891063
+      sprPoliceFrontDesk_strip11_11: -4376536319252796274
+      sprPoliceFrontDesk_strip11_12: 2491511776756963201
+      sprPoliceFrontDesk_strip11_13: 8849336756258872615
+      sprPoliceFrontDesk_strip11_14: -3632154681476453647
+      sprPoliceFrontDesk_strip11_15: -850942093708501805
+      sprPoliceFrontDesk_strip11_16: 492647992189901574
+      sprPoliceFrontDesk_strip11_17: 4742660126093858880
+      sprPoliceFrontDesk_strip11_18: 4027293816572050760
+      sprPoliceFrontDesk_strip11_19: 6823591295763765264
+      sprPoliceFrontDesk_strip11_2: 1972281279741776730
+      sprPoliceFrontDesk_strip11_20: 992906775213891264
+      sprPoliceFrontDesk_strip11_21: -4357392311970791046
+      sprPoliceFrontDesk_strip11_3: 2762955075820242795
+      sprPoliceFrontDesk_strip11_4: -3979718389424518254
+      sprPoliceFrontDesk_strip11_5: -908804067978956383
+      sprPoliceFrontDesk_strip11_6: -3287574086605089923
+      sprPoliceFrontDesk_strip11_7: -4963330515677390389
+      sprPoliceFrontDesk_strip11_8: -5200218143138564033
+      sprPoliceFrontDesk_strip11_9: 5156058513171688292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

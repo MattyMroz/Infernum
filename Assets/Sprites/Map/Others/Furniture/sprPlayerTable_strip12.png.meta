@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: fa12356dc7aab7040ba5600ea27617c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3485074798879343812
+    second: sprPlayerTable_strip12_0
+  - first:
+      213: 7040827918538387742
+    second: sprPlayerTable_strip12_1
+  - first:
+      213: 3201047461209193315
+    second: sprPlayerTable_strip12_2
+  - first:
+      213: 2580974184938961355
+    second: sprPlayerTable_strip12_3
+  - first:
+      213: -874492980480559209
+    second: sprPlayerTable_strip12_4
+  - first:
+      213: -1905144227748686258
+    second: sprPlayerTable_strip12_5
+  - first:
+      213: -4398818661106240672
+    second: sprPlayerTable_strip12_6
+  - first:
+      213: 3533535377152602016
+    second: sprPlayerTable_strip12_7
+  - first:
+      213: -600937826062190221
+    second: sprPlayerTable_strip12_8
+  - first:
+      213: -1625538972122575534
+    second: sprPlayerTable_strip12_9
+  - first:
+      213: 2644622948960560330
+    second: sprPlayerTable_strip12_10
+  - first:
+      213: -3566036334413757213
+    second: sprPlayerTable_strip12_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c48eda90197d5030800000000000000
+      internalID: 3485074798879343812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 2
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11322120bb06b160800000000000000
+      internalID: 7040827918538387742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b3a82c4b76c6c20800000000000000
+      internalID: 3201047461209193315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc97dbbb85671d320800000000000000
+      internalID: 2580974184938961355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 2
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79732eb744d2dd3f0800000000000000
+      internalID: -874492980480559209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 2
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4657233b619f85e0800000000000000
+      internalID: -1905144227748686258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_6
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 2
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0633761dbb144f2c0800000000000000
+      internalID: -4398818661106240672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_7
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 2
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afe47c34b3a90130800000000000000
+      internalID: 3533535377152602016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 2
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379b7792b3a09a7f0800000000000000
+      internalID: -600937826062190221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_9
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 2
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d8416daece079e0800000000000000
+      internalID: -1625538972122575534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_10
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 2
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4e3ad6f8693b420800000000000000
+      internalID: 2644622948960560330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPlayerTable_strip12_11
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 2
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4c127f8d4e28ec0800000000000000
+      internalID: -3566036334413757213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprPlayerTable_strip12_0: 3485074798879343812
+      sprPlayerTable_strip12_1: 7040827918538387742
+      sprPlayerTable_strip12_10: 2644622948960560330
+      sprPlayerTable_strip12_11: -3566036334413757213
+      sprPlayerTable_strip12_2: 3201047461209193315
+      sprPlayerTable_strip12_3: 2580974184938961355
+      sprPlayerTable_strip12_4: -874492980480559209
+      sprPlayerTable_strip12_5: -1905144227748686258
+      sprPlayerTable_strip12_6: -4398818661106240672
+      sprPlayerTable_strip12_7: 3533535377152602016
+      sprPlayerTable_strip12_8: -600937826062190221
+      sprPlayerTable_strip12_9: -1625538972122575534
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

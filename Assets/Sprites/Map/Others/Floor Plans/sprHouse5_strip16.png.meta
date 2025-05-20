@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: ef4cdc7b8bc6ba74fa04b80f8fcf9e13
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1621528516239943469
+    second: sprHouse5_strip16_0
+  - first:
+      213: 3992319725673005853
+    second: sprHouse5_strip16_1
+  - first:
+      213: 4545591655306742704
+    second: sprHouse5_strip16_2
+  - first:
+      213: 4373394810851494182
+    second: sprHouse5_strip16_3
+  - first:
+      213: -7147611596078772756
+    second: sprHouse5_strip16_4
+  - first:
+      213: 944698946677990496
+    second: sprHouse5_strip16_5
+  - first:
+      213: -4755535460865354170
+    second: sprHouse5_strip16_6
+  - first:
+      213: 3871320901228722576
+    second: sprHouse5_strip16_7
+  - first:
+      213: -6298652102633651959
+    second: sprHouse5_strip16_8
+  - first:
+      213: 776935913307418307
+    second: sprHouse5_strip16_9
+  - first:
+      213: 7932103176659763772
+    second: sprHouse5_strip16_10
+  - first:
+      213: 7563726415940337000
+    second: sprHouse5_strip16_11
+  - first:
+      213: 3178354242374810208
+    second: sprHouse5_strip16_12
+  - first:
+      213: 2681619496084195474
+    second: sprHouse5_strip16_13
+  - first:
+      213: -1613227808417186144
+    second: sprHouse5_strip16_14
+  - first:
+      213: 6230785538004778822
+    second: sprHouse5_strip16_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprHouse5_strip16_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27e5a32893d08610800000000000000
+      internalID: 1621528516239943469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 6
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13468663a1976730800000000000000
+      internalID: 3992319725673005853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 6
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbc984e68f251f30800000000000000
+      internalID: 4545591655306742704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 6
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6290753c86b61bc30800000000000000
+      internalID: 4373394810851494182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_4
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 6
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced034f7f159ecc90800000000000000
+      internalID: -7147611596078772756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_5
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 6
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0646d60dfae3c1d00800000000000000
+      internalID: 944698946677990496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_6
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 6
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646d85ab1b1f00eb0800000000000000
+      internalID: -4755535460865354170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_7
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 6
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099784939d1b9b530800000000000000
+      internalID: 3871320901228722576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_8
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 14
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90101cac841b698a0800000000000000
+      internalID: -6298652102633651959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_9
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 14
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ceaee5c81b38ca00800000000000000
+      internalID: 776935913307418307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_10
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 14
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c328d8620dd741e60800000000000000
+      internalID: 7932103176659763772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_11
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 14
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dbc58d911c7f860800000000000000
+      internalID: 7563726415940337000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_12
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 14
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a3b130858cb1c20800000000000000
+      internalID: 3178354242374810208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_13
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 14
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2984cde49b6073520800000000000000
+      internalID: 2681619496084195474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_14
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 14
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aef2810bd9ac99e0800000000000000
+      internalID: -1613227808417186144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprHouse5_strip16_15
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 14
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f7a684f62387650800000000000000
+      internalID: 6230785538004778822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprHouse5_strip16_0: 1621528516239943469
+      sprHouse5_strip16_1: 3992319725673005853
+      sprHouse5_strip16_10: 7932103176659763772
+      sprHouse5_strip16_11: 7563726415940337000
+      sprHouse5_strip16_12: 3178354242374810208
+      sprHouse5_strip16_13: 2681619496084195474
+      sprHouse5_strip16_14: -1613227808417186144
+      sprHouse5_strip16_15: 6230785538004778822
+      sprHouse5_strip16_2: 4545591655306742704
+      sprHouse5_strip16_3: 4373394810851494182
+      sprHouse5_strip16_4: -7147611596078772756
+      sprHouse5_strip16_5: 944698946677990496
+      sprHouse5_strip16_6: -4755535460865354170
+      sprHouse5_strip16_7: 3871320901228722576
+      sprHouse5_strip16_8: -6298652102633651959
+      sprHouse5_strip16_9: 776935913307418307
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

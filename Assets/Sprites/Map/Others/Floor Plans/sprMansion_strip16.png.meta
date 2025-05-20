@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: e0e4b1761a5cea0449bd2c9c0e5355be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8156575357958396603
+    second: sprMansion_strip16_0
+  - first:
+      213: -3019493765633746398
+    second: sprMansion_strip16_1
+  - first:
+      213: 6985574591118355275
+    second: sprMansion_strip16_2
+  - first:
+      213: 1263143465170340717
+    second: sprMansion_strip16_3
+  - first:
+      213: -7294965000140961110
+    second: sprMansion_strip16_4
+  - first:
+      213: 2558012028295742254
+    second: sprMansion_strip16_5
+  - first:
+      213: 2569579268784798874
+    second: sprMansion_strip16_6
+  - first:
+      213: -1298052592810796514
+    second: sprMansion_strip16_7
+  - first:
+      213: -6879838133594297594
+    second: sprMansion_strip16_8
+  - first:
+      213: -3603641048882713730
+    second: sprMansion_strip16_9
+  - first:
+      213: 2967972593586461760
+    second: sprMansion_strip16_10
+  - first:
+      213: -7450067955982809492
+    second: sprMansion_strip16_11
+  - first:
+      213: 1583006566265925013
+    second: sprMansion_strip16_12
+  - first:
+      213: 8778734487616333200
+    second: sprMansion_strip16_13
+  - first:
+      213: -8666615659883999202
+    second: sprMansion_strip16_14
+  - first:
+      213: -3590426209181720979
+    second: sprMansion_strip16_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprMansion_strip16_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 38
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5456f256de50ece80800000000000000
+      internalID: -8156575357958396603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 38
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ad4e90b6a9816d0800000000000000
+      internalID: -3019493765633746398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 38
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4baa97541fb1f060800000000000000
+      internalID: 6985574591118355275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_3
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 38
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b85d50a46978110800000000000000
+      internalID: 1263143465170340717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 38
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaac0b59bf313ca90800000000000000
+      internalID: -7294965000140961110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_5
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 38
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e238eb50362ef7320800000000000000
+      internalID: 2558012028295742254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_6
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 38
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c30221bbaf8a320800000000000000
+      internalID: 2569579268784798874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_7
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 38
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1adcb15b046cfde0800000000000000
+      internalID: -1298052592810796514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_8
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 78
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60becee1ba7e580a0800000000000000
+      internalID: -6879838133594297594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_9
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 78
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b64571f8b4dfdc0800000000000000
+      internalID: -3603641048882713730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_10
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 78
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04cd0df495b503920800000000000000
+      internalID: 2967972593586461760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_11
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 78
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66cf1b8aaa0c9890800000000000000
+      internalID: -7450067955982809492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_12
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 78
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d246bb518f7f510800000000000000
+      internalID: 1583006566265925013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_13
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 78
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095a7d7318454d970800000000000000
+      internalID: 8778734487616333200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_14
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 78
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10d6cb99fef9b780800000000000000
+      internalID: -8666615659883999202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprMansion_strip16_15
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 78
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e9879b26e3c2ec0800000000000000
+      internalID: -3590426209181720979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprMansion_strip16_0: -8156575357958396603
+      sprMansion_strip16_1: -3019493765633746398
+      sprMansion_strip16_10: 2967972593586461760
+      sprMansion_strip16_11: -7450067955982809492
+      sprMansion_strip16_12: 1583006566265925013
+      sprMansion_strip16_13: 8778734487616333200
+      sprMansion_strip16_14: -8666615659883999202
+      sprMansion_strip16_15: -3590426209181720979
+      sprMansion_strip16_2: 6985574591118355275
+      sprMansion_strip16_3: 1263143465170340717
+      sprMansion_strip16_4: -7294965000140961110
+      sprMansion_strip16_5: 2558012028295742254
+      sprMansion_strip16_6: 2569579268784798874
+      sprMansion_strip16_7: -1298052592810796514
+      sprMansion_strip16_8: -6879838133594297594
+      sprMansion_strip16_9: -3603641048882713730
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
