@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class InfMinigame : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class InfMinigame : MonoBehaviour
     [SerializeField] private GameObject _panel;
     [SerializeField] private TextMeshProUGUI displayLvl;
     [SerializeField] private TextMeshProUGUI displayExp;
+    [SerializeField] private TextMeshProUGUI TimeNow;
+    [SerializeField] private TextMeshProUGUI MinigameName;
     [SerializeField] private RectTransform playArea;
     [SerializeField] private Image notPlayArea;
 
@@ -22,17 +25,30 @@ public class InfMinigame : MonoBehaviour
     [SerializeField] private int expPerSec = 5;
     [SerializeField] private int knowledgeIndex = 1;   // slot w exams_knowledge
 
+    [Header("keys")]
+    public KeyCode exit;
+    public KeyCode CURRENT_KEY;
+
+
     /* ---------- Internal ---------- */
     private Player _playerScript;
     private Vector2 _velocity;
     private float _secTimer;
     private int playableZoneDirection = -1;
 
+    // obsługa wyłączania skryptów i ruchu
+    private bool minigameActive = false;
+    private List<MonoBehaviour> previouslyDisabled = new List<MonoBehaviour>();
+    private Movement playerMovement;
+    private Rigidbody2D playerRb;
+
     /* ---------- Start (IEnumerator) ---------- */
     private IEnumerator Start()
     {
-     
+
         _playerScript = _player.GetComponent<Player>();
+        playerMovement = _player.GetComponent<Movement>();
+        playerRb = _player.GetComponent<Rigidbody2D>();
 
         yield return null;
 
@@ -44,14 +60,25 @@ public class InfMinigame : MonoBehaviour
     private void Update()
     {
         /* wyjście z minigry */
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(exit))
         {
-            _panel.SetActive(false);
-            return;
+            if (minigameActive)
+            {
+                CloseMinigame();
+                return;
+            }
         }
 
+        if (!minigameActive && _panel.activeSelf)
+        {
+            OpenMinigame();
+        }
+
+        if (!minigameActive)
+            return;
+
         /* sterowanie piłką */
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(CURRENT_KEY))
             _velocity.y += liftForce * UnityEngine.Time.deltaTime;
 
         _velocity.y -= gravity * UnityEngine.Time.deltaTime;
@@ -128,10 +155,80 @@ public class InfMinigame : MonoBehaviour
 
     private void UpdateHud()
     {
-        int total = _playerScript.exams_knowledge[knowledgeIndex];
-        displayLvl.text = $"{total / 100}";
-        displayExp.text = $"{total % 100} / 100";
+        var result = _playerScript.LvlIncrease(_playerScript.exams_knowledge[knowledgeIndex]);
+        displayLvl.text = $"{result.lvl}";
+        displayExp.text = $"{result.exp} / {result.divide}";
+
+        TimeNow.text = Time.Time_now;
+        MinigameName.text = "Informatyka";
     }
 
     public void FocusInput() { }
+
+    /* ---------- wylaczanie innych UI ---------- */
+    private void OpenMinigame()
+    {
+        minigameActive = true;
+
+        DisableOtherUIDisplays();
+
+        if (playerMovement != null)
+        {
+            playerMovement.ResetVelocity();
+            playerMovement.enabled = false;
+        }
+
+        if (playerRb != null)
+            playerRb.bodyType = RigidbodyType2D.Static;
+
+        _panel.SetActive(true);
+    }
+
+    private void CloseMinigame()
+    {
+        minigameActive = false;
+
+        ReenableUIDisplays();
+
+        if (playerMovement != null)
+        {
+            playerMovement.ResetVelocity();
+            playerMovement.enabled = true;
+        }
+
+        if (playerRb != null)
+            playerRb.bodyType = RigidbodyType2D.Dynamic;
+
+        _panel.SetActive(false);
+    }
+
+    private void DisableOtherUIDisplays()
+    {
+        previouslyDisabled.Clear();
+
+        MonoBehaviour[] scripts = gameObject.GetComponents<MonoBehaviour>();
+
+        foreach (MonoBehaviour script in scripts)
+        {
+            if (script != this && script.enabled && script.GetType().Name.StartsWith("Display"))
+            {
+                script.enabled = false;
+                previouslyDisabled.Add(script);
+            }
+        }
+    }
+
+    private void ReenableUIDisplays()
+    {
+        foreach (MonoBehaviour script in previouslyDisabled)
+        {
+            if (script != null)
+            {
+                script.enabled = true;
+            }
+        }
+        previouslyDisabled.Clear();
+    }
 }
+
+

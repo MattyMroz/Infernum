@@ -120,4 +120,28 @@ public class Player : MonoBehaviour
             current_map_bounds = collision.gameObject;
         }
     }
+
+    // lvl_increace
+    public (int lvl, int exp, int divide) LvlIncrease(int exp)
+    {
+        int level = 0;
+        int divide = 100;
+
+        int i = 1;
+        while (exp >= 100)
+        {
+            if (exp - (100 * i) >= 0)
+            {
+                divide = i * 100;
+                exp -= 100 * i;
+                level++;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return (level, exp, divide);
+    }
 }
