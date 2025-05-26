@@ -29,7 +29,7 @@ public class GraphMinigame : MonoBehaviour
     private Movement playerMovement;
     private Rigidbody2D playerRb;
 
-    private readonly KeyCode[] _possibleKeys_Player1_Player1 =
+    private readonly KeyCode[] _possibleKeys_Player1 =
     {
         KeyCode.Alpha0, KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4,
         KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9

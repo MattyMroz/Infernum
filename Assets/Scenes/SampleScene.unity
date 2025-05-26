@@ -8135,7 +8135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8821668bbf52142b107a5401681fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panel: {fileID: 951759159}
+  _panel: {fileID: 961507010}
   displayKeys: {fileID: 675916153}
   displayLvl: {fileID: 73002603}
   displayExp: {fileID: 319970512}
@@ -8145,6 +8145,7 @@ MonoBehaviour:
   comboGain: 15
   comboLength: 3
   knowledgeIndex: 3
+  exit: 120
 --- !u!1 &966375656
 GameObject:
   m_ObjectHideFlags: 0
@@ -10266,7 +10267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1422357134
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10304,7 +10305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3db3ef9e95c5332498c738efd1b348c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panel: {fileID: 1608602413}
+  _panel: {fileID: 1422357133}
   displayLvl: {fileID: 855578882}
   displayExp: {fileID: 827805517}
   TimeNow: {fileID: 541201841}
@@ -10317,6 +10318,8 @@ MonoBehaviour:
   gravity: 900
   expPerSec: 5
   knowledgeIndex: 1
+  exit: 120
+  CURRENT_KEY: 32
 --- !u!1 &1447459713
 GameObject:
   m_ObjectHideFlags: 0
