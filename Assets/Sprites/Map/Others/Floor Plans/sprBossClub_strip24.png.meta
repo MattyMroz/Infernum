@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 372819405fc33ef47a6ea6b14080c1a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4294191929364339909
+    second: sprBossClub_strip24_0
+  - first:
+      213: 4822232574889809999
+    second: sprBossClub_strip24_1
+  - first:
+      213: -7439342639895118477
+    second: sprBossClub_strip24_2
+  - first:
+      213: 6035866360266306860
+    second: sprBossClub_strip24_3
+  - first:
+      213: -8185139682734085610
+    second: sprBossClub_strip24_4
+  - first:
+      213: 5354192286493285342
+    second: sprBossClub_strip24_5
+  - first:
+      213: -511630788456111633
+    second: sprBossClub_strip24_6
+  - first:
+      213: 8620671247498462210
+    second: sprBossClub_strip24_7
+  - first:
+      213: 7558208242262088238
+    second: sprBossClub_strip24_8
+  - first:
+      213: 1284884720330477581
+    second: sprBossClub_strip24_9
+  - first:
+      213: 6349317731928150666
+    second: sprBossClub_strip24_10
+  - first:
+      213: 4890000397095811129
+    second: sprBossClub_strip24_11
+  - first:
+      213: -6512242553009527048
+    second: sprBossClub_strip24_12
+  - first:
+      213: 4793484815041544775
+    second: sprBossClub_strip24_13
+  - first:
+      213: 498894865964746223
+    second: sprBossClub_strip24_14
+  - first:
+      213: 3617371888095499301
+    second: sprBossClub_strip24_15
+  - first:
+      213: 8651396912950927771
+    second: sprBossClub_strip24_16
+  - first:
+      213: -3685725851885557255
+    second: sprBossClub_strip24_17
+  - first:
+      213: -7259537246988780957
+    second: sprBossClub_strip24_18
+  - first:
+      213: 263168629630026687
+    second: sprBossClub_strip24_19
+  - first:
+      213: 3185879056519203805
+    second: sprBossClub_strip24_20
+  - first:
+      213: 7799709351106955530
+    second: sprBossClub_strip24_21
+  - first:
+      213: 2972659185593998410
+    second: sprBossClub_strip24_22
+  - first:
+      213: -8110810124232078724
+    second: sprBossClub_strip24_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprBossClub_strip24_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 78
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc5c13eec8089b30800000000000000
+      internalID: 4294191929364339909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 78
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48df924af20ce240800000000000000
+      internalID: 4822232574889809999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 78
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d72aac84522c890800000000000000
+      internalID: -7439342639895118477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_3
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 78
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25376ba974b3c350800000000000000
+      internalID: 6035866360266306860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_4
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 78
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a6ea543da886e80800000000000000
+      internalID: -8185139682734085610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_5
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 78
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb919f4489ed4a40800000000000000
+      internalID: 5354192286493285342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_6
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 78
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1abe5328256e8f0800000000000000
+      internalID: -511630788456111633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_7
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 78
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204c19843d6c2a770800000000000000
+      internalID: 8620671247498462210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_8
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 30
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a167ae95624e860800000000000000
+      internalID: 7558208242262088238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_9
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 30
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0010a478d3d4d110800000000000000
+      internalID: 1284884720330477581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_10
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 30
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a829aa946de4d1850800000000000000
+      internalID: 6349317731928150666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_11
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 30
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9383a6ce375ccd340800000000000000
+      internalID: 4890000397095811129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_12
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 30
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f62fa0c6eddf95a0800000000000000
+      internalID: -6512242553009527048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_13
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 30
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742c7c4da01e58240800000000000000
+      internalID: 4793484815041544775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_14
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 30
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe54812cc3e6ce600800000000000000
+      internalID: 498894865964746223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_15
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 30
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5249a6a019c733230800000000000000
+      internalID: 3617371888095499301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_16
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 30
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91e95fb7afef0870800000000000000
+      internalID: 8651396912950927771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_17
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 30
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f923e29ddba9dcc0800000000000000
+      internalID: -3685725851885557255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_18
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 30
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a34872651f04b90800000000000000
+      internalID: -7259537246988780957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_19
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 30
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3cf1d6976f6a300800000000000000
+      internalID: 263168629630026687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_20
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 30
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb0f255f14863c20800000000000000
+      internalID: 3185879056519203805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_21
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 30
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09c50884522e3c60800000000000000
+      internalID: 7799709351106955530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_22
+      rect:
+        serializedVersion: 2
+        x: 3095
+        y: 30
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4cd1ab87c1014920800000000000000
+      internalID: 2972659185593998410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBossClub_strip24_23
+      rect:
+        serializedVersion: 2
+        x: 3235
+        y: 30
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a41883a2d907f80800000000000000
+      internalID: -8110810124232078724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprBossClub_strip24_0: 4294191929364339909
+      sprBossClub_strip24_1: 4822232574889809999
+      sprBossClub_strip24_10: 6349317731928150666
+      sprBossClub_strip24_11: 4890000397095811129
+      sprBossClub_strip24_12: -6512242553009527048
+      sprBossClub_strip24_13: 4793484815041544775
+      sprBossClub_strip24_14: 498894865964746223
+      sprBossClub_strip24_15: 3617371888095499301
+      sprBossClub_strip24_16: 8651396912950927771
+      sprBossClub_strip24_17: -3685725851885557255
+      sprBossClub_strip24_18: -7259537246988780957
+      sprBossClub_strip24_19: 263168629630026687
+      sprBossClub_strip24_2: -7439342639895118477
+      sprBossClub_strip24_20: 3185879056519203805
+      sprBossClub_strip24_21: 7799709351106955530
+      sprBossClub_strip24_22: 2972659185593998410
+      sprBossClub_strip24_23: -8110810124232078724
+      sprBossClub_strip24_3: 6035866360266306860
+      sprBossClub_strip24_4: -8185139682734085610
+      sprBossClub_strip24_5: 5354192286493285342
+      sprBossClub_strip24_6: -511630788456111633
+      sprBossClub_strip24_7: 8620671247498462210
+      sprBossClub_strip24_8: 7558208242262088238
+      sprBossClub_strip24_9: 1284884720330477581
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

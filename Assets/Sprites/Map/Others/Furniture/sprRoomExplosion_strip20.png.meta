@@ -1,0 +1,3835 @@
+fileFormatVersion: 2
+guid: 097f0cfe99007964aa23f839ff896791
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7526100714085898756
+    second: sprRoomExplosion_strip20_0
+  - first:
+      213: 6182350950040153615
+    second: sprRoomExplosion_strip20_1
+  - first:
+      213: -3267707979218855991
+    second: sprRoomExplosion_strip20_2
+  - first:
+      213: 7002866315380428375
+    second: sprRoomExplosion_strip20_3
+  - first:
+      213: -4585448650782991532
+    second: sprRoomExplosion_strip20_4
+  - first:
+      213: 3900284441898012940
+    second: sprRoomExplosion_strip20_5
+  - first:
+      213: -3390207392083554896
+    second: sprRoomExplosion_strip20_6
+  - first:
+      213: -4374866683447268489
+    second: sprRoomExplosion_strip20_7
+  - first:
+      213: -3833711460522794998
+    second: sprRoomExplosion_strip20_8
+  - first:
+      213: 3173370042026713408
+    second: sprRoomExplosion_strip20_9
+  - first:
+      213: -3720606819008489253
+    second: sprRoomExplosion_strip20_10
+  - first:
+      213: -8092244154891922556
+    second: sprRoomExplosion_strip20_11
+  - first:
+      213: -3690163655232431171
+    second: sprRoomExplosion_strip20_12
+  - first:
+      213: 5480260667236242644
+    second: sprRoomExplosion_strip20_13
+  - first:
+      213: -8440950702642964572
+    second: sprRoomExplosion_strip20_14
+  - first:
+      213: 2773554200015398624
+    second: sprRoomExplosion_strip20_15
+  - first:
+      213: -6579690408677272886
+    second: sprRoomExplosion_strip20_16
+  - first:
+      213: -5853471934873374774
+    second: sprRoomExplosion_strip20_17
+  - first:
+      213: 4201842963416427841
+    second: sprRoomExplosion_strip20_18
+  - first:
+      213: 1215108834040075539
+    second: sprRoomExplosion_strip20_19
+  - first:
+      213: 381533873134864980
+    second: sprRoomExplosion_strip20_20
+  - first:
+      213: -2682841616617589361
+    second: sprRoomExplosion_strip20_21
+  - first:
+      213: 6594639547365132442
+    second: sprRoomExplosion_strip20_22
+  - first:
+      213: 5286449198876826812
+    second: sprRoomExplosion_strip20_23
+  - first:
+      213: 8492653809776297735
+    second: sprRoomExplosion_strip20_24
+  - first:
+      213: 3214256703268796163
+    second: sprRoomExplosion_strip20_25
+  - first:
+      213: 1757552879346747083
+    second: sprRoomExplosion_strip20_26
+  - first:
+      213: -812145008462132066
+    second: sprRoomExplosion_strip20_27
+  - first:
+      213: 847577675763093468
+    second: sprRoomExplosion_strip20_28
+  - first:
+      213: -7916714554973614514
+    second: sprRoomExplosion_strip20_29
+  - first:
+      213: -6393424796455892788
+    second: sprRoomExplosion_strip20_30
+  - first:
+      213: -3667962838584630607
+    second: sprRoomExplosion_strip20_31
+  - first:
+      213: 2532857028871781647
+    second: sprRoomExplosion_strip20_32
+  - first:
+      213: 8759904387450344301
+    second: sprRoomExplosion_strip20_33
+  - first:
+      213: 6220540463847825970
+    second: sprRoomExplosion_strip20_34
+  - first:
+      213: -2158256443244824469
+    second: sprRoomExplosion_strip20_35
+  - first:
+      213: -3900078036634304435
+    second: sprRoomExplosion_strip20_36
+  - first:
+      213: -4879136519424269475
+    second: sprRoomExplosion_strip20_37
+  - first:
+      213: -6411219496694240905
+    second: sprRoomExplosion_strip20_38
+  - first:
+      213: -3888206355852074878
+    second: sprRoomExplosion_strip20_39
+  - first:
+      213: -494653775079583284
+    second: sprRoomExplosion_strip20_40
+  - first:
+      213: -3872138825568185568
+    second: sprRoomExplosion_strip20_41
+  - first:
+      213: -8756085216848372081
+    second: sprRoomExplosion_strip20_42
+  - first:
+      213: -8446249166547278852
+    second: sprRoomExplosion_strip20_43
+  - first:
+      213: 2547685889946110013
+    second: sprRoomExplosion_strip20_44
+  - first:
+      213: 9004601859991133076
+    second: sprRoomExplosion_strip20_45
+  - first:
+      213: 8010159414961545705
+    second: sprRoomExplosion_strip20_46
+  - first:
+      213: -1102695367395189357
+    second: sprRoomExplosion_strip20_47
+  - first:
+      213: -7381688396658385779
+    second: sprRoomExplosion_strip20_48
+  - first:
+      213: -8330543211364649996
+    second: sprRoomExplosion_strip20_49
+  - first:
+      213: 5348283950556208433
+    second: sprRoomExplosion_strip20_50
+  - first:
+      213: 8121419386557839984
+    second: sprRoomExplosion_strip20_51
+  - first:
+      213: -9134258222791424586
+    second: sprRoomExplosion_strip20_52
+  - first:
+      213: -6688767635234037750
+    second: sprRoomExplosion_strip20_53
+  - first:
+      213: -6323754942339729291
+    second: sprRoomExplosion_strip20_54
+  - first:
+      213: -4080463222727006396
+    second: sprRoomExplosion_strip20_55
+  - first:
+      213: -5504101940113869673
+    second: sprRoomExplosion_strip20_56
+  - first:
+      213: 5198253529763270525
+    second: sprRoomExplosion_strip20_57
+  - first:
+      213: -8885771562198842457
+    second: sprRoomExplosion_strip20_58
+  - first:
+      213: 2365171205800498352
+    second: sprRoomExplosion_strip20_59
+  - first:
+      213: -8100007537838632554
+    second: sprRoomExplosion_strip20_60
+  - first:
+      213: 2637599290753779383
+    second: sprRoomExplosion_strip20_61
+  - first:
+      213: 2348637736437460997
+    second: sprRoomExplosion_strip20_62
+  - first:
+      213: -6523083991015986897
+    second: sprRoomExplosion_strip20_63
+  - first:
+      213: 6154762238322838079
+    second: sprRoomExplosion_strip20_64
+  - first:
+      213: 4436239813594789039
+    second: sprRoomExplosion_strip20_65
+  - first:
+      213: 6888536729647744181
+    second: sprRoomExplosion_strip20_66
+  - first:
+      213: -1387385431311610918
+    second: sprRoomExplosion_strip20_67
+  - first:
+      213: -8594719029878480788
+    second: sprRoomExplosion_strip20_68
+  - first:
+      213: -5594005096627241599
+    second: sprRoomExplosion_strip20_69
+  - first:
+      213: 4375008254900229781
+    second: sprRoomExplosion_strip20_70
+  - first:
+      213: 8196704797309918992
+    second: sprRoomExplosion_strip20_71
+  - first:
+      213: -2144883408977857429
+    second: sprRoomExplosion_strip20_72
+  - first:
+      213: -7372422357183035581
+    second: sprRoomExplosion_strip20_73
+  - first:
+      213: -4920866573937382587
+    second: sprRoomExplosion_strip20_74
+  - first:
+      213: 7972695360104419686
+    second: sprRoomExplosion_strip20_75
+  - first:
+      213: 5677714623924581811
+    second: sprRoomExplosion_strip20_76
+  - first:
+      213: -3454562649644332127
+    second: sprRoomExplosion_strip20_77
+  - first:
+      213: -5793792239294394326
+    second: sprRoomExplosion_strip20_78
+  - first:
+      213: -137475738144078792
+    second: sprRoomExplosion_strip20_79
+  - first:
+      213: -8470292370067835972
+    second: sprRoomExplosion_strip20_80
+  - first:
+      213: 2587373026218602954
+    second: sprRoomExplosion_strip20_81
+  - first:
+      213: 3410265493307989620
+    second: sprRoomExplosion_strip20_82
+  - first:
+      213: -2918495531618597076
+    second: sprRoomExplosion_strip20_83
+  - first:
+      213: 3898702573391115911
+    second: sprRoomExplosion_strip20_84
+  - first:
+      213: -669335553975530434
+    second: sprRoomExplosion_strip20_85
+  - first:
+      213: -1097025733866389670
+    second: sprRoomExplosion_strip20_86
+  - first:
+      213: 3600807708176162221
+    second: sprRoomExplosion_strip20_87
+  - first:
+      213: -4346573707953294962
+    second: sprRoomExplosion_strip20_88
+  - first:
+      213: 8618663951824516762
+    second: sprRoomExplosion_strip20_89
+  - first:
+      213: 3965383235920181544
+    second: sprRoomExplosion_strip20_90
+  - first:
+      213: 4243789028322333789
+    second: sprRoomExplosion_strip20_91
+  - first:
+      213: -7100040037541592202
+    second: sprRoomExplosion_strip20_92
+  - first:
+      213: -4080994079108739235
+    second: sprRoomExplosion_strip20_93
+  - first:
+      213: 2258033875054877312
+    second: sprRoomExplosion_strip20_94
+  - first:
+      213: 867236177819771934
+    second: sprRoomExplosion_strip20_95
+  - first:
+      213: -1253140265216216614
+    second: sprRoomExplosion_strip20_96
+  - first:
+      213: 6776204708145845965
+    second: sprRoomExplosion_strip20_97
+  - first:
+      213: -6182786721794658662
+    second: sprRoomExplosion_strip20_98
+  - first:
+      213: -4966854606536061307
+    second: sprRoomExplosion_strip20_99
+  - first:
+      213: -2877231525971559532
+    second: sprRoomExplosion_strip20_100
+  - first:
+      213: 8479740687643819682
+    second: sprRoomExplosion_strip20_101
+  - first:
+      213: -3688716511451023700
+    second: sprRoomExplosion_strip20_102
+  - first:
+      213: 7689702135535327606
+    second: sprRoomExplosion_strip20_103
+  - first:
+      213: -3013804563345531285
+    second: sprRoomExplosion_strip20_104
+  - first:
+      213: 3343125876531280601
+    second: sprRoomExplosion_strip20_105
+  - first:
+      213: -1248739673262398193
+    second: sprRoomExplosion_strip20_106
+  - first:
+      213: 7120481897704562469
+    second: sprRoomExplosion_strip20_107
+  - first:
+      213: 5999657269561975602
+    second: sprRoomExplosion_strip20_108
+  - first:
+      213: 7976798703487235474
+    second: sprRoomExplosion_strip20_109
+  - first:
+      213: -1054400183883501639
+    second: sprRoomExplosion_strip20_110
+  - first:
+      213: 1804895839748063789
+    second: sprRoomExplosion_strip20_111
+  - first:
+      213: -5940927807217448723
+    second: sprRoomExplosion_strip20_112
+  - first:
+      213: 6986224960024693860
+    second: sprRoomExplosion_strip20_113
+  - first:
+      213: 2073872321679768020
+    second: sprRoomExplosion_strip20_114
+  - first:
+      213: -9172664168396851864
+    second: sprRoomExplosion_strip20_115
+  - first:
+      213: -8756572858918906252
+    second: sprRoomExplosion_strip20_116
+  - first:
+      213: 6600948295712453732
+    second: sprRoomExplosion_strip20_117
+  - first:
+      213: -5565759809970454617
+    second: sprRoomExplosion_strip20_118
+  - first:
+      213: 253013582555641257
+    second: sprRoomExplosion_strip20_119
+  - first:
+      213: -3791716403785232636
+    second: sprRoomExplosion_strip20_120
+  - first:
+      213: -2801811551883421254
+    second: sprRoomExplosion_strip20_121
+  - first:
+      213: 3212200366644869213
+    second: sprRoomExplosion_strip20_122
+  - first:
+      213: 2459803367267971596
+    second: sprRoomExplosion_strip20_123
+  - first:
+      213: -3761391217402687395
+    second: sprRoomExplosion_strip20_124
+  - first:
+      213: -2859230410319197290
+    second: sprRoomExplosion_strip20_125
+  - first:
+      213: 4977546470311958698
+    second: sprRoomExplosion_strip20_126
+  - first:
+      213: -3885207758613830918
+    second: sprRoomExplosion_strip20_127
+  - first:
+      213: 4448558093273301737
+    second: sprRoomExplosion_strip20_128
+  - first:
+      213: 8165993268550745640
+    second: sprRoomExplosion_strip20_129
+  - first:
+      213: -4908970535021853018
+    second: sprRoomExplosion_strip20_130
+  - first:
+      213: 328867940256301212
+    second: sprRoomExplosion_strip20_131
+  - first:
+      213: -59765504189147915
+    second: sprRoomExplosion_strip20_132
+  - first:
+      213: -988561063199517283
+    second: sprRoomExplosion_strip20_133
+  - first:
+      213: 4372920933977837837
+    second: sprRoomExplosion_strip20_134
+  - first:
+      213: -2881088539539232869
+    second: sprRoomExplosion_strip20_135
+  - first:
+      213: -6219111765438409953
+    second: sprRoomExplosion_strip20_136
+  - first:
+      213: 4231210468810840917
+    second: sprRoomExplosion_strip20_137
+  - first:
+      213: -831696214953174343
+    second: sprRoomExplosion_strip20_138
+  - first:
+      213: -7237483449427188692
+    second: sprRoomExplosion_strip20_139
+  - first:
+      213: 2409582899623677236
+    second: sprRoomExplosion_strip20_140
+  - first:
+      213: -831797287576548797
+    second: sprRoomExplosion_strip20_141
+  - first:
+      213: -7617106382802108806
+    second: sprRoomExplosion_strip20_142
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_0
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 313
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a57e679b4127860800000000000000
+      internalID: 7526100714085898756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_1
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 324
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e21fdfe6f1cc550800000000000000
+      internalID: 6182350950040153615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_2
+      rect:
+        serializedVersion: 2
+        x: 3388
+        y: 318
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c753fce7e4c6a2d0800000000000000
+      internalID: -3267707979218855991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_3
+      rect:
+        serializedVersion: 2
+        x: 3419
+        y: 326
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e8cc1afcd2f2160800000000000000
+      internalID: 7002866315380428375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_4
+      rect:
+        serializedVersion: 2
+        x: 3747
+        y: 324
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b19423fb63d50c0800000000000000
+      internalID: -4585448650782991532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_5
+      rect:
+        serializedVersion: 2
+        x: 3778
+        y: 334
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01505a0908902630800000000000000
+      internalID: 3900284441898012940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_6
+      rect:
+        serializedVersion: 2
+        x: 4107
+        y: 329
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bdc4f7c65093f0d0800000000000000
+      internalID: -3390207392083554896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_7
+      rect:
+        serializedVersion: 2
+        x: 4138
+        y: 338
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b2f613ee95943c0800000000000000
+      internalID: -4374866683447268489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_8
+      rect:
+        serializedVersion: 2
+        x: 4466
+        y: 333
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00e1301dbbebcac0800000000000000
+      internalID: -3833711460522794998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_9
+      rect:
+        serializedVersion: 2
+        x: 4475
+        y: 283
+        width: 84
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0416edf6d331a0c20800000000000000
+      internalID: 3173370042026713408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_10
+      rect:
+        serializedVersion: 2
+        x: 4802
+        y: 276
+        width: 117
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd85a1c8fcfbd5cc0800000000000000
+      internalID: -3720606819008489253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_11
+      rect:
+        serializedVersion: 2
+        x: 5161
+        y: 250
+        width: 116
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4839fefc0d292bf80800000000000000
+      internalID: -8092244154891922556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_12
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 42
+        width: 278
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb50d6f4b7e9ccc0800000000000000
+      internalID: -3690163655232431171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_13
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 40
+        width: 293
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4592b8a0ccd0c40800000000000000
+      internalID: 5480260667236242644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_14
+      rect:
+        serializedVersion: 2
+        x: 3095
+        y: 314
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7d16ade08bbda80800000000000000
+      internalID: -8440950702642964572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_15
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 38
+        width: 268
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6e53999d4ad7620800000000000000
+      internalID: 2773554200015398624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_16
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 325
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac21fba1f6e30b4a0800000000000000
+      internalID: -6579690408677272886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_17
+      rect:
+        serializedVersion: 2
+        x: 3460
+        y: 323
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf672bc94a44cea0800000000000000
+      internalID: -5853471934873374774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_18
+      rect:
+        serializedVersion: 2
+        x: 3658
+        y: 53
+        width: 261
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d2964b9e1ff4a30800000000000000
+      internalID: 4201842963416427841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_19
+      rect:
+        serializedVersion: 2
+        x: 3824
+        y: 326
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315d560fb0fecd010800000000000000
+      internalID: 1215108834040075539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_20
+      rect:
+        serializedVersion: 2
+        x: 4090
+        y: 314
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a8bf1490b7b4500800000000000000
+      internalID: 381533873134864980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_21
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 287
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85bfd493c1a4cad0800000000000000
+      internalID: -2682841616617589361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_22
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 314
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98017a7abdd48b50800000000000000
+      internalID: 6594639547365132442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_23
+      rect:
+        serializedVersion: 2
+        x: 4166
+        y: 318
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc933e998d3d5940800000000000000
+      internalID: 5286449198876826812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_24
+      rect:
+        serializedVersion: 2
+        x: 4166
+        y: 301
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707851cd4a7fbd570800000000000000
+      internalID: 8492653809776297735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_25
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 318
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307314711755b9c20800000000000000
+      internalID: 3214256703268796163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_26
+      rect:
+        serializedVersion: 2
+        x: 4450
+        y: 317
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc68d672805146810800000000000000
+      internalID: 1757552879346747083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_27
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 57
+        width: 244
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c0280fa6eaab4f0800000000000000
+      internalID: -812145008462132066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_28
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 57
+        width: 244
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf096bc76333cb00800000000000000
+      internalID: 847577675763093468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_29
+      rect:
+        serializedVersion: 2
+        x: 4084
+        y: 289
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e02aa8e0e222290800000000000000
+      internalID: -7916714554973614514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_30
+      rect:
+        serializedVersion: 2
+        x: 4444
+        y: 291
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8821d750ef547a0800000000000000
+      internalID: -6393424796455892788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_31
+      rect:
+        serializedVersion: 2
+        x: 5424
+        y: 151
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b264d46b37c81dc0800000000000000
+      internalID: -3667962838584630607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_32
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 77
+        width: 210
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0df0c05c04862320800000000000000
+      internalID: 2532857028871781647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_33
+      rect:
+        serializedVersion: 2
+        x: 4015
+        y: 52
+        width: 265
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d631d50e0ae619970800000000000000
+      internalID: 8759904387450344301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_34
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 29
+        width: 266
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232e792189cc35650800000000000000
+      internalID: 6220540463847825970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_35
+      rect:
+        serializedVersion: 2
+        x: 4495
+        y: 273
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68b13623355c02e0800000000000000
+      internalID: -2158256443244824469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_36
+      rect:
+        serializedVersion: 2
+        x: 4505
+        y: 272
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d400c1e60b320e9c0800000000000000
+      internalID: -3900078036634304435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_37
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 11
+        width: 328
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53a415bf23d94cb0800000000000000
+      internalID: -4879136519424269475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_38
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 126
+        width: 145
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7792b7af5d5c607a0800000000000000
+      internalID: -6411219496694240905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_39
+      rect:
+        serializedVersion: 2
+        x: 5224
+        y: 144
+        width: 161
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28065028be05a0ac0800000000000000
+      internalID: -3888206355852074878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_40
+      rect:
+        serializedVersion: 2
+        x: 5594
+        y: 143
+        width: 152
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc153992303a229f0800000000000000
+      internalID: -494653775079583284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_41
+      rect:
+        serializedVersion: 2
+        x: 5859
+        y: 172
+        width: 109
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023920de046634ac0800000000000000
+      internalID: -3872138825568185568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_42
+      rect:
+        serializedVersion: 2
+        x: 5985
+        y: 154
+        width: 41
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e14b213e22c7680800000000000000
+      internalID: -8756085216848372081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_43
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 246
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3a2871225e8ca80800000000000000
+      internalID: -8446249166547278852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_44
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 249
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38438591d23b5320800000000000000
+      internalID: 2547685889946110013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_45
+      rect:
+        serializedVersion: 2
+        x: 6361
+        y: 176
+        width: 26
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bd798eea5c6fc70800000000000000
+      internalID: 9004601859991133076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_46
+      rect:
+        serializedVersion: 2
+        x: 6583
+        y: 103
+        width: 152
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1a80b5c8dc92f60800000000000000
+      internalID: 8010159414961545705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_47
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 132
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39dd0fad76072b0f0800000000000000
+      internalID: -1102695367395189357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_48
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 109
+        width: 135
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cdd8a5389fe8990800000000000000
+      internalID: -7381688396658385779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_49
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 176
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3719c1617f36c80800000000000000
+      internalID: -8330543211364649996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_50
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 170
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d53d6aaebe83a40800000000000000
+      internalID: 5348283950556208433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_51
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 176
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a30c727e315b070800000000000000
+      internalID: 8121419386557839984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_52
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 177
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b583dfaa889c3180800000000000000
+      internalID: -9134258222791424586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_53
+      rect:
+        serializedVersion: 2
+        x: 3277
+        y: 176
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00eebc3649bc23a0800000000000000
+      internalID: -6688767635234037750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_54
+      rect:
+        serializedVersion: 2
+        x: 3281
+        y: 192
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578383772628d38a0800000000000000
+      internalID: -6323754942339729291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_55
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 186
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447af4271584f57c0800000000000000
+      internalID: -4080463222727006396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_56
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 171
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79479fb82708d93b0800000000000000
+      internalID: -5504101940113869673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_57
+      rect:
+        serializedVersion: 2
+        x: 3621
+        y: 178
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fc5f53b08e32840800000000000000
+      internalID: 5198253529763270525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_58
+      rect:
+        serializedVersion: 2
+        x: 3638
+        y: 196
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3cedfc7d56fa480800000000000000
+      internalID: -8885771562198842457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_59
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 173
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b498b23ea6c2d020800000000000000
+      internalID: 2365171205800498352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_60
+      rect:
+        serializedVersion: 2
+        x: 3653
+        y: 224
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691542d5f0ef69f80800000000000000
+      internalID: -8100007537838632554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_61
+      rect:
+        serializedVersion: 2
+        x: 3916
+        y: 189
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b683319492aa9420800000000000000
+      internalID: 2637599290753779383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_62
+      rect:
+        serializedVersion: 2
+        x: 3926
+        y: 170
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500be62e399089020800000000000000
+      internalID: 2348637736437460997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_63
+      rect:
+        serializedVersion: 2
+        x: 3980
+        y: 178
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f296473cba95975a0800000000000000
+      internalID: -6523083991015986897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_64
+      rect:
+        serializedVersion: 2
+        x: 3995
+        y: 197
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a883c75ab1a6550800000000000000
+      internalID: 6154762238322838079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_65
+      rect:
+        serializedVersion: 2
+        x: 4005
+        y: 172
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa433c33b90b09d30800000000000000
+      internalID: 4436239813594789039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_66
+      rect:
+        serializedVersion: 2
+        x: 4021
+        y: 210
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b482e898aff89f50800000000000000
+      internalID: 6888536729647744181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_67
+      rect:
+        serializedVersion: 2
+        x: 4246
+        y: 228
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb8e180d440fbce0800000000000000
+      internalID: -1387385431311610918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_68
+      rect:
+        serializedVersion: 2
+        x: 4278
+        y: 204
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60adcf349c69b880800000000000000
+      internalID: -8594719029878480788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_69
+      rect:
+        serializedVersion: 2
+        x: 4288
+        y: 190
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18dfecfb00a1e52b0800000000000000
+      internalID: -5594005096627241599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_70
+      rect:
+        serializedVersion: 2
+        x: 4290
+        y: 171
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596dabaf3d627bc30800000000000000
+      internalID: 4375008254900229781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_71
+      rect:
+        serializedVersion: 2
+        x: 4337
+        y: 183
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01fd56cc59b80c170800000000000000
+      internalID: 8196704797309918992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_72
+      rect:
+        serializedVersion: 2
+        x: 4354
+        y: 164
+        width: 20
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64fe3357e7db32e0800000000000000
+      internalID: -2144883408977857429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_73
+      rect:
+        serializedVersion: 2
+        x: 4394
+        y: 220
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34705f94de4efa990800000000000000
+      internalID: -7372422357183035581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_74
+      rect:
+        serializedVersion: 2
+        x: 4610
+        y: 234
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b6e514ce195bbb0800000000000000
+      internalID: -4920866573937382587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_75
+      rect:
+        serializedVersion: 2
+        x: 4616
+        y: 233
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661dd695034b4ae60800000000000000
+      internalID: 7972695360104419686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_76
+      rect:
+        serializedVersion: 2
+        x: 4641
+        y: 213
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5b01f5e5b4bce40800000000000000
+      internalID: 5677714623924581811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_77
+      rect:
+        serializedVersion: 2
+        x: 4649
+        y: 206
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab0e9db29dee00d0800000000000000
+      internalID: -3454562649644332127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_78
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 185
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20517ab7a0589fa0800000000000000
+      internalID: -5793792239294394326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_79
+      rect:
+        serializedVersion: 2
+        x: 5139
+        y: 177
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83400b66b86971ef0800000000000000
+      internalID: -137475738144078792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_80
+      rect:
+        serializedVersion: 2
+        x: 5172
+        y: 10
+        width: 139
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3b76a87f9737a80800000000000000
+      internalID: -8470292370067835972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_81
+      rect:
+        serializedVersion: 2
+        x: 5293
+        y: 192
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1ff211f0238e320800000000000000
+      internalID: 2587373026218602954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_82
+      rect:
+        serializedVersion: 2
+        x: 5295
+        y: 186
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e1566d562b35f20800000000000000
+      internalID: 3410265493307989620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_83
+      rect:
+        serializedVersion: 2
+        x: 6219
+        y: 181
+        width: 10
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c270f4fd6cb6f77d0800000000000000
+      internalID: -2918495531618597076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_84
+      rect:
+        serializedVersion: 2
+        x: 3274
+        y: 148
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786f0e39559fa1630800000000000000
+      internalID: 3898702573391115911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_85
+      rect:
+        serializedVersion: 2
+        x: 4653
+        y: 172
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ccfb52cda06b6f0800000000000000
+      internalID: -669335553975530434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_86
+      rect:
+        serializedVersion: 2
+        x: 5139
+        y: 170
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f7e6748e496c0f0800000000000000
+      internalID: -1097025733866389670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_87
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 165
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad145e5883a8f130800000000000000
+      internalID: 3600807708176162221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_88
+      rect:
+        serializedVersion: 2
+        x: 3542
+        y: 148
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e813463ed3edda3c0800000000000000
+      internalID: -4346573707953294962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_89
+      rect:
+        serializedVersion: 2
+        x: 3631
+        y: 146
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96f6f65335ab9770800000000000000
+      internalID: 8618663951824516762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_90
+      rect:
+        serializedVersion: 2
+        x: 3988
+        y: 146
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829bf472b0fd70730800000000000000
+      internalID: 3965383235920181544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_91
+      rect:
+        serializedVersion: 2
+        x: 4348
+        y: 145
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d545adef2a7f4ea30800000000000000
+      internalID: 4243789028322333789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_92
+      rect:
+        serializedVersion: 2
+        x: 5137
+        y: 93
+        width: 72
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67348471437977d90800000000000000
+      internalID: -7100040037541592202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_93
+      rect:
+        serializedVersion: 2
+        x: 3905
+        y: 146
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f4040d1856d57c0800000000000000
+      internalID: -4080994079108739235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_94
+      rect:
+        serializedVersion: 2
+        x: 4268
+        y: 146
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ad17588d5265f10800000000000000
+      internalID: 2258033875054877312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_95
+      rect:
+        serializedVersion: 2
+        x: 4631
+        y: 145
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14a05b75ba090c00800000000000000
+      internalID: 867236177819771934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_96
+      rect:
+        serializedVersion: 2
+        x: 4635
+        y: 150
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad17c067193fb9ee0800000000000000
+      internalID: -1253140265216216614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_97
+      rect:
+        serializedVersion: 2
+        x: 5613
+        y: 103
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6dc5ab74ae90e50800000000000000
+      internalID: 6776204708145845965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_98
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 129
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e6d6dfb34523aa0800000000000000
+      internalID: -6182786721794658662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_99
+      rect:
+        serializedVersion: 2
+        x: 4006
+        y: 134
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ec7660d00321bb0800000000000000
+      internalID: -4966854606536061307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_100
+      rect:
+        serializedVersion: 2
+        x: 4013
+        y: 129
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bf8eddb250218d0800000000000000
+      internalID: -2877231525971559532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_101
+      rect:
+        serializedVersion: 2
+        x: 4365
+        y: 134
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aebf625a371ea570800000000000000
+      internalID: 8479740687643819682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_102
+      rect:
+        serializedVersion: 2
+        x: 4393
+        y: 137
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6f7d160eb0fccc0800000000000000
+      internalID: -3688716511451023700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_103
+      rect:
+        serializedVersion: 2
+        x: 5502
+        y: 102
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6795529b95f47ba60800000000000000
+      internalID: 7689702135535327606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_104
+      rect:
+        serializedVersion: 2
+        x: 5862
+        y: 95
+        width: 83
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e965ba7b0dc26d0800000000000000
+      internalID: -3013804563345531285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_105
+      rect:
+        serializedVersion: 2
+        x: 4374
+        y: 129
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da3016a54b256e20800000000000000
+      internalID: 3343125876531280601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_106
+      rect:
+        serializedVersion: 2
+        x: 5988
+        y: 103
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05e14e12e59baee0800000000000000
+      internalID: -1248739673262398193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_107
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 102
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f974e5f8801d260800000000000000
+      internalID: 7120481897704562469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_108
+      rect:
+        serializedVersion: 2
+        x: 6361
+        y: 103
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233e456cf70134350800000000000000
+      internalID: 5999657269561975602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_109
+      rect:
+        serializedVersion: 2
+        x: 4022
+        y: 118
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295372e682843be60800000000000000
+      internalID: 7976798703487235474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_110
+      rect:
+        serializedVersion: 2
+        x: 4382
+        y: 118
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf64848e940e51f0800000000000000
+      internalID: -1054400183883501639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_111
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 56
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2283c814374c0910800000000000000
+      internalID: 1804895839748063789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_112
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 56
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8409eb2a59d8da0800000000000000
+      internalID: -5940927807217448723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_113
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 26
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c4d37269e04f060800000000000000
+      internalID: 6986224960024693860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_114
+      rect:
+        serializedVersion: 2
+        x: 2718
+        y: 39
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9bc3383efd7cc10800000000000000
+      internalID: 2073872321679768020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_115
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 35
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86570c6a98624b080800000000000000
+      internalID: -9172664168396851864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_116
+      rect:
+        serializedVersion: 2
+        x: 3054
+        y: 20
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476df4e01676a7680800000000000000
+      internalID: -8756572858918906252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_117
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 35
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46439aa60874b9b50800000000000000
+      internalID: 6600948295712453732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_118
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 31
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afb09501f272c2b0800000000000000
+      internalID: -5565759809970454617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_119
+      rect:
+        serializedVersion: 2
+        x: 3414
+        y: 19
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5f3974382e28300800000000000000
+      internalID: 253013582555641257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_120
+      rect:
+        serializedVersion: 2
+        x: 3443
+        y: 32
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f0c57250e116bc0800000000000000
+      internalID: -3791716403785232636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_121
+      rect:
+        serializedVersion: 2
+        x: 3736
+        y: 30
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9176afc37fd19d0800000000000000
+      internalID: -2801811551883421254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_122
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 52
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d583f39e637049c20800000000000000
+      internalID: 3212200366644869213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_123
+      rect:
+        serializedVersion: 2
+        x: 3755
+        y: 50
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c023153412af22220800000000000000
+      internalID: 2459803367267971596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_124
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 38
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d505071dd9adccbc0800000000000000
+      internalID: -3761391217402687395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_125
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 15
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b0ee53719f158d0800000000000000
+      internalID: -2859230410319197290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_126
+      rect:
+        serializedVersion: 2
+        x: 3787
+        y: 39
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa891ff742cc31540800000000000000
+      internalID: 4977546470311958698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_127
+      rect:
+        serializedVersion: 2
+        x: 3805
+        y: 30
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af22b35d028f41ac0800000000000000
+      internalID: -3885207758613830918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_128
+      rect:
+        serializedVersion: 2
+        x: 3813
+        y: 52
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e28e3034047cbd30800000000000000
+      internalID: 4448558093273301737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_129
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 60
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82eb23acc9f635170800000000000000
+      internalID: 8165993268550745640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_130
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 31
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6c927ae45dfdbb0800000000000000
+      internalID: -4908970535021853018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_131
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90cdf436af509400800000000000000
+      internalID: 328867940256301212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_132
+      rect:
+        serializedVersion: 2
+        x: 4113
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4dbf0379bab2ff0800000000000000
+      internalID: -59765504189147915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_133
+      rect:
+        serializedVersion: 2
+        x: 4114
+        y: 49
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95d53d53fce742f0800000000000000
+      internalID: -988561063199517283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_134
+      rect:
+        serializedVersion: 2
+        x: 4130
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d015e94bb6cbfac30800000000000000
+      internalID: 4372920933977837837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_135
+      rect:
+        serializedVersion: 2
+        x: 4134
+        y: 13
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97a05aec315408d0800000000000000
+      internalID: -2881088539539232869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_136
+      rect:
+        serializedVersion: 2
+        x: 4148
+        y: 38
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f135792bcc641b9a0800000000000000
+      internalID: -6219111765438409953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_137
+      rect:
+        serializedVersion: 2
+        x: 4166
+        y: 29
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b5263e08748ba30800000000000000
+      internalID: 4231210468810840917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_138
+      rect:
+        serializedVersion: 2
+        x: 4455
+        y: 36
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9badda2f2b83574f0800000000000000
+      internalID: -831696214953174343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_139
+      rect:
+        serializedVersion: 2
+        x: 4460
+        y: 31
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24af19062b4f8b90800000000000000
+      internalID: -7237483449427188692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_140
+      rect:
+        serializedVersion: 2
+        x: 4495
+        y: 13
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43dcce471ee807120800000000000000
+      internalID: 2409582899623677236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_141
+      rect:
+        serializedVersion: 2
+        x: 4503
+        y: 12
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34acdd426ccd474f0800000000000000
+      internalID: -831797287576548797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprRoomExplosion_strip20_142
+      rect:
+        serializedVersion: 2
+        x: 5539
+        y: 9
+        width: 57
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e38bc1a1a9a4690800000000000000
+      internalID: -7617106382802108806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprRoomExplosion_strip20_0: 7526100714085898756
+      sprRoomExplosion_strip20_1: 6182350950040153615
+      sprRoomExplosion_strip20_10: -3720606819008489253
+      sprRoomExplosion_strip20_100: -2877231525971559532
+      sprRoomExplosion_strip20_101: 8479740687643819682
+      sprRoomExplosion_strip20_102: -3688716511451023700
+      sprRoomExplosion_strip20_103: 7689702135535327606
+      sprRoomExplosion_strip20_104: -3013804563345531285
+      sprRoomExplosion_strip20_105: 3343125876531280601
+      sprRoomExplosion_strip20_106: -1248739673262398193
+      sprRoomExplosion_strip20_107: 7120481897704562469
+      sprRoomExplosion_strip20_108: 5999657269561975602
+      sprRoomExplosion_strip20_109: 7976798703487235474
+      sprRoomExplosion_strip20_11: -8092244154891922556
+      sprRoomExplosion_strip20_110: -1054400183883501639
+      sprRoomExplosion_strip20_111: 1804895839748063789
+      sprRoomExplosion_strip20_112: -5940927807217448723
+      sprRoomExplosion_strip20_113: 6986224960024693860
+      sprRoomExplosion_strip20_114: 2073872321679768020
+      sprRoomExplosion_strip20_115: -9172664168396851864
+      sprRoomExplosion_strip20_116: -8756572858918906252
+      sprRoomExplosion_strip20_117: 6600948295712453732
+      sprRoomExplosion_strip20_118: -5565759809970454617
+      sprRoomExplosion_strip20_119: 253013582555641257
+      sprRoomExplosion_strip20_12: -3690163655232431171
+      sprRoomExplosion_strip20_120: -3791716403785232636
+      sprRoomExplosion_strip20_121: -2801811551883421254
+      sprRoomExplosion_strip20_122: 3212200366644869213
+      sprRoomExplosion_strip20_123: 2459803367267971596
+      sprRoomExplosion_strip20_124: -3761391217402687395
+      sprRoomExplosion_strip20_125: -2859230410319197290
+      sprRoomExplosion_strip20_126: 4977546470311958698
+      sprRoomExplosion_strip20_127: -3885207758613830918
+      sprRoomExplosion_strip20_128: 4448558093273301737
+      sprRoomExplosion_strip20_129: 8165993268550745640
+      sprRoomExplosion_strip20_13: 5480260667236242644
+      sprRoomExplosion_strip20_130: -4908970535021853018
+      sprRoomExplosion_strip20_131: 328867940256301212
+      sprRoomExplosion_strip20_132: -59765504189147915
+      sprRoomExplosion_strip20_133: -988561063199517283
+      sprRoomExplosion_strip20_134: 4372920933977837837
+      sprRoomExplosion_strip20_135: -2881088539539232869
+      sprRoomExplosion_strip20_136: -6219111765438409953
+      sprRoomExplosion_strip20_137: 4231210468810840917
+      sprRoomExplosion_strip20_138: -831696214953174343
+      sprRoomExplosion_strip20_139: -7237483449427188692
+      sprRoomExplosion_strip20_14: -8440950702642964572
+      sprRoomExplosion_strip20_140: 2409582899623677236
+      sprRoomExplosion_strip20_141: -831797287576548797
+      sprRoomExplosion_strip20_142: -7617106382802108806
+      sprRoomExplosion_strip20_15: 2773554200015398624
+      sprRoomExplosion_strip20_16: -6579690408677272886
+      sprRoomExplosion_strip20_17: -5853471934873374774
+      sprRoomExplosion_strip20_18: 4201842963416427841
+      sprRoomExplosion_strip20_19: 1215108834040075539
+      sprRoomExplosion_strip20_2: -3267707979218855991
+      sprRoomExplosion_strip20_20: 381533873134864980
+      sprRoomExplosion_strip20_21: -2682841616617589361
+      sprRoomExplosion_strip20_22: 6594639547365132442
+      sprRoomExplosion_strip20_23: 5286449198876826812
+      sprRoomExplosion_strip20_24: 8492653809776297735
+      sprRoomExplosion_strip20_25: 3214256703268796163
+      sprRoomExplosion_strip20_26: 1757552879346747083
+      sprRoomExplosion_strip20_27: -812145008462132066
+      sprRoomExplosion_strip20_28: 847577675763093468
+      sprRoomExplosion_strip20_29: -7916714554973614514
+      sprRoomExplosion_strip20_3: 7002866315380428375
+      sprRoomExplosion_strip20_30: -6393424796455892788
+      sprRoomExplosion_strip20_31: -3667962838584630607
+      sprRoomExplosion_strip20_32: 2532857028871781647
+      sprRoomExplosion_strip20_33: 8759904387450344301
+      sprRoomExplosion_strip20_34: 6220540463847825970
+      sprRoomExplosion_strip20_35: -2158256443244824469
+      sprRoomExplosion_strip20_36: -3900078036634304435
+      sprRoomExplosion_strip20_37: -4879136519424269475
+      sprRoomExplosion_strip20_38: -6411219496694240905
+      sprRoomExplosion_strip20_39: -3888206355852074878
+      sprRoomExplosion_strip20_4: -4585448650782991532
+      sprRoomExplosion_strip20_40: -494653775079583284
+      sprRoomExplosion_strip20_41: -3872138825568185568
+      sprRoomExplosion_strip20_42: -8756085216848372081
+      sprRoomExplosion_strip20_43: -8446249166547278852
+      sprRoomExplosion_strip20_44: 2547685889946110013
+      sprRoomExplosion_strip20_45: 9004601859991133076
+      sprRoomExplosion_strip20_46: 8010159414961545705
+      sprRoomExplosion_strip20_47: -1102695367395189357
+      sprRoomExplosion_strip20_48: -7381688396658385779
+      sprRoomExplosion_strip20_49: -8330543211364649996
+      sprRoomExplosion_strip20_5: 3900284441898012940
+      sprRoomExplosion_strip20_50: 5348283950556208433
+      sprRoomExplosion_strip20_51: 8121419386557839984
+      sprRoomExplosion_strip20_52: -9134258222791424586
+      sprRoomExplosion_strip20_53: -6688767635234037750
+      sprRoomExplosion_strip20_54: -6323754942339729291
+      sprRoomExplosion_strip20_55: -4080463222727006396
+      sprRoomExplosion_strip20_56: -5504101940113869673
+      sprRoomExplosion_strip20_57: 5198253529763270525
+      sprRoomExplosion_strip20_58: -8885771562198842457
+      sprRoomExplosion_strip20_59: 2365171205800498352
+      sprRoomExplosion_strip20_6: -3390207392083554896
+      sprRoomExplosion_strip20_60: -8100007537838632554
+      sprRoomExplosion_strip20_61: 2637599290753779383
+      sprRoomExplosion_strip20_62: 2348637736437460997
+      sprRoomExplosion_strip20_63: -6523083991015986897
+      sprRoomExplosion_strip20_64: 6154762238322838079
+      sprRoomExplosion_strip20_65: 4436239813594789039
+      sprRoomExplosion_strip20_66: 6888536729647744181
+      sprRoomExplosion_strip20_67: -1387385431311610918
+      sprRoomExplosion_strip20_68: -8594719029878480788
+      sprRoomExplosion_strip20_69: -5594005096627241599
+      sprRoomExplosion_strip20_7: -4374866683447268489
+      sprRoomExplosion_strip20_70: 4375008254900229781
+      sprRoomExplosion_strip20_71: 8196704797309918992
+      sprRoomExplosion_strip20_72: -2144883408977857429
+      sprRoomExplosion_strip20_73: -7372422357183035581
+      sprRoomExplosion_strip20_74: -4920866573937382587
+      sprRoomExplosion_strip20_75: 7972695360104419686
+      sprRoomExplosion_strip20_76: 5677714623924581811
+      sprRoomExplosion_strip20_77: -3454562649644332127
+      sprRoomExplosion_strip20_78: -5793792239294394326
+      sprRoomExplosion_strip20_79: -137475738144078792
+      sprRoomExplosion_strip20_8: -3833711460522794998
+      sprRoomExplosion_strip20_80: -8470292370067835972
+      sprRoomExplosion_strip20_81: 2587373026218602954
+      sprRoomExplosion_strip20_82: 3410265493307989620
+      sprRoomExplosion_strip20_83: -2918495531618597076
+      sprRoomExplosion_strip20_84: 3898702573391115911
+      sprRoomExplosion_strip20_85: -669335553975530434
+      sprRoomExplosion_strip20_86: -1097025733866389670
+      sprRoomExplosion_strip20_87: 3600807708176162221
+      sprRoomExplosion_strip20_88: -4346573707953294962
+      sprRoomExplosion_strip20_89: 8618663951824516762
+      sprRoomExplosion_strip20_9: 3173370042026713408
+      sprRoomExplosion_strip20_90: 3965383235920181544
+      sprRoomExplosion_strip20_91: 4243789028322333789
+      sprRoomExplosion_strip20_92: -7100040037541592202
+      sprRoomExplosion_strip20_93: -4080994079108739235
+      sprRoomExplosion_strip20_94: 2258033875054877312
+      sprRoomExplosion_strip20_95: 867236177819771934
+      sprRoomExplosion_strip20_96: -1253140265216216614
+      sprRoomExplosion_strip20_97: 6776204708145845965
+      sprRoomExplosion_strip20_98: -6182786721794658662
+      sprRoomExplosion_strip20_99: -4966854606536061307
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

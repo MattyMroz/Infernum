@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 02783e7ebe59200438de030ddb759b95
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1615427877006817029
+    second: sprDeadGuysTable_strip11_0
+  - first:
+      213: 7990215799129327514
+    second: sprDeadGuysTable_strip11_1
+  - first:
+      213: 458069091621380418
+    second: sprDeadGuysTable_strip11_2
+  - first:
+      213: -87080069965991552
+    second: sprDeadGuysTable_strip11_3
+  - first:
+      213: 1755650644439963241
+    second: sprDeadGuysTable_strip11_4
+  - first:
+      213: 2204461618261230827
+    second: sprDeadGuysTable_strip11_5
+  - first:
+      213: 2390930975976570236
+    second: sprDeadGuysTable_strip11_6
+  - first:
+      213: 7757004392742578804
+    second: sprDeadGuysTable_strip11_7
+  - first:
+      213: -437498807336156379
+    second: sprDeadGuysTable_strip11_8
+  - first:
+      213: 1053542341913976605
+    second: sprDeadGuysTable_strip11_9
+  - first:
+      213: 6495056817256356375
+    second: sprDeadGuysTable_strip11_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507314168172b6610800000000000000
+      internalID: 1615427877006817029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9741d17fe2f2ee60800000000000000
+      internalID: 7990215799129327514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241ada079636b5600800000000000000
+      internalID: 458069091621380418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08139a24321aacef0800000000000000
+      internalID: -87080069965991552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_4
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966978395f25d5810800000000000000
+      internalID: 1755650644439963241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_5
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4817d7922d79e10800000000000000
+      internalID: 2204461618261230827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_6
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dbf811e0b4e2120800000000000000
+      internalID: 2390930975976570236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_7
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ae096956a66ab60800000000000000
+      internalID: 7757004392742578804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_8
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52342171721bde9f0800000000000000
+      internalID: -437498807336156379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_9
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f9d959d2fee9e00800000000000000
+      internalID: 1053542341913976605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDeadGuysTable_strip11_10
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 14
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a5b8453c3132a50800000000000000
+      internalID: 6495056817256356375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprDeadGuysTable_strip11_0: 1615427877006817029
+      sprDeadGuysTable_strip11_1: 7990215799129327514
+      sprDeadGuysTable_strip11_10: 6495056817256356375
+      sprDeadGuysTable_strip11_2: 458069091621380418
+      sprDeadGuysTable_strip11_3: -87080069965991552
+      sprDeadGuysTable_strip11_4: 1755650644439963241
+      sprDeadGuysTable_strip11_5: 2204461618261230827
+      sprDeadGuysTable_strip11_6: 2390930975976570236
+      sprDeadGuysTable_strip11_7: 7757004392742578804
+      sprDeadGuysTable_strip11_8: -437498807336156379
+      sprDeadGuysTable_strip11_9: 1053542341913976605
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

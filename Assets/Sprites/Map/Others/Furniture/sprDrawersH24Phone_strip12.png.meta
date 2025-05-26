@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 469dfa8352782e5428d1f3c5031c1fa3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2104063190678756073
+    second: sprDrawersH24Phone_strip12_0
+  - first:
+      213: -600537045738474767
+    second: sprDrawersH24Phone_strip12_1
+  - first:
+      213: -6147404462484061625
+    second: sprDrawersH24Phone_strip12_2
+  - first:
+      213: 3726941189845800481
+    second: sprDrawersH24Phone_strip12_3
+  - first:
+      213: -4283624116619988156
+    second: sprDrawersH24Phone_strip12_4
+  - first:
+      213: -1836474912440436477
+    second: sprDrawersH24Phone_strip12_5
+  - first:
+      213: -4806225097213705028
+    second: sprDrawersH24Phone_strip12_6
+  - first:
+      213: -3668420702512444781
+    second: sprDrawersH24Phone_strip12_7
+  - first:
+      213: -3557022372333146553
+    second: sprDrawersH24Phone_strip12_8
+  - first:
+      213: -1922965208971777531
+    second: sprDrawersH24Phone_strip12_9
+  - first:
+      213: -8807380642706917331
+    second: sprDrawersH24Phone_strip12_10
+  - first:
+      213: -2400654295519465289
+    second: sprDrawersH24Phone_strip12_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7152e960daddcc2e0800000000000000
+      internalID: -2104063190678756073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2bb4a1db67aa7f0800000000000000
+      internalID: -600537045738474767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7428cf2363800baa0800000000000000
+      internalID: -6147404462484061625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126d7871441c8b330800000000000000
+      internalID: 3726941189845800481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443b191cf828d84c0800000000000000
+      internalID: -4283624116619988156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30932151cc78386e0800000000000000
+      internalID: -1836474912440436477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb482021dbbdc4db0800000000000000
+      internalID: -4806225097213705028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a8e04aec6271dc0800000000000000
+      internalID: -3668420702512444781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e27fe8ffae2aec0800000000000000
+      internalID: -3557022372333146553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a6dcba4514055e0800000000000000
+      internalID: -1922965208971777531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d287dcd08f5e5c580800000000000000
+      internalID: -8807380642706917331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprDrawersH24Phone_strip12_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0fb0f23a92faed0800000000000000
+      internalID: -2400654295519465289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprDrawersH24Phone_strip12_0: -2104063190678756073
+      sprDrawersH24Phone_strip12_1: -600537045738474767
+      sprDrawersH24Phone_strip12_10: -8807380642706917331
+      sprDrawersH24Phone_strip12_11: -2400654295519465289
+      sprDrawersH24Phone_strip12_2: -6147404462484061625
+      sprDrawersH24Phone_strip12_3: 3726941189845800481
+      sprDrawersH24Phone_strip12_4: -4283624116619988156
+      sprDrawersH24Phone_strip12_5: -1836474912440436477
+      sprDrawersH24Phone_strip12_6: -4806225097213705028
+      sprDrawersH24Phone_strip12_7: -3668420702512444781
+      sprDrawersH24Phone_strip12_8: -3557022372333146553
+      sprDrawersH24Phone_strip12_9: -1922965208971777531
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

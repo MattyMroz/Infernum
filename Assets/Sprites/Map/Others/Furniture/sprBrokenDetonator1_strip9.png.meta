@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: c5f253f3580aa7447a6a9abcffcce2af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7040137118788921107
+    second: sprBrokenDetonator1_strip9_0
+  - first:
+      213: -8435342739864571749
+    second: sprBrokenDetonator1_strip9_1
+  - first:
+      213: -8759520831306999867
+    second: sprBrokenDetonator1_strip9_2
+  - first:
+      213: -2481917647534222314
+    second: sprBrokenDetonator1_strip9_3
+  - first:
+      213: -539126434320150842
+    second: sprBrokenDetonator1_strip9_4
+  - first:
+      213: -4765725735656191812
+    second: sprBrokenDetonator1_strip9_5
+  - first:
+      213: -4019726386360900737
+    second: sprBrokenDetonator1_strip9_6
+  - first:
+      213: 7066406621755800147
+    second: sprBrokenDetonator1_strip9_7
+  - first:
+      213: 7883704916655944157
+    second: sprBrokenDetonator1_strip9_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 6
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317a477c86793b160800000000000000
+      internalID: 7040137118788921107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 5
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90b3bf6874afea80800000000000000
+      internalID: -8435342739864571749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 5
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7df4fb63eef6680800000000000000
+      internalID: -8759520831306999867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 6
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61413f0ac057e8dd0800000000000000
+      internalID: -2481917647534222314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 5
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce03594d53a488f0800000000000000
+      internalID: -539126434320150842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 6
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8864d71bdbcddb0800000000000000
+      internalID: -4765725735656191812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_6
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 5
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73a1b626201738c0800000000000000
+      internalID: -4019726386360900737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 6
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35af830126be01260800000000000000
+      internalID: 7066406621755800147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprBrokenDetonator1_strip9_8
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 6
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1374f1adb886d60800000000000000
+      internalID: 7883704916655944157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprBrokenDetonator1_strip9_0: 7040137118788921107
+      sprBrokenDetonator1_strip9_1: -8435342739864571749
+      sprBrokenDetonator1_strip9_2: -8759520831306999867
+      sprBrokenDetonator1_strip9_3: -2481917647534222314
+      sprBrokenDetonator1_strip9_4: -539126434320150842
+      sprBrokenDetonator1_strip9_5: -4765725735656191812
+      sprBrokenDetonator1_strip9_6: -4019726386360900737
+      sprBrokenDetonator1_strip9_7: 7066406621755800147
+      sprBrokenDetonator1_strip9_8: 7883704916655944157
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

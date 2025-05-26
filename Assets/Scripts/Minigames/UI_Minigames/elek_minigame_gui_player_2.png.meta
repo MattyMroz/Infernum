@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      elek_minigame_gui_player_2_0: 516813461979736282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

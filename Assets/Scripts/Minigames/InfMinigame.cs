@@ -11,6 +11,7 @@ public class InfMinigame : MonoBehaviour
     [SerializeField] private TextMeshProUGUI displayLvl;
     [SerializeField] private TextMeshProUGUI displayExp;
     [SerializeField] private RectTransform playArea;
+    [SerializeField] private Image notPlayArea;
 
     /* ---------- Gameplay ---------- */
     [Header("Gameplay")]
@@ -25,6 +26,7 @@ public class InfMinigame : MonoBehaviour
     private Player _playerScript;
     private Vector2 _velocity;
     private float _secTimer;
+    private int playableZoneDirection = -1;
 
     /* ---------- Start (IEnumerator) ---------- */
     private IEnumerator Start()
@@ -53,7 +55,46 @@ public class InfMinigame : MonoBehaviour
             _velocity.y += liftForce * UnityEngine.Time.deltaTime;
 
         _velocity.y -= gravity * UnityEngine.Time.deltaTime;
+        _velocity.y = Mathf.Clamp(_velocity.y, -200f, 200f);
+
         ball.rectTransform.anchoredPosition += _velocity * UnityEngine.Time.deltaTime;
+
+        // Make sure the ball stays in the minigame zone
+        float ballClampYBottom = notPlayArea.rectTransform.rect.yMin + ball.rectTransform.rect.height / 2f;
+        float ballClampYTop = notPlayArea.rectTransform.rect.yMax - ball.rectTransform.rect.height / 2f;
+
+        ball.rectTransform.anchoredPosition = new Vector2(
+            ball.rectTransform.anchoredPosition.x,
+            Mathf.Clamp(
+                ball.rectTransform.anchoredPosition.y,
+                ballClampYBottom,
+                ballClampYTop
+                ));
+
+        if (ball.rectTransform.anchoredPosition.y == ballClampYBottom
+            || ball.rectTransform.anchoredPosition.y == ballClampYTop)
+            _velocity = Vector2.zero;
+
+        // Handle playable zone
+        float playableClampYBottom = notPlayArea.rectTransform.rect.yMin + playArea.rect.height / 2f;
+        float playableClampYTop = notPlayArea.rectTransform.rect.yMax - playArea.rect.height / 2f;
+
+        playArea.anchoredPosition += new Vector2(0f, 100f) * playableZoneDirection * UnityEngine.Time.deltaTime;
+
+        playArea.anchoredPosition = new Vector2(
+            playArea.anchoredPosition.x,
+            Mathf.Clamp(
+                playArea.anchoredPosition.y,
+                playableClampYBottom,
+                playableClampYTop
+                ));
+
+        if (playArea.anchoredPosition.y == playableClampYBottom
+            || playArea.anchoredPosition.y == playableClampYTop)
+        {
+            playableZoneDirection *= -1;
+        }
+
 
         /* sprawdzanie, czy piłka jest w playArea */
         bool inside = RectTransformUtility.RectangleContainsScreenPoint(
@@ -74,7 +115,7 @@ public class InfMinigame : MonoBehaviour
         else
         {
             _secTimer = 0f;
-            _velocity = Vector2.zero;
+            //_velocity = Vector2.zero;
         }
     }
 
