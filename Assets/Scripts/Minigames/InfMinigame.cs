@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class InfMinigame : MonoBehaviour
+public class InfMinigame : Interactable
 {
     /* ----------  UI ---------- */
     [Header("UI")]
@@ -41,6 +41,11 @@ public class InfMinigame : MonoBehaviour
     private List<MonoBehaviour> previouslyDisabled = new List<MonoBehaviour>();
     private Movement playerMovement;
     private Rigidbody2D playerRb;
+
+    public override void React(GameObject player)
+    {
+        StartMinigame();
+    }
 
     /* ---------- Start (IEnumerator) ---------- */
     private IEnumerator Start()
@@ -151,6 +156,14 @@ public class InfMinigame : MonoBehaviour
     {
         ball.rectTransform.anchoredPosition = playArea.rect.center;
         _velocity = Vector2.zero;
+    }
+
+    public void StartMinigame()
+    {
+        OpenMinigame();
+        CenterBall();
+        _secTimer = 0f;
+        UpdateHud();
     }
 
     private void UpdateHud()

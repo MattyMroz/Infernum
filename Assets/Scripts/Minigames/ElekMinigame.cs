@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ElekMinigame : MonoBehaviour
+public class ElekMinigame : Interactable
 {
     [Header("UI")]
     [SerializeField] private GameObject _panel;
@@ -36,6 +36,11 @@ public class ElekMinigame : MonoBehaviour
     private List<MonoBehaviour> previouslyDisabled = new List<MonoBehaviour>();
     private Movement playerMovement;
     private Rigidbody2D playerRb;
+
+    public override void React(GameObject player)
+    {
+        StartMinigame();
+    }
 
     private IEnumerator Start()
     {
@@ -100,6 +105,16 @@ public class ElekMinigame : MonoBehaviour
         _goTime = UnityEngine.Time.time;
         _ready = true;
         indicator.color = Color.green;
+    }
+
+    public void StartMinigame()
+    {
+        OpenMinigame();
+        indicator.color = Color.red;
+        label.text = $"REAGUJ '{CURRENT_KEY}'";
+        UpdateHud();
+        StopAllCoroutines();
+        StartCoroutine(WaitAndGo());
     }
 
     private void UpdateHud()

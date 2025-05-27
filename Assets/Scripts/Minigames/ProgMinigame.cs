@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ClickMinigame : MonoBehaviour
+public class ProgMinigame : Interactable
 {
     [Header("UI")]
     [SerializeField] private GameObject _panel;
@@ -29,6 +29,11 @@ public class ClickMinigame : MonoBehaviour
     private List<MonoBehaviour> previouslyDisabled = new List<MonoBehaviour>();
     private Movement playerMovement;
     private Rigidbody2D playerRb;
+
+    public override void React(GameObject player)
+    {
+        StartMinigame();
+    }
 
     private IEnumerator Start()
     {
@@ -67,6 +72,13 @@ public class ClickMinigame : MonoBehaviour
 
             UpdateHud();
         }
+    }
+
+    public void StartMinigame()
+    {
+        OpenMinigame();
+        _clicks = 0;
+        UpdateHud();
     }
 
     private void UpdateHud()

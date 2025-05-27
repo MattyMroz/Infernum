@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GraphMinigame : MonoBehaviour
+public class GraphMinigame : Interactable
 {
     [Header("UI")]
     [SerializeField] private GameObject _panel;
@@ -37,6 +37,11 @@ public class GraphMinigame : MonoBehaviour
 
     private KeyCode[] _currentCombo;
     private Player _playerScript;
+
+    public override void React(GameObject player)
+    {
+        StartMinigame();
+    }
 
     private IEnumerator Start()
     {
@@ -91,6 +96,13 @@ public class GraphMinigame : MonoBehaviour
 
         displayKeys.text = string.Join(" + ",
             _currentCombo.Select(k => k.ToString().Replace("Alpha", "")));
+    }
+
+    public void StartMinigame()
+    {
+        OpenMinigame();
+        GenerateCombo();
+        UpdateHud();
     }
 
     private void UpdateHud()

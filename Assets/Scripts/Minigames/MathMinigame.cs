@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MathMinigame : MonoBehaviour
+public class MathMinigame : Interactable
 {
     [Header("UI")]
     [SerializeField] private GameObject _panel;
@@ -33,6 +33,11 @@ public class MathMinigame : MonoBehaviour
     private Movement playerMovement;
     private Rigidbody2D playerRb;
 
+    public override void React(GameObject player)
+    {
+        StartMinigame();
+    }
+
     private IEnumerator Start()
     {
         _playerScript = _player.GetComponent<Player>();
@@ -53,6 +58,8 @@ public class MathMinigame : MonoBehaviour
 
     private void Update()
     {
+        UpdateHud();
+
         if (Input.GetKeyDown(exit))
         {
             if (minigameActive)
@@ -79,6 +86,14 @@ public class MathMinigame : MonoBehaviour
             inputField.selectionAnchorPosition =
             inputField.selectionFocusPosition = len;
         }
+    }
+
+    public void StartMinigame()
+    {
+        _panel.SetActive(true);
+        minigameActive = true;
+        GenerateNumber();
+        FocusInput();
     }
 
     void GenerateNumber()
