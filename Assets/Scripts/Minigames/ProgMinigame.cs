@@ -1,158 +1,82 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
-public class ProgMinigame : Interactable
+public class ProgMinigame : BaseMinigame
 {
-    [Header("UI")]
-    [SerializeField] private GameObject _panel;
-    [SerializeField] private TextMeshProUGUI displayLvl;
-    [SerializeField] private TextMeshProUGUI displayExp;
-    [SerializeField] private TextMeshProUGUI TimeNow;
-    [SerializeField] private TextMeshProUGUI MinigameName;
+    [System.Serializable]
+    public class PlayerSlot
+    {
+        public Player player;
+        public GameObject panel;
+        public KeyCode exitKey;
+        public KeyCode actionKey;
+    }
+
+    [Header("Players")]
+    [SerializeField] private PlayerSlot player1;
+    [SerializeField] private PlayerSlot player2;
+
+    private TextMeshProUGUI lvlTxt, expTxt, timeTxt, nameTxt;
 
     [Header("Gameplay")]
-    [SerializeField] private GameObject _player;
     [SerializeField] private int keyGain = 1;
+    private const int KNOWLEDGE_IDX = 2;
 
-    [Header("keys")]
-    public KeyCode exit;
-    public KeyCode CURRENT_KEY;
+    private PlayerSlot cur;
+    private KeyCode clickKey;
 
-
-    private int _clicks = 0;
-    private Player _playerScript;
-
-    // Blokada ruchu i UI
-    private bool minigameActive = false;
-    private List<MonoBehaviour> previouslyDisabled = new List<MonoBehaviour>();
-    private Movement playerMovement;
-    private Rigidbody2D playerRb;
-
-    public override void React(GameObject player)
+    /* ───── React ───── */
+    public override void React(GameObject playerGO)
     {
-        StartMinigame();
+        cur = playerGO == player1.player.gameObject ? player1 : player2;
+
+        // boot bazowej logiki (blokada ruchu + pokazanie panelu)
+        Boot(playerGO, new MinigameConfig
+        {
+            panel = cur.panel,
+            exitKey = cur.exitKey,
+            actionKeys = new[] { cur.actionKey }
+        });
     }
 
-    private IEnumerator Start()
+    /* ───── Boot / Open ───── */
+    protected override void OnBoot(MinigameConfig cfg)
     {
-        _playerScript = _player.GetComponent<Player>();
-        playerMovement = _player.GetComponent<Movement>();
-        playerRb = _player.GetComponent<Rigidbody2D>();
-
-        yield return null;
-
-        UpdateHud();
+        BindUI(cur.panel);
+        clickKey = cfg.actionKeys[0];
+        nameTxt.text = "Programowanie";
+        UpdateHUD();
     }
 
-    private void Update()
+    protected override void OnOpen() => BindUI(cur.panel);
+
+    /* ───── Update ───── */
+    protected override void Update()
     {
-        if (Input.GetKeyDown(exit))
+        base.Update();
+        if (!active) return;
+
+        if (Input.GetKeyDown(clickKey))
         {
-            if (minigameActive)
-            {
-                CloseMinigame();
-                return;
-            }
-        }
-
-        if (!minigameActive && _panel.activeSelf)
-        {
-            OpenMinigame();
-        }
-
-        if (!minigameActive)
-            return;
-
-        if (Input.GetKeyDown(CURRENT_KEY))
-        {
-            _playerScript.exams_knowledge[2] += keyGain; // programming - id : 2
-            _clicks++;
-
-            UpdateHud();
+            player.exams_knowledge[KNOWLEDGE_IDX] += keyGain;
+            UpdateHUD();
         }
     }
 
-    public void StartMinigame()
+    /* ───── UI helpers ───── */
+    private void BindUI(GameObject p)
     {
-        OpenMinigame();
-        _clicks = 0;
-        UpdateHud();
+        lvlTxt = p.transform.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        expTxt = p.transform.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        timeTxt = p.transform.Find("Time").GetComponent<TextMeshProUGUI>();
+        nameTxt = p.transform.Find("MinigameName").GetComponent<TextMeshProUGUI>();
     }
 
-    private void UpdateHud()
+    private void UpdateHUD()
     {
-        var result = _playerScript.LvlIncrease(_playerScript.exams_knowledge[2]);
-        displayLvl.text = $"{result.lvl}";
-        displayExp.text = $"{result.exp} / {result.divide}";
-
-        TimeNow.text = Time.Time_now;
-        MinigameName.text = "Programowanie";
-    }
-
-    /* ---------- wy��czanie innych UI i ruchu ---------- */
-    private void OpenMinigame()
-    {
-        minigameActive = true;
-
-        DisableOtherUIDisplays();
-
-        if (playerMovement != null)
-        {
-            playerMovement.ResetVelocity();
-            playerMovement.enabled = false;
-        }
-
-        if (playerRb != null)
-            playerRb.bodyType = RigidbodyType2D.Static;
-
-        _panel.SetActive(true);
-    }
-
-    private void CloseMinigame()
-    {
-        minigameActive = false;
-
-        ReenableUIDisplays();
-
-        if (playerMovement != null)
-        {
-            playerMovement.ResetVelocity();
-            playerMovement.enabled = true;
-        }
-
-        if (playerRb != null)
-            playerRb.bodyType = RigidbodyType2D.Dynamic;
-
-        _panel.SetActive(false);
-    }
-
-    private void DisableOtherUIDisplays()
-    {
-        previouslyDisabled.Clear();
-
-        MonoBehaviour[] scripts = gameObject.GetComponents<MonoBehaviour>();
-
-        foreach (MonoBehaviour script in scripts)
-        {
-            if (script != this && script.enabled && script.GetType().Name.StartsWith("Display"))
-            {
-                script.enabled = false;
-                previouslyDisabled.Add(script);
-            }
-        }
-    }
-
-    private void ReenableUIDisplays()
-    {
-        foreach (MonoBehaviour script in previouslyDisabled)
-        {
-            if (script != null)
-            {
-                script.enabled = true;
-            }
-        }
-        previouslyDisabled.Clear();
+        var r = player.LvlIncrease(player.exams_knowledge[KNOWLEDGE_IDX]);
+        lvlTxt.text = r.lvl.ToString();
+        expTxt.text = $"{r.exp} / {r.divide}";
+        timeTxt.text = Time.Time_now;
     }
 }

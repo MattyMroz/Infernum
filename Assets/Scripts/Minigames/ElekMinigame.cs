@@ -1,94 +1,89 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
-public class ElekMinigame : Interactable
+public class ElekMinigame : BaseMinigame
 {
-    [Header("UI")]
-    [SerializeField] private GameObject _panel;
-    [SerializeField] private Image indicator;
-    [SerializeField] private TextMeshProUGUI label;
-    [SerializeField] private TextMeshProUGUI displayLvl;
-    [SerializeField] private TextMeshProUGUI displayExp;
-    [SerializeField] private TextMeshProUGUI TimeNow;
-    [SerializeField] private TextMeshProUGUI MinigameName;  
+    [System.Serializable]
+    public class PlayerSlot
+    {
+        public Player player;
+        public GameObject panel;
+        public KeyCode exitKey;
+        public KeyCode actionKey;
+    }
+
+    [Header("Players")]
+    [SerializeField] private PlayerSlot player1;
+    [SerializeField] private PlayerSlot player2;
+
+    private Image indicator;
+    private TextMeshProUGUI label, lvlTxt, expTxt, timeTxt, nameTxt;
 
     [Header("Gameplay")]
-    [SerializeField] private GameObject _player;
     [SerializeField] private int baseGain = 25;
     [SerializeField] private float minWait = 1f;
     [SerializeField] private float maxWait = 3f;
-    [SerializeField] private int knowledgeIndex = 4;
+    private const int KNOWLEDGE_IDX = 4;
 
-    [Header("keys")]
-    public KeyCode exit;
-    public KeyCode CURRENT_KEY;
+    private PlayerSlot cur;
+    private KeyCode reactKey;
+    private bool ready;
+    private float goTime;
 
-
-    private Player _playerScript;
-    private bool _ready;
-    private float _goTime;
-
-    // obsługa wyłączania skryptów i ruchu
-    private bool minigameActive = false;
-    private List<MonoBehaviour> previouslyDisabled = new List<MonoBehaviour>();
-    private Movement playerMovement;
-    private Rigidbody2D playerRb;
-
-    public override void React(GameObject player)
+    /* ───── React ───── */
+    public override void React(GameObject playerGO)
     {
-        StartMinigame();
+        cur = playerGO == player1.player.gameObject ? player1 : player2;
+
+        // boot bazowej logiki (blokada ruchu + pokazanie panelu)
+        Boot(playerGO, new MinigameConfig
+        {
+            panel = cur.panel,
+            exitKey = cur.exitKey,
+            actionKeys = new[] { cur.actionKey }
+        });
     }
 
-    private IEnumerator Start()
+    /* ───── Boot / Open ───── */
+    protected override void OnBoot(MinigameConfig cfg)
     {
-        _playerScript = _player.GetComponent<Player>();
-        playerMovement = _player.GetComponent<Movement>();
-        playerRb = _player.GetComponent<Rigidbody2D>();
-
-        yield return null;
-
+        BindUI(cur.panel);
+        reactKey = cfg.actionKeys[0];
+        nameTxt.text = "Elektrotechnika";
+        label.text = $"REAGUJ '{reactKey}'";
         indicator.color = Color.red;
-        label.text = $"REAGUJ '{CURRENT_KEY}'";
-
-        UpdateHud();
-
+        UpdateHUD();
         StartCoroutine(WaitAndGo());
     }
 
-    private void Update()
+    protected override void OnOpen()
     {
-        if (Input.GetKeyDown(exit))
+        BindUI(cur.panel);
+        indicator.color = Color.red;
+        label.text = $"REAGUJ '{reactKey}'";
+        StopAllCoroutines();
+        StartCoroutine(WaitAndGo());
+    }
+
+    /* ───── Update ───── */
+    protected override void Update()
+    {
+        base.Update();
+        if (!active) return;
+
+        if (Input.GetKeyDown(reactKey))
         {
-            if (minigameActive)
+            if (ready)
             {
-                CloseMinigame();
-                return;
-            }
-        }
-
-        if (!minigameActive && _panel.activeSelf)
-        {
-            OpenMinigame();
-        }
-
-        if (!minigameActive)
-            return;
-
-        if (Input.GetKeyDown(CURRENT_KEY))
-        {
-            if (_ready)
-            {
-                float reaction = UnityEngine.Time.time - _goTime;
+                float reaction = UnityEngine.Time.time - goTime;
                 int gain = Mathf.Max(1, baseGain - Mathf.RoundToInt(reaction * baseGain));
-
-                _playerScript.exams_knowledge[knowledgeIndex] += gain;
-                UpdateHud();
-                StartCoroutine(WaitAndGo());     // kolejny cykl
+                player.exams_knowledge[KNOWLEDGE_IDX] += gain;
+                UpdateHUD();
+                StartCoroutine(WaitAndGo());
             }
-            else                                 // przedwczesny klik
+            else
             {
                 StopAllCoroutines();
                 StartCoroutine(WaitAndGo());
@@ -96,99 +91,34 @@ public class ElekMinigame : Interactable
         }
     }
 
+    /* ───── coroutine ───── */
     private IEnumerator WaitAndGo()
     {
-        _ready = false;
+        ready = false;
         indicator.color = Color.red;
         yield return new WaitForSeconds(Random.Range(minWait, maxWait));
 
-        _goTime = UnityEngine.Time.time;
-        _ready = true;
+        goTime = UnityEngine.Time.time;
+        ready = true;
         indicator.color = Color.green;
     }
 
-    public void StartMinigame()
+    /* ───── helpers ───── */
+    private void BindUI(GameObject p)
     {
-        OpenMinigame();
-        indicator.color = Color.red;
-        label.text = $"REAGUJ '{CURRENT_KEY}'";
-        UpdateHud();
-        StopAllCoroutines();
-        StartCoroutine(WaitAndGo());
+        indicator = p.transform.Find("Image").GetComponent<Image>();
+        label = p.transform.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
+        lvlTxt = p.transform.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        expTxt = p.transform.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        timeTxt = p.transform.Find("Time").GetComponent<TextMeshProUGUI>();
+        nameTxt = p.transform.Find("MinigameName").GetComponent<TextMeshProUGUI>();
     }
 
-    private void UpdateHud()
+    private void UpdateHUD()
     {
-        var result = _playerScript.LvlIncrease(_playerScript.exams_knowledge[knowledgeIndex]);
-        displayLvl.text = $"{result.lvl}";
-        displayExp.text = $"{result.exp} / {result.divide}";
-
-        TimeNow.text = Time.Time_now;
-        MinigameName.text = "Elektrotechnika";
-    }
-
-    /* ---------- wylaczanie innych UI i ruchu ---------- */
-    private void OpenMinigame()
-    {
-        minigameActive = true;
-
-        DisableOtherUIDisplays();
-
-        if (playerMovement != null)
-        {
-            playerMovement.ResetVelocity();
-            playerMovement.enabled = false;
-        }
-
-        if (playerRb != null)
-            playerRb.bodyType = RigidbodyType2D.Static;
-
-        _panel.SetActive(true);
-    }
-
-    private void CloseMinigame()
-    {
-        minigameActive = false;
-
-        ReenableUIDisplays();
-
-        if (playerMovement != null)
-        {
-            playerMovement.ResetVelocity();
-            playerMovement.enabled = true;
-        }
-
-        if (playerRb != null)
-            playerRb.bodyType = RigidbodyType2D.Dynamic;
-
-        _panel.SetActive(false);
-    }
-
-    private void DisableOtherUIDisplays()
-    {
-        previouslyDisabled.Clear();
-
-        MonoBehaviour[] scripts = gameObject.GetComponents<MonoBehaviour>();
-
-        foreach (MonoBehaviour script in scripts)
-        {
-            if (script != this && script.enabled && script.GetType().Name.StartsWith("Display"))
-            {
-                script.enabled = false;
-                previouslyDisabled.Add(script);
-            }
-        }
-    }
-
-    private void ReenableUIDisplays()
-    {
-        foreach (MonoBehaviour script in previouslyDisabled)
-        {
-            if (script != null)
-            {
-                script.enabled = true;
-            }
-        }
-        previouslyDisabled.Clear();
+        var r = player.LvlIncrease(player.exams_knowledge[KNOWLEDGE_IDX]);
+        lvlTxt.text = r.lvl.ToString();
+        expTxt.text = $"{r.exp} / {r.divide}";
+        timeTxt.text = Time.Time_now;
     }
 }
