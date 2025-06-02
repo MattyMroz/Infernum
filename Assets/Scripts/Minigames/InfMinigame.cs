@@ -68,6 +68,9 @@ public class InfMinigame : BaseMinigame
     /* ───── Update ───── */
     protected override void Update()
     {
+        if (player == null)
+            return;
+
         UpdateHUD();
 
         base.Update();

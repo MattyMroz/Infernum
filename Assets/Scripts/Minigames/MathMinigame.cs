@@ -68,6 +68,11 @@ public class MathMinigame : BaseMinigame
 
     protected override void Update()
     {
+        if (player == null)
+            return;
+
+        UpdateHUD();
+
         base.Update();                      //  Exit
         if (!active) return;
 
