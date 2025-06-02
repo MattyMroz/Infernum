@@ -17,6 +17,8 @@ public class InfMinigame : BaseMinigame
     [SerializeField] private PlayerSlot player1;
     [SerializeField] private PlayerSlot player2;
 
+
+
     /* UI refs (bindowane) */
     private TextMeshProUGUI lvlTxt, expTxt, timeTxt, nameTxt;
     private RectTransform playArea;
@@ -38,6 +40,8 @@ public class InfMinigame : BaseMinigame
     public override void React(GameObject playerGO)
     {
         cur = playerGO == player1.player.gameObject ? player1 : player2;
+
+        used[playerGO.GetComponent<Player>().id] = true;
 
         // boot bazowej logiki (blokada ruchu + pokazanie panelu)
         Boot(playerGO, new MinigameConfig
@@ -66,6 +70,7 @@ public class InfMinigame : BaseMinigame
     }
 
     /* ───── Update ───── */
+    //
     protected override void Update()
     {
         if (player == null)
@@ -75,6 +80,14 @@ public class InfMinigame : BaseMinigame
 
         base.Update();
         if (!active) return;
+
+        for(int i = 0; i < 2; i++)
+        {
+            // if(is used[id])
+            // access the data and update the UI
+            // change the whole system to work for 2 players
+            // add a class or an array idc
+        }
 
         if (Input.GetKey(flyKey))
             velocity.y += liftForce * UnityEngine.Time.deltaTime;
