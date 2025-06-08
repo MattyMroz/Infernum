@@ -2,9 +2,28 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 
+//minigames
+public enum MinigameID
+{
+    Math,
+    Prog,
+    Inf,
+    Graph,
+    Elek
+}
+
+[System.Serializable]
+public class MinigameConfig
+{
+    public MinigameID id;          // do którego trybu pasuje
+    public GameObject panel;       // panel UI na Canvasie gracza
+    public KeyCode exitKey;     // klawisz „wyjdŸ”
+    public KeyCode[] actionKeys;  // klawisze u¿ywane w trakcie (0-n)
+}
 
 public class Player : MonoBehaviour
 {
+    
     public int id;
     public string player_name;
 
@@ -25,6 +44,12 @@ public class Player : MonoBehaviour
     public int Wisdom { get { return wisdom; } set { wisdom = value; } }
     public int Endurance { get { return endurance; } set { endurance = value; } }
     public int Hunger { get { return hunger; } set { hunger = value; } } //Using in DisplayStats
+
+
+    public List<MinigameConfig> minigames;
+    public MinigameConfig GetConfig(MinigameID id) =>
+            minigames.Find(c => c.id == id);
+
 
     private void InitStats()
     {
@@ -119,5 +144,29 @@ public class Player : MonoBehaviour
         {
             current_map_bounds = collision.gameObject;
         }
+    }
+
+    // lvl_increace
+    public (int lvl, int exp, int divide) LvlIncrease(int exp)
+    {
+        int level = 0;
+        int divide = 100;
+
+        int i = 1;
+        while (exp >= 100)
+        {
+            if (exp - (100 * i) >= 0)
+            {
+                divide = i * 100;
+                exp -= 100 * i;
+                level++;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return (level, exp, divide);
     }
 }
