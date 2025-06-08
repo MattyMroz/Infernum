@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class MathMinigame : BaseMinigame
@@ -7,129 +6,173 @@ public class MathMinigame : BaseMinigame
     [System.Serializable]
     public class PlayerSlot
     {
-        public Player player;
-        public GameObject panel;
-        public KeyCode exitKey;
+        public Player player;               // obiekt Player
+        public GameObject panel;                // panel UI gracza
+        public KeyCode exitKey = KeyCode.F;  // klawisz wyjścia
     }
 
-    [Header("Players")]
-    [SerializeField] private PlayerSlot player1;
-    [SerializeField] private PlayerSlot player2;
-
-    private TextMeshProUGUI displayNumber;
-    private TMP_InputField inputField;
-    private TextMeshProUGUI lvlTxt;
-    private TextMeshProUGUI expTxt;
-    private TextMeshProUGUI timeTxt;
-    private TextMeshProUGUI nameTxt;
+    [Header("Players (P1 = 0, P2 = 1)")]
+    [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
 
     [Header("Gameplay")]
     [SerializeField] private int mathGain = 10;
-    [SerializeField] private int knowledgeIndex = 0;   // Math
+    [SerializeField] private int knowledgeIndex = 0;   // Mathematics
 
-    private int randomNumber;
-    private PlayerSlot cur;            // aktualnie grający slot - chodzi o gracza
+    /* --------- stan jednej sesji --------- */
+    private class Session
+    {
+        public bool active;
+        public PlayerSlot slot;
 
-    /* ───── Interakcja z obiektem w świecie ───── */
+        // UI
+        public TextMeshProUGUI displayNumber;
+        public TMP_InputField inputField;
+        public TextMeshProUGUI lvl, exp, time, name;
+
+        // Gameplay
+        public int randomNumber;
+    }
+
+    private readonly Session[] sessions = { new Session(), new Session() };
+
+    /* --------- wejście w minigrę --------- */
     public override void React(GameObject playerGO)
     {
-        cur = playerGO == player1.player.gameObject ? player1 : player2;
+        for (int i = 0; i < slots.Length; i++)
+            if (playerGO == slots[i].player.gameObject && !sessions[i].active)
+            {
+                StartSession(i);
+                return;
+            }
+    }
 
-        // boot bazowej logiki (blokada ruchu + pokazanie panelu) - CHAT UGOTOWAŁ - CZEMU MUSIAŁEM NAPISAĆ SPECJALNIE Boot()? WTF
-        Boot(playerGO, new MinigameConfig
+    /* --------- start / koniec --------- */
+    private void StartSession(int id)
+    {
+        var s = sessions[id];
+        s.active = true;
+        s.slot = slots[id];
+
+        BindUI(s);
+        SetupInput(s);
+        GenerateNumber(s);
+        UpdateHud(s);
+
+        ToggleMovement(s.slot.player, true);
+        TogglePlayerHud(s.slot.player, false);
+        s.slot.panel.SetActive(true);
+    }
+
+    private void EndSession(int id)
+    {
+        var s = sessions[id];
+        s.active = false;
+        s.slot.panel.SetActive(false);
+
+        ToggleMovement(s.slot.player, false);
+        TogglePlayerHud(s.slot.player, true);
+    }
+
+    /* --------- UNITY UPDATE --------- */
+    protected override void Update()       // <- override, nie ukrywa bazy
+    {
+        for (int i = 0; i < sessions.Length; i++)
         {
-            panel = cur.panel,
-            exitKey = cur.exitKey,
-            actionKeys = null
-        });
-    }
+            var s = sessions[i];
+            if (!s.active) continue;
 
-    // Błagam zostawcie to w spokoju. // To wywołuje bazowa klasa przy bootowaniu minigry.
-    protected override void OnBoot(MinigameConfig _)
-    {
-        BindUI(cur.panel);
-        nameTxt.text = "Matematyka";
+        
 
-        inputField.contentType = TMP_InputField.ContentType.IntegerNumber;
-        inputField.characterValidation = TMP_InputField.CharacterValidation.Digit;
-        inputField.onValidateInput += OnlyDigits;
-        inputField.onEndEdit.AddListener(CheckInput);
+            UpdateHud(s);
 
-        GenerateNumber();
-        UpdateHUD();
-        FocusInput();
-    }
+            if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
 
-    protected override void OnOpen()
-    {
-        BindUI(cur.panel);
-        FocusInput();
-    }
-
-    protected override void Update()
-    {
-        if (player == null)
-            return;
-
-        UpdateHUD();
-
-        base.Update();                      //  Exit
-        if (!active) return;
-
-        if (inputField.isFocused &&
-            (Input.GetKeyDown(KeyCode.LeftArrow) ||
-             Input.GetKeyDown(KeyCode.RightArrow) ||
-             Input.GetKeyDown(KeyCode.UpArrow) ||
-             Input.GetKeyDown(KeyCode.DownArrow)))
-        {
-            int len = inputField.text.Length;
-            inputField.caretPosition =
-            inputField.selectionAnchorPosition =
-            inputField.selectionFocusPosition = len;
+            MaintainCaret(s);
+            UpdateHud(s);      // odświeżamy co klatkę, by HUD był aktualny
         }
     }
 
-    private void BindUI(GameObject panel)
+    /* --------- Helpers --------- */
+    private void BindUI(Session s)
     {
-        // znajdowanie obietków po nazwach
-        displayNumber = panel.transform.Find("DisplayNumber").GetComponent<TextMeshProUGUI>();
-        inputField = panel.transform.Find("InputNumber").GetComponent<TMP_InputField>();
-        lvlTxt = panel.transform.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
-        expTxt = panel.transform.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
-        timeTxt = panel.transform.Find("Time").GetComponent<TextMeshProUGUI>();
-        nameTxt = panel.transform.Find("MinigameName").GetComponent<TextMeshProUGUI>();
+        Transform t = s.slot.panel.transform;
+        s.displayNumber = t.Find("DisplayNumber").GetComponent<TextMeshProUGUI>();
+        s.inputField = t.Find("InputNumber").GetComponent<TMP_InputField>();
+        s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        s.name = t.Find("MinigameName").GetComponent<TextMeshProUGUI>();
     }
 
-    private void GenerateNumber()
+    private void SetupInput(Session s)
     {
-        randomNumber = Random.Range(1_000_000, 10_000_000);
-        displayNumber.text = randomNumber.ToString();
-        inputField.text = string.Empty;
+        s.name.text = "Matematyka";
+
+        s.inputField.contentType = TMP_InputField.ContentType.IntegerNumber;
+        s.inputField.characterValidation = TMP_InputField.CharacterValidation.Digit;
+        s.inputField.onValidateInput = OnlyDigits;
+        s.inputField.onEndEdit.RemoveAllListeners();
+        s.inputField.onEndEdit.AddListener(str => CheckInput(s, str));
+        s.inputField.ActivateInputField();
     }
 
-    private void CheckInput(string userInput)
+    private void GenerateNumber(Session s)
+    {
+        s.randomNumber = Random.Range(1_000_000, 10_000_000);
+        s.displayNumber.text = s.randomNumber.ToString();
+        s.inputField.text = string.Empty;
+    }
+
+    private void CheckInput(Session s, string userInput)
     {
         if (string.IsNullOrWhiteSpace(userInput)) return;
 
-        if (int.TryParse(userInput, out int n) && n == randomNumber)
-        {
-            player.exams_knowledge[knowledgeIndex] += mathGain;
-            UpdateHUD();
-        }
+        if (int.TryParse(userInput, out int n) && n == s.randomNumber)
+            s.slot.player.exams_knowledge[knowledgeIndex] += mathGain;
 
-        GenerateNumber();
-        FocusInput();
+        GenerateNumber(s);
+        UpdateHud(s);
+        s.inputField.ActivateInputField();
     }
 
-    private char OnlyDigits(string _, int __, char c) => char.IsDigit(c) ? c : '\0';
+    private static char OnlyDigits(string _, int __, char c) =>
+        char.IsDigit(c) ? c : '\0';
 
-    private void UpdateHUD()
+    private void MaintainCaret(Session s)
     {
-        var r = player.LvlIncrease(player.exams_knowledge[knowledgeIndex]);
-        lvlTxt.text = r.lvl.ToString();
-        expTxt.text = $"{r.exp} / {r.divide}";
-        timeTxt.text = Time.Time_now;
+        if (!s.inputField.isFocused) return;
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) ||
+            Input.GetKeyDown(KeyCode.RightArrow) ||
+            Input.GetKeyDown(KeyCode.UpArrow) ||
+            Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            int len = s.inputField.text.Length;
+            s.inputField.caretPosition =
+            s.inputField.selectionAnchorPosition =
+            s.inputField.selectionFocusPosition = len;
+        }
     }
 
-    private void FocusInput() => inputField.ActivateInputField();
+    private void UpdateHud(Session s)
+    {
+        var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[knowledgeIndex]);
+        s.lvl.text = res.lvl.ToString();
+        s.exp.text = $"{res.exp} / {res.divide}";
+        s.time.text = Time.Time_now;
+    }
+
+    /* --------- utility --------- */
+    private static void ToggleMovement(Player p, bool freeze)
+    {
+        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
+        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+    }
+
+    private static void TogglePlayerHud(Player p, bool show)
+    {
+        foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
+            if (c.GetType().Name.StartsWith("Display"))
+                c.enabled = show;
+    }
 }

@@ -10,102 +10,119 @@ public class GraphMinigame : BaseMinigame
         public Player player;
         public GameObject panel;
         public KeyCode exitKey;
-        public KeyCode[] keys = new KeyCode[10];   // 10 klawiszy
+        public KeyCode[] keys = new KeyCode[10];   // klawisze 0-9
     }
 
-    [Header("Players")]
-    [SerializeField] private PlayerSlot player1;
-    [SerializeField] private PlayerSlot player2;
-
-    private TextMeshProUGUI keysTxt, lvlTxt, expTxt, timeTxt, nameTxt;
+    [Header("Players (P1 = 0, P2 = 1)")]
+    [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
 
     [Header("Gameplay")]
     [SerializeField] private int comboGain = 15;
     [SerializeField] private int comboLength = 3;
-    private const int KNOWLEDGE_IDX = 3;
+    private const int KNOWLEDGE_IDX = 3;       // Graphics
 
-    private PlayerSlot cur;
-    private KeyCode[] allowedKeys;
-    private KeyCode[] currentCombo;
+    private class Session
+    {
+        public bool active;
+        public PlayerSlot slot;
+        public TextMeshProUGUI keysTxt, lvl, exp, time, name;
+        public KeyCode[] currentCombo;
+    }
 
-    /* ───── React ───── */
+    private readonly Session[] sessions = { new Session(), new Session() };
+
     public override void React(GameObject playerGO)
     {
-        cur = playerGO == player1.player.gameObject ? player1 : player2;
-
-        // boot bazowej logiki (blokada ruchu + pokazanie panelu)
-        Boot(playerGO, new MinigameConfig
-        {
-            panel = cur.panel,
-            exitKey = cur.exitKey,
-            actionKeys = cur.keys
-        });
+        for (int i = 0; i < slots.Length; i++)
+            if (playerGO == slots[i].player.gameObject && !sessions[i].active)
+                StartSession(i);
     }
 
-    /* ───── Boot / Open ───── */
-    protected override void OnBoot(MinigameConfig cfg)
+    private void StartSession(int id)
     {
-        BindUI(cur.panel);
-        allowedKeys = cfg.actionKeys;
-        nameTxt.text = "Grafika";
-        GenerateCombo();
-        UpdateHUD();
+        var s = sessions[id];
+        s.active = true;
+        s.slot = slots[id];
+        BindUI(s);
+        GenerateCombo(s);
+        UpdateHud(s);
+
+        ToggleMovement(s.slot.player, true);
+        TogglePlayerHud(s.slot.player, false);
+        s.slot.panel.SetActive(true);
     }
 
-    protected override void OnOpen()
+    private void EndSession(int id)
     {
-        BindUI(cur.panel);
-        GenerateCombo();
+        var s = sessions[id];
+        s.active = false;
+        s.slot.panel.SetActive(false);
+
+        ToggleMovement(s.slot.player, false);
+        TogglePlayerHud(s.slot.player, true);
     }
 
-    /* ───── Update ───── */
     protected override void Update()
     {
-        if (player == null)
-            return;
-
-        UpdateHUD();
-
-        base.Update();
-        if (!active || currentCombo == null) return;
-
-        bool allPressed = currentCombo.All(Input.GetKey);
-        bool anyPressedNow = currentCombo.Any(Input.GetKeyDown);
-
-        if (allPressed && anyPressedNow)
+        for (int i = 0; i < sessions.Length; i++)
         {
-            player.exams_knowledge[KNOWLEDGE_IDX] += comboGain;
-            UpdateHUD();
-            GenerateCombo();
+            var s = sessions[i];
+            if (!s.active) continue;
+
+
+            UpdateHud(s);
+
+            if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
+
+            if (s.currentCombo.All(Input.GetKey) && s.currentCombo.Any(Input.GetKeyDown))
+            {
+                s.slot.player.exams_knowledge[KNOWLEDGE_IDX] += comboGain;
+                UpdateHud(s);
+                GenerateCombo(s);
+            }
         }
     }
 
-    /* ───── helpers ───── */
-    private void BindUI(GameObject p)
+    /* ---------- helpers ---------- */
+    private void BindUI(Session s)
     {
-        keysTxt = p.transform.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
-        lvlTxt = p.transform.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
-        expTxt = p.transform.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
-        timeTxt = p.transform.Find("Time").GetComponent<TextMeshProUGUI>();
-        nameTxt = p.transform.Find("MinigameName").GetComponent<TextMeshProUGUI>();
+        var t = s.slot.panel.transform;
+        s.keysTxt = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
+        s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        s.name = t.Find("MinigameName").GetComponent<TextMeshProUGUI>();
+        s.name.text = "Grafika";
     }
 
-    private void GenerateCombo()
+    private void GenerateCombo(Session s)
     {
-        currentCombo = allowedKeys
+        s.currentCombo = s.slot.keys
             .OrderBy(_ => Random.value)
             .Take(comboLength)
             .ToArray();
 
-        keysTxt.text = string.Join(" + ",
-            currentCombo.Select(k => k.ToString().Replace("Alpha", "").Replace("Keypad", "")));
+        s.keysTxt.text = string.Join(" + ",
+            s.currentCombo.Select(k => k.ToString().Replace("Alpha", "").Replace("Keypad", "")));
     }
 
-    private void UpdateHUD()
+    private void UpdateHud(Session s)
     {
-        var r = player.LvlIncrease(player.exams_knowledge[KNOWLEDGE_IDX]);
-        lvlTxt.text = r.lvl.ToString();
-        expTxt.text = $"{r.exp} / {r.divide}";
-        timeTxt.text = Time.Time_now;
+        var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[KNOWLEDGE_IDX]);
+        s.lvl.text = res.lvl.ToString();
+        s.exp.text = $"{res.exp} / {res.divide}";
+        s.time.text = Time.Time_now;
+    }
+
+    private static void ToggleMovement(Player p, bool freeze)
+    {
+        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
+        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+    }
+    private static void TogglePlayerHud(Player p, bool show)
+    {
+        foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
+            if (c.GetType().Name.StartsWith("Display"))
+                c.enabled = show;
     }
 }

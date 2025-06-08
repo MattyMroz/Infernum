@@ -6,82 +6,116 @@ public class ProgMinigame : BaseMinigame
     [System.Serializable]
     public class PlayerSlot
     {
-        public Player player;
-        public GameObject panel;
-        public KeyCode exitKey;
-        public KeyCode actionKey;
+        public Player player;      // obiekt Player
+        public GameObject panel;       // panel UI gracza
+        public KeyCode exitKey;     // klawisz wyjścia
+        public KeyCode actionKey;   // klawisz „klik”
     }
 
-    [Header("Players")]
-    [SerializeField] private PlayerSlot player1;
-    [SerializeField] private PlayerSlot player2;
-
-    private TextMeshProUGUI lvlTxt, expTxt, timeTxt, nameTxt;
+    [Header("Players (P1 = 0, P2 = 1)")]
+    [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
 
     [Header("Gameplay")]
     [SerializeField] private int keyGain = 1;
-    private const int KNOWLEDGE_IDX = 2;
+    private const int KNOWLEDGE_IDX = 2;   // Programming
 
-    private PlayerSlot cur;
-    private KeyCode clickKey;
+    /* --------- stan jednej sesji --------- */
+    private class Session
+    {
+        public bool active;
+        public PlayerSlot slot;
+        public TextMeshProUGUI lvl, exp, time, name;
+    }
 
-    /* ───── React ───── */
+    private readonly Session[] sessions = { new Session(), new Session() };
+
+    /* --------- React --------- */
     public override void React(GameObject playerGO)
     {
-        cur = playerGO == player1.player.gameObject ? player1 : player2;
-
-        // boot bazowej logiki (blokada ruchu + pokazanie panelu)
-        Boot(playerGO, new MinigameConfig
-        {
-            panel = cur.panel,
-            exitKey = cur.exitKey,
-            actionKeys = new[] { cur.actionKey }
-        });
+        for (int i = 0; i < slots.Length; i++)
+            if (playerGO == slots[i].player.gameObject && !sessions[i].active)
+            {
+                StartSession(i);
+                return;
+            }
     }
 
-    /* ───── Boot / Open ───── */
-    protected override void OnBoot(MinigameConfig cfg)
+    /* --------- Start / End --------- */
+    private void StartSession(int id)
     {
-        BindUI(cur.panel);
-        clickKey = cfg.actionKeys[0];
-        nameTxt.text = "Programowanie";
-        UpdateHUD();
+        var s = sessions[id];
+        s.active = true;
+        s.slot = slots[id];
+
+        BindUI(s);
+        UpdateHud(s);
+
+        ToggleMovement(s.slot.player, true);
+        TogglePlayerHud(s.slot.player, false);
+        s.slot.panel.SetActive(true);
     }
 
-    protected override void OnOpen() => BindUI(cur.panel);
-
-    /* ───── Update ───── */
-    protected override void Update()
+    private void EndSession(int id)
     {
-        if (player == null)
-            return;
+        var s = sessions[id];
+        s.active = false;
+        s.slot.panel.SetActive(false);
 
-        UpdateHUD();
+        ToggleMovement(s.slot.player, false);
+        TogglePlayerHud(s.slot.player, true);
+    }
 
-        base.Update();
-        if (!active) return;
-
-        if (Input.GetKeyDown(clickKey))
+    /* --------- Update --------- */
+    protected override void Update()   // override, nie ukrywa bazy
+    {
+        for (int i = 0; i < sessions.Length; i++)
         {
-            player.exams_knowledge[KNOWLEDGE_IDX] += keyGain;
-            UpdateHUD();
+            var s = sessions[i];
+            if (!s.active) continue;
+
+
+            UpdateHud(s);
+
+            if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
+
+            if (Input.GetKeyDown(s.slot.actionKey))
+            {
+                s.slot.player.exams_knowledge[KNOWLEDGE_IDX] += keyGain;
+                UpdateHud(s);
+            }
         }
     }
 
-    /* ───── UI helpers ───── */
-    private void BindUI(GameObject p)
+    /* --------- UI / HUD --------- */
+    private void BindUI(Session s)
     {
-        lvlTxt = p.transform.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
-        expTxt = p.transform.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
-        timeTxt = p.transform.Find("Time").GetComponent<TextMeshProUGUI>();
-        nameTxt = p.transform.Find("MinigameName").GetComponent<TextMeshProUGUI>();
+        Transform t = s.slot.panel.transform;
+        s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        s.name = t.Find("MinigameName").GetComponent<TextMeshProUGUI>();
+        s.name.text = "Programowanie";
     }
 
-    private void UpdateHUD()
+    private void UpdateHud(Session s)
     {
-        var r = player.LvlIncrease(player.exams_knowledge[KNOWLEDGE_IDX]);
-        lvlTxt.text = r.lvl.ToString();
-        expTxt.text = $"{r.exp} / {r.divide}";
-        timeTxt.text = Time.Time_now;
+        var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[KNOWLEDGE_IDX]);
+        s.lvl.text = res.lvl.ToString();
+        s.exp.text = $"{res.exp} / {res.divide}";
+        s.time.text = Time.Time_now;
+    }
+
+    /* --------- helpers --------- */
+    private static void ToggleMovement(Player p, bool freeze)
+    {
+        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
+        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+    }
+
+    private static void TogglePlayerHud(Player p, bool show)
+    {
+        foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
+            if (c.GetType().Name.StartsWith("Display"))
+                c.enabled = show;
     }
 }
