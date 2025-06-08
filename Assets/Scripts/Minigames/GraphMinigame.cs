@@ -1,83 +1,128 @@
-using System.Linq;
+﻿using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using System.Collections;
 
-public class GraphMinigame : MonoBehaviour
+public class GraphMinigame : BaseMinigame
 {
-    [Header("UI")]
-    [SerializeField] private GameObject _panel;
-    [SerializeField] private TextMeshProUGUI displayKeys;
-    [SerializeField] private TextMeshProUGUI displayLvl;
-    [SerializeField] private TextMeshProUGUI displayExp;
+    [System.Serializable]
+    public class PlayerSlot
+    {
+        public Player player;
+        public GameObject panel;
+        public KeyCode exitKey;
+        public KeyCode[] keys = new KeyCode[10];   // klawisze 0-9
+    }
+
+    [Header("Players (P1 = 0, P2 = 1)")]
+    [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
 
     [Header("Gameplay")]
-    [SerializeField] private GameObject _player;
     [SerializeField] private int comboGain = 15;
     [SerializeField] private int comboLength = 3;
+    private const int KNOWLEDGE_IDX = 3;       // Graphics
 
-    private readonly KeyCode[] _possibleKeys =
+    private class Session
     {
-        KeyCode.Alpha0, KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4,
-        KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9
-    };
-
-    private KeyCode[] _currentCombo;
-    private Player _playerScript;
-
-
-    private IEnumerator Start()
-    {
-        _playerScript = _player.GetComponent<Player>();
-
-        yield return null;
-
-        GenerateCombo();
-        UpdateHud();
+        public bool active;
+        public PlayerSlot slot;
+        public TextMeshProUGUI keysTxt, lvl, exp, time, name;
+        public KeyCode[] currentCombo;
     }
 
+    private readonly Session[] sessions = { new Session(), new Session() };
 
-    private void Update()
+    public override void React(GameObject playerGO)
     {
-        if (_currentCombo == null) return;            
+        for (int i = 0; i < slots.Length; i++)
+            if (playerGO == slots[i].player.gameObject && !sessions[i].active)
+                StartSession(i);
+    }
 
-        if (Input.GetKeyDown(KeyCode.X))            
+    private void StartSession(int id)
+    {
+        var s = sessions[id];
+        s.active = true;
+        s.slot = slots[id];
+        BindUI(s);
+        GenerateCombo(s);
+        UpdateHud(s);
+
+        ToggleMovement(s.slot.player, true);
+        TogglePlayerHud(s.slot.player, false);
+        s.slot.panel.SetActive(true);
+    }
+
+    private void EndSession(int id)
+    {
+        var s = sessions[id];
+        s.active = false;
+        s.slot.panel.SetActive(false);
+
+        ToggleMovement(s.slot.player, false);
+        TogglePlayerHud(s.slot.player, true);
+    }
+
+    protected override void Update()
+    {
+        for (int i = 0; i < sessions.Length; i++)
         {
-            _panel.SetActive(false);
-            enabled = false;                          
-            return;
-        }
+            var s = sessions[i];
+            if (!s.active) continue;
 
-        bool allPressed = _currentCombo.All(Input.GetKey);
-        bool anyPressedNow = _currentCombo.Any(Input.GetKeyDown);
 
-        if (allPressed && anyPressedNow)
-        {
-            _playerScript.exams_knowledge[3] += comboGain;
-            UpdateHud();
-            GenerateCombo();
+            UpdateHud(s);
+
+            if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
+
+            if (s.currentCombo.All(Input.GetKey) && s.currentCombo.Any(Input.GetKeyDown))
+            {
+                s.slot.player.exams_knowledge[KNOWLEDGE_IDX] += comboGain;
+                UpdateHud(s);
+                GenerateCombo(s);
+            }
         }
     }
 
-  
-    private void GenerateCombo()
+    /* ---------- helpers ---------- */
+    private void BindUI(Session s)
     {
-        _currentCombo = _possibleKeys
+        var t = s.slot.panel.transform;
+        s.keysTxt = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
+        s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        s.name = t.Find("MinigameName").GetComponent<TextMeshProUGUI>();
+        s.name.text = "Grafika";
+    }
+
+    private void GenerateCombo(Session s)
+    {
+        s.currentCombo = s.slot.keys
             .OrderBy(_ => Random.value)
             .Take(comboLength)
             .ToArray();
 
-        displayKeys.text = string.Join(" + ",
-            _currentCombo.Select(k => k.ToString().Replace("Alpha", "")));
+        s.keysTxt.text = string.Join(" + ",
+            s.currentCombo.Select(k => k.ToString().Replace("Alpha", "").Replace("Keypad", "")));
     }
 
-    private void UpdateHud()
+    private void UpdateHud(Session s)
     {
-        int totalExp = _playerScript.exams_knowledge[3];
-        displayLvl.text = $"{totalExp / 100}";
-        displayExp.text = $"{totalExp % 100} / 100";
+        var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[KNOWLEDGE_IDX]);
+        s.lvl.text = res.lvl.ToString();
+        s.exp.text = $"{res.exp} / {res.divide}";
+        s.time.text = Time.Time_now;
     }
 
-    public void FocusInput() { }
+    private static void ToggleMovement(Player p, bool freeze)
+    {
+        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
+        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+    }
+    private static void TogglePlayerHud(Player p, bool show)
+    {
+        foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
+            if (c.GetType().Name.StartsWith("Display"))
+                c.enabled = show;
+    }
 }

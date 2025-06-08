@@ -1,95 +1,178 @@
-﻿using System.Collections;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;  
 
-public class MathMinigame : MonoBehaviour
+public class MathMinigame : BaseMinigame
 {
-  
-    [Header("UI")]
-    [SerializeField] private GameObject _panel;
-    [SerializeField] private TextMeshProUGUI displayNumber;
-    [SerializeField] private TMP_InputField inputField;
+    [System.Serializable]
+    public class PlayerSlot
+    {
+        public Player player;               // obiekt Player
+        public GameObject panel;                // panel UI gracza
+        public KeyCode exitKey = KeyCode.F;  // klawisz wyjścia
+    }
 
-    [SerializeField] private TextMeshProUGUI DisplayLvl;
-    [SerializeField] private TextMeshProUGUI DisplayExp;
+    [Header("Players (P1 = 0, P2 = 1)")]
+    [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
 
     [Header("Gameplay")]
-    [SerializeField] private GameObject _player;
     [SerializeField] private int mathGain = 10;
+    [SerializeField] private int knowledgeIndex = 0;   // Mathematics
 
-  
-    private int randomNumber;
-    private Player _playerScript;
-
-
-    private IEnumerator Start()
+    /* --------- stan jednej sesji --------- */
+    private class Session
     {
-        _playerScript = _player.GetComponent<Player>();
+        public bool active;
+        public PlayerSlot slot;
 
-        inputField.contentType = TMP_InputField.ContentType.IntegerNumber;
-        inputField.characterValidation = TMP_InputField.CharacterValidation.Digit;
-        inputField.onValidateInput += OnlyDigits;
+        // UI
+        public TextMeshProUGUI displayNumber;
+        public TMP_InputField inputField;
+        public TextMeshProUGUI lvl, exp, time, name;
 
-        yield return null;
-
-        GenerateNumber();
-
-        inputField.onEndEdit.AddListener(CheckInput);
-        inputField.ActivateInputField();          
+        // Gameplay
+        public int randomNumber;
     }
 
-    void Update()
-    {
-        if (!inputField.isFocused) return;
+    private readonly Session[] sessions = { new Session(), new Session() };
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+    /* --------- wejście w minigrę --------- */
+    public override void React(GameObject playerGO)
+    {
+        for (int i = 0; i < slots.Length; i++)
+            if (playerGO == slots[i].player.gameObject && !sessions[i].active)
+            {
+                StartSession(i);
+                return;
+            }
+    }
+
+    /* --------- start / koniec --------- */
+    private void StartSession(int id)
+    {
+        var s = sessions[id];
+        s.active = true;
+        s.slot = slots[id];
+
+        BindUI(s);
+        SetupInput(s);
+        GenerateNumber(s);
+        UpdateHud(s);
+
+        ToggleMovement(s.slot.player, true);
+        TogglePlayerHud(s.slot.player, false);
+        s.slot.panel.SetActive(true);
+    }
+
+    private void EndSession(int id)
+    {
+        var s = sessions[id];
+        s.active = false;
+        s.slot.panel.SetActive(false);
+
+        ToggleMovement(s.slot.player, false);
+        TogglePlayerHud(s.slot.player, true);
+    }
+
+    /* --------- UNITY UPDATE --------- */
+    protected override void Update()       // <- override, nie ukrywa bazy
+    {
+        for (int i = 0; i < sessions.Length; i++)
         {
-            int len = inputField.text.Length;
-            inputField.caretPosition =
-            inputField.selectionAnchorPosition =
-            inputField.selectionFocusPosition = len;
+            var s = sessions[i];
+            if (!s.active) continue;
+
+        
+
+            UpdateHud(s);
+
+            if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
+
+            MaintainCaret(s);
+            UpdateHud(s);      // odświeżamy co klatkę, by HUD był aktualny
         }
     }
 
-
-    void GenerateNumber()
+    /* --------- Helpers --------- */
+    private void BindUI(Session s)
     {
-        randomNumber = Random.Range(1_000_000, 10_000_000);
-        displayNumber.text = randomNumber.ToString();
-
-        UpdateHud();
-
-        inputField.text = string.Empty;
+        Transform t = s.slot.panel.transform;
+        s.displayNumber = t.Find("DisplayNumber").GetComponent<TextMeshProUGUI>();
+        s.inputField = t.Find("InputNumber").GetComponent<TMP_InputField>();
+        s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        s.name = t.Find("MinigameName").GetComponent<TextMeshProUGUI>();
     }
 
-
-    void CheckInput(string userInput)
+    private void SetupInput(Session s)
     {
-        if (string.IsNullOrWhiteSpace(userInput))
-            return;
+        s.name.text = "Matematyka";
 
-        if (int.TryParse(userInput, out int inputNumber) && inputNumber == randomNumber)
+        s.inputField.contentType = TMP_InputField.ContentType.IntegerNumber;
+        s.inputField.characterValidation = TMP_InputField.CharacterValidation.Digit;
+        s.inputField.onValidateInput = OnlyDigits;
+        s.inputField.onEndEdit.RemoveAllListeners();
+        s.inputField.onEndEdit.AddListener(str => CheckInput(s, str));
+        s.inputField.ActivateInputField();
+    }
+
+    private void GenerateNumber(Session s)
+    {
+        s.randomNumber = Random.Range(1_000_000, 10_000_000);
+        s.displayNumber.text = s.randomNumber.ToString();
+        s.inputField.text = string.Empty;
+    }
+
+    private void CheckInput(Session s, string userInput)
+    {
+        if (string.IsNullOrWhiteSpace(userInput)) return;
+
+        if (int.TryParse(userInput, out int n) && n == s.randomNumber)
+            s.slot.player.exams_knowledge[knowledgeIndex] += mathGain;
+
+        GenerateNumber(s);
+        UpdateHud(s);
+        s.inputField.ActivateInputField();
+    }
+
+    private static char OnlyDigits(string _, int __, char c) =>
+        char.IsDigit(c) ? c : '\0';
+
+    private void MaintainCaret(Session s)
+    {
+        if (!s.inputField.isFocused) return;
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) ||
+            Input.GetKeyDown(KeyCode.RightArrow) ||
+            Input.GetKeyDown(KeyCode.UpArrow) ||
+            Input.GetKeyDown(KeyCode.DownArrow))
         {
-            _playerScript.exams_knowledge[0] += mathGain;
-            UpdateHud();
+            int len = s.inputField.text.Length;
+            s.inputField.caretPosition =
+            s.inputField.selectionAnchorPosition =
+            s.inputField.selectionFocusPosition = len;
         }
-
-        GenerateNumber();
-
-        inputField.ActivateInputField();
-
     }
 
-    private char OnlyDigits(string text, int index, char addedChar) => char.IsDigit(addedChar) ? addedChar : '\0';
-
-    private void UpdateHud()
+    private void UpdateHud(Session s)
     {
-        int lvl = _playerScript.exams_knowledge[0] / 100;
-        DisplayLvl.text = $"{lvl}";
-        int exp = _playerScript.exams_knowledge[0] % 100;
-        DisplayExp.text = $"{exp} / 100";
+        var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[knowledgeIndex]);
+        s.lvl.text = res.lvl.ToString();
+        s.exp.text = $"{res.exp} / {res.divide}";
+        s.time.text = Time.Time_now;
     }
 
-    public void FocusInput() => inputField.ActivateInputField();
+    /* --------- utility --------- */
+    private static void ToggleMovement(Player p, bool freeze)
+    {
+        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
+        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+    }
+
+    private static void TogglePlayerHud(Player p, bool show)
+    {
+        foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
+            if (c.GetType().Name.StartsWith("Display"))
+                c.enabled = show;
+    }
 }
