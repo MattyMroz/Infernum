@@ -3265,19 +3265,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   used: 0000
-  player1:
-    player: {fileID: 920649277}
+  slots:
+  - player: {fileID: 920649277}
     panel: {fileID: 1422357133}
     exitKey: 120
     actionKey: 32
-  player2:
-    player: {fileID: 145639000}
+  - player: {fileID: 145639000}
     panel: {fileID: 1493568449}
     exitKey: 268
     actionKey: 256
   liftForce: 1800
   gravity: 900
+  zoneSpeed: 100
   expPerSec: 5
+  knowledgeId: 1
 --- !u!1 &339524546
 GameObject:
   m_ObjectHideFlags: 0
@@ -10611,13 +10612,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   used: 0000
-  player1:
-    player: {fileID: 920649277}
+  slots:
+  - player: {fileID: 920649277}
     panel: {fileID: 914699885}
     exitKey: 120
     actionKey: 32
-  player2:
-    player: {fileID: 145639000}
+  - player: {fileID: 145639000}
     panel: {fileID: 348311648}
     exitKey: 268
     actionKey: 256
@@ -16009,12 +16009,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   used: 0000
-  player1:
-    player: {fileID: 920649277}
+  slots:
+  - player: {fileID: 920649277}
     panel: {fileID: 808042284}
     exitKey: 120
-  player2:
-    player: {fileID: 145639000}
+  - player: {fileID: 145639000}
     panel: {fileID: 2032268356}
     exitKey: 268
   mathGain: 10
@@ -17459,13 +17458,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   used: 0000
-  player1:
-    player: {fileID: 920649277}
+  slots:
+  - player: {fileID: 920649277}
     panel: {fileID: 33131771}
     exitKey: 120
     actionKey: 32
-  player2:
-    player: {fileID: 145639000}
+  - player: {fileID: 145639000}
     panel: {fileID: 1478306755}
     exitKey: 268
     actionKey: 256
@@ -18944,15 +18942,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   used: 0000
-  player1:
-    player: {fileID: 920649277}
+  slots:
+  - player: {fileID: 920649277}
     panel: {fileID: 961507010}
     exitKey: 120
     keys: 30000000310000003200000033000000340000003500000036000000370000003800000039000000
-  player2:
-    player: {fileID: 145639000}
-    panel: {fileID: 961507010}
-    exitKey: 268
+  - player: {fileID: 145639000}
+    panel: {fileID: 215412171}
+    exitKey: 0
     keys: 00010000010100000201000003010000040100000501000006010000070100000801000009010000
   comboGain: 15
   comboLength: 3
