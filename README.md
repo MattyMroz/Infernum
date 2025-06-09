@@ -40,12 +40,12 @@ Możesz wygenerować wizualizację diagramu, kopiując poniższy kod i wklejają
 [Ocena]1 - 1[Przedmiot],
 [Egzamin]1 - 1[Przedmiot],
 [Kamera]1 - 1[Gracz],
-[Gracz]1 - 0..*[ObiektInteraktywny],
-[Gracz]1 - 0..*[Minigra],
+[Gracz]1 - 0..1[ObiektInteraktywny],
 [ObiektInteraktywny]^[Egzamin],
 [ObiektInteraktywny]^[Jedzenie],
 [ObiektInteraktywny]^[Teleport],
 [ObiektInteraktywny]^[Kosz],
+[ObiektInteraktywny]^[Minigra],
 [Minigra]^[MinigraInf],
 [Minigra]^[MinigraElek],
 [Minigra]^[MinigraMat],
@@ -53,7 +53,7 @@ Możesz wygenerować wizualizację diagramu, kopiując poniższy kod i wklejają
 [Minigra]^[MinigraGraf]
 ```
 
-![Diagram UML Architektury Gry](https://yuml.me/9a6da8cf.jpg)
+![Diagram UML Architektury Gry](https://yuml.me/3031a431.jpg)
 
 
 ## 🕹️ Jak Grać?
