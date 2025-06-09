@@ -31,11 +31,7 @@ public class Exam : Interactable
     {
         Player player_script = player.GetComponent<Player>();
 
-        if (used[player_script.id] || takes[player_script.id] >= 2)
-            return;
-
         player_script.TakeExam(this);
-        used[player_script.id] = true;
     }
 }
 
