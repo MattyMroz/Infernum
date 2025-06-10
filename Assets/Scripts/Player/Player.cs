@@ -164,19 +164,15 @@ public class Player : MonoBehaviour
         int divide = 100;
 
         int i = 1;
-        while (exp >= 100)
+        while (exp >= i * 100)
         {
-            if (exp - (100 * i) >= 0)
-            {
-                divide = i * 100;
-                exp -= 100 * i;
-                level++;
-            }
-            else
-            {
-                break;
-            }
+            divide = i * 100;
+            exp -= divide;
+            level++;
+            i++;
         }
+
+        divide = i * 100;
 
         return (level, exp, divide);
     }

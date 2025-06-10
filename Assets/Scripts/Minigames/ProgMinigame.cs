@@ -66,7 +66,7 @@ public class ProgMinigame : BaseMinigame
     }
 
     /* --------- Update --------- */
-    protected override void Update()   // override, nie ukrywa bazy
+    protected override void Update()  
     {
         for (int i = 0; i < sessions.Length; i++)
         {
