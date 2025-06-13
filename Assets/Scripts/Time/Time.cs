@@ -9,8 +9,6 @@ public class Time : MonoBehaviour
     public static bool timeStarted = true;
     private static bool paused = false;
 
-    [SerializeField] private TextMeshProUGUI statsText;
-
     private const float multiplier = (60 * 8) / 3;
     private readonly System.TimeSpan startTime = new System.TimeSpan(8, 0, 0);
     [SerializeField] private int days;
@@ -49,7 +47,7 @@ public class Time : MonoBehaviour
             timeStarted = false;
         }
 
-        statsText.text = $"Day: {days}\nTime: {simulatedTime:hh\\:mm}";
+        //statsText.text = $"Day: {days}\nTime: {simulatedTime:hh\\:mm}";
         the_time = simulatedTime.ToString(@"hh\:mm");
     }
 

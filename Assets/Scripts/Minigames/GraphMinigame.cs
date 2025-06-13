@@ -25,7 +25,7 @@ public class GraphMinigame : BaseMinigame
     {
         public bool active;
         public PlayerSlot slot;
-        public TextMeshProUGUI keysTxt, lvl, exp, time, name;
+        public TextMeshProUGUI playerName, day, keysTxt, lvl, exp, time, name;
         public KeyCode[] currentCombo;
         public bool comboReady;
     }
@@ -106,6 +106,8 @@ public class GraphMinigame : BaseMinigame
     private void BindUI(Session s)
     {
         var t = s.slot.panel.transform;
+        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
+        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
         s.keysTxt = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
@@ -116,8 +118,6 @@ public class GraphMinigame : BaseMinigame
 
     private void GenerateCombo(Session s)
     {
-        Debug.Log("GenerateCombo called for: " + s.slot.player.name);
-
         s.currentCombo = s.slot.keys
             .OrderBy(_ => Random.value)
             .Take(comboLength)
@@ -132,6 +132,8 @@ public class GraphMinigame : BaseMinigame
         s.lvl.text = res.lvl.ToString();
         s.exp.text = $"{res.exp} / {res.divide}";
         s.time.text = Time.Time_now;
+        s.playerName.text = s.slot.player.player_name;
+        s.day.text = $"Dzień: {Time.Days}";
     }
 
     private static void ToggleMovement(Player p, bool freeze)

@@ -21,6 +21,7 @@ public class ElekMinigame : BaseMinigame
     [SerializeField] private int baseGain = 25;
     [SerializeField] private float minWait = 1f;
     [SerializeField] private float maxWait = 3f;
+    [SerializeField] private float nextRoundDelay = 0.5f;
     private const int KNOWLEDGE_IDX = 4;        // Electrotechnics
 
     private class Session
@@ -28,9 +29,11 @@ public class ElekMinigame : BaseMinigame
         public bool active;
         public PlayerSlot slot;
         public Image indicator;
-        public TextMeshProUGUI label, lvl, exp, time, name;
+        public TextMeshProUGUI playerName, day, label, lvl, exp, time, name;
         public bool ready;
         public float goTime;
+        public bool reacted;
+        public Coroutine waitCoroutine;
     }
 
     private readonly Session[] sessions = { new Session(), new Session() };
@@ -50,6 +53,8 @@ public class ElekMinigame : BaseMinigame
         BindUI(s);
 
         s.name.text = "Elektrotechnika";
+        s.playerName.text = s.slot.player.player_name;
+        s.day.text = $"Dzień: {Time.Days}";
         s.label.text = $"REAGUJ '{s.slot.actionKey}'";
         s.indicator.color = Color.red;
 
@@ -57,7 +62,11 @@ public class ElekMinigame : BaseMinigame
         TogglePlayerHud(s.slot.player, false);
         s.slot.panel.SetActive(true);
 
-        StartCoroutine(WaitAndGo(s));
+        if (s.waitCoroutine != null)
+            StopCoroutine(s.waitCoroutine);
+
+        s.waitCoroutine = StartCoroutine(WaitAndGo(s));
+
         UpdateHud(s);
     }
 
@@ -65,7 +74,11 @@ public class ElekMinigame : BaseMinigame
     {
         var s = sessions[id];
         s.active = false;
-        StopAllCoroutines();
+        if (s.waitCoroutine != null)
+        {
+            StopCoroutine(s.waitCoroutine);
+            s.waitCoroutine = null;
+        }
         s.slot.panel.SetActive(false);
 
         ToggleMovement(s.slot.player, false);
@@ -79,45 +92,67 @@ public class ElekMinigame : BaseMinigame
             var s = sessions[i];
             if (!s.active) continue;
 
-
             UpdateHud(s);
 
-            if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
+            if (Input.GetKeyDown(s.slot.exitKey))
+            {
+                EndSession(i);
+                continue;
+            }
 
             if (Input.GetKeyDown(s.slot.actionKey))
             {
-                if (s.ready)
+                if (s.ready && !s.reacted)
                 {
                     float reaction = UnityEngine.Time.time - s.goTime;
                     int gain = Mathf.Max(1, baseGain - Mathf.RoundToInt(reaction * baseGain));
                     s.slot.player.exams_knowledge[KNOWLEDGE_IDX] += gain;
+                    s.reacted = true;
+                    s.ready = false;
                     UpdateHud(s);
-                    StartCoroutine(WaitAndGo(s));
                 }
-                else
+                else if (!s.ready)
                 {
-                    StopCoroutine("WaitAndGo");
-                    StartCoroutine(WaitAndGo(s));
+                    if (s.waitCoroutine != null)
+                        StopCoroutine(s.waitCoroutine);
+
+                    s.waitCoroutine = StartCoroutine(WaitAndGo(s));
                 }
             }
         }
     }
 
+
     private IEnumerator WaitAndGo(Session s)
     {
         s.ready = false;
+        s.reacted = false;
         s.indicator.color = Color.red;
+
         yield return new WaitForSeconds(Random.Range(minWait, maxWait));
 
         s.goTime = UnityEngine.Time.time;
         s.ready = true;
         s.indicator.color = Color.green;
+
+        float timeout = 3f;
+        float waitUntil = UnityEngine.Time.time + timeout;
+
+        while (s.ready && !s.reacted && UnityEngine.Time.time < waitUntil)
+            yield return null;
+
+        yield return new WaitForSeconds(nextRoundDelay);
+
+        s.waitCoroutine = StartCoroutine(WaitAndGo(s));
     }
+
 
     /* ---------- helpers ---------- */
     private void BindUI(Session s)
     {
         var t = s.slot.panel.transform;
+        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
+        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
         s.indicator = t.Find("Image").GetComponent<Image>();
         s.label = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
