@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bbd3f61026d1ea64ba46ee71641958e2
+guid: 1b257e596c1198a42891cf2a48f3e3e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 547169037123937713
-    second: PoliPG11_0
+      213: 2660195087753647290
+    second: Start_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PoliPG11_0
+      name: Start_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b56dd9175fe79700800000000000000
-      internalID: 547169037123937713
+      spriteID: ab49bc68659eae420800000000000000
+      internalID: 2660195087753647290
       vertices: []
       indices: 
       edges: []

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e8d90ae71588e174b842ae288fb821e8
+guid: cf389240757a46d479c85ee5e70a1cff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2525179966659535271
-    second: PoliPG8_0
+      213: -6222790260230172753
+    second: Autorzy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PoliPG8_0
+      name: Autorzy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95e53550332c4fcd0800000000000000
-      internalID: -2525179966659535271
+      spriteID: faf48336a3534a9a0800000000000000
+      internalID: -6222790260230172753
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Autorzy_0: -6222790260230172753
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
