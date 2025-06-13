@@ -27,7 +27,7 @@ public class MathMinigame : BaseMinigame
         // UI
         public TextMeshProUGUI displayNumber;
         public TMP_InputField inputField;
-        public TextMeshProUGUI lvl, exp, time, name;
+        public TextMeshProUGUI playerName, day, lvl, exp, time, name;
 
         // Gameplay
         public int randomNumber;
@@ -96,6 +96,8 @@ public class MathMinigame : BaseMinigame
     private void BindUI(Session s)
     {
         Transform t = s.slot.panel.transform;
+        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
+        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
         s.displayNumber = t.Find("DisplayNumber").GetComponent<TextMeshProUGUI>();
         s.inputField = t.Find("InputNumber").GetComponent<TMP_InputField>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
@@ -107,6 +109,8 @@ public class MathMinigame : BaseMinigame
     private void SetupInput(Session s)
     {
         s.name.text = "Matematyka";
+        s.playerName.text = s.slot.player.player_name;
+        s.day.text = $"Dzień: {Time.Days}";
 
         s.inputField.contentType = TMP_InputField.ContentType.IntegerNumber;
         s.inputField.characterValidation = TMP_InputField.CharacterValidation.Digit;

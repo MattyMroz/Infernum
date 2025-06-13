@@ -24,7 +24,7 @@ public class ProgMinigame : BaseMinigame
     {
         public bool active;
         public PlayerSlot slot;
-        public TextMeshProUGUI lvl, exp, time, name;
+        public TextMeshProUGUI playerName, day, lvl, exp, time, name;
     }
 
     private readonly Session[] sessions = { new Session(), new Session() };
@@ -66,7 +66,7 @@ public class ProgMinigame : BaseMinigame
     }
 
     /* --------- Update --------- */
-    protected override void Update()   // override, nie ukrywa bazy
+    protected override void Update()  
     {
         for (int i = 0; i < sessions.Length; i++)
         {
@@ -90,6 +90,8 @@ public class ProgMinigame : BaseMinigame
     private void BindUI(Session s)
     {
         Transform t = s.slot.panel.transform;
+        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
+        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
         s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
@@ -100,6 +102,8 @@ public class ProgMinigame : BaseMinigame
     private void UpdateHud(Session s)
     {
         var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[KNOWLEDGE_IDX]);
+        s.playerName.text = s.slot.player.player_name;
+        s.day.text = $"Dzień: {Time.Days}";
         s.lvl.text = res.lvl.ToString();
         s.exp.text = $"{res.exp} / {res.divide}";
         s.time.text = Time.Time_now;

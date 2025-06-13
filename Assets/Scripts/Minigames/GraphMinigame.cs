@@ -25,8 +25,9 @@ public class GraphMinigame : BaseMinigame
     {
         public bool active;
         public PlayerSlot slot;
-        public TextMeshProUGUI keysTxt, lvl, exp, time, name;
+        public TextMeshProUGUI playerName, day, keysTxt, lvl, exp, time, name;
         public KeyCode[] currentCombo;
+        public bool comboReady;
     }
 
     private readonly Session[] sessions = { new Session(), new Session() };
@@ -43,6 +44,8 @@ public class GraphMinigame : BaseMinigame
         var s = sessions[id];
         s.active = true;
         s.slot = slots[id];
+
+        s.currentCombo = null;
         BindUI(s);
         GenerateCombo(s);
         UpdateHud(s);
@@ -51,6 +54,7 @@ public class GraphMinigame : BaseMinigame
         TogglePlayerHud(s.slot.player, false);
         s.slot.panel.SetActive(true);
     }
+
 
     private void EndSession(int id)
     {
@@ -69,24 +73,41 @@ public class GraphMinigame : BaseMinigame
             var s = sessions[i];
             if (!s.active) continue;
 
-
             UpdateHud(s);
 
-            if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
+            if (Input.GetKeyDown(s.slot.exitKey))
+            {
+                EndSession(i);
+                continue;
+            }
+
+            if (!s.comboReady)
+            {
+                if (!s.currentCombo.Any(Input.GetKey))
+                {
+                    s.comboReady = true;
+                }
+                continue;
+            }
 
             if (s.currentCombo.All(Input.GetKey) && s.currentCombo.Any(Input.GetKeyDown))
             {
                 s.slot.player.exams_knowledge[KNOWLEDGE_IDX] += comboGain;
                 UpdateHud(s);
                 GenerateCombo(s);
+                s.comboReady = false;
             }
         }
     }
+
+
 
     /* ---------- helpers ---------- */
     private void BindUI(Session s)
     {
         var t = s.slot.panel.transform;
+        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
+        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
         s.keysTxt = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
@@ -102,8 +123,7 @@ public class GraphMinigame : BaseMinigame
             .Take(comboLength)
             .ToArray();
 
-        s.keysTxt.text = string.Join(" + ",
-            s.currentCombo.Select(k => k.ToString().Replace("Alpha", "").Replace("Keypad", "")));
+        s.keysTxt.text = string.Join(" + ", s.currentCombo.Select(k => k.ToString().Replace("Alpha", "").Replace("Keypad", "")));
     }
 
     private void UpdateHud(Session s)
@@ -112,6 +132,8 @@ public class GraphMinigame : BaseMinigame
         s.lvl.text = res.lvl.ToString();
         s.exp.text = $"{res.exp} / {res.divide}";
         s.time.text = Time.Time_now;
+        s.playerName.text = s.slot.player.player_name;
+        s.day.text = $"Dzień: {Time.Days}";
     }
 
     private static void ToggleMovement(Player p, bool freeze)

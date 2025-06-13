@@ -27,7 +27,7 @@ public class InfMinigame : BaseMinigame
     {
         public bool active;
         public PlayerSlot slot;
-        public TextMeshProUGUI lvl, exp, time, name;
+        public TextMeshProUGUI playerName, day, lvl, exp, time, name;
         public RectTransform playArea;
         public Image notPlayArea, ball;
         public Vector2 velocity;
@@ -72,6 +72,8 @@ public class InfMinigame : BaseMinigame
     private void BindUI(Session s)
     {
         var t = s.slot.panel.transform;
+        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
+        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
         s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
@@ -150,6 +152,8 @@ public class InfMinigame : BaseMinigame
         s.exp.text = $"{res.exp} / {res.divide}";
         s.time.text = Time.Time_now;        
         s.name.text = "Informatyka";
+        s.playerName.text = s.slot.player.player_name;
+        s.day.text = $"Dzień: {Time.Days}";
     }
 
     private static void ToggleMovement(Player p, bool freeze)
