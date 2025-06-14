@@ -7,6 +7,8 @@ public class CameraFollow : MonoBehaviour
     private Camera _camera;
     public GameObject _current_map_bounds;
 
+    private Vector2 vel;
+
     private void Start()
     {
         _player_script = player.GetComponent<Player>();

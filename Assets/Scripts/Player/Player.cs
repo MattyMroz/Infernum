@@ -111,12 +111,19 @@ public class Player : MonoBehaviour
     public void TakeExam(Exam exam)
     {
 
+        //StartCoroutine(GetComponent<ExamDisplay>().DiceRoll(overallScore));
+        GetComponent<ExamDisplay>().Open(exam);
+    }
+
+    public int StartExam(Exam exam)
+    {
+
         int chance = Random.Range(1, 21); // Max value is exclusive
         int overallScore = chance;
 
         for (int i = 0; i < exam.exam_types.Count; i++)
         {
-            overallScore += exams_knowledge[(int)exam.exam_types[i]];
+            overallScore += (int)Mathf.Pow(LvlIncrease(exams_knowledge[(int)exam.exam_types[i]]).lvl, 2f);
 
             if (overallScore >= exam.score_to_pass)
             {
@@ -125,6 +132,8 @@ public class Player : MonoBehaviour
                     overallScore = exam.max_score;
 
                 exam.passed[id] = true;
+                exam.score[id] = overallScore;
+                exam.failed[id] = false;
                 //player_exams.SetListText();
 
                 break;
@@ -136,6 +145,8 @@ public class Player : MonoBehaviour
 
             exam.score[id] = overallScore;
         }
+
+        return overallScore;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -153,19 +164,15 @@ public class Player : MonoBehaviour
         int divide = 100;
 
         int i = 1;
-        while (exp >= 100)
+        while (exp >= i * 100)
         {
-            if (exp - (100 * i) >= 0)
-            {
-                divide = i * 100;
-                exp -= 100 * i;
-                level++;
-            }
-            else
-            {
-                break;
-            }
+            divide = i * 100;
+            exp -= divide;
+            level++;
+            i++;
         }
+
+        divide = i * 100;
 
         return (level, exp, divide);
     }
