@@ -3,7 +3,14 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
+    public string displayName = "???";
     public bool[] used = new bool[2];
+
+    void Start()
+    {
+        if (string.IsNullOrWhiteSpace(displayName))
+            displayName = gameObject.name;
+    }
 
     public virtual void React()
     {

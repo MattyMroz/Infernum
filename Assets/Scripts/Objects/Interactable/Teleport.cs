@@ -5,6 +5,11 @@ public class Teleport : Interactable
 
     [SerializeField] Transform other;
 
+    private void Awake()
+    {
+        displayName = "Przejœcie";
+    }
+
     public override void React(GameObject player)
     {
         player.transform.position = other.position;

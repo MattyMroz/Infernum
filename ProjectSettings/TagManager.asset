@@ -8,6 +8,7 @@ TagManager:
   - Beer
   - Exam
   - MapBounds
+  - UIPanel
   layers:
   - Default
   - TransparentFX

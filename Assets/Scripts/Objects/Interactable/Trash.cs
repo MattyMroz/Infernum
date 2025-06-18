@@ -5,6 +5,11 @@ using UnityEngine;
 public class Trash : Interactable
 {
 
+    private void Awake()
+    {
+        displayName = "Kosz na œmieci";
+    }
+
     public override void React(GameObject player)
     {
         Player playerScript = player.GetComponent<Player>();

@@ -35,6 +35,11 @@ public class MathMinigame : BaseMinigame
 
     private readonly Session[] sessions = { new Session(), new Session() };
 
+    private void Awake()
+    {
+        displayName = "Matematyka";
+    }
+
     /* --------- wejście w minigrę --------- */
     public override void React(GameObject playerGO)
     {

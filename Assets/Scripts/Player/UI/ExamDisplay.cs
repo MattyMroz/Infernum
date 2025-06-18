@@ -9,7 +9,7 @@ using UnityEngine.UI;
 using UnityEngine.UIElements;
 using static UnityEngine.Rendering.DebugUI;
 
-public class ExamDisplay : MonoBehaviour
+public class ExamDisplay : Interactable
 {
 
     [SerializeField] GameObject examUI;
@@ -43,8 +43,10 @@ public class ExamDisplay : MonoBehaviour
 
     private Exam _exam;
 
+
     private void Start()
     {
+        displayName = gameObject.name;
         player = GetComponent<Player>();
     }
 

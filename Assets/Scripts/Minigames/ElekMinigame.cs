@@ -38,6 +38,12 @@ public class ElekMinigame : BaseMinigame
 
     private readonly Session[] sessions = { new Session(), new Session() };
 
+    private void Awake()
+    {
+        displayName = "Elektrotechnika";
+    }
+
+
     public override void React(GameObject playerGO)
     {
         for (int i = 0; i < slots.Length; i++)

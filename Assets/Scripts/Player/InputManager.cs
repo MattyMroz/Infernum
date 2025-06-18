@@ -12,6 +12,8 @@ public class InputManager : MonoBehaviour
 
     private Player _player_script;
 
+    private float interactionRadius = 0.1f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,7 +33,7 @@ public class InputManager : MonoBehaviour
 
             RaycastHit2D hit;
 
-            hit = Physics2D.CircleCast(transform.position, 1f, Vector2.zero, 1f, layer_mask);
+            hit = Physics2D.CircleCast(transform.position, interactionRadius, Vector2.zero, interactionRadius, layer_mask);
             if (hit)
             {
                 if (_player_script.Endurance <= 0) return;

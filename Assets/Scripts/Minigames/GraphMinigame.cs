@@ -32,6 +32,11 @@ public class GraphMinigame : BaseMinigame
 
     private readonly Session[] sessions = { new Session(), new Session() };
 
+    private void Awake()
+    {
+        displayName = "Grafika";
+    }
+
     public override void React(GameObject playerGO)
     {
         for (int i = 0; i < slots.Length; i++)

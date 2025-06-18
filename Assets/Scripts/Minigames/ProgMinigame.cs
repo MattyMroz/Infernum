@@ -29,6 +29,11 @@ public class ProgMinigame : BaseMinigame
 
     private readonly Session[] sessions = { new Session(), new Session() };
 
+    private void Awake()
+    {
+        displayName = "Programowanie";
+    }
+
     /* --------- React --------- */
     public override void React(GameObject playerGO)
     {
