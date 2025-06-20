@@ -13,7 +13,6 @@ public class Teleport : Interactable
     public override void React(GameObject player)
     {
         player.transform.position = other.position;
-        player.GetComponent<Player>().DecreaseEndurance(1);
 
 
         StartCoroutine(Wait(1, player.GetComponent<Player>().id));

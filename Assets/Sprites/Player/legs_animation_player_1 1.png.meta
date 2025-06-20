@@ -1,91 +1,91 @@
 fileFormatVersion: 2
-guid: 6b00ae709f02dbe4e943a92a84bcfc0d
+guid: 6478da788db381c48993ab7ee57d3139
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7554262419730443523
-    second: sprLegs_strip16_0
+      213: -3272332789344658351
+    second: legs_animation_player_1_0
   - first:
-      213: -5125756143617534556
-    second: sprLegs_strip16_1
+      213: 2764109970596777690
+    second: legs_animation_player_1_1
   - first:
-      213: -2362993996163658596
-    second: sprLegs_strip16_2
+      213: -6730355428375821950
+    second: legs_animation_player_1_2
   - first:
-      213: -1906379814107514226
-    second: sprLegs_strip16_3
+      213: 176345540014433506
+    second: legs_animation_player_1_3
   - first:
-      213: -235100117870141397
-    second: sprLegs_strip16_4
+      213: -7607087409649545318
+    second: legs_animation_player_1_4
   - first:
-      213: -6461207377687398604
-    second: sprLegs_strip16_5
+      213: -7298621944969375586
+    second: legs_animation_player_1_5
   - first:
-      213: -8719493569504339429
-    second: sprLegs_strip16_6
+      213: -8059199761112213579
+    second: legs_animation_player_1_6
   - first:
-      213: -5230190334488639084
-    second: sprLegs_strip16_7
+      213: 3598219154764081350
+    second: legs_animation_player_1_7
   - first:
-      213: -1988944610433186112
-    second: sprLegs_strip16_8
+      213: -1395553046716652675
+    second: legs_animation_player_1_8
   - first:
-      213: 7156913652873614203
-    second: sprLegs_strip16_9
+      213: 6453205642195514329
+    second: legs_animation_player_1_9
   - first:
-      213: 5577185878230253379
-    second: sprLegs_strip16_10
+      213: -1744514280848292890
+    second: legs_animation_player_1_10
   - first:
-      213: -406484134268735814
-    second: sprLegs_strip16_11
+      213: 4987201811247984192
+    second: legs_animation_player_1_11
   - first:
-      213: -1144997800300227114
-    second: sprLegs_strip16_12
+      213: 4813617880885314537
+    second: legs_animation_player_1_12
   - first:
-      213: -4755565454447298796
-    second: sprLegs_strip16_13
+      213: 5747081179007865879
+    second: legs_animation_player_1_13
   - first:
-      213: -134414431704963718
-    second: sprLegs_strip16_14
+      213: -3465069008476922954
+    second: legs_animation_player_1_14
   - first:
-      213: 1691743831904487872
-    second: sprLegs_strip16_15
+      213: 367796383927646439
+    second: legs_animation_player_1_15
   - first:
-      213: 1986650311521913017
-    second: sprLegs_strip16_16
+      213: -4236542640228476234
+    second: legs_animation_player_1_16
   - first:
-      213: 7218966400732901107
-    second: sprLegs_strip16_17
+      213: -8268550020622243134
+    second: legs_animation_player_1_17
   - first:
-      213: 6476854815751289751
-    second: sprLegs_strip16_18
+      213: 4691377977533000256
+    second: legs_animation_player_1_18
   - first:
-      213: -1609992732764766520
-    second: sprLegs_strip16_19
+      213: -9199038304379202456
+    second: legs_animation_player_1_19
   - first:
-      213: -9137873636818884314
-    second: sprLegs_strip16_20
+      213: 6638894016066394643
+    second: legs_animation_player_1_20
   - first:
-      213: 8810248568174742004
-    second: sprLegs_strip16_21
+      213: 4633740873384294452
+    second: legs_animation_player_1_21
   - first:
-      213: -3659550966657986193
-    second: sprLegs_strip16_22
+      213: -4341857583954613312
+    second: legs_animation_player_1_22
   - first:
-      213: 3632619435639403977
-    second: sprLegs_strip16_23
+      213: 3618192317015225691
+    second: legs_animation_player_1_23
   - first:
-      213: 5919996831594332880
-    second: sprLegs_strip16_24
+      213: 1995000630332782753
+    second: legs_animation_player_1_24
   - first:
-      213: 4956493749164472548
-    second: sprLegs_strip16_25
+      213: 3086772881706724650
+    second: legs_animation_player_1_25
   - first:
-      213: 4317296894005102640
-    second: sprLegs_strip16_26
+      213: -5655448827344088058
+    second: legs_animation_player_1_26
   - first:
-      213: 2559706364694438690
-    second: sprLegs_strip16_27
+      213: 4787082188782364172
+    second: legs_animation_player_1_27
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -156,7 +156,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -181,29 +181,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprLegs_strip16_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30dad1485a126d860800000000000000
-      internalID: 7554262419730443523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprLegs_strip16_1
+      name: legs_animation_player_1 1_0
       rect:
         serializedVersion: 2
         x: 32
@@ -216,16 +194,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4a5966ed1f7add8b0800000000000000
-      internalID: -5125756143617534556
+      spriteID: eb4bf10dfa7ed7d4bb8fda6a56d6d654
+      internalID: 751051667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_2
+      name: legs_animation_player_1 1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -238,16 +216,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c9cc84cea75f43fd0800000000000000
-      internalID: -2362993996163658596
+      spriteID: d43d059de6f6f6c4a8f687e0b427ff52
+      internalID: -622254122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_3
+      name: legs_animation_player_1 1_2
       rect:
         serializedVersion: 2
         x: 96
@@ -260,16 +238,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8a7525d8ad2b85e0800000000000000
-      internalID: -1906379814107514226
+      spriteID: dcabb9e0a505dae42b297451bdba014a
+      internalID: 889331898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_4
+      name: legs_animation_player_1 1_3
       rect:
         serializedVersion: 2
         x: 128
@@ -282,16 +260,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b20a2bb30b1ccbcf0800000000000000
-      internalID: -235100117870141397
+      spriteID: 85da976ee399ac049bb1d1eb6c34b80b
+      internalID: 271244173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_5
+      name: legs_animation_player_1 1_4
       rect:
         serializedVersion: 2
         x: 160
@@ -304,16 +282,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4373fc87f1e2556a0800000000000000
-      internalID: -6461207377687398604
+      spriteID: 0df809a41468a0f469ca0e008db997f6
+      internalID: -915936937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_6
+      name: legs_animation_player_1 1_5
       rect:
         serializedVersion: 2
         x: 192
@@ -326,16 +304,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b1a1460ebc22ef680800000000000000
-      internalID: -8719493569504339429
+      spriteID: e54eb2d5616e00748afddc4f31caec8a
+      internalID: 575338699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_7
+      name: legs_animation_player_1 1_6
       rect:
         serializedVersion: 2
         x: 224
@@ -348,38 +326,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4998f1df991aa67b0800000000000000
-      internalID: -5230190334488639084
+      spriteID: 40c08da7882c38d45a4f9f6ab40e7b22
+      internalID: -2122405154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c6c3392a69d564e0800000000000000
-      internalID: -1988944610433186112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprLegs_strip16_9
+      name: legs_animation_player_1 1_7
       rect:
         serializedVersion: 2
         x: 288
@@ -392,16 +348,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b73dcaf5c07725360800000000000000
-      internalID: 7156913652873614203
+      spriteID: fc1e3317bd688fc479f9fe5e07478915
+      internalID: 531010899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_10
+      name: legs_animation_player_1 1_8
       rect:
         serializedVersion: 2
         x: 320
@@ -414,16 +370,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 34f3d3ec105266d40800000000000000
-      internalID: 5577185878230253379
+      spriteID: 1c42f8e3cd393bb4b90918edb7145f00
+      internalID: 1403816437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_11
+      name: legs_animation_player_1 1_9
       rect:
         serializedVersion: 2
         x: 352
@@ -436,16 +392,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: abe641265d0eb5af0800000000000000
-      internalID: -406484134268735814
+      spriteID: a174b1b81d8c47f46a31f10ee900c4fa
+      internalID: 795344275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_12
+      name: legs_animation_player_1 1_10
       rect:
         serializedVersion: 2
         x: 384
@@ -458,16 +414,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6d5508c21962c10f0800000000000000
-      internalID: -1144997800300227114
+      spriteID: 477f110605925df46a39c4979a781ceb
+      internalID: -440311501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_13
+      name: legs_animation_player_1 1_11
       rect:
         serializedVersion: 2
         x: 416
@@ -480,16 +436,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 417bc8d4a66d00eb0800000000000000
-      internalID: -4755565454447298796
+      spriteID: 9b091510fb0dd9841a594289f978135f
+      internalID: 1777607816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_14
+      name: legs_animation_player_1 1_12
       rect:
         serializedVersion: 2
         x: 448
@@ -504,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e318dd71fb487d4aac5941bb567ac62
-      internalID: -1318114352
+      spriteID: 1f4e5bab8bf34ab4b9b3a79e464da49e
+      internalID: -1280989706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprLegs_strip16_15
+      name: legs_animation_player_1 1_13
       rect:
         serializedVersion: 2
         x: 480
@@ -526,8 +482,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c42e575cb6eadf54e8ba24ba9825b9a4
-      internalID: -768999288
+      spriteID: 258ec4f44930bad419ac9f27fa557e92
+      internalID: 2131177700
       vertices: []
       indices: 
       edges: []
@@ -536,7 +492,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5d584de47c73a3142884d7fc7f808bbd
+    spriteID: e147dc696168d76458c320898ef6036b
     internalID: 0
     vertices: []
     indices: 
@@ -546,22 +502,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprLegs_strip16_0: 7554262419730443523
-      sprLegs_strip16_1: -5125756143617534556
-      sprLegs_strip16_10: 5577185878230253379
-      sprLegs_strip16_11: -406484134268735814
-      sprLegs_strip16_12: -1144997800300227114
-      sprLegs_strip16_13: -4755565454447298796
-      sprLegs_strip16_14: -1318114352
-      sprLegs_strip16_15: -768999288
-      sprLegs_strip16_2: -2362993996163658596
-      sprLegs_strip16_3: -1906379814107514226
-      sprLegs_strip16_4: -235100117870141397
-      sprLegs_strip16_5: -6461207377687398604
-      sprLegs_strip16_6: -8719493569504339429
-      sprLegs_strip16_7: -5230190334488639084
-      sprLegs_strip16_8: -1988944610433186112
-      sprLegs_strip16_9: 7156913652873614203
+      legs_animation_player_1 1_0: 751051667
+      legs_animation_player_1 1_1: -622254122
+      legs_animation_player_1 1_10: -440311501
+      legs_animation_player_1 1_11: 1777607816
+      legs_animation_player_1 1_12: -1280989706
+      legs_animation_player_1 1_13: 2131177700
+      legs_animation_player_1 1_2: 889331898
+      legs_animation_player_1 1_3: 271244173
+      legs_animation_player_1 1_4: -915936937
+      legs_animation_player_1 1_5: 575338699
+      legs_animation_player_1 1_6: -2122405154
+      legs_animation_player_1 1_7: 531010899
+      legs_animation_player_1 1_8: 1403816437
+      legs_animation_player_1 1_9: 795344275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

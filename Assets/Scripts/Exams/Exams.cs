@@ -15,6 +15,21 @@ public class Exams : MonoBehaviour
     {
         InitExams();
         //SetListText();
+        ResetExams();
+    }
+
+    void ResetExams()
+    {
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            Exam exam = transform.GetChild(i).GetComponent<Exam>();
+            if (exam != null)
+            {
+                for (int id = 0; id < 2; id++)
+                    exam.score[id] = 0;
+            }
+        }
     }
 
     private void InitExams()

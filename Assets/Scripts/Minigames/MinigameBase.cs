@@ -43,6 +43,7 @@ public abstract class BaseMinigame : Interactable
         if (playerMovement) { playerMovement.ResetVelocity(); playerMovement.enabled = false; }
         if (playerRb) playerRb.bodyType = RigidbodyType2D.Static;
 
+
         OnOpen();
     }
     protected void Close()

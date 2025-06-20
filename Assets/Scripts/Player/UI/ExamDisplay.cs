@@ -86,7 +86,7 @@ public class ExamDisplay : Interactable
 
         diceImage.sprite = defaultDiceSprite;
         diceText.text = diceResult.ToString();
-        takes.text = _exam.takes[player.id].ToString();
+        takes.text = _exam.takes[player.id] >= 2 ? "2" : (_exam.takes[player.id] + 1).ToString();
 
         if (_exam.passed[player.id])
             passed.SetActive(true);
@@ -121,7 +121,7 @@ public class ExamDisplay : Interactable
 
         examUI.SetActive(true);
         diceText.text = "";
-        takes.text = _exam.takes[player.id].ToString();
+        takes.text = _exam.takes[player.id] >= 2 ? "2" : (_exam.takes[player.id] + 1).ToString();
         playerName.text = gameObject.name;
         examName.text = exam.gameObject.name;
         passRate.text = _exam.score_to_pass + "/" + "100";

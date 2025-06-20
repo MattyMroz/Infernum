@@ -34,8 +34,6 @@ public class DisplayExams : MonoBehaviour
         Display();
     }
 
-
-
     private void Display()
     {
         if (Input.GetKey(display))
