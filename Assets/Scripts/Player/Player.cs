@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Numerics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //minigames
@@ -29,7 +30,6 @@ public class Player : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] int wisdom;
-    [SerializeField] int hunger;
     [SerializeField] int endurance;
 
     [SerializeField] public int accountBalance = 0;
@@ -43,7 +43,6 @@ public class Player : MonoBehaviour
 
     public int Wisdom { get { return wisdom; } set { wisdom = value; } }
     public int Endurance { get { return endurance; } set { endurance = value; } }
-    public int Hunger { get { return hunger; } set { hunger = value; } } //Using in DisplayStats
 
 
     public List<MinigameConfig> minigames;
@@ -58,7 +57,6 @@ public class Player : MonoBehaviour
         for (int i = 0; i < (int)ExamType.NR_TYPES; i++)
             exams_knowledge[i] = 5;
 
-        hunger = 0;
         endurance = 5;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -108,6 +106,13 @@ public class Player : MonoBehaviour
             accountBalance += Random.Range(1, 11);
         }
     }
+
+    public void SpendMoney(int amount)
+    {
+        if (amount > accountBalance) return;
+        accountBalance -= amount;
+    }
+
     public void TakeExam(Exam exam)
     {
 

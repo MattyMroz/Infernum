@@ -3,16 +3,26 @@ using UnityEngine;
 public class Chinese : Interactable
 {
     [SerializeField] int increase_endurance;
+    [SerializeField] int cost = 20;
 
     private void Awake()
     {
         displayName = "Chiñskie";
     }
 
-    public override void React(GameObject player)
+    public override void React(GameObject playerObj)
     {
-        player.GetComponent<Player>().IncreaseEndurance(increase_endurance);
+        Player player = playerObj.GetComponent<Player>();
 
-        StartCoroutine(Wait(1, player.GetComponent<Player>().id));
+        if (player.accountBalance >= cost)
+        {
+            player.SpendMoney(cost);
+            player.IncreaseEndurance(increase_endurance);
+            StartCoroutine(Wait(1, player.id));
+        }
+        else
+        {
+            Debug.Log($"Gracz {player.id} nie ma wystarczaj¹co pieniêdzy na jedzenie Chiñskie.");
+        }
     }
 }
