@@ -55,6 +55,14 @@ public class ExamDisplay : Interactable
     {
         if (opened)
         {
+            if (!examUI.activeSelf)
+            {
+                Close();
+                GetComponent<InputManager>().enabled = false;
+                GetComponent<Movement>().ResetVelocity(); GetComponent<Movement>().enabled = false;
+                GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+                ToggleUI(false);
+            }
 
             if (!_using && Input.GetKeyDown(takeExamButton))
                 StartCoroutine(DiceRoll());
@@ -122,9 +130,9 @@ public class ExamDisplay : Interactable
         examUI.SetActive(true);
         diceText.text = "";
         takes.text = _exam.takes[player.id] >= 2 ? "2" : (_exam.takes[player.id] + 1).ToString();
-        playerName.text = gameObject.name;
+        playerName.text = player.player_name;
         examName.text = exam.gameObject.name;
-        passRate.text = _exam.score_to_pass + "/" + "100";
+        passRate.text = _exam.score_to_pass + "/" + exam.max_score;
 
         skills.text = "";
 

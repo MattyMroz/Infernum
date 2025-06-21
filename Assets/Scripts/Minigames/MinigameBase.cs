@@ -30,6 +30,9 @@ public abstract class BaseMinigame : Interactable
 
     protected virtual void Update()
     {
+        if (active && !panel.activeSelf)
+            Close();
+
         if (Input.GetKeyDown(exitKey) && active)
             Close();
     }

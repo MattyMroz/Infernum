@@ -9,10 +9,12 @@ public class Time : MonoBehaviour
     public static bool timeStarted = true;
     private static bool paused = false;
 
-    private const float multiplier = (60 * 8) / 3;
+    private const float multiplier = (60 * 8) / 0.2f;
     private readonly System.TimeSpan startTime = new System.TimeSpan(8, 0, 0);
     [SerializeField] private int days;
     [SerializeField] private string the_time;
+
+    [SerializeField] private EndOfDayManager endOfDayManager;
 
     void Awake()
     {
@@ -39,6 +41,8 @@ public class Time : MonoBehaviour
         {
             days++;
             timer = 0;
+
+            endOfDayManager.StartEndOfDay();
         }
 
         if (days == 14)

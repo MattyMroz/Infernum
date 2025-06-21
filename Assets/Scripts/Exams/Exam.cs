@@ -16,6 +16,7 @@ public class Exam : Interactable
     public int ects { get; private set; }
     public bool[] passed = new bool[2], failed = new bool[2];
     public int[] takes = new int[2];
+    public float[] grade = new float[2];
 
     [SerializeField] public int exams_ects;
 
@@ -25,6 +26,8 @@ public class Exam : Interactable
         id--;
 
         exam_name = name;
+        score_to_pass = exams_ects * 5;
+        max_score = score_to_pass * 2;
     }
 
     public override void React(GameObject player)

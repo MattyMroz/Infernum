@@ -3,7 +3,7 @@ using TMPro;
 
 public class WhatAmILookingAt : MonoBehaviour
 {
-    public float detectionRadius = 5f;  // Promieñ wokó³ gracza, w którym sprawdzamy obiekty
+    public float detectionRadius = .1f;  // Promieñ wokó³ gracza, w którym sprawdzamy obiekty
     public LayerMask detectionLayer;    // Warstwa, w której bêd¹ obiekty, które chcemy wykrywaæ (np. NPC, przedmioty)
 
     public TextMeshProUGUI objectNameText;  // Referencja do TextMeshProUGUI (UI Text), gdzie wyœwietlimy nazwê obiektu

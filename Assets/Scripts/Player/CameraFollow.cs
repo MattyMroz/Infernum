@@ -27,6 +27,8 @@ public class CameraFollow : MonoBehaviour
 
         _current_map_bounds = _player_script.current_map_bounds;
 
+        if (!_current_map_bounds) return;
+
         Vector2 boundsSize = _current_map_bounds.GetComponent<SpriteRenderer>().bounds.size;
         float camHeight = 2f * _camera.orthographicSize;
         float camWidth = camHeight * _camera.aspect;

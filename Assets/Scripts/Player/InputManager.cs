@@ -12,7 +12,7 @@ public class InputManager : MonoBehaviour
 
     private Player _player_script;
 
-    private float interactionRadius = 0.1f;
+    private float interactionRadius = .1f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

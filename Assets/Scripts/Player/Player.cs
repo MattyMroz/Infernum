@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 //minigames
 public enum MinigameID
@@ -62,13 +63,14 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         InitStats();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     
     public void IncreaseWisdom(int amount)
@@ -125,31 +127,45 @@ public class Player : MonoBehaviour
 
         int chance = Random.Range(1, 21); // Max value is exclusive
         int overallScore = chance;
+        int knowledgeScore = 0;
 
         for (int i = 0; i < exam.exam_types.Count; i++)
         {
-            overallScore += (int)Mathf.Pow(LvlIncrease(exams_knowledge[(int)exam.exam_types[i]]).lvl, 2f);
-
-            if (overallScore >= exam.score_to_pass)
-            {
-
-                if (overallScore > exam.max_score)
-                    overallScore = exam.max_score;
-
-                exam.passed[id] = true;
-                exam.score[id] = overallScore;
-                exam.failed[id] = false;
-                //player_exams.SetListText();
-
-                break;
-            }
-            else
-            {
-                exam.failed[id] = true;
-            }
-
-            exam.score[id] = overallScore;
+            knowledgeScore += LvlIncrease(exams_knowledge[(int)exam.exam_types[i]]).lvl;
         }
+
+        knowledgeScore /= exam.exam_types.Count;
+
+        overallScore += knowledgeScore;
+
+        if (overallScore >= exam.score_to_pass)
+        {
+
+            if (overallScore > exam.max_score)
+                overallScore = exam.max_score;
+
+            exam.passed[id] = true;
+            exam.failed[id] = false;
+        }
+        else
+        {
+            exam.passed[id] = false;
+            exam.failed[id] = true;
+        }
+
+        exam.score[id] = overallScore;
+
+        float grade = 2f;
+
+        if (exam.score[id] < exam.score_to_pass)
+            grade = 2f;
+        else if (exam.score[id] >= exam.max_score) grade = 5f;
+        else if (exam.score[id] >= (float)exam.score_to_pass * 1.75f) grade = 4.5f;
+        else if (exam.score[id] >= (float)exam.score_to_pass * 1.5f) grade = 4.0f;
+        else if (exam.score[id] >= (float)exam.score_to_pass * 1.25f) grade = 3.5f;
+        else if (exam.score[id] >= exam.score_to_pass) grade = 3f;
+
+        exam.grade[id] = grade;
 
         return overallScore;
     }

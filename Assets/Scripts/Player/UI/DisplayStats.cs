@@ -66,6 +66,11 @@ public class DisplayStats : MonoBehaviour
         }
     }
 
+    public void TogglePanel(bool status)
+    {
+        panel.SetActive(status);
+    }
+
     private void UpdateStatsUI()
     {
         Name.text = _player.player_name;

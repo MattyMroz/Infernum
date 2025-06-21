@@ -47,6 +47,9 @@ public class Movement : MonoBehaviour
 
         if (x_dir != 0f || y_dir != 0f)
         {
+            if (!animator.enabled)
+                animator.enabled = true;
+
             animator.SetBool("Moving", true);
             _last_velocity = _velocity;
         }
@@ -67,5 +70,6 @@ public class Movement : MonoBehaviour
     public void ResetVelocity()
     {
         _velocity = Vector2.zero;
+        animator.SetBool("Moving", false);
     }
 }

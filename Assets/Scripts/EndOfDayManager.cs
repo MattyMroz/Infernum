@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class EndOfDayManager : MonoBehaviour
 {
     [Header("Fade & UI")]
+    [SerializeField] private GameObject endOfDayObject;
     [SerializeField] private Image fadeImage; // Czarny Image na Canvasie
     [SerializeField] private TextMeshProUGUI dayText; // Tekst z informacj¹ o dniu
     [SerializeField] private float fadeDuration = 1.5f;
@@ -13,9 +15,24 @@ public class EndOfDayManager : MonoBehaviour
 
     [Header("Gracze i start")]
     [SerializeField] private Player[] players;
+    [SerializeField] private GameObject[] playerUIs;
     [SerializeField] private Transform[] startPositions;
+    [SerializeField] private DisplayExams[] displayExams;
+    [SerializeField] private DisplayStats[] displayStats;
 
-    private int currentDay = 1;
+    private readonly List<MonoBehaviour> disabled = new();
+
+    private int currentDay = 0;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            StartEndOfDay();
+        }
+
+        currentDay = Time.Days + 1;
+    }
 
     public void StartEndOfDay()
     {
@@ -24,6 +41,16 @@ public class EndOfDayManager : MonoBehaviour
 
     private IEnumerator EndOfDayRoutine()
     {
+        endOfDayObject.SetActive(true);
+
+        for(int i = 0; i < players.Length; i++)
+        {
+            players[i].GetComponent<InputManager>().enabled = false;
+            players[i].GetComponent<Movement>().ResetVelocity(); players[i].GetComponent<Movement>().enabled = false;
+            players[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        }
+
+        ToggleUI(false);
         // Fade-in
         yield return StartCoroutine(FadeScreen(0f, 1f));
 
@@ -43,7 +70,16 @@ public class EndOfDayManager : MonoBehaviour
         // Fade-out
         yield return StartCoroutine(FadeScreen(1f, 0f));
 
-        currentDay++;
+        endOfDayObject.SetActive(false);
+
+        for (int i = 0; i < players.Length; i++)
+        {
+            players[i].GetComponent<InputManager>().enabled = true;
+            players[i].GetComponent<Movement>().ResetVelocity(); players[i].GetComponent<Movement>().enabled = true;
+            players[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        }
+
+        ToggleUI(true);
     }
 
     private IEnumerator FadeScreen(float fromAlpha, float toAlpha)
@@ -67,5 +103,62 @@ public class EndOfDayManager : MonoBehaviour
     public void SetDay(int day)
     {
         currentDay = day;
+    }
+
+    private void ToggleUI(bool state)
+    {
+
+        for (int i = 0; i < playerUIs.Length; i++)
+        {
+
+            foreach (var s in playerUIs[i].GetComponents<MonoBehaviour>())
+            {
+                if (s == this) continue;
+
+                if (s.GetType().Name.StartsWith("Display"))
+                {
+                    if (state)
+                    {
+                        if (disabled.Contains(s)) s.enabled = true;
+                    }
+                    else
+                    {
+                        if (s.enabled)
+                        {
+                            s.enabled = false;
+                            disabled.Add(s);
+                        }
+                    }
+                }
+            }
+
+            if (state)
+                disabled.Clear();
+        }
+
+
+        for (int i = 0; i < playerUIs.Length; i++)
+        {
+            foreach(Transform gObject in playerUIs[i].transform)
+            {
+                if (!state)
+                {
+
+                    if (gObject.gameObject.name == "Minigames")
+                    {
+                        for(int j = 0; j < gObject.childCount; j++)
+                        {
+                            gObject.GetChild(j).gameObject.SetActive(false);
+                        }
+                    }
+                    gObject.gameObject.SetActive(false);
+                }
+                else
+                {
+                    if (gObject.gameObject.name == "Minigames")
+                        gObject.gameObject.SetActive(true);
+                }
+            }
+        }
     }
 }

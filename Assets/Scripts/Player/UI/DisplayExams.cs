@@ -36,6 +36,11 @@ public class DisplayExams : MonoBehaviour
         Display();
     }
 
+    public void TogglePanel(bool status)
+    {
+        panel.SetActive(status);
+    }
+
     private void Display()
     {
         if (Input.GetKey(display))
@@ -59,18 +64,7 @@ public class DisplayExams : MonoBehaviour
                 for (int i = 0; i < exam_script.exams.Count; i++)
                 {
                     int score = exam_script.exams[i].score[_player_script.id];
-                    float ocena;
-
-                    score /= 10;
-                    switch (score)
-                    {
-                        case 9: ocena = 5.0f; break;
-                        case 8: ocena = 4.5f; break;
-                        case 7: ocena = 4.0f; break;
-                        case 6: ocena = 3.5f; break;
-                        case 5: ocena = 3.0f; break;
-                        default: ocena = 2.0f; break;
-                    }
+                    float ocena = exam_script.exams[i].grade[_player_script.id];
 
                     if (score == 0 && !exam_script.exams[i].failed[_player_script.id])
                     {
