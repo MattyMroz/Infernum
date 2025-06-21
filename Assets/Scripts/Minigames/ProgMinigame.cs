@@ -6,10 +6,10 @@ public class ProgMinigame : BaseMinigame
     [System.Serializable]
     public class PlayerSlot
     {
-        public Player player;      // obiekt Player
-        public GameObject panel;       // panel UI gracza
-        public KeyCode exitKey;     // klawisz wyjścia
-        public KeyCode actionKey;   // klawisz „klik”
+        public Player player;
+        public GameObject panel;
+        public KeyCode exitKey;
+        public KeyCode actionKey;
     }
 
     [Header("Players (P1 = 0, P2 = 1)")]
@@ -19,12 +19,12 @@ public class ProgMinigame : BaseMinigame
     [SerializeField] private int keyGain = 1;
     private const int KNOWLEDGE_IDX = 2;   // Programming
 
-    /* --------- stan jednej sesji --------- */
     private class Session
     {
         public bool active;
         public PlayerSlot slot;
         public TextMeshProUGUI playerName, day, lvl, exp, time, name;
+        public float enduranceTimer = 5f;
     }
 
     private readonly Session[] sessions = { new Session(), new Session() };
@@ -34,7 +34,6 @@ public class ProgMinigame : BaseMinigame
         displayName = "Programowanie";
     }
 
-    /* --------- React --------- */
     public override void React(GameObject playerGO)
     {
         for (int i = 0; i < slots.Length; i++)
@@ -45,12 +44,12 @@ public class ProgMinigame : BaseMinigame
             }
     }
 
-    /* --------- Start / End --------- */
     private void StartSession(int id)
     {
         var s = sessions[id];
         s.active = true;
         s.slot = slots[id];
+        s.enduranceTimer = 5f;
 
         BindUI(s);
         UpdateHud(s);
@@ -70,18 +69,29 @@ public class ProgMinigame : BaseMinigame
         TogglePlayerHud(s.slot.player, true);
     }
 
-    /* --------- Update --------- */
-    protected override void Update()  
+    protected override void Update()
     {
         for (int i = 0; i < sessions.Length; i++)
         {
             var s = sessions[i];
             if (!s.active) continue;
 
-
             UpdateHud(s);
 
             if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
+
+            s.enduranceTimer -= UnityEngine.Time.deltaTime;
+            if (s.enduranceTimer <= 0f)
+            {
+                s.slot.player.DecreaseEndurance(1);
+                s.enduranceTimer = 5f;
+
+                if (s.slot.player.Endurance <= 0)
+                {
+                    EndSession(i);
+                    continue;
+                }
+            }
 
             if (Input.GetKeyDown(s.slot.actionKey))
             {
@@ -91,7 +101,6 @@ public class ProgMinigame : BaseMinigame
         }
     }
 
-    /* --------- UI / HUD --------- */
     private void BindUI(Session s)
     {
         Transform t = s.slot.panel.transform;
@@ -114,11 +123,13 @@ public class ProgMinigame : BaseMinigame
         s.time.text = Time.Time_now;
     }
 
-    /* --------- helpers --------- */
     private static void ToggleMovement(Player p, bool freeze)
     {
-        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
-        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+        var mv = p.GetComponent<Movement>();
+        if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
+
+        var rb = p.GetComponent<Rigidbody2D>();
+        if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
     }
 
     private static void TogglePlayerHud(Player p, bool show)

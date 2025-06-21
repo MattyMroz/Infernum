@@ -4,7 +4,6 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-
 public class Exams : MonoBehaviour
 {
     public TextMeshProUGUI exams_UItext;

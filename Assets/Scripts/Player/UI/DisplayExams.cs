@@ -15,7 +15,9 @@ public class DisplayExams : MonoBehaviour
     [SerializeField] private GameObject exam;
 
     private bool displayActive = false;
-    private List<MonoBehaviour> previouslyDisabled = new List<MonoBehaviour>();
+
+    [SerializeField] private GameObject playerUI;
+    private readonly List<MonoBehaviour> disabled = new();
 
 
     private Player _player_script;
@@ -42,7 +44,8 @@ public class DisplayExams : MonoBehaviour
             {
                 displayActive = true;
 
-                DisableOtherUIDisplays();
+                ToggleUI(false);
+
 
                 player.GetComponent<Movement>().ResetVelocity();
                 player.GetComponent<Movement>().enabled = false;
@@ -84,7 +87,7 @@ public class DisplayExams : MonoBehaviour
         {
             displayActive = false;
 
-            ReenableUIDisplays();
+            ToggleUI(true);
 
             player.GetComponent<Movement>().ResetVelocity();
             player.GetComponent<Movement>().enabled = true;
@@ -95,32 +98,31 @@ public class DisplayExams : MonoBehaviour
     }
 
 
-    private void DisableOtherUIDisplays()
+    private void ToggleUI(bool state)
     {
-        previouslyDisabled.Clear();
 
-        MonoBehaviour[] scripts = gameObject.GetComponents<MonoBehaviour>();
-
-        foreach (MonoBehaviour script in scripts)
+        foreach (var s in playerUI.GetComponents<MonoBehaviour>())
         {
-            if (script != this && script.enabled && script.GetType().Name.StartsWith("Display"))
+            if (s == this) continue;
+
+            if (s.GetType().Name.StartsWith("Display"))
             {
-                script.enabled = false;
-                previouslyDisabled.Add(script);
+                if (state)
+                {
+                    if (disabled.Contains(s)) s.enabled = true;
+                }
+                else
+                {
+                    if (s.enabled)
+                    {
+                        s.enabled = false;
+                        disabled.Add(s);
+                    }
+                }
             }
         }
-    }
 
-    private void ReenableUIDisplays()
-    {
-        foreach (MonoBehaviour script in previouslyDisabled)
-        {
-            if (script != null)
-            {
-                script.enabled = true;
-            }
-        }
-
-        previouslyDisabled.Clear();
+        if (state)
+            disabled.Clear();
     }
 }

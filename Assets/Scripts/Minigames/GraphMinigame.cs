@@ -28,6 +28,7 @@ public class GraphMinigame : BaseMinigame
         public TextMeshProUGUI playerName, day, keysTxt, lvl, exp, time, name;
         public KeyCode[] currentCombo;
         public bool comboReady;
+        public float enduranceTimer = 5f;
     }
 
     private readonly Session[] sessions = { new Session(), new Session() };
@@ -49,6 +50,7 @@ public class GraphMinigame : BaseMinigame
         var s = sessions[id];
         s.active = true;
         s.slot = slots[id];
+        s.enduranceTimer = 5f;
 
         s.currentCombo = null;
         BindUI(s);
@@ -59,7 +61,6 @@ public class GraphMinigame : BaseMinigame
         TogglePlayerHud(s.slot.player, false);
         s.slot.panel.SetActive(true);
     }
-
 
     private void EndSession(int id)
     {
@@ -80,12 +81,28 @@ public class GraphMinigame : BaseMinigame
 
             UpdateHud(s);
 
+            // Wyjście z minigry
             if (Input.GetKeyDown(s.slot.exitKey))
             {
                 EndSession(i);
                 continue;
             }
 
+            // Odliczanie do spadku wytrzymałości
+            s.enduranceTimer -= UnityEngine.Time.deltaTime;
+            if (s.enduranceTimer <= 0f)
+            {
+                s.slot.player.DecreaseEndurance(1);
+                s.enduranceTimer = 5f;
+
+                if (s.slot.player.Endurance <= 0)
+                {
+                    EndSession(i);
+                    continue;
+                }
+            }
+
+            // Oczekiwanie na puszczenie klawiszy
             if (!s.comboReady)
             {
                 if (!s.currentCombo.Any(Input.GetKey))
@@ -95,6 +112,7 @@ public class GraphMinigame : BaseMinigame
                 continue;
             }
 
+            // Kompletna sekwencja
             if (s.currentCombo.All(Input.GetKey) && s.currentCombo.Any(Input.GetKeyDown))
             {
                 s.slot.player.exams_knowledge[KNOWLEDGE_IDX] += comboGain;
@@ -104,8 +122,6 @@ public class GraphMinigame : BaseMinigame
             }
         }
     }
-
-
 
     /* ---------- helpers ---------- */
     private void BindUI(Session s)
@@ -143,9 +159,13 @@ public class GraphMinigame : BaseMinigame
 
     private static void ToggleMovement(Player p, bool freeze)
     {
-        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
-        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+        var mv = p.GetComponent<Movement>();
+        if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
+
+        var rb = p.GetComponent<Rigidbody2D>();
+        if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
     }
+
     private static void TogglePlayerHud(Player p, bool show)
     {
         foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))

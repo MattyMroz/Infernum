@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
+using System.Collections.Generic;
+
 
 public class DisplayStats : MonoBehaviour
 {
@@ -19,6 +21,10 @@ public class DisplayStats : MonoBehaviour
     [SerializeField] GameObject panel;
     [SerializeField] GameObject player;
     [SerializeField] KeyCode displayKey;
+
+    private readonly List<MonoBehaviour> disabled = new();
+    [SerializeField] GameObject playerUI;
+
 
 
     private Player _player;
@@ -43,11 +49,17 @@ public class DisplayStats : MonoBehaviour
             player.GetComponent<Movement>().enabled = false;
             _rb.bodyType = RigidbodyType2D.Static;
 
+            ToggleUI(false);
+
+
             panel.SetActive(true);
             UpdateStatsUI();
         }
         else if (Input.GetKeyUp(displayKey))
         {
+            ToggleUI(true);
+
+
             player.GetComponent<Movement>().enabled = true;
             _rb.bodyType = RigidbodyType2D.Dynamic;
             panel.SetActive(false);
@@ -105,5 +117,34 @@ public class DisplayStats : MonoBehaviour
             NextLvl.text += toNext.ToString() + '\n';
         }
 
+    }
+
+
+    private void ToggleUI(bool state)
+    {
+
+        foreach (var s in playerUI.GetComponents<MonoBehaviour>())
+        {
+            if (s == this) continue;
+
+            if (s.GetType().Name.StartsWith("Display"))
+            {
+                if (state)
+                {
+                    if (disabled.Contains(s)) s.enabled = true;
+                }
+                else
+                {
+                    if (s.enabled)
+                    {
+                        s.enabled = false;
+                        disabled.Add(s);
+                    }
+                }
+            }
+        }
+
+        if (state)
+            disabled.Clear();
     }
 }

@@ -58,15 +58,15 @@ public class MathMinigame : BaseMinigame
         s.active = true;
         s.slot = slots[id];
 
+        // ← najważniejsze – ręczne odpalenie Boot()
+        Boot(s.slot.player.gameObject, s.slot.player.GetConfig(MinigameID.Math));
+
         BindUI(s);
         SetupInput(s);
         GenerateNumber(s);
         UpdateHud(s);
-
-        ToggleMovement(s.slot.player, true);
-        TogglePlayerHud(s.slot.player, false);
-        s.slot.panel.SetActive(true);
     }
+
 
     private void EndSession(int id)
     {

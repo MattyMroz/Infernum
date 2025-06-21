@@ -1,9 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class BaseMinigame : Interactable
 {
-    /*  pola wspólne  */
     protected GameObject panel;
     protected Player player;
     protected KeyCode exitKey;
@@ -13,8 +13,8 @@ public abstract class BaseMinigame : Interactable
     protected bool active;
 
     private readonly List<MonoBehaviour> disabled = new();
+    private Coroutine enduranceCoroutine;
 
-    /*  wywo³uje Interactable.React()  */
     public void Boot(GameObject playerGO, MinigameConfig cfg)
     {
         player = playerGO.GetComponent<Player>();
@@ -24,16 +24,16 @@ public abstract class BaseMinigame : Interactable
         playerMovement = playerGO.GetComponent<Movement>();
         playerRb = playerGO.GetComponent<Rigidbody2D>();
 
-        OnBoot(cfg);          // hook dla pochodnych
+        OnBoot(cfg);
         Open();
     }
 
-    /* ====== baza otwierania / zamykania ====== */
     protected virtual void Update()
     {
         if (Input.GetKeyDown(exitKey) && active)
             Close();
     }
+
     protected void Open()
     {
         active = true;
@@ -43,9 +43,10 @@ public abstract class BaseMinigame : Interactable
         if (playerMovement) { playerMovement.ResetVelocity(); playerMovement.enabled = false; }
         if (playerRb) playerRb.bodyType = RigidbodyType2D.Static;
 
-
+        enduranceCoroutine = StartCoroutine(DrainEndurance());
         OnOpen();
     }
+
     protected void Close()
     {
         active = false;
@@ -55,8 +56,12 @@ public abstract class BaseMinigame : Interactable
         if (playerMovement) { playerMovement.ResetVelocity(); playerMovement.enabled = true; }
         if (playerRb) playerRb.bodyType = RigidbodyType2D.Dynamic;
 
+        if (enduranceCoroutine != null)
+            StopCoroutine(enduranceCoroutine);
+
         OnClose();
     }
+
     private void ToggleUI(bool state)
     {
         disabled.Clear();
@@ -68,11 +73,11 @@ public abstract class BaseMinigame : Interactable
 
             if (s.GetType().Name.StartsWith("Display"))
             {
-                if (state)            // przywracamy
+                if (state)
                 {
                     if (disabled.Contains(s)) s.enabled = true;
                 }
-                else                  // wy³¹czamy
+                else
                 {
                     if (s.enabled)
                     {
@@ -84,7 +89,22 @@ public abstract class BaseMinigame : Interactable
         }
     }
 
-    /* ====== wirtualne hooki ====== */
+    private IEnumerator DrainEndurance()
+    {
+        while (active && player != null)
+        {
+            yield return new WaitForSeconds(5f);
+
+            player.DecreaseEndurance(1);
+
+            if (player.Endurance <= 0)
+            {
+                Close();
+                yield break;
+            }
+        }
+    }
+
     protected virtual void OnBoot(MinigameConfig cfg) { }
     protected virtual void OnOpen() { }
     protected virtual void OnClose() { }

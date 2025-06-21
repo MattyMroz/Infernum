@@ -33,6 +33,8 @@ public class InfMinigame : BaseMinigame
         public Vector2 velocity;
         public float secTimer;
         public int zoneDir = -1;
+
+        public float enduranceTimer = 5f;
     }
 
     private readonly Session[] sessions = { new Session(), new Session() };
@@ -54,6 +56,7 @@ public class InfMinigame : BaseMinigame
         var s = sessions[id];
         s.active = true;
         s.slot = slots[id];
+        s.enduranceTimer = 5f;
 
         BindUI(s);
         CenterBall(s);
@@ -88,27 +91,26 @@ public class InfMinigame : BaseMinigame
         s.ball = t.Find("NotPlayArea/Ball").GetComponent<Image>();
     }
 
-    protected override void Update()          // ← override
+    protected override void Update()
     {
         for (int i = 0; i < sessions.Length; i++)
         {
             var s = sessions[i];
             if (!s.active) continue;
 
-         
-
             UpdateHud(s);
 
-            if (Input.GetKeyDown(s.slot.exitKey)) {
+            if (Input.GetKeyDown(s.slot.exitKey))
+            {
                 EndSession(i);
-                continue; 
+                continue;
             }
 
-            TickSession(s);
+            TickSession(s, i);
         }
     }
 
-    private void TickSession(Session s)
+    private void TickSession(Session s, int id)
     {
         if (Input.GetKey(s.slot.actionKey))
             s.velocity.y += liftForce * UnityEngine.Time.deltaTime;
@@ -146,16 +148,28 @@ public class InfMinigame : BaseMinigame
             }
         }
         else s.secTimer = 0f;
+
+        // Nowy kod: spadek wytrzymałości co 5 sek
+        s.enduranceTimer -= UnityEngine.Time.deltaTime;
+        if (s.enduranceTimer <= 0f)
+        {
+            s.slot.player.DecreaseEndurance(1);
+            s.enduranceTimer = 5f;
+
+            if (s.slot.player.Endurance <= 0)
+                EndSession(id);
+        }
     }
 
-    private void CenterBall(Session s) => s.ball.rectTransform.anchoredPosition = s.playArea.rect.center;
+    private void CenterBall(Session s) =>
+        s.ball.rectTransform.anchoredPosition = s.playArea.rect.center;
 
     private void UpdateHud(Session s)
     {
         var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[knowledgeId]);
         s.lvl.text = res.lvl.ToString();
         s.exp.text = $"{res.exp} / {res.divide}";
-        s.time.text = Time.Time_now;        
+        s.time.text = Time.Time_now;
         s.name.text = "Informatyka";
         s.playerName.text = s.slot.player.player_name;
         s.day.text = $"Dzień: {Time.Days}";
@@ -163,12 +177,14 @@ public class InfMinigame : BaseMinigame
 
     private static void ToggleMovement(Player p, bool freeze)
     {
-        var mv = p.GetComponent<Movement>(); if (mv) {
-            if (freeze) mv.ResetVelocity(); 
-            mv.enabled = !freeze; 
+        var mv = p.GetComponent<Movement>();
+        if (mv)
+        {
+            if (freeze) mv.ResetVelocity();
+            mv.enabled = !freeze;
         }
 
-        var rb = p.GetComponent<Rigidbody2D>(); 
+        var rb = p.GetComponent<Rigidbody2D>();
         if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
     }
 

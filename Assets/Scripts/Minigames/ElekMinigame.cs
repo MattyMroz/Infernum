@@ -22,7 +22,7 @@ public class ElekMinigame : BaseMinigame
     [SerializeField] private float minWait = 1f;
     [SerializeField] private float maxWait = 3f;
     [SerializeField] private float nextRoundDelay = 0.5f;
-    private const int KNOWLEDGE_IDX = 4;        // Electrotechnics
+    private const int KNOWLEDGE_IDX = 4; // Electrotechnics
 
     private class Session
     {
@@ -34,6 +34,7 @@ public class ElekMinigame : BaseMinigame
         public float goTime;
         public bool reacted;
         public Coroutine waitCoroutine;
+        public float enduranceTimer = 5f;
     }
 
     private readonly Session[] sessions = { new Session(), new Session() };
@@ -42,7 +43,6 @@ public class ElekMinigame : BaseMinigame
     {
         displayName = "Elektrotechnika";
     }
-
 
     public override void React(GameObject playerGO)
     {
@@ -56,6 +56,7 @@ public class ElekMinigame : BaseMinigame
         var s = sessions[id];
         s.active = true;
         s.slot = slots[id];
+        s.enduranceTimer = 5f;
         BindUI(s);
 
         s.name.text = "Elektrotechnika";
@@ -72,7 +73,6 @@ public class ElekMinigame : BaseMinigame
             StopCoroutine(s.waitCoroutine);
 
         s.waitCoroutine = StartCoroutine(WaitAndGo(s));
-
         UpdateHud(s);
     }
 
@@ -80,13 +80,14 @@ public class ElekMinigame : BaseMinigame
     {
         var s = sessions[id];
         s.active = false;
+
         if (s.waitCoroutine != null)
         {
             StopCoroutine(s.waitCoroutine);
             s.waitCoroutine = null;
         }
-        s.slot.panel.SetActive(false);
 
+        s.slot.panel.SetActive(false);
         ToggleMovement(s.slot.player, false);
         TogglePlayerHud(s.slot.player, true);
     }
@@ -104,6 +105,20 @@ public class ElekMinigame : BaseMinigame
             {
                 EndSession(i);
                 continue;
+            }
+
+            // Wytrzymałość co 5 sekund
+            s.enduranceTimer -= UnityEngine.Time.deltaTime;
+            if (s.enduranceTimer <= 0f)
+            {
+                s.slot.player.DecreaseEndurance(1);
+                s.enduranceTimer = 5f;
+
+                if (s.slot.player.Endurance <= 0)
+                {
+                    EndSession(i);
+                    continue;
+                }
             }
 
             if (Input.GetKeyDown(s.slot.actionKey))
@@ -128,7 +143,6 @@ public class ElekMinigame : BaseMinigame
         }
     }
 
-
     private IEnumerator WaitAndGo(Session s)
     {
         s.ready = false;
@@ -151,7 +165,6 @@ public class ElekMinigame : BaseMinigame
 
         s.waitCoroutine = StartCoroutine(WaitAndGo(s));
     }
-
 
     /* ---------- helpers ---------- */
     private void BindUI(Session s)
@@ -177,9 +190,13 @@ public class ElekMinigame : BaseMinigame
 
     private static void ToggleMovement(Player p, bool freeze)
     {
-        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
-        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+        var mv = p.GetComponent<Movement>();
+        if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
+
+        var rb = p.GetComponent<Rigidbody2D>();
+        if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
     }
+
     private static void TogglePlayerHud(Player p, bool show)
     {
         foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
