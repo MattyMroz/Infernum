@@ -56,7 +56,7 @@ public class EndOfDayManager : MonoBehaviour
             float t = elapsed / fadeDuration;
             color.a = Mathf.Lerp(fromAlpha, toAlpha, t);
             fadeImage.color = color;
-            elapsed += Time.deltaTime;
+            elapsed += UnityEngine.Time.deltaTime;
             yield return null;
         }
 
