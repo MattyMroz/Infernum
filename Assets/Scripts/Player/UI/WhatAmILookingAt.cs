@@ -1,67 +1,57 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class WhatAmILookingAt : MonoBehaviour
 {
-    public float detectionRadius = .1f;  // Promieñ wokó³ gracza, w którym sprawdzamy obiekty
-    public LayerMask detectionLayer;    // Warstwa, w której bêd¹ obiekty, które chcemy wykrywaæ (np. NPC, przedmioty)
+    [Header("Detection")]
+    [SerializeField] float detectionRadius = .1f;
+    [SerializeField] LayerMask detectionLayer;
 
-    public TextMeshProUGUI objectNameText;  // Referencja do TextMeshProUGUI (UI Text), gdzie wyœwietlimy nazwê obiektu
+    [Header("UI")]
+    [SerializeField] TextMeshProUGUI objectNameText;
+    [SerializeField] GameObject[] uiPanels;          // przypisz w Inspectorze
+                                                     // (lub usuñ [SerializeField] – patrz Start)
+
+    void Start()
+    {
+        if (objectNameText == null)
+            Debug.LogError("Brak referencji do TextMeshProUGUI");
+
+        // jeœli nic nie przypisano rêcznie – pobierz panele z tagiem
+        if (uiPanels == null || uiPanels.Length == 0)
+            uiPanels = GameObject.FindGameObjectsWithTag("UIPanel");
+    }
 
     void Update()
     {
-        // Upewnij siê, ¿e objectNameText jest przypisane w Inspektorze, zanim u¿yjesz go
-        if (objectNameText == null)
-        {
-            Debug.LogError("objectNameText is not assigned in the Inspector.");
-            return;  // Zatrzymaj dalsze wykonywanie kodu, jeœli objectNameText jest null
-        }
+        if (objectNameText == null) return;
 
-        // Sprawdzamy, czy którykolwiek panel UI z tagiem "UIPanel" jest aktywowany
-        if (IsAnyUIPanelActive())
-        {
-            objectNameText.gameObject.SetActive(false);  // Ukrywamy tekst, jeœli jakikolwiek panel UI jest aktywowany
-            return;  // Zatrzymujemy dalsze przetwarzanie, poniewa¿ ekran UI jest aktywowany
-        }
+        bool uiVisible = AnyPanelActive();
+        objectNameText.gameObject.SetActive(!uiVisible);
 
-        objectNameText.gameObject.SetActive(true);  // Upewniamy siê, ¿e tekst jest w³¹czony, gdy nie ma aktywnego UI
+        if (uiVisible) return;
 
-        // Sprawdzamy obiekty wokó³ gracza, jeœli ¿aden panel UI nie jest aktywowany
-        string objectName = "";
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, detectionLayer);
-
-        foreach (var hitCollider in hitColliders)
-        {
-            if (hitCollider.GetComponent<Interactable>() != null)
+        string objName = "";
+        foreach (var hit in Physics2D.OverlapCircleAll(transform.position, detectionRadius, detectionLayer))
+            if (hit.GetComponent<Interactable>())
             {
-                objectName = hitCollider.gameObject.name;
-                break;  // Zatrzymujemy po znalezieniu pierwszego trafionego obiektu
+                objName = hit.name;
+                break;
             }
-        }
 
-        // Wyœwietlamy nazwê obiektu, jeœli ¿aden panel UI nie jest aktywowany
-        objectNameText.text = objectName;
+        objectNameText.text = objName;
     }
 
-    // Funkcja sprawdzaj¹ca, czy jakikolwiek panel UI z tagiem "UIPanel" jest aktywowany
-    bool IsAnyUIPanelActive()
+    bool AnyPanelActive()
     {
-        // W tej funkcji sprawdzamy, czy jakikolwiek panel UI (z tagiem "UIPanel") jest aktywowany
-        foreach (GameObject panel in GameObject.FindGameObjectsWithTag("UIPanel"))
-        {
-            if (panel.activeSelf)  // Sprawdzamy, czy panel jest aktywowany
-            {
-                return true;  // Zwracamy true, jeœli jakikolwiek panel jest aktywowany
-            }
-        }
-
-        return false;  // Zwracamy false, jeœli ¿aden panel UI nie jest aktywowany
+        foreach (var p in uiPanels)
+            if (p != null && p.activeSelf) return true;
+        return false;
     }
 
-    // Funkcja rysuj¹ca okr¹g w edytorze (zasiêg detekcji)
     void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);  // Rysujemy okr¹g wokó³ modelu gracza
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }
