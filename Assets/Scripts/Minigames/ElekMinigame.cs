@@ -1,7 +1,7 @@
-﻿using TMPro;
+﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class ElekMinigame : BaseMinigame
 {
@@ -21,186 +21,120 @@ public class ElekMinigame : BaseMinigame
     [SerializeField] private int baseGain = 25;
     [SerializeField] private float minWait = 1f;
     [SerializeField] private float maxWait = 3f;
-    [SerializeField] private float nextRoundDelay = 0.5f;
-    private const int KNOWLEDGE_IDX = 4; // Electrotechnics
+    [SerializeField] private float nextRoundDelay = .5f;
+    private const int KNOW_IDX = 4;                  // Electrotechnics
 
-    private class Session
+    /* ---------- stan lokalny ---------- */
+    private class Local
     {
         public bool active;
-        public PlayerSlot slot;
         public Image indicator;
-        public TextMeshProUGUI playerName, day, label, lvl, exp, time, name;
-        public bool ready;
+        public TextMeshProUGUI label, lvl, exp, time;
+        public Coroutine waitCo;
+        public bool ready, reacted;
         public float goTime;
-        public bool reacted;
-        public Coroutine waitCoroutine;
-        public float enduranceTimer = 5f;
     }
+    private readonly Local[] l = { new Local(), new Local() };
 
-    private readonly Session[] sessions = { new Session(), new Session() };
+    private int current;                             // który slot właśnie otwiera / zamyka
 
-    private void Awake()
-    {
-        displayName = "Elektrotechnika";
-    }
-
-    public override void React(GameObject playerGO)
+    /* ---------- wejście ---------- */
+    public override void React(GameObject go)
     {
         for (int i = 0; i < slots.Length; i++)
-            if (playerGO == slots[i].player.gameObject && !sessions[i].active)
+            if (go == slots[i].player.gameObject && !l[i].active)
                 StartSession(i);
     }
 
-    private void StartSession(int id)
+    private void StartSession(int i)
     {
-        var s = sessions[id];
-        s.active = true;
-        s.slot = slots[id];
-        s.enduranceTimer = 5f;
-        BindUI(s);
+        current = i;
+        var s = l[i]; var slot = slots[i];
 
-        s.name.text = "Elektrotechnika";
-        s.playerName.text = s.slot.player.player_name;
-        s.day.text = $"Dzień: {Time.Days}";
-        s.label.text = $"REAGUJ '{s.slot.actionKey}'";
-        s.indicator.color = Color.red;
+        Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Elek));   // blok ruchu + stamina
 
-        ToggleMovement(s.slot.player, true);
-        TogglePlayerHud(s.slot.player, false);
-        s.slot.panel.SetActive(true);
-
-        if (s.waitCoroutine != null)
-            StopCoroutine(s.waitCoroutine);
-
-        s.waitCoroutine = StartCoroutine(WaitAndGo(s));
-        UpdateHud(s);
-    }
-
-    private void EndSession(int id)
-    {
-        var s = sessions[id];
-        s.active = false;
-
-        if (s.waitCoroutine != null)
-        {
-            StopCoroutine(s.waitCoroutine);
-            s.waitCoroutine = null;
-        }
-
-        s.slot.panel.SetActive(false);
-        ToggleMovement(s.slot.player, false);
-        TogglePlayerHud(s.slot.player, true);
-    }
-
-    protected override void Update()
-    {
-        for (int i = 0; i < sessions.Length; i++)
-        {
-            var s = sessions[i];
-            if (!s.active) continue;
-
-            UpdateHud(s);
-
-            if (Input.GetKeyDown(s.slot.exitKey))
-            {
-                EndSession(i);
-                continue;
-            }
-
-            // Wytrzymałość co 5 sekund
-            s.enduranceTimer -= UnityEngine.Time.deltaTime;
-            if (s.enduranceTimer <= 0f)
-            {
-                s.slot.player.DecreaseEndurance(1);
-                s.enduranceTimer = 5f;
-
-                if (s.slot.player.Endurance <= 0)
-                {
-                    EndSession(i);
-                    continue;
-                }
-            }
-
-            if (Input.GetKeyDown(s.slot.actionKey))
-            {
-                if (s.ready && !s.reacted)
-                {
-                    float reaction = UnityEngine.Time.time - s.goTime;
-                    int gain = Mathf.Max(1, baseGain - Mathf.RoundToInt(reaction * baseGain));
-                    s.slot.player.exams_knowledge[KNOWLEDGE_IDX] += gain;
-                    s.reacted = true;
-                    s.ready = false;
-                    UpdateHud(s);
-                }
-                else if (!s.ready)
-                {
-                    if (s.waitCoroutine != null)
-                        StopCoroutine(s.waitCoroutine);
-
-                    s.waitCoroutine = StartCoroutine(WaitAndGo(s));
-                }
-            }
-        }
-    }
-
-    private IEnumerator WaitAndGo(Session s)
-    {
-        s.ready = false;
-        s.reacted = false;
-        s.indicator.color = Color.red;
-
-        yield return new WaitForSeconds(Random.Range(minWait, maxWait));
-
-        s.goTime = UnityEngine.Time.time;
-        s.ready = true;
-        s.indicator.color = Color.green;
-
-        float timeout = 3f;
-        float waitUntil = UnityEngine.Time.time + timeout;
-
-        while (s.ready && !s.reacted && UnityEngine.Time.time < waitUntil)
-            yield return null;
-
-        yield return new WaitForSeconds(nextRoundDelay);
-
-        s.waitCoroutine = StartCoroutine(WaitAndGo(s));
-    }
-
-    /* ---------- helpers ---------- */
-    private void BindUI(Session s)
-    {
-        var t = s.slot.panel.transform;
-        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
-        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
+        // UI
+        var t = slot.panel.transform;
         s.indicator = t.Find("Image").GetComponent<Image>();
         s.label = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
         s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
-        s.name = t.Find("MinigameName").GetComponent<TextMeshProUGUI>();
+
+        s.label.text = $"REAGUJ '{slot.actionKey}'";
+        s.indicator.color = Color.red;
+        s.active = true;
+
+        if (s.waitCo != null) StopCoroutine(s.waitCo);
+        s.waitCo = StartCoroutine(WaitAndGo(i));
+
+        UpdateHud(i);
     }
 
-    private void UpdateHud(Session s)
+    private void EndSession(int i)
     {
-        var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[KNOWLEDGE_IDX]);
-        s.lvl.text = res.lvl.ToString();
-        s.exp.text = $"{res.exp} / {res.divide}";
-        s.time.text = Time.Time_now;
+        if (!l[i].active) return;
+        current = i;
+        Close();                       // wywołuje OnClose → flagi + zatrzymanie korutyny
     }
 
-    private static void ToggleMovement(Player p, bool freeze)
+    /* ---------- hooks ---------- */
+    protected override void OnClose()
     {
-        var mv = p.GetComponent<Movement>();
-        if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
-
-        var rb = p.GetComponent<Rigidbody2D>();
-        if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
+        var s = l[current];
+        if (s.waitCo != null) { StopCoroutine(s.waitCo); s.waitCo = null; }
+        s.active = false;
     }
 
-    private static void TogglePlayerHud(Player p, bool show)
+    /* ---------- Update ---------- */
+    protected override void Update()
     {
-        foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
-            if (c.GetType().Name.StartsWith("Display"))
-                c.enabled = show;
+        base.Update();                 // exitKey & panel.SetActive
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (!l[i].active) continue;
+            var slot = slots[i];
+            var s = l[i];
+
+            if (Input.GetKeyDown(slot.exitKey)) { EndSession(i); continue; }
+
+            if (Input.GetKeyDown(slot.actionKey))
+            {
+                if (s.ready && !s.reacted)
+                {
+                    float rt = UnityEngine.Time.time - s.goTime;
+                    int gain = Mathf.Max(1, baseGain - Mathf.RoundToInt(rt * baseGain));
+                    slot.player.exams_knowledge[KNOW_IDX] += gain;
+                    s.reacted = true; s.ready = false;
+                    UpdateHud(i);
+                }
+                else if (!s.ready)
+                {
+                    if (s.waitCo != null) StopCoroutine(s.waitCo);
+                    s.waitCo = StartCoroutine(WaitAndGo(i));
+                }
+            }
+        }
+    }
+
+    /* ---------- corutyna ---------- */
+    private IEnumerator WaitAndGo(int i)
+    {
+        var s = l[i]; s.ready = s.reacted = false; s.indicator.color = Color.red;
+        yield return new WaitForSeconds(Random.Range(minWait, maxWait));
+
+        s.goTime = UnityEngine.Time.time; s.ready = true; s.indicator.color = Color.green;
+        yield return new WaitForSeconds(nextRoundDelay);
+        s.waitCo = StartCoroutine(WaitAndGo(i));          // kolejna runda
+    }
+
+    private void UpdateHud(int i)
+    {
+        var p = slots[i].player;
+        var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
+        l[i].lvl.text = r.lvl.ToString();
+        l[i].exp.text = $"{r.exp} / {r.divide}";
+        l[i].time.text = Time.Time_now;
     }
 }

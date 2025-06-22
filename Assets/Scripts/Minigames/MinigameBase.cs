@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,7 +31,10 @@ public abstract class BaseMinigame : Interactable
     protected virtual void Update()
     {
         if (active && !panel.activeSelf)
-            Close();
+        {
+            Debug.LogWarning("Panel został wyłączony poza systemem. Zamykanie minigry...");
+            Close();  // Wyłącza całą minigrę jeśli panel zniknął
+        }
 
         if (Input.GetKeyDown(exitKey) && active)
             Close();
@@ -111,4 +114,9 @@ public abstract class BaseMinigame : Interactable
     protected virtual void OnBoot(MinigameConfig cfg) { }
     protected virtual void OnOpen() { }
     protected virtual void OnClose() { }
+
+
+    protected virtual void OnSessionStart(int i) { }
+    protected virtual void OnSessionEnd(int i) { } 
+
 }

@@ -6,9 +6,9 @@ public class MathMinigame : BaseMinigame
     [System.Serializable]
     public class PlayerSlot
     {
-        public Player player;               // obiekt Player
-        public GameObject panel;                // panel UI gracza
-        public KeyCode exitKey = KeyCode.F;  // klawisz wyjścia
+        public Player player;
+        public GameObject panel;
+        public KeyCode exitKey = KeyCode.F;
     }
 
     [Header("Players (P1 = 0, P2 = 1)")]
@@ -16,172 +16,114 @@ public class MathMinigame : BaseMinigame
 
     [Header("Gameplay")]
     [SerializeField] private int mathGain = 10;
-    [SerializeField] private int knowledgeIndex = 0;   // Mathematics
+    private const int KNOWLEDGE_IDX = 0;            // Mathematics
 
-    /* --------- stan jednej sesji --------- */
-    private class Session
+    /* ---------- stan lokalny ---------- */
+    private class Local
     {
         public bool active;
+        public TMP_InputField input;
+        public TextMeshProUGUI numTxt, lvl, exp, time;
+        public int random;
         public PlayerSlot slot;
-
-        // UI
-        public TextMeshProUGUI displayNumber;
-        public TMP_InputField inputField;
-        public TextMeshProUGUI playerName, day, lvl, exp, time, name;
-
-        // Gameplay
-        public int randomNumber;
     }
+    private readonly Local[] l = { new Local(), new Local() };
 
-    private readonly Session[] sessions = { new Session(), new Session() };
+    /* indeks aktualnie otwieranej / zamykanej sesji */
+    private int currentIdx = -1;
 
-    private void Awake()
-    {
-        displayName = "Matematyka";
-    }
-
-    /* --------- wejście w minigrę --------- */
+    /* ---------- React ---------- */
     public override void React(GameObject playerGO)
     {
         for (int i = 0; i < slots.Length; i++)
-            if (playerGO == slots[i].player.gameObject && !sessions[i].active)
-            {
+            if (playerGO == slots[i].player.gameObject && !l[i].active)
                 StartSession(i);
-                return;
-            }
     }
 
-    /* --------- start / koniec --------- */
-    private void StartSession(int id)
+    /* ---------- Start ---------- */
+    private void StartSession(int i)
     {
-        var s = sessions[id];
-        s.active = true;
-        s.slot = slots[id];
+        currentIdx = i;
+        var s = l[i]; s.slot = slots[i]; s.active = true;
 
-        // ← najważniejsze – ręczne odpalenie Boot()
         Boot(s.slot.player.gameObject, s.slot.player.GetConfig(MinigameID.Math));
 
-        BindUI(s);
-        SetupInput(s);
-        GenerateNumber(s);
-        UpdateHud(s);
-    }
-
-
-    private void EndSession(int id)
-    {
-        var s = sessions[id];
-        s.active = false;
-        s.slot.panel.SetActive(false);
-
-        ToggleMovement(s.slot.player, false);
-        TogglePlayerHud(s.slot.player, true);
-    }
-
-    /* --------- UNITY UPDATE --------- */
-    protected override void Update()       // <- override, nie ukrywa bazy
-    {
-        for (int i = 0; i < sessions.Length; i++)
-        {
-            var s = sessions[i];
-            if (!s.active) continue;
-
-        
-
-            UpdateHud(s);
-
-            if (Input.GetKeyDown(s.slot.exitKey)) { EndSession(i); continue; }
-
-            MaintainCaret(s);
-            UpdateHud(s);      // odświeżamy co klatkę, by HUD był aktualny
-        }
-    }
-
-    /* --------- Helpers --------- */
-    private void BindUI(Session s)
-    {
-        Transform t = s.slot.panel.transform;
-        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
-        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
-        s.displayNumber = t.Find("DisplayNumber").GetComponent<TextMeshProUGUI>();
-        s.inputField = t.Find("InputNumber").GetComponent<TMP_InputField>();
+        var t = s.slot.panel.transform;
+        s.input = t.Find("InputNumber").GetComponent<TMP_InputField>();
+        s.numTxt = t.Find("DisplayNumber").GetComponent<TextMeshProUGUI>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
         s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
-        s.name = t.Find("MinigameName").GetComponent<TextMeshProUGUI>();
+
+        SetupInput(i);
+        NewNumber(i);
+        UpdateHud(i);
     }
 
-    private void SetupInput(Session s)
+    /* ---------- Update ---------- */
+    protected override void Update()
     {
-        s.name.text = "Matematyka";
-        s.playerName.text = s.slot.player.player_name;
-        s.day.text = $"Dzień: {Time.Days}";
+        base.Update();                       // exitKey + panel.SetActive + stamina
 
-        s.inputField.contentType = TMP_InputField.ContentType.IntegerNumber;
-        s.inputField.characterValidation = TMP_InputField.CharacterValidation.Digit;
-        s.inputField.onValidateInput = OnlyDigits;
-        s.inputField.onEndEdit.RemoveAllListeners();
-        s.inputField.onEndEdit.AddListener(str => CheckInput(s, str));
-        s.inputField.ActivateInputField();
+        for (int i = 0; i < l.Length; i++)
+            if (l[i].active) MaintainCaret(i);
     }
 
-    private void GenerateNumber(Session s)
+    /* ---------- gameplay helpers ---------- */
+    private void SetupInput(int i)
     {
-        s.randomNumber = Random.Range(1_000_000, 10_000_000);
-        s.displayNumber.text = s.randomNumber.ToString();
-        s.inputField.text = string.Empty;
+        var inp = l[i].input;
+        inp.contentType = TMP_InputField.ContentType.IntegerNumber;
+        inp.characterValidation = TMP_InputField.CharacterValidation.Digit;
+        inp.onValidateInput = (_, __, c) => char.IsDigit(c) ? c : '\0';
+        inp.onEndEdit.RemoveAllListeners();
+        inp.onEndEdit.AddListener(str => CheckAnswer(i, str));
+        inp.ActivateInputField();
     }
 
-    private void CheckInput(Session s, string userInput)
+    private void NewNumber(int i)
     {
-        if (string.IsNullOrWhiteSpace(userInput)) return;
-
-        if (int.TryParse(userInput, out int n) && n == s.randomNumber)
-            s.slot.player.exams_knowledge[knowledgeIndex] += mathGain;
-
-        GenerateNumber(s);
-        UpdateHud(s);
-        s.inputField.ActivateInputField();
+        l[i].random = Random.Range(1_000_000, 10_000_000);
+        l[i].numTxt.text = l[i].random.ToString();
+        l[i].input.text = "";
     }
 
-    private static char OnlyDigits(string _, int __, char c) =>
-        char.IsDigit(c) ? c : '\0';
-
-    private void MaintainCaret(Session s)
+    private void CheckAnswer(int i, string s)
     {
-        if (!s.inputField.isFocused) return;
+        if (int.TryParse(s, out int n) && n == l[i].random)
+            l[i].slot.player.exams_knowledge[KNOWLEDGE_IDX] += mathGain;
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) ||
-            Input.GetKeyDown(KeyCode.RightArrow) ||
-            Input.GetKeyDown(KeyCode.UpArrow) ||
-            Input.GetKeyDown(KeyCode.DownArrow))
+        NewNumber(i);
+        UpdateHud(i);
+        l[i].input.ActivateInputField();
+    }
+
+    private void MaintainCaret(int i)
+    {
+        var inp = l[i].input; if (!inp.isFocused) return;
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
+            Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            int len = s.inputField.text.Length;
-            s.inputField.caretPosition =
-            s.inputField.selectionAnchorPosition =
-            s.inputField.selectionFocusPosition = len;
+            int len = inp.text.Length;
+            inp.caretPosition =
+            inp.selectionAnchorPosition =
+            inp.selectionFocusPosition = len;
         }
     }
 
-    private void UpdateHud(Session s)
+    /* ---------- HUD ---------- */
+    private void UpdateHud(int i)
     {
-        var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[knowledgeIndex]);
-        s.lvl.text = res.lvl.ToString();
-        s.exp.text = $"{res.exp} / {res.divide}";
-        s.time.text = Time.Time_now;
+        var p = l[i].slot.player;
+        var res = p.LvlIncrease(p.exams_knowledge[KNOWLEDGE_IDX]);
+        l[i].lvl.text = res.lvl.ToString();
+        l[i].exp.text = $"{res.exp} / {res.divide}";
+        l[i].time.text = Time.Time_now;
     }
 
-    /* --------- utility --------- */
-    private static void ToggleMovement(Player p, bool freeze)
+    /* ---------- hook z bazy ---------- */
+    protected override void OnClose()
     {
-        var mv = p.GetComponent<Movement>(); if (mv) { if (freeze) mv.ResetVelocity(); mv.enabled = !freeze; }
-        var rb = p.GetComponent<Rigidbody2D>(); if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
-    }
-
-    private static void TogglePlayerHud(Player p, bool show)
-    {
-        foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
-            if (c.GetType().Name.StartsWith("Display"))
-                c.enabled = show;
+        if (currentIdx >= 0) l[currentIdx].active = false;
     }
 }

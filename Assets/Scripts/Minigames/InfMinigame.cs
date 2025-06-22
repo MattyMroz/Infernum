@@ -13,185 +13,112 @@ public class InfMinigame : BaseMinigame
         public KeyCode actionKey;
     }
 
-    [Header("Players")]
     [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
 
     [Header("Gameplay")]
-    [SerializeField] private float liftForce = 1800f;
-    [SerializeField] private float gravity = 900f;
-    [SerializeField] private float zoneSpeed = 100f;
+    [SerializeField] private float lift = 1800f, gravity = 900f, zoneSpeed = 100f;
     [SerializeField] private int expPerSec = 5;
-    [SerializeField] private int knowledgeId = 1;   // IT
+    private const int KNOW_IDX = 1; // IT
 
-    private class Session
+    /* ----- stan ----- */
+    private class Local
     {
         public bool active;
-        public PlayerSlot slot;
-        public TextMeshProUGUI playerName, day, lvl, exp, time, name;
         public RectTransform playArea;
-        public Image notPlayArea, ball;
-        public Vector2 velocity;
-        public float secTimer;
+        public Image notArea, ball;
+        public Vector2 vel;
         public int zoneDir = -1;
-
-        public float enduranceTimer = 5f;
+        public float secTimer;
+        public TextMeshProUGUI lvl, exp, time;
     }
+    private readonly Local[] l = { new Local(), new Local() };
+    private int current;
 
-    private readonly Session[] sessions = { new Session(), new Session() };
-
-    private void Awake()
-    {
-        displayName = "Informatyka";
-    }
-
-    public override void React(GameObject playerGO)
+    public override void React(GameObject go)
     {
         for (int i = 0; i < slots.Length; i++)
-            if (playerGO == slots[i].player.gameObject && !sessions[i].active)
+            if (go == slots[i].player.gameObject && !l[i].active)
                 StartSession(i);
     }
 
-    private void StartSession(int id)
+    private void StartSession(int i)
     {
-        var s = sessions[id];
-        s.active = true;
-        s.slot = slots[id];
-        s.enduranceTimer = 5f;
+        current = i;
+        var slot = slots[i];
+        Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Inf));
 
-        BindUI(s);
-        CenterBall(s);
-        UpdateHud(s);
+        var t = slot.panel.transform;
+        l[i].playArea = t.Find("NotPlayArea/PlayArea").GetComponent<RectTransform>();
+        l[i].notArea = t.Find("NotPlayArea").GetComponent<Image>();
+        l[i].ball = t.Find("NotPlayArea/Ball").GetComponent<Image>();
+        l[i].lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        l[i].exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        l[i].time = t.Find("Time").GetComponent<TextMeshProUGUI>();
 
-        ToggleMovement(s.slot.player, true);
-        TogglePlayerHud(s.slot.player, false);
-        s.slot.panel.SetActive(true);
+        l[i].ball.rectTransform.anchoredPosition = l[i].playArea.rect.center;
+        l[i].active = true;
+        UpdateHud(i);
     }
 
-    private void EndSession(int id)
-    {
-        var s = sessions[id];
-        s.active = false;
-        s.slot.panel.SetActive(false);
+    private void EndSession(int i) { if (l[i].active) { current = i; Close(); } }
+    protected override void OnClose() { l[current].active = false; }
 
-        ToggleMovement(s.slot.player, false);
-        TogglePlayerHud(s.slot.player, true);
-    }
-
-    private void BindUI(Session s)
-    {
-        var t = s.slot.panel.transform;
-        s.playerName = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
-        s.day = t.Find("Day").GetComponent<TextMeshProUGUI>();
-        s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
-        s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
-        s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
-        s.name = t.Find("MinigameName").GetComponent<TextMeshProUGUI>();
-        s.playArea = t.Find("NotPlayArea/PlayArea").GetComponent<RectTransform>();
-        s.notPlayArea = t.Find("NotPlayArea").GetComponent<Image>();
-        s.ball = t.Find("NotPlayArea/Ball").GetComponent<Image>();
-    }
-
+    /* ----- Update ----- */
     protected override void Update()
     {
-        for (int i = 0; i < sessions.Length; i++)
+        base.Update();
+
+        for (int i = 0; i < slots.Length; i++)
         {
-            var s = sessions[i];
-            if (!s.active) continue;
-
-            UpdateHud(s);
-
-            if (Input.GetKeyDown(s.slot.exitKey))
-            {
-                EndSession(i);
-                continue;
-            }
-
-            TickSession(s, i);
+            if (!l[i].active) continue;
+            Tick(i);
         }
     }
 
-    private void TickSession(Session s, int id)
+    private void Tick(int i)
     {
-        if (Input.GetKey(s.slot.actionKey))
-            s.velocity.y += liftForce * UnityEngine.Time.deltaTime;
+        var slot = slots[i]; var s = l[i];
 
-        s.velocity.y -= gravity * UnityEngine.Time.deltaTime;
-        s.velocity.y = Mathf.Clamp(s.velocity.y, -200f, 200f);
-        s.ball.rectTransform.anchoredPosition += s.velocity * UnityEngine.Time.deltaTime;
+        if (Input.GetKeyDown(slot.exitKey)) { EndSession(i); return; }
 
-        float yMin = s.notPlayArea.rectTransform.rect.yMin + s.ball.rectTransform.rect.height * 0.5f;
-        float yMax = s.notPlayArea.rectTransform.rect.yMax - s.ball.rectTransform.rect.height * 0.5f;
+        if (Input.GetKey(slot.actionKey))
+            s.vel.y += lift * UnityEngine.Time.deltaTime;
+        s.vel.y -= gravity * UnityEngine.Time.deltaTime;
+        s.vel.y = Mathf.Clamp(s.vel.y, -200, 200);
+        s.ball.rectTransform.anchoredPosition += s.vel * UnityEngine.Time.deltaTime;
+
+        // kolizja z ramką
+        float yMin = s.notArea.rectTransform.rect.yMin + s.ball.rectTransform.rect.height * .5f;
+        float yMax = s.notArea.rectTransform.rect.yMax - s.ball.rectTransform.rect.height * .5f;
         var pos = s.ball.rectTransform.anchoredPosition;
         pos.y = Mathf.Clamp(pos.y, yMin, yMax);
         s.ball.rectTransform.anchoredPosition = pos;
-        if (pos.y == yMin || pos.y == yMax) s.velocity = Vector2.zero;
+        if (pos.y == yMin || pos.y == yMax) s.vel = Vector2.zero;
 
-        float pMin = s.notPlayArea.rectTransform.rect.yMin + s.playArea.rect.height * 0.5f;
-        float pMax = s.notPlayArea.rectTransform.rect.yMax - s.playArea.rect.height * 0.5f;
+        // strefa
+        float pMin = s.notArea.rectTransform.rect.yMin + s.playArea.rect.height * .5f;
+        float pMax = s.notArea.rectTransform.rect.yMax - s.playArea.rect.height * .5f;
         s.playArea.anchoredPosition += Vector2.up * zoneSpeed * s.zoneDir * UnityEngine.Time.deltaTime;
         var pa = s.playArea.anchoredPosition;
         pa.y = Mathf.Clamp(pa.y, pMin, pMax);
         s.playArea.anchoredPosition = pa;
         if (pa.y == pMin || pa.y == pMax) s.zoneDir *= -1;
 
-        bool inside = RectTransformUtility.RectangleContainsScreenPoint(
-            s.playArea, s.ball.rectTransform.position, null);
-
+        bool inside = RectTransformUtility.RectangleContainsScreenPoint(s.playArea, s.ball.rectTransform.position, null);
         if (inside)
         {
             s.secTimer += UnityEngine.Time.deltaTime;
-            if (s.secTimer >= 1f)
-            {
-                s.slot.player.exams_knowledge[knowledgeId] += expPerSec;
-                s.secTimer -= 1f;
-                UpdateHud(s);
-            }
+            if (s.secTimer >= 1f) { slot.player.exams_knowledge[KNOW_IDX] += expPerSec; s.secTimer -= 1f; UpdateHud(i); }
         }
         else s.secTimer = 0f;
-
-        // Nowy kod: spadek wytrzymałości co 5 sek
-        s.enduranceTimer -= UnityEngine.Time.deltaTime;
-        if (s.enduranceTimer <= 0f)
-        {
-            s.slot.player.DecreaseEndurance(1);
-            s.enduranceTimer = 5f;
-
-            if (s.slot.player.Endurance <= 0)
-                EndSession(id);
-        }
     }
 
-    private void CenterBall(Session s) =>
-        s.ball.rectTransform.anchoredPosition = s.playArea.rect.center;
-
-    private void UpdateHud(Session s)
+    private void UpdateHud(int i)
     {
-        var res = s.slot.player.LvlIncrease(s.slot.player.exams_knowledge[knowledgeId]);
-        s.lvl.text = res.lvl.ToString();
-        s.exp.text = $"{res.exp} / {res.divide}";
-        s.time.text = Time.Time_now;
-        s.name.text = "Informatyka";
-        s.playerName.text = s.slot.player.player_name;
-        s.day.text = $"Dzień: {Time.Days}";
-    }
-
-    private static void ToggleMovement(Player p, bool freeze)
-    {
-        var mv = p.GetComponent<Movement>();
-        if (mv)
-        {
-            if (freeze) mv.ResetVelocity();
-            mv.enabled = !freeze;
-        }
-
-        var rb = p.GetComponent<Rigidbody2D>();
-        if (rb) rb.bodyType = freeze ? RigidbodyType2D.Static : RigidbodyType2D.Dynamic;
-    }
-
-    private static void TogglePlayerHud(Player p, bool show)
-    {
-        foreach (var c in p.GetComponentsInChildren<MonoBehaviour>(true))
-            if (c.GetType().Name.StartsWith("Display"))
-                c.enabled = show;
+        var p = slots[i].player;
+        var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
+        l[i].lvl.text = r.lvl.ToString();
+        l[i].exp.text = $"{r.exp}/{r.divide}";
+        l[i].time.text = Time.Time_now;
     }
 }
