@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
         for (int i = 0; i < (int)ExamType.NR_TYPES; i++)
             exams_knowledge[i] = 5;
 
-        endurance = 5;
+        endurance = 100;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -70,17 +70,25 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RaycastHit2D hit;
 
+        hit = Physics2D.CircleCast(transform.position, 0.1f, UnityEngine.Vector2.zero, 0.1f, 0);
+
+        if (hit)
+        {
+            if (hit.transform.CompareTag("MapBounds"))
+                current_map_bounds = hit.transform.gameObject;
+        }
     }
     
     public void IncreaseWisdom(int amount)
     {
-        wisdom += amount;
+        wisdom += wisdom < 100 ? amount : 0;
     }
 
     public void IncreaseEndurance(int amount)
     {
-        endurance += amount;
+        endurance += endurance < 100 ? amount : 0 ;
     }
 
     public void DecreaseWisdom(int amount)
@@ -93,10 +101,17 @@ public class Player : MonoBehaviour
         endurance -= endurance > 0 ? amount : 0;
     }
 
-    public void DrinkBeer(int wisdom_decrease, int endurance_increase)
+    public void DrinkBeer(int wisdom_increase, int endurance_increase)
     {
-        wisdom -= wisdom > 0 ? wisdom_decrease : 0;
-        endurance += endurance_increase;
+        wisdom += wisdom < 100 ? wisdom_increase : 0;
+        endurance -= endurance > 0 ? endurance_increase : 0;
+    }
+
+    public void ResetEndurance()
+    {
+
+        endurance = 100;
+        wisdom = 100;
     }
 
     public void SearchTrash()
@@ -120,6 +135,7 @@ public class Player : MonoBehaviour
 
         //StartCoroutine(GetComponent<ExamDisplay>().DiceRoll(overallScore));
         GetComponent<ExamDisplay>().Open(exam);
+        DecreaseWisdom(25);
     }
 
     public int StartExam(Exam exam)
@@ -171,6 +187,14 @@ public class Player : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("MapBounds"))
+        {
+            current_map_bounds = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("MapBounds"))
         {

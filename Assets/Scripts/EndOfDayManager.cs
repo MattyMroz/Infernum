@@ -43,11 +43,13 @@ public class EndOfDayManager : MonoBehaviour
     {
         endOfDayObject.SetActive(true);
 
+        Time.PauseTime();
+
         for(int i = 0; i < players.Length; i++)
         {
             players[i].GetComponent<InputManager>().enabled = false;
             players[i].GetComponent<Movement>().ResetVelocity(); players[i].GetComponent<Movement>().enabled = false;
-            players[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            players[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         }
 
         ToggleUI(false);
@@ -59,6 +61,7 @@ public class EndOfDayManager : MonoBehaviour
         dayText.gameObject.SetActive(true);
         yield return new WaitForSeconds(messageDuration);
         dayText.gameObject.SetActive(false);
+
 
         // Teleportacja graczy
         for (int i = 0; i < players.Length; i++)
@@ -76,19 +79,26 @@ public class EndOfDayManager : MonoBehaviour
         {
             players[i].GetComponent<InputManager>().enabled = true;
             players[i].GetComponent<Movement>().ResetVelocity(); players[i].GetComponent<Movement>().enabled = true;
-            players[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            players[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
+            players[i].ResetEndurance();
         }
 
         ToggleUI(true);
+
+        Time.ResumeTime();
     }
 
     private IEnumerator FadeScreen(float fromAlpha, float toAlpha)
     {
+
+
         Color color = fadeImage.color;
         float elapsed = 0f;
 
         while (elapsed < fadeDuration)
         {
+            ToggleUI(false);
             float t = elapsed / fadeDuration;
             color.a = Mathf.Lerp(fromAlpha, toAlpha, t);
             fadeImage.color = color;

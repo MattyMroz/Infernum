@@ -38,7 +38,7 @@ public class ExamDisplay : Interactable
     [SerializeField] KeyCode exitButton;
 
     private int diceResult = 0;
-    private bool opened = false;
+    [SerializeField] private bool opened = false;
     private bool _using = false;
 
     private Exam _exam;
@@ -55,16 +55,16 @@ public class ExamDisplay : Interactable
     {
         if (opened)
         {
-            if (!examUI.activeSelf)
+            if (!examUI.activeSelf && opened)
             {
                 Close();
                 GetComponent<InputManager>().enabled = false;
                 GetComponent<Movement>().ResetVelocity(); GetComponent<Movement>().enabled = false;
                 GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-                ToggleUI(false);
+                //ToggleUI(false);
             }
 
-            if (!_using && Input.GetKeyDown(takeExamButton))
+            if (!_using && Input.GetKeyDown(takeExamButton) && player.Wisdom >= 25)
                 StartCoroutine(DiceRoll());
             if (!_using && Input.GetKeyDown(exitButton))
                 Close();
