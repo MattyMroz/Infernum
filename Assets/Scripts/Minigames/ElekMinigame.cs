@@ -45,7 +45,7 @@ public class ElekMinigame : BaseMinigame
         loc.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         loc.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
         loc.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
-        loc.day = t.Find("Day").GetComponent<TextMeshProUGUI>();          // ← ➋ BIND
+        loc.day = t.Find("Day").GetComponent<TextMeshProUGUI>();      
 
         loc.lbl.text = $"REAGUJ '{slot.actionKey}'";
         loc.ind.color = Color.red;
@@ -112,6 +112,6 @@ public class ElekMinigame : BaseMinigame
         l[i].lvl.text = r.lvl.ToString();
         l[i].exp.text = $"{r.exp}/{r.divide}";
         l[i].time.text = Time.Time_now;
-        l[i].day.text = $"Dzień: {Time.Days}";             // ← ➌ NOWE
+        l[i].day.text = $"Dzień: {Time.Days}";      
     }
 }

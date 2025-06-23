@@ -20,8 +20,9 @@ public class InfMinigame : BaseMinigame
         public Vector2 vel;
         public int zoneDir = -1;
         public float secTimer;
-        public TextMeshProUGUI lvl, exp, time;
+        public TextMeshProUGUI lvl, exp, time, day;          // ← ➊
     }
+
     private readonly Local[] l = { new Local(), new Local() };
     private int cur;
 
@@ -33,18 +34,25 @@ public class InfMinigame : BaseMinigame
 
     private void StartSession(int i)
     {
-        cur = i; var s = slots[i]; var loc = l[i];
-        Boot(s.player.gameObject, s.player.GetConfig(MinigameID.Inf));
-        var t = s.panel.transform;
+        cur = i;
+        var slot = slots[i];
+        var loc = l[i];
+
+        Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Inf));
+
+        var t = slot.panel.transform;
         loc.playArea = t.Find("NotPlayArea/PlayArea").GetComponent<RectTransform>();
         loc.notArea = t.Find("NotPlayArea").GetComponent<Image>();
         loc.ball = t.Find("NotPlayArea/Ball").GetComponent<Image>();
         loc.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         loc.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
         loc.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        loc.day = t.Find("Day").GetComponent<TextMeshProUGUI>();      // ← ➋
+
         loc.ball.rectTransform.anchoredPosition = loc.playArea.rect.center;
-        loc.active = true; UpdateHud(i);
-        ToggleUI(s.player, false);
+        loc.active = true;
+        UpdateHud(i);
+        ToggleUI(slot.player, false);
     }
 
     private void EndSession(int i) { 
@@ -111,8 +119,10 @@ public class InfMinigame : BaseMinigame
     {
         var p = slots[i].player;
         var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
+
         l[i].lvl.text = r.lvl.ToString();
         l[i].exp.text = $"{r.exp}/{r.divide}";
         l[i].time.text = Time.Time_now;
+        l[i].day.text = $"Dzień: {Time.Days}";             // ← ➌
     }
 }

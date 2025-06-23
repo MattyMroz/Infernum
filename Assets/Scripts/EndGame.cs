@@ -5,8 +5,8 @@ public class EndGame : MonoBehaviour
 {
     [SerializeField] int lastDay = 14;
     [SerializeField] Exams examsRoot;
-    [SerializeField] Player[] players;     // P1 = 0, P2 = 1 …
-    [SerializeField] TextMeshProUGUI[] lines;       // po jednym polu tekstowym na gracza
+    [SerializeField] Player[] players;   // P1 = 0, P2 = 1 …
+    [SerializeField] TextMeshProUGUI[] lines;     // jedno pole tekstowe na gracza
     [SerializeField] GameObject endPanel;
 
     bool finished;
@@ -25,15 +25,15 @@ public class EndGame : MonoBehaviour
         int examsTotal = examsRoot.exams.Count;
         int slots = Mathf.Min(players.Length, lines.Length);
 
-        Time.PauseTime();
-        Time.timeStarted = false;
+        Time.PauseTime();             
+        Time.ResetClock();          
 
         for (int i = 0; i < slots; i++)
         {
             Player p = players[i];
-            int idx = Mathf.Clamp(p.id, 0, 1); 
-            int passed = 0;
+            int idx = Mathf.Clamp(p.id, 0, 1);
 
+            int passed = 0;
             foreach (var ex in examsRoot.exams)
                 if (idx < ex.passed.Length && ex.passed[idx])
                     passed++;
@@ -43,7 +43,10 @@ public class EndGame : MonoBehaviour
 
         for (int i = slots; i < lines.Length; i++)
             lines[i].text = "";
+    }
 
-        Time.PauseTime();
+    public void ResetFlag()
+    {
+        finished = false;
     }
 }

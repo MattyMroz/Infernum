@@ -10,7 +10,12 @@ public class ProgMinigame : BaseMinigame
     [SerializeField] private int keyGain = 1;
     private const int KNOW_IDX = 2;
 
-    private class Local { public bool active; public TextMeshProUGUI lvl, exp, time; }
+    private class Local
+    {
+        public bool active;
+        public TextMeshProUGUI lvl, exp, time, day;          // ← ➊
+    }
+    
     private readonly Local[] l = { new Local(), new Local() };
     private int cur;
 
@@ -22,14 +27,21 @@ public class ProgMinigame : BaseMinigame
 
     private void StartSession(int i)
     {
-        cur = i; var s = slots[i]; var loc = l[i];
-        Boot(s.player.gameObject, s.player.GetConfig(MinigameID.Prog));
-        var t = s.panel.transform;
+        cur = i;
+        var slot = slots[i];
+        var loc = l[i];
+
+        Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Prog));
+
+        var t = slot.panel.transform;
         loc.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         loc.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
         loc.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
-        loc.active = true; UpdateHud(i);
-        ToggleUI(s.player, false);
+        loc.day = t.Find("Day").GetComponent<TextMeshProUGUI>();          // ← ➋
+
+        loc.active = true;
+        UpdateHud(i);
+        ToggleUI(slot.player, false);
     }
 
     private void EndSession(int i) { ToggleUI(slots[i].player, true); if (l[i].active) { cur = i; Close(); } }
@@ -52,8 +64,10 @@ public class ProgMinigame : BaseMinigame
     {
         var p = slots[i].player;
         var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
+
         l[i].lvl.text = r.lvl.ToString();
         l[i].exp.text = $"{r.exp}/{r.divide}";
         l[i].time.text = Time.Time_now;
+        l[i].day.text = $"Dzień: {Time.Days}";             // ← ➌
     }
 }
