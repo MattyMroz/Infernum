@@ -1,132 +1,86 @@
-﻿using System.Collections;
+﻿/* ---------------- ElekMinigame ---------------- */
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ElekMinigame : BaseMinigame
 {
-    [System.Serializable]
-    public class PlayerSlot
-    {
-        public Player player;
-        public GameObject panel;
-        public KeyCode exitKey;
-        public KeyCode actionKey;
-    }
+    [System.Serializable] public class PlayerSlot { public Player player; public GameObject panel; public KeyCode exitKey; public KeyCode actionKey; }
 
-    [Header("Players (P1 = 0, P2 = 1)")]
     [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
-
-    [Header("Gameplay")]
     [SerializeField] private int baseGain = 25;
-    [SerializeField] private float minWait = 1f;
-    [SerializeField] private float maxWait = 3f;
-    [SerializeField] private float nextRoundDelay = .5f;
-    private const int KNOW_IDX = 4;                  // Electrotechnics
+    [SerializeField] private float minWait = 1f, maxWait = 3f, nextDelay = .5f;
+    private const int KNOW_IDX = 4;
 
-    /* ---------- stan lokalny ---------- */
     private class Local
     {
-        public bool active;
-        public Image indicator;
-        public TextMeshProUGUI label, lvl, exp, time;
-        public Coroutine waitCo;
-        public bool ready, reacted;
-        public float goTime;
+        public bool active, ready, reacted;
+        public Image ind;
+        public TextMeshProUGUI lbl, lvl, exp, time;
+        public Coroutine co;
+        public float go;
     }
     private readonly Local[] l = { new Local(), new Local() };
+    private int cur;
 
-    private int current;                             // który slot właśnie otwiera / zamyka
-
-    /* ---------- wejście ---------- */
     public override void React(GameObject go)
     {
         for (int i = 0; i < slots.Length; i++)
-            if (go == slots[i].player.gameObject && !l[i].active)
-                StartSession(i);
+            if (go == slots[i].player.gameObject && !l[i].active) StartSession(i);
     }
 
     private void StartSession(int i)
     {
-        current = i;
-        var s = l[i]; var slot = slots[i];
-
-        Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Elek));   // blok ruchu + stamina
-
-        // UI
+        cur = i; var slot = slots[i]; var loc = l[i];
+        Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Elek));
         var t = slot.panel.transform;
-        s.indicator = t.Find("Image").GetComponent<Image>();
-        s.label = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
-        s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
-        s.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
-        s.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
-
-        s.label.text = $"REAGUJ '{slot.actionKey}'";
-        s.indicator.color = Color.red;
-        s.active = true;
-
-        if (s.waitCo != null) StopCoroutine(s.waitCo);
-        s.waitCo = StartCoroutine(WaitAndGo(i));
-
-        UpdateHud(i);
+        loc.ind = t.Find("Image").GetComponent<Image>();
+        loc.lbl = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
+        loc.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        loc.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        loc.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        loc.lbl.text = $"REAGUJ '{slot.actionKey}'";
+        loc.ind.color = Color.red; loc.active = true;
+        if (loc.co != null) StopCoroutine(loc.co); loc.co = StartCoroutine(WaitGo(i));
+        UpdateHud(i); ToggleUI(slot.player, false);
     }
 
-    private void EndSession(int i)
-    {
-        if (!l[i].active) return;
-        current = i;
-        Close();                       // wywołuje OnClose → flagi + zatrzymanie korutyny
-    }
+    private void EndSession(int i) { ToggleUI(slots[i].player, true); if (l[i].active) { cur = i; Close(); } }
+    protected override void OnClose() { if (l[cur].co != null) StopCoroutine(l[cur].co); l[cur].active = false; }
 
-    /* ---------- hooks ---------- */
-    protected override void OnClose()
-    {
-        var s = l[current];
-        if (s.waitCo != null) { StopCoroutine(s.waitCo); s.waitCo = null; }
-        s.active = false;
-    }
-
-    /* ---------- Update ---------- */
     protected override void Update()
     {
-        base.Update();                 // exitKey & panel.SetActive
-
+        base.Update();
         for (int i = 0; i < slots.Length; i++)
         {
             if (!l[i].active) continue;
-            var slot = slots[i];
-            var s = l[i];
-
+            var slot = slots[i]; var loc = l[i];
             if (Input.GetKeyDown(slot.exitKey)) { EndSession(i); continue; }
-
             if (Input.GetKeyDown(slot.actionKey))
             {
-                if (s.ready && !s.reacted)
+                if (loc.ready && !loc.reacted)
                 {
-                    float rt = UnityEngine.Time.time - s.goTime;
-                    int gain = Mathf.Max(1, baseGain - Mathf.RoundToInt(rt * baseGain));
+                    int gain = Mathf.Max(1, baseGain - Mathf.RoundToInt((UnityEngine.Time.time - loc.go) * baseGain));
                     slot.player.exams_knowledge[KNOW_IDX] += gain;
-                    s.reacted = true; s.ready = false;
-                    UpdateHud(i);
+                    loc.reacted = true; loc.ready = false; UpdateHud(i);
                 }
-                else if (!s.ready)
+                else if (!loc.ready)
                 {
-                    if (s.waitCo != null) StopCoroutine(s.waitCo);
-                    s.waitCo = StartCoroutine(WaitAndGo(i));
+                    if (loc.co != null) StopCoroutine(loc.co);
+                    loc.co = StartCoroutine(WaitGo(i));
                 }
             }
         }
     }
 
-    /* ---------- corutyna ---------- */
-    private IEnumerator WaitAndGo(int i)
+    private IEnumerator WaitGo(int i)
     {
-        var s = l[i]; s.ready = s.reacted = false; s.indicator.color = Color.red;
+        var loc = l[i]; loc.ready = loc.reacted = false; loc.ind.color = Color.red;
         yield return new WaitForSeconds(Random.Range(minWait, maxWait));
-
-        s.goTime = UnityEngine.Time.time; s.ready = true; s.indicator.color = Color.green;
-        yield return new WaitForSeconds(nextRoundDelay);
-        s.waitCo = StartCoroutine(WaitAndGo(i));          // kolejna runda
+        loc.go = UnityEngine.Time.time; loc.ready = true; loc.ind.color = Color.green;
+        yield return new WaitForSeconds(nextDelay);
+        loc.co = StartCoroutine(WaitGo(i));
     }
 
     private void UpdateHud(int i)
@@ -134,7 +88,7 @@ public class ElekMinigame : BaseMinigame
         var p = slots[i].player;
         var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
         l[i].lvl.text = r.lvl.ToString();
-        l[i].exp.text = $"{r.exp} / {r.divide}";
+        l[i].exp.text = $"{r.exp}/{r.divide}";
         l[i].time.text = Time.Time_now;
     }
 }

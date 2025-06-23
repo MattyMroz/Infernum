@@ -1,71 +1,50 @@
-﻿using TMPro;
+﻿/* ---------------- ProgMinigame ---------------- */
+using TMPro;
 using UnityEngine;
 
 public class ProgMinigame : BaseMinigame
 {
-    [System.Serializable]
-    public class PlayerSlot
-    {
-        public Player player;
-        public GameObject panel;
-        public KeyCode exitKey;
-        public KeyCode actionKey;
-    }
+    [System.Serializable] public class PlayerSlot { public Player player; public GameObject panel; public KeyCode exitKey; public KeyCode actionKey; }
 
     [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
-
-    [Header("Gameplay")]
     [SerializeField] private int keyGain = 1;
-    private const int KNOW_IDX = 2; // Programming
+    private const int KNOW_IDX = 2;
 
-    /* ----- lokalny ----- */
-    private class Local
-    {
-        public bool active;
-        public TextMeshProUGUI lvl, exp, time;
-    }
+    private class Local { public bool active; public TextMeshProUGUI lvl, exp, time; }
     private readonly Local[] l = { new Local(), new Local() };
-    private int current;
+    private int cur;
 
     public override void React(GameObject go)
     {
         for (int i = 0; i < slots.Length; i++)
-            if (go == slots[i].player.gameObject && !l[i].active)
-                StartSession(i);
+            if (go == slots[i].player.gameObject && !l[i].active) StartSession(i);
     }
 
     private void StartSession(int i)
     {
-        current = i;
-        var slot = slots[i];
-        Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Prog));
-
-        var t = slot.panel.transform;
-        l[i].lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
-        l[i].exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
-        l[i].time = t.Find("Time").GetComponent<TextMeshProUGUI>();
-
-        l[i].active = true; UpdateHud(i);
+        cur = i; var s = slots[i]; var loc = l[i];
+        Boot(s.player.gameObject, s.player.GetConfig(MinigameID.Prog));
+        var t = s.panel.transform;
+        loc.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
+        loc.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
+        loc.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        loc.active = true; UpdateHud(i);
+        ToggleUI(s.player, false);
     }
 
-    private void EndSession(int i) { if (l[i].active) { current = i; Close(); } }
-    protected override void OnClose() { l[current].active = false; }
+    private void EndSession(int i) { ToggleUI(slots[i].player, true); if (l[i].active) { cur = i; Close(); } }
+
+    protected override void OnClose() { l[cur].active = false; }
 
     protected override void Update()
     {
         base.Update();
-
         for (int i = 0; i < slots.Length; i++)
         {
             if (!l[i].active) continue;
-
+            UpdateHud(i);
             if (Input.GetKeyDown(slots[i].exitKey)) { EndSession(i); continue; }
-
-            if (Input.GetKeyDown(slots[i].actionKey))
-            {
-                slots[i].player.exams_knowledge[KNOW_IDX] += keyGain;
-                UpdateHud(i);
-            }
+            if (Input.GetKeyDown(slots[i].actionKey)) slots[i].player.exams_knowledge[KNOW_IDX] += keyGain;
         }
     }
 

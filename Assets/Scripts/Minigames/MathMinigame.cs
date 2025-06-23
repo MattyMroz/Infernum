@@ -16,9 +16,9 @@ public class MathMinigame : BaseMinigame
 
     [Header("Gameplay")]
     [SerializeField] private int mathGain = 10;
-    private const int KNOWLEDGE_IDX = 0;            // Mathematics
+    private const int KNOWLEDGE_IDX = 0; // Mathematics
 
-    /* ---------- stan lokalny ---------- */
+    // Stan lokalny jednego gracza
     private class Local
     {
         public bool active;
@@ -27,27 +27,36 @@ public class MathMinigame : BaseMinigame
         public int random;
         public PlayerSlot slot;
     }
+
     private readonly Local[] l = { new Local(), new Local() };
 
-    /* indeks aktualnie otwieranej / zamykanej sesji */
     private int currentIdx = -1;
 
-    /* ---------- React ---------- */
+    // React - wejście w minigrę
     public override void React(GameObject playerGO)
     {
         for (int i = 0; i < slots.Length; i++)
+        {
             if (playerGO == slots[i].player.gameObject && !l[i].active)
+            {
                 StartSession(i);
+                return;
+            }
+        }
     }
 
-    /* ---------- Start ---------- */
+    // Start sesji
     private void StartSession(int i)
     {
         currentIdx = i;
-        var s = l[i]; s.slot = slots[i]; s.active = true;
+        var s = l[i];
+        s.slot = slots[i];
+        s.active = true;
 
+        // Uruchamiamy logikę z BaseMinigame (blok ruchu + stamina + zamykanie panelem/klawiszem)
         Boot(s.slot.player.gameObject, s.slot.player.GetConfig(MinigameID.Math));
 
+        // Podpinamy UI tego gracza
         var t = s.slot.panel.transform;
         s.input = t.Find("InputNumber").GetComponent<TMP_InputField>();
         s.numTxt = t.Find("DisplayNumber").GetComponent<TextMeshProUGUI>();
@@ -58,18 +67,39 @@ public class MathMinigame : BaseMinigame
         SetupInput(i);
         NewNumber(i);
         UpdateHud(i);
+
+        // Wywołanie ToggleUI z odpowiednimi argumentami
+        ToggleUI(s.slot.player, false); // Wyłącz UI gracza
     }
 
-    /* ---------- Update ---------- */
+    private void EndSession(int i)
+    {
+        if (!l[i].active) return;
+        l[i].active = false;
+        l[i].slot.panel.SetActive(false);
+
+        // Ponowne włączenie UI gracza
+        ToggleUI(l[i].slot.player, true); // Włącz UI gracza
+    }
+
+
+
+
+
+    // Update
     protected override void Update()
     {
-        base.Update();                       // exitKey + panel.SetActive + stamina
+        base.Update();                  
 
         for (int i = 0; i < l.Length; i++)
-            if (l[i].active) MaintainCaret(i);
+            if (l[i].active)
+            {
+                MaintainCaret(i);
+                UpdateHud(i);          
+            }
     }
 
-    /* ---------- gameplay helpers ---------- */
+    // Setup input dla minigry
     private void SetupInput(int i)
     {
         var inp = l[i].input;
@@ -81,6 +111,7 @@ public class MathMinigame : BaseMinigame
         inp.ActivateInputField();
     }
 
+    // Nowa liczba
     private void NewNumber(int i)
     {
         l[i].random = Random.Range(1_000_000, 10_000_000);
@@ -88,6 +119,7 @@ public class MathMinigame : BaseMinigame
         l[i].input.text = "";
     }
 
+    // Sprawdzenie odpowiedzi
     private void CheckAnswer(int i, string s)
     {
         if (int.TryParse(s, out int n) && n == l[i].random)
@@ -98,9 +130,11 @@ public class MathMinigame : BaseMinigame
         l[i].input.ActivateInputField();
     }
 
+    // Utrzymanie kursora
     private void MaintainCaret(int i)
     {
-        var inp = l[i].input; if (!inp.isFocused) return;
+        var inp = l[i].input;
+        if (!inp.isFocused) return;
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
             Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -111,7 +145,7 @@ public class MathMinigame : BaseMinigame
         }
     }
 
-    /* ---------- HUD ---------- */
+    // Aktualizacja HUD
     private void UpdateHud(int i)
     {
         var p = l[i].slot.player;
@@ -121,7 +155,7 @@ public class MathMinigame : BaseMinigame
         l[i].time.text = Time.Time_now;
     }
 
-    /* ---------- hook z bazy ---------- */
+    // Hook z base minigame
     protected override void OnClose()
     {
         if (currentIdx >= 0) l[currentIdx].active = false;

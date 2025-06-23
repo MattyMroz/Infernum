@@ -149,14 +149,14 @@ public class EndOfDayManager : MonoBehaviour
 
         for (int i = 0; i < playerUIs.Length; i++)
         {
-            foreach(Transform gObject in playerUIs[i].transform)
+            foreach (Transform gObject in playerUIs[i].transform)
             {
                 if (!state)
                 {
 
                     if (gObject.gameObject.name == "Minigames")
                     {
-                        for(int j = 0; j < gObject.childCount; j++)
+                        for (int j = 0; j < gObject.childCount; j++)
                         {
                             gObject.GetChild(j).gameObject.SetActive(false);
                         }
@@ -171,4 +171,5 @@ public class EndOfDayManager : MonoBehaviour
             }
         }
     }
+
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class BaseMinigame : Interactable
 {
+    [SerializeField] protected GameObject[] playerUI;
+
     protected GameObject panel;
     protected Player player;
     protected KeyCode exitKey;
@@ -33,7 +35,7 @@ public abstract class BaseMinigame : Interactable
         if (active && !panel.activeSelf)
         {
             Debug.LogWarning("Panel został wyłączony poza systemem. Zamykanie minigry...");
-            Close();  // Wyłącza całą minigrę jeśli panel zniknął
+            Close();
         }
 
         if (Input.GetKeyDown(exitKey) && active)
@@ -43,7 +45,7 @@ public abstract class BaseMinigame : Interactable
     protected void Open()
     {
         active = true;
-        ToggleUI(false);
+        ToggleUI(player, false); 
         panel.SetActive(true);
 
         if (playerMovement) { playerMovement.ResetVelocity(); playerMovement.enabled = false; }
@@ -56,7 +58,7 @@ public abstract class BaseMinigame : Interactable
     protected void Close()
     {
         active = false;
-        ToggleUI(true);
+        ToggleUI(player, true); 
         panel.SetActive(false);
 
         if (playerMovement) { playerMovement.ResetVelocity(); playerMovement.enabled = true; }
@@ -68,32 +70,44 @@ public abstract class BaseMinigame : Interactable
         OnClose();
     }
 
-    private void ToggleUI(bool state)
+    protected void ToggleUI(Player p, bool state)
     {
-        disabled.Clear();
+        if (playerUI == null || p.id < 0 || p.id >= playerUI.Length) return;
+        if (playerUI[p.id] == null) return;
 
-        foreach (var s in player.GetComponentsInChildren<MonoBehaviour>(true))
+        foreach (var mb in playerUI[p.id].GetComponentsInChildren<MonoBehaviour>(true))
         {
-            if (s == this) continue;
-            if (panel != null && s.transform.IsChildOf(panel.transform)) continue;
+            if (mb == this) continue;                      
 
-            if (s.GetType().Name.StartsWith("Display"))
+            if (mb.transform.IsChildOf(panel.transform))      
+                continue;
+            Transform t = mb.transform;
+            while (t != null)
             {
-                if (state)
+                if (t.name == "Minigames") { mb.enabled = true; goto next; }
+                t = t.parent;
+            }
+
+            // 2️⃣  zwykła obsługa włącz / wyłącz
+            if (state)
+            {
+                if (disabled.Contains(mb)) mb.enabled = true;
+            }
+            else
+            {
+                if (mb.enabled)
                 {
-                    if (disabled.Contains(s)) s.enabled = true;
-                }
-                else
-                {
-                    if (s.enabled)
-                    {
-                        s.enabled = false;
-                        disabled.Add(s);
-                    }
+                    mb.enabled = false;
+                    disabled.Add(mb);
                 }
             }
+        next:;
         }
+
+        if (state) disabled.Clear();
     }
+
+
 
     private IEnumerator DrainEndurance()
     {
@@ -114,9 +128,5 @@ public abstract class BaseMinigame : Interactable
     protected virtual void OnBoot(MinigameConfig cfg) { }
     protected virtual void OnOpen() { }
     protected virtual void OnClose() { }
-
-
-    protected virtual void OnSessionStart(int i) { }
-    protected virtual void OnSessionEnd(int i) { } 
 
 }

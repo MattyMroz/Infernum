@@ -9,7 +9,7 @@ public class Time : MonoBehaviour
     public static bool timeStarted = true;
     private static bool paused = false;
 
-    private const float multiplier = (60 * 8) / 0.2f;
+    private const float multiplier = (60 * 8) / 3f; // base 3
     private readonly System.TimeSpan startTime = new System.TimeSpan(8, 0, 0);
     [SerializeField] private int days;
     [SerializeField] private string the_time;
