@@ -269,7 +269,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 145585770008611782, guid: 824d056d34937b1478cfdd3c4050e96b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.49996948
+      value: -0.49998474
       objectReference: {fileID: 0}
     - target: {fileID: 413480722364884759, guid: 824d056d34937b1478cfdd3c4050e96b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -93618,7 +93618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2157883535580017400, guid: 7d0f963a17ef014498cc33b34d1519f7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.49996948
+      value: -0.49998474
       objectReference: {fileID: 0}
     - target: {fileID: 3847390500277058255, guid: 7d0f963a17ef014498cc33b34d1519f7, type: 3}
       propertyPath: player
@@ -144963,6 +144963,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1142190418}
+    - target: {fileID: 2197862540734275166, guid: 20b901f285ffe7a4a903688edcbf34bc, type: 3}
+      propertyPath: m_Antialiasing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197862540734275166, guid: 20b901f285ffe7a4a903688edcbf34bc, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6521664255350745737, guid: 20b901f285ffe7a4a903688edcbf34bc, type: 3}
       propertyPath: m_Name
       value: Camera_Holder_1
