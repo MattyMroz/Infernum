@@ -5,7 +5,12 @@ using UnityEngine;
 
 public class GraphMinigame : BaseMinigame
 {
-    [System.Serializable] public class PlayerSlot { public Player player; public GameObject panel; public KeyCode exitKey; public KeyCode[] keys = new KeyCode[10]; }
+    [System.Serializable] public class PlayerSlot { 
+        public Player player;
+        public GameObject panel;
+        public KeyCode exitKey; 
+        public KeyCode[] keys = new KeyCode[10];
+    }
 
     [SerializeField] private PlayerSlot[] slots = new PlayerSlot[2];
     [SerializeField] private int comboGain = 15, comboLength = 3;
@@ -39,8 +44,17 @@ public class GraphMinigame : BaseMinigame
         ToggleUI(slot.player, false);
     }
 
-    private void EndSession(int i) { ToggleUI(slots[i].player, true); if (l[i].active) { cur = i; Close(); } }
-    protected override void OnClose() { l[cur].active = false; }
+    private void EndSession(int i) { 
+        ToggleUI(slots[i].player, true);
+        if (l[i].active) {
+            cur = i;
+            Close();
+        }
+    }
+
+    protected override void OnClose() {
+        l[cur].active = false;
+    }
 
     protected override void Update()
     {
@@ -48,8 +62,16 @@ public class GraphMinigame : BaseMinigame
         for (int i = 0; i < slots.Length; i++)
         {
             if (!l[i].active) continue;
-            var slot = slots[i]; var loc = l[i];
-            if (Input.GetKeyDown(slot.exitKey)) { EndSession(i); continue; }
+            UpdateHud(i);
+
+            var slot = slots[i]; 
+            var loc = l[i];
+
+            if (Input.GetKeyDown(slot.exitKey)) { 
+                EndSession(i); 
+                continue;
+            }
+
             if (!loc.ready)
             {
                 if (!loc.combo.Any(Input.GetKey)) loc.ready = true;
@@ -58,7 +80,8 @@ public class GraphMinigame : BaseMinigame
             if (loc.combo.All(Input.GetKey) && loc.combo.Any(Input.GetKeyDown))
             {
                 slot.player.exams_knowledge[KNOW_IDX] += comboGain;
-                GenerateCombo(i); loc.ready = false; UpdateHud(i);
+                GenerateCombo(i); 
+                loc.ready = false;
             }
         }
     }

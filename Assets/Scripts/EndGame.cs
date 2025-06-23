@@ -1,106 +1,49 @@
-using System.Collections.Generic;
+ï»¿using UnityEngine;
 using TMPro;
-using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class EndGame : MonoBehaviour
 {
-    [SerializeField] private Player player;              // Referencja do gracza
-    [SerializeField] private Exams exams;                // Lista wszystkich egzaminów w grze
-    [SerializeField] private GameObject gameEndPanel;    // Panel czarny koñca gry
-    [SerializeField] private TextMeshProUGUI resultText; // Wynik koñcowy
-    [SerializeField] private TextMeshProUGUI winLoseText;// Tekst "Wygra³eœ" lub "Przegra³eœ"
+    [SerializeField] int lastDay = 14;
+    [SerializeField] Exams examsRoot;
+    [SerializeField] Player[] players;     // P1 = 0, P2 = 1 â€¦
+    [SerializeField] TextMeshProUGUI[] lines;       // po jednym polu tekstowym na gracza
+    [SerializeField] GameObject endPanel;
 
-    [SerializeField] private int day;
-    [SerializeField] private int lastDay;
-    [SerializeField] private int thresholdToWin = 50;
+    bool finished;
 
-    private readonly List<MonoBehaviour> disabled = new();
-
-    private bool hasEnded = false;
-
-    private void Update()
+    void Update()
     {
-        day = Time.Days;
+        if (!finished && Time.Days >= lastDay)
+            ShowResults();
+    }
 
-        if (!hasEnded && day >= lastDay)
+    void ShowResults()
+    {
+        finished = true;
+        endPanel.SetActive(true);
+
+        int examsTotal = examsRoot.exams.Count;
+        int slots = Mathf.Min(players.Length, lines.Length);
+
+        Time.PauseTime();
+        Time.timeStarted = false;
+
+        for (int i = 0; i < slots; i++)
         {
-            TurnPlayerOff();
-            ToggleUI(false);
-            ShowFinalScore();
-        }
-    }
+            Player p = players[i];
+            int idx = Mathf.Clamp(p.id, 0, 1); 
+            int passed = 0;
 
-    public void SetDay(int newDay)
-    {
-        day = newDay;
-    }
+            foreach (var ex in examsRoot.exams)
+                if (idx < ex.passed.Length && ex.passed[idx])
+                    passed++;
 
-    void TurnPlayerOff()
-    {
-        player.GetComponent<InputManager>().enabled = false;
-        player.GetComponent<Movement>().ResetVelocity(); player.GetComponent<Movement>().enabled = false;
-        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-    }
-
-    private void ShowFinalScore()
-    {
-        hasEnded = true;
-        int totalPoints = 0;
-
-        int loopLength = Mathf.Min(player.exams_knowledge.Length, exams.exams.Count);
-
-        for (int i = 0; i < loopLength; i++)
-        {
-            int score = player.exams_knowledge[i];
-            float grade;
-
-            int gradeBucket = score / 10;
-            switch (gradeBucket)
-            {
-                case 9: grade = 5.0f; break;
-                case 8: grade = 4.5f; break;
-                case 7: grade = 4.0f; break;
-                case 6: grade = 3.5f; break;
-                case 5: grade = 3.0f; break;
-                default: grade = 2.0f; break;
-            }
-
-            int subjectPoints = Mathf.RoundToInt(grade * exams.exams[i].ects);
-            totalPoints += subjectPoints;
+            lines[i].text = $"{p.player_name}:  {passed} / {examsTotal} zdanych";
         }
 
+        for (int i = slots; i < lines.Length; i++)
+            lines[i].text = "";
 
-        gameEndPanel.SetActive(true);
-        resultText.text = $"Twoje punkty: {totalPoints}";
-        winLoseText.text = totalPoints >= thresholdToWin ? "WYGRA£EŒ!" : "PRZEGRA£EŒ!";
-    }
-
-    private void ToggleUI(bool state)
-    {
-
-        foreach (var s in GetComponents<MonoBehaviour>())
-        {
-            if (s == this) continue;
-
-            if (s.GetType().Name.StartsWith("Display"))
-            {
-                if (state)
-                {
-                    if (disabled.Contains(s)) s.enabled = true;
-                }
-                else
-                {
-                    if (s.enabled)
-                    {
-                        s.enabled = false;
-                        disabled.Add(s);
-                    }
-                }
-            }
-        }
-
-        if (state)
-            disabled.Clear();
+        Time.PauseTime();
     }
 }

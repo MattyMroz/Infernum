@@ -17,10 +17,11 @@ public class ElekMinigame : BaseMinigame
     {
         public bool active, ready, reacted;
         public Image ind;
-        public TextMeshProUGUI lbl, lvl, exp, time;
+        public TextMeshProUGUI lbl, lvl, exp, time, day;   // ← ➊ DODANE „day”
         public Coroutine co;
         public float go;
     }
+
     private readonly Local[] l = { new Local(), new Local() };
     private int cur;
 
@@ -32,18 +33,29 @@ public class ElekMinigame : BaseMinigame
 
     private void StartSession(int i)
     {
-        cur = i; var slot = slots[i]; var loc = l[i];
+        cur = i;
+        var slot = slots[i];
+        var loc = l[i];
+
         Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Elek));
+
         var t = slot.panel.transform;
         loc.ind = t.Find("Image").GetComponent<Image>();
         loc.lbl = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
         loc.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         loc.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
         loc.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
+        loc.day = t.Find("Day").GetComponent<TextMeshProUGUI>();          // ← ➋ BIND
+
         loc.lbl.text = $"REAGUJ '{slot.actionKey}'";
-        loc.ind.color = Color.red; loc.active = true;
-        if (loc.co != null) StopCoroutine(loc.co); loc.co = StartCoroutine(WaitGo(i));
-        UpdateHud(i); ToggleUI(slot.player, false);
+        loc.ind.color = Color.red;
+        loc.active = true;
+
+        if (loc.co != null) StopCoroutine(loc.co);
+        loc.co = StartCoroutine(WaitGo(i));
+
+        UpdateHud(i);
+        ToggleUI(slot.player, false);
     }
 
     private void EndSession(int i) { ToggleUI(slots[i].player, true); if (l[i].active) { cur = i; Close(); } }
@@ -55,15 +67,24 @@ public class ElekMinigame : BaseMinigame
         for (int i = 0; i < slots.Length; i++)
         {
             if (!l[i].active) continue;
-            var slot = slots[i]; var loc = l[i];
-            if (Input.GetKeyDown(slot.exitKey)) { EndSession(i); continue; }
+            UpdateHud(i);
+
+            var slot = slots[i];
+            var loc = l[i];
+
+            if (Input.GetKeyDown(slot.exitKey)) { 
+                EndSession(i); 
+                continue; 
+            }
+
             if (Input.GetKeyDown(slot.actionKey))
             {
                 if (loc.ready && !loc.reacted)
                 {
                     int gain = Mathf.Max(1, baseGain - Mathf.RoundToInt((UnityEngine.Time.time - loc.go) * baseGain));
                     slot.player.exams_knowledge[KNOW_IDX] += gain;
-                    loc.reacted = true; loc.ready = false; UpdateHud(i);
+                    loc.reacted = true; 
+                    loc.ready = false;
                 }
                 else if (!loc.ready)
                 {
@@ -87,8 +108,10 @@ public class ElekMinigame : BaseMinigame
     {
         var p = slots[i].player;
         var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
+
         l[i].lvl.text = r.lvl.ToString();
         l[i].exp.text = $"{r.exp}/{r.divide}";
         l[i].time.text = Time.Time_now;
+        l[i].day.text = $"Dzień: {Time.Days}";             // ← ➌ NOWE
     }
 }

@@ -53,12 +53,12 @@ public class Player : MonoBehaviour
 
     private void InitStats()
     {
-        wisdom = 5;
-
-        for (int i = 0; i < (int)ExamType.NR_TYPES; i++)
-            exams_knowledge[i] = 5;
-
+        accountBalance = 5;
+        wisdom = 100;
         endurance = 100;
+
+        for (int i = 0; i < exams_knowledge.Length; i++)
+            exams_knowledge[i] = 0;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

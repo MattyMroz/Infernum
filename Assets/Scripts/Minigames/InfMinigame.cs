@@ -47,14 +47,27 @@ public class InfMinigame : BaseMinigame
         ToggleUI(s.player, false);
     }
 
-    private void EndSession(int i) { ToggleUI(slots[i].player, true); if (l[i].active) { cur = i; Close(); } }
-    protected override void OnClose() { l[cur].active = false; }
+    private void EndSession(int i) { 
+        ToggleUI(slots[i].player, true);
+        if (l[i].active) { 
+            cur = i; 
+            Close(); 
+        }
+    }
+
+    protected override void OnClose() {
+        l[cur].active = false; 
+    }
 
     protected override void Update()
     {
         base.Update();
         for (int i = 0; i < slots.Length; i++)
-            if (l[i].active) Tick(i);
+            if (l[i].active)
+            {
+                Tick(i);
+                UpdateHud(i);
+            }
     }
 
     private void Tick(int i)
@@ -86,7 +99,10 @@ public class InfMinigame : BaseMinigame
         if (inside)
         {
             s.secTimer += UnityEngine.Time.deltaTime;
-            if (s.secTimer >= 1f) { slot.player.exams_knowledge[KNOW_IDX] += expPerSec; s.secTimer -= 1f; UpdateHud(i); }
+            if (s.secTimer >= 1f) { 
+                slot.player.exams_knowledge[KNOW_IDX] += expPerSec;
+                s.secTimer -= 1f; 
+            }
         }
         else s.secTimer = 0f;
     }

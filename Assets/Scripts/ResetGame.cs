@@ -34,5 +34,7 @@ public class ResetGame : MonoBehaviour
         {
             exams[i].Reset();
         }
+
+        Time.ResetClock();
     }
 }

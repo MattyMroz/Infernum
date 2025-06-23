@@ -14,6 +14,8 @@ public class Time : MonoBehaviour
     [SerializeField] private int days;
     [SerializeField] private string the_time;
 
+    [SerializeField] private int GameDays;
+
     [SerializeField] private EndOfDayManager endOfDayManager;
 
     void Awake()
@@ -45,7 +47,7 @@ public class Time : MonoBehaviour
             endOfDayManager.StartEndOfDay();
         }
 
-        if (days == 14)
+        if (days == GameDays)
         {
             simulatedTime = new System.TimeSpan(16, 0, 0);
             timeStarted = false;
@@ -54,6 +56,18 @@ public class Time : MonoBehaviour
         //statsText.text = $"Day: {days}\nTime: {simulatedTime:hh\\:mm}";
         the_time = simulatedTime.ToString(@"hh\:mm");
     }
+
+    public static void ResetClock()
+    {
+        timer = 0;
+        instance.days = 0;
+
+        timeStarted = true;
+        paused = false;
+
+        instance.the_time = instance.startTime.ToString(@"hh\:mm");
+    }
+
 
     public static int Days => instance.days;
     public static string Time_now => instance.the_time;
