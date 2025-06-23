@@ -80,7 +80,16 @@ public class Player : MonoBehaviour
                 current_map_bounds = hit.transform.gameObject;
         }
     }
-    
+
+    public void Reset()
+    {
+        accountBalance = 5;
+        wisdom = 100;
+        endurance = 100;
+
+        // Wiktor dodaj reset lvli
+    }
+
     public void IncreaseWisdom(int amount)
     {
         wisdom += wisdom < 100 ? amount : 0;

@@ -6,6 +6,9 @@ public class StartGame : MonoBehaviour
     [SerializeField] private GameObject player1;    // Twój gracz
     [SerializeField] private GameObject player2;
 
+    [SerializeField] private GameObject player1_spawnpoint;
+    [SerializeField] private GameObject player2_spawnpoint;
+
     private void Start()
     {
         player1.GetComponent<InputManager>().enabled = false;
@@ -19,6 +22,10 @@ public class StartGame : MonoBehaviour
 
     public void StartGameNow()
     {
+        player1.transform.position = player1_spawnpoint.transform.position;
+        player2.transform.position = player2_spawnpoint.transform.position;
+
+
         menuPanel.SetActive(false);
         player1.GetComponent<Movement>().enabled = true;
         player1.GetComponent<InputManager>().enabled = true;

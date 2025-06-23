@@ -28,4 +28,12 @@ public class Interactable : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         used[player_id] = false;
     }
+
+    public void Reset()
+    {
+        for(int i = 0; i < 2; i++)
+        {
+            used[i] = false;
+        }
+    }
 }

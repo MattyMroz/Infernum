@@ -30,6 +30,20 @@ public class Exam : Interactable
         max_score = score_to_pass * 2;
     }
 
+    public void ResetExam()
+    {
+        for(int i = 0; i < 2; i++)
+        {
+            passed[i] = false;
+            failed[i] = false;
+            takes[i] = 0;
+            grade[i] = 0;
+            score[i] = 0;
+        }
+
+        base.Reset();
+    }
+
     public override void React(GameObject player)
     {
         Player player_script = player.GetComponent<Player>();
