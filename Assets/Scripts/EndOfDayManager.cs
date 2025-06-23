@@ -67,7 +67,10 @@ public class EndOfDayManager : MonoBehaviour
         for (int i = 0; i < players.Length; i++)
         {
             if (i < startPositions.Length)
+            {
                 players[i].transform.position = startPositions[i].position;
+                players[i].transform.rotation = startPositions[i].rotation;
+            }
         }
 
         // Fade-out

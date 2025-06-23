@@ -7,8 +7,11 @@ public class Beer : Interactable
     [SerializeField] int endurance_increase;
     [SerializeField] int cost = 5;
 
+    [SerializeField] AudioSource audioSource;
+
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         displayName = "Piwo";
     }
 
@@ -20,6 +23,7 @@ public class Beer : Interactable
         {
             player.SpendMoney(cost);
             player.DrinkBeer(wisdom_decrease, endurance_increase);
+            audioSource.PlayOneShot(audioSource.clip);
             StartCoroutine(Wait(1, player.id));
         }
         else

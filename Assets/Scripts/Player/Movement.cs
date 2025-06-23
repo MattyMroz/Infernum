@@ -21,9 +21,13 @@ public class Movement : MonoBehaviour
     [Header("Animation")]
     [SerializeField] Animator animator;
 
+    [Header("Sounds")]
+    [SerializeField] AudioSource audioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         _rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         _last_velocity = _velocity;
@@ -51,10 +55,14 @@ public class Movement : MonoBehaviour
                 animator.enabled = true;
 
             animator.SetBool("Moving", true);
+            audioSource.enabled = true;
             _last_velocity = _velocity;
         }
         else
+        {
+            audioSource.enabled = false;
             animator.SetBool("Moving", false);
+        }
 
         // Rotate player towards movement direction
         float angle = Mathf.Atan2(_last_velocity.y, _last_velocity.x) * Mathf.Rad2Deg;
@@ -70,6 +78,7 @@ public class Movement : MonoBehaviour
     public void ResetVelocity()
     {
         _velocity = Vector2.zero;
+        audioSource.enabled = false;
         animator.SetBool("Moving", false);
     }
 }

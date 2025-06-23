@@ -25,6 +25,9 @@ public class StartGame : MonoBehaviour
         player1.transform.position = player1_spawnpoint.transform.position;
         player2.transform.position = player2_spawnpoint.transform.position;
 
+        player1.transform.rotation = player1_spawnpoint.transform.rotation;
+        player2.transform.rotation = player2_spawnpoint.transform.rotation;
+
 
         menuPanel.SetActive(false);
         player1.GetComponent<Movement>().enabled = true;

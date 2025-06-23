@@ -18,10 +18,16 @@ public class Exam : Interactable
     public int[] takes = new int[2];
     public float[] grade = new float[2];
 
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip audioPassed;
+    [SerializeField] AudioClip audioFailed;
+
     [SerializeField] public int exams_ects;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         id = Interlocked.Increment(ref s_next_id);
         id--;
 
@@ -42,6 +48,17 @@ public class Exam : Interactable
         }
 
         base.Reset();
+    }
+
+    public void PlayPassedAudio()
+    {
+        audioSource.clip = audioPassed;
+        audioSource.PlayOneShot(audioSource.clip);
+    }
+    public void PlayFailedAudio()
+    {
+        audioSource.clip = audioFailed;
+        audioSource.PlayOneShot(audioSource.clip);
     }
 
     public override void React(GameObject player)

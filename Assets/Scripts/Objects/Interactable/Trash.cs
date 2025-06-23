@@ -5,8 +5,11 @@ using UnityEngine;
 public class Trash : Interactable
 {
 
+    [SerializeField] AudioSource audioSource;
+
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         displayName = "Kosz na œmieci";
     }
 
@@ -18,6 +21,8 @@ public class Trash : Interactable
             return;
 
         playerScript.SearchTrash();
+
+        audioSource.PlayOneShot(audioSource.clip);
 
         this.used[playerScript.id] = true;
     }

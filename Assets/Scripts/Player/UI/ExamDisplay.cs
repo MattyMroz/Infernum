@@ -97,11 +97,17 @@ public class ExamDisplay : Interactable
         takes.text = _exam.takes[player.id] >= 2 ? "2" : (_exam.takes[player.id] + 1).ToString();
 
         if (_exam.passed[player.id])
+        {
             passed.SetActive(true);
+            _exam.PlayPassedAudio();
+        }
         else
             passed.SetActive(false);
         if (_exam.failed[player.id] && _exam.takes[player.id] >= 2)
+        {
             failed.SetActive(true);
+            _exam.PlayFailedAudio();
+        }
         else
             failed.SetActive(false);
 
