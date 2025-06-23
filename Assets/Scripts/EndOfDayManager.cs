@@ -141,10 +141,10 @@ public class EndOfDayManager : MonoBehaviour
                     }
                 }
             }
-
-            if (state)
-                disabled.Clear();
         }
+
+        if (state)
+            disabled.Clear();
 
 
         for (int i = 0; i < playerUIs.Length; i++)
