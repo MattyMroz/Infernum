@@ -658,6 +658,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6441411418442410607, guid: 0d04f659916c8d5438ab815402c3df5c, type: 3}
   m_PrefabInstance: {fileID: 365134701}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &94864618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8306254472214679205, guid: 824d056d34937b1478cfdd3c4050e96b, type: 3}
+  m_PrefabInstance: {fileID: 49864901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &96266029
 GameObject:
   m_ObjectHideFlags: 0
@@ -8743,6 +8748,11 @@ PolygonCollider2D:
       - {x: 9.704157, y: -0.21749115}
       - {x: 10.482883, y: -0.19546509}
   m_UseDelaunayMesh: 0
+--- !u!1 &233280725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1121683747115137491, guid: 7d0f963a17ef014498cc33b34d1519f7, type: 3}
+  m_PrefabInstance: {fileID: 1142692110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &233934306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91442,6 +91452,16 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1064940029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6364956748079971314, guid: 7d0f963a17ef014498cc33b34d1519f7, type: 3}
+  m_PrefabInstance: {fileID: 1142692110}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1074482834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6750949891899680210, guid: 824d056d34937b1478cfdd3c4050e96b, type: 3}
+  m_PrefabInstance: {fileID: 49864901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1078973334
 GameObject:
   m_ObjectHideFlags: 0
@@ -93316,6 +93336,46 @@ PrefabInstance:
       propertyPath: detectionRadius
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: uiPanels.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1889178727}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1074482834}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[2]'
+      value: 
+      objectReference: {fileID: 94864618}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[3]'
+      value: 
+      objectReference: {fileID: 49864906}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[4]'
+      value: 
+      objectReference: {fileID: 49864905}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[5]'
+      value: 
+      objectReference: {fileID: 49864903}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[6]'
+      value: 
+      objectReference: {fileID: 49864902}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[7]'
+      value: 
+      objectReference: {fileID: 49864904}
+    - target: {fileID: 537536835381697843, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
+      propertyPath: 'uiPanels.Array.data[8]'
+      value: 
+      objectReference: {fileID: 209512652}
     - target: {fileID: 5119304565193444016, guid: 13963d3e623eb364aa9306db2df5bf27, type: 3}
       propertyPath: m_CullingMode
       value: 1
@@ -94641,6 +94701,10 @@ PrefabInstance:
     - target: {fileID: 4155303962290955262, guid: 8317d5fa846635840a821492c85327ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363633405669378151, guid: 8317d5fa846635840a821492c85327ae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.36
       objectReference: {fileID: 0}
     - target: {fileID: 4840307767493818737, guid: 8317d5fa846635840a821492c85327ae, type: 3}
       propertyPath: slots.Array.data[0].panel
@@ -103966,6 +104030,42 @@ PrefabInstance:
       propertyPath: detectionRadius
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: uiPanels.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: 'uiPanels.Array.data[0]'
+      value: 
+      objectReference: {fileID: 233280725}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: 'uiPanels.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1064940029}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: 'uiPanels.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1142692115}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: 'uiPanels.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1142692114}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: 'uiPanels.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1142692112}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: 'uiPanels.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1142692111}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: 'uiPanels.Array.data[6]'
+      value: 
+      objectReference: {fileID: 1142692113}
+    - target: {fileID: 2276216992456875750, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
+      propertyPath: 'uiPanels.Array.data[7]'
+      value: 
+      objectReference: {fileID: 1051629637}
     - target: {fileID: 2784427354310031923, guid: c237def8efc60144cb6ec366d1f4ad1f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.867119
@@ -104450,6 +104550,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1889178727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1336511141882616548, guid: 824d056d34937b1478cfdd3c4050e96b, type: 3}
+  m_PrefabInstance: {fileID: 49864901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1908512741
 GameObject:
   m_ObjectHideFlags: 0

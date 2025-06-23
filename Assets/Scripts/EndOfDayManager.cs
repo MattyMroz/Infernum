@@ -50,6 +50,7 @@ public class EndOfDayManager : MonoBehaviour
             players[i].GetComponent<InputManager>().enabled = false;
             players[i].GetComponent<Movement>().ResetVelocity(); players[i].GetComponent<Movement>().enabled = false;
             players[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            players[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
 
         ToggleUI(false);
@@ -83,6 +84,7 @@ public class EndOfDayManager : MonoBehaviour
             players[i].GetComponent<InputManager>().enabled = true;
             players[i].GetComponent<Movement>().ResetVelocity(); players[i].GetComponent<Movement>().enabled = true;
             players[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            players[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 
             players[i].ResetEndurance();
         }
@@ -118,6 +120,9 @@ public class EndOfDayManager : MonoBehaviour
         currentDay = day;
     }
 
+
+
+    
     private void ToggleUI(bool state)
     {
 

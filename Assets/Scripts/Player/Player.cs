@@ -87,7 +87,8 @@ public class Player : MonoBehaviour
         wisdom = 100;
         endurance = 100;
 
-        // Wiktor dodaj reset lvli
+        for (int i = 0; i < exams_knowledge.Length; i++)
+            exams_knowledge[i] = 0;
     }
 
     public void IncreaseWisdom(int amount)
