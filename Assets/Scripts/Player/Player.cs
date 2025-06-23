@@ -145,7 +145,6 @@ public class Player : MonoBehaviour
 
         //StartCoroutine(GetComponent<ExamDisplay>().DiceRoll(overallScore));
         GetComponent<ExamDisplay>().Open(exam);
-        DecreaseWisdom(25);
     }
 
     public int StartExam(Exam exam)
@@ -154,6 +153,8 @@ public class Player : MonoBehaviour
         int chance = Random.Range(1, 21); // Max value is exclusive
         int overallScore = chance;
         int knowledgeScore = 0;
+
+        DecreaseWisdom(25);
 
         for (int i = 0; i < exam.exam_types.Count; i++)
         {
