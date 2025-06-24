@@ -28,6 +28,7 @@ public class ExamDisplay : Interactable
 
     [SerializeField] GameObject passed;
     [SerializeField] GameObject failed;
+    [SerializeField] GameObject wisdomChecker;
 
     [SerializeField] Player player;
 
@@ -69,7 +70,7 @@ public class ExamDisplay : Interactable
             if (!_using && Input.GetKeyDown(exitButton))
                 Close();
 
-            day.text = Time.Days.ToString();
+            day.text = (Time.Days + 1).ToString();
             hour.text = Time.Time_now;
         }
     }
@@ -132,6 +133,11 @@ public class ExamDisplay : Interactable
             failed.SetActive(true);
         else
             failed.SetActive(false);
+
+        if (player.Wisdom < 25 && !_exam.passed[player.id] && !_exam.failed[player.id])
+            wisdomChecker.SetActive(true);
+        else
+            wisdomChecker.SetActive(false);
 
         examUI.SetActive(true);
         diceText.text = "";

@@ -36,6 +36,7 @@ public class EndOfDayManager : MonoBehaviour
 
     public void StartEndOfDay()
     {
+
         StartCoroutine(EndOfDayRoutine());
     }
 
