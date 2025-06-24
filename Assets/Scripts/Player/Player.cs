@@ -114,7 +114,12 @@ public class Player : MonoBehaviour
     public void DrinkBeer(int wisdom_increase, int endurance_increase)
     {
         wisdom += wisdom < 100 ? wisdom_increase : 0;
+
+        if (wisdom < 0) wisdom = 0;
+
         endurance -= endurance > 0 ? endurance_increase : 0;
+
+        if (endurance > 100) endurance = 100;
     }
 
     public void ResetEndurance()
