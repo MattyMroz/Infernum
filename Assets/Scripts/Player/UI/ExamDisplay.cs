@@ -79,7 +79,9 @@ public class ExamDisplay : Interactable
     {
         if (_exam.takes[player.id] >= 2 || _exam.passed[player.id]) yield break;
 
-        _exam.takes[player.id] += 1;
+        int takesExam = _exam.takes[player.id];
+
+        takesExam += 1;
         _using = true;
 
         diceResult = player.StartExam(_exam);
@@ -106,10 +108,11 @@ public class ExamDisplay : Interactable
             _exam.PlayPassedAudio();
             _exam.passed[player.id] = true;
             _exam.failed[player.id] = false;
+
         }
         else
             passed.SetActive(false);
-        if (failedExam && _exam.takes[player.id] >= 2)
+        if (failedExam && takesExam >= 2)
         {
             failed.SetActive(true);
             _exam.PlayFailedAudio();
@@ -118,6 +121,9 @@ public class ExamDisplay : Interactable
         }
         else
             failed.SetActive(false);
+
+        if(!passedExam)
+            _exam.takes[player.id] = takesExam;
 
         if (player.Wisdom < 25 && !_exam.passed[player.id] && !_exam.failed[player.id])
             wisdomChecker.SetActive(true);
