@@ -131,12 +131,7 @@ public class Player : MonoBehaviour
 
     public void SearchTrash()
     {
-        int chance = Random.Range(1,101);
-
-        if (chance <= 80)
-        {
-            accountBalance += Random.Range(1, 11);
-        }
+         accountBalance += Random.Range(0, 6);
     }
 
     public void SpendMoney(int amount)

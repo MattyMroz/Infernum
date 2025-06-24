@@ -30,6 +30,11 @@ public abstract class BaseMinigame : Interactable
         Open();
     }
 
+    private void Start()
+    {
+        displayName = gameObject.name;
+    }
+
     protected virtual void Update()
     {
         if (active && !panel.activeSelf)

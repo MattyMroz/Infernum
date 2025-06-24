@@ -26,6 +26,8 @@ public class Exam : Interactable
 
     private void Start()
     {
+        this.displayName = gameObject.name;
+
         audioSource = GetComponent<AudioSource>();
 
         id = Interlocked.Increment(ref s_next_id);

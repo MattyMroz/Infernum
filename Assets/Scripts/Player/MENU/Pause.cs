@@ -50,7 +50,7 @@ public class Pause : MonoBehaviour
 
     private void UpdateHud()
     {
-        _day.text = Time.Days.ToString();
+        _day.text = (Time.Days + 1).ToString();
         _hour.text = Time.Time_now;
     }
 }

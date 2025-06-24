@@ -103,7 +103,7 @@ public class DisplayStats : MonoBehaviour
         // Czas i dzień
         int day = Time.Days;
 
-        Day.text = Time.Days.ToString();
+        Day.text = (Time.Days + 1).ToString();
         TimeDisplay.text = Time.Time_now;
 
         // Level

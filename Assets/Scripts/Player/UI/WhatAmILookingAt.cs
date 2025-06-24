@@ -35,7 +35,7 @@ public class WhatAmILookingAt : MonoBehaviour
         foreach (var hit in Physics2D.OverlapCircleAll(transform.position, detectionRadius, detectionLayer))
             if (hit.GetComponent<Interactable>())
             {
-                objName = hit.name;
+                objName = hit.GetComponent<Interactable>().displayName;
                 break;
             }
 

@@ -14,7 +14,6 @@ public class Beer : Interactable
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        displayName = "Piwo";
     }
 
     public override void React(GameObject playerObj)

@@ -7,7 +7,7 @@ public class Teleport : Interactable
 
     private void Awake()
     {
-        displayName = "Przejœcie";
+        displayName = gameObject.name;
     }
 
     public override void React(GameObject player)
