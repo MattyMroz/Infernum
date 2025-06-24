@@ -111,6 +111,12 @@ public class SoundtrackManager : MonoBehaviour
         audioSource.Stop();
     }
 
+    public void SetVolume(float volume)
+    {
+        baseAudioVolume = volume;
+        audioSource.volume = baseAudioVolume;
+    }
+
     public void PlaySoundtrack()
     {
         audioSource.Stop();

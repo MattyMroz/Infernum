@@ -5,16 +5,22 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider generalSlider;
-    [SerializeField] private AudioSource musicAudioSource;
+    [SerializeField] private SoundtrackManager soundtrackManager;
+
+    private float MsliderValue = 1f;
+    private float GsliderValue = 1f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    void Start()
     {
-        musicAudioSource.volume = 1.0f;
+        soundtrackManager.SetVolume(1f);
         AudioListener.volume = 1.0f;
 
         musicSlider.value = 1.0f;
         generalSlider.value = 1.0f;
+
+        MsliderValue = 1f;
+        GsliderValue = 1f;
     }
 
     // Update is called once per frame
@@ -25,11 +31,13 @@ public class SoundManager : MonoBehaviour
 
     public void SetMusicVolume()
     {
-        musicAudioSource.volume = musicSlider.value;
+        MsliderValue = musicSlider.value;
+        soundtrackManager.SetVolume(MsliderValue);
     }
 
     public void SetGeneralVolume()
     {
-        AudioListener.volume = generalSlider.value;
+        GsliderValue = generalSlider.value;
+        AudioListener.volume = GsliderValue;
     }
 }

@@ -9,6 +9,8 @@ public class StartGame : MonoBehaviour
     [SerializeField] private GameObject player1_spawnpoint;
     [SerializeField] private GameObject player2_spawnpoint;
 
+    [SerializeField] private SoundManager soundManager;
+
     private void Start()
     {
         player1.GetComponent<InputManager>().enabled = false;
@@ -22,6 +24,10 @@ public class StartGame : MonoBehaviour
 
     public void StartGameNow()
     {
+        soundManager.SetGeneralVolume();
+        soundManager.SetMusicVolume();
+
+
         player1.transform.position = player1_spawnpoint.transform.position;
         player2.transform.position = player2_spawnpoint.transform.position;
 
