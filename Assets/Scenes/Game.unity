@@ -269,11 +269,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 145585770008611782, guid: 824d056d34937b1478cfdd3c4050e96b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.49998474
+      value: -0.49996948
       objectReference: {fileID: 0}
     - target: {fileID: 413480722364884759, guid: 824d056d34937b1478cfdd3c4050e96b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.49993896
+      value: -0.49996948
       objectReference: {fileID: 0}
     - target: {fileID: 727513873603393081, guid: 824d056d34937b1478cfdd3c4050e96b, type: 3}
       propertyPath: m_IsActive
@@ -94467,7 +94467,7 @@ PrefabInstance:
       objectReference: {fileID: 1964860435227800961, guid: 7df8b2cf369e5bf4080ee33a2af1371d, type: 3}
     - target: {fileID: 2157883535580017400, guid: 7d0f963a17ef014498cc33b34d1519f7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.49998474
+      value: -0.49996948
       objectReference: {fileID: 0}
     - target: {fileID: 3847390500277058255, guid: 7d0f963a17ef014498cc33b34d1519f7, type: 3}
       propertyPath: player
@@ -95545,11 +95545,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3757612496352383615, guid: 8317d5fa846635840a821492c85327ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.15
+      value: 1.075
       objectReference: {fileID: 0}
     - target: {fileID: 3757612496352383615, guid: 8317d5fa846635840a821492c85327ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -89.68
+      value: -89.451
       objectReference: {fileID: 0}
     - target: {fileID: 4002884353265727083, guid: 8317d5fa846635840a821492c85327ae, type: 3}
       propertyPath: playerUI.Array.size
@@ -95690,6 +95690,10 @@ PrefabInstance:
     - target: {fileID: 5383292669682774321, guid: 8317d5fa846635840a821492c85327ae, type: 3}
       propertyPath: m_LocalPosition.y
       value: -67.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691111400545647490, guid: 8317d5fa846635840a821492c85327ae, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6887949503377927712, guid: 8317d5fa846635840a821492c85327ae, type: 3}
       propertyPath: playerUI.Array.size
@@ -97604,7 +97608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2, y: 0.29273686}
   m_AnchorMax: {x: 0.8, y: 0.33210528}
-  m_AnchoredPosition: {x: 0, y: -0.30000687}
+  m_AnchoredPosition: {x: 0, y: -0.3000183}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357800846
@@ -97654,7 +97658,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.3
+  m_fontSize: 13.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -98039,7 +98043,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.9
+  m_fontSize: 20
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -109927,7 +109931,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.1
+  m_fontSize: 18.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -171,13 +171,6 @@ public class Player : MonoBehaviour
             if (overallScore > exam.max_score)
                 overallScore = exam.max_score;
 
-            exam.passed[id] = true;
-            exam.failed[id] = false;
-        }
-        else
-        {
-            exam.passed[id] = false;
-            exam.failed[id] = true;
         }
 
         exam.score[id] = overallScore;

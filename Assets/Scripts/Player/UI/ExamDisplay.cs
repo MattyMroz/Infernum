@@ -97,20 +97,32 @@ public class ExamDisplay : Interactable
         diceText.text = diceResult.ToString();
         takes.text = _exam.takes[player.id] >= 2 ? "2" : (_exam.takes[player.id] + 1).ToString();
 
-        if (_exam.passed[player.id])
+        bool passedExam = diceResult >= _exam.score_to_pass;
+        bool failedExam = diceResult < _exam.score_to_pass;
+
+        if (passedExam)
         {
             passed.SetActive(true);
             _exam.PlayPassedAudio();
+            _exam.passed[player.id] = true;
+            _exam.failed[player.id] = false;
         }
         else
             passed.SetActive(false);
-        if (_exam.failed[player.id] && _exam.takes[player.id] >= 2)
+        if (failedExam && _exam.takes[player.id] >= 2)
         {
             failed.SetActive(true);
             _exam.PlayFailedAudio();
+            _exam.passed[player.id] = false;
+            _exam.failed[player.id] = true;
         }
         else
             failed.SetActive(false);
+
+        if (player.Wisdom < 25 && !_exam.passed[player.id] && !_exam.failed[player.id])
+            wisdomChecker.SetActive(true);
+        else
+            wisdomChecker.SetActive(false);
 
 
         yield return new WaitForSeconds(1.5f);
