@@ -58,7 +58,7 @@ public class DisplayExams : MonoBehaviour
                 panel.SetActive(true);
 
                 Exams exam_script = exam.GetComponent<Exams>();
-                grade.text = "";
+                grade.text = " ";
 
                 for (int i = 0; i < exam_script.exams.Count; i++)
                 {

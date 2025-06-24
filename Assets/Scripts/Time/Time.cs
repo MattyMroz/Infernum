@@ -8,6 +8,7 @@ public class Time : MonoBehaviour
     public static float timer;
     public static bool timeStarted = true;
     private static bool paused = false;
+    public static int maxDays = 10;
 
     private const float multiplier = (60 * 8) / 3f; // base 3
     private readonly System.TimeSpan startTime = new System.TimeSpan(8, 0, 0);
@@ -44,7 +45,8 @@ public class Time : MonoBehaviour
             days++;
             timer = 0;
 
-            endOfDayManager.StartEndOfDay();
+            if(days < maxDays - 1)
+                endOfDayManager.StartEndOfDay();
         }
 
         if (days == GameDays)
