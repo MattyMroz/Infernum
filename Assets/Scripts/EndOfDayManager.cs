@@ -21,9 +21,18 @@ public class EndOfDayManager : MonoBehaviour
     [SerializeField] private DisplayStats[] displayStats;
     [SerializeField] private SoundtrackManager soundtrackManager;
 
+    [SerializeField] Trash[] trashCans;
+
+    private AudioSource audioSource;
+
     private readonly List<MonoBehaviour> disabled = new();
 
     private int currentDay = 0;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -57,7 +66,14 @@ public class EndOfDayManager : MonoBehaviour
             players[i].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
 
+        for(int i = 0; i < trashCans.Length; i++)
+        {
+            trashCans[i].Reset();
+        }
+
         ToggleUI(false);
+
+        audioSource.Play();
         // Fade-in
         yield return StartCoroutine(FadeScreen(0f, 1f));
 

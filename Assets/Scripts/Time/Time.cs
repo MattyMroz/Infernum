@@ -8,7 +8,7 @@ public class Time : MonoBehaviour
     public static float timer;
     public static bool timeStarted = true;
     private static bool paused = true;
-    public static int maxDays = 3;
+    public static int maxDays = 1;
 
     private const float multiplier = (60 * 8) / 0.2f; // base 3
     private readonly System.TimeSpan startTime = new System.TimeSpan(8, 0, 0);
