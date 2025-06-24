@@ -19,6 +19,7 @@ public class EndOfDayManager : MonoBehaviour
     [SerializeField] private Transform[] startPositions;
     [SerializeField] private DisplayExams[] displayExams;
     [SerializeField] private DisplayStats[] displayStats;
+    [SerializeField] private SoundtrackManager soundtrackManager;
 
     private readonly List<MonoBehaviour> disabled = new();
 
@@ -45,6 +46,8 @@ public class EndOfDayManager : MonoBehaviour
         endOfDayObject.SetActive(true);
 
         Time.PauseTime();
+
+        soundtrackManager.StartCoroutine(soundtrackManager.FadeMusic(soundtrackManager.baseAudioVolume, 0f));
 
         for(int i = 0; i < players.Length; i++)
         {
@@ -75,6 +78,8 @@ public class EndOfDayManager : MonoBehaviour
             }
         }
 
+        soundtrackManager.StartCoroutine(soundtrackManager.FadeMusic(0f, soundtrackManager.baseAudioVolume));
+
         // Fade-out
         yield return StartCoroutine(FadeScreen(1f, 0f));
 
@@ -93,6 +98,8 @@ public class EndOfDayManager : MonoBehaviour
         ToggleUI(true);
 
         Time.ResumeTime();
+
+        //soundtrackManager.StartCoroutine(soundtrackManager.PlayMusic());
     }
 
     private IEnumerator FadeScreen(float fromAlpha, float toAlpha)
