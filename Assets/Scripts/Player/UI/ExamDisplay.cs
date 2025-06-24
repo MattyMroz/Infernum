@@ -105,7 +105,9 @@ public class ExamDisplay : Interactable
         if (passedExam)
         {
             passed.SetActive(true);
-            _exam.PlayPassedAudio();
+
+            if(opened)
+                _exam.PlayPassedAudio();
             _exam.passed[player.id] = true;
             _exam.failed[player.id] = false;
 
@@ -115,7 +117,8 @@ public class ExamDisplay : Interactable
         if (failedExam && takesExam >= 2)
         {
             failed.SetActive(true);
-            _exam.PlayFailedAudio();
+            if(opened)
+                _exam.PlayFailedAudio();
             _exam.passed[player.id] = false;
             _exam.failed[player.id] = true;
         }
@@ -173,24 +176,24 @@ public class ExamDisplay : Interactable
             switch (_exam.exam_types[type]) {
 
                 case ExamType.Math:
-                    examTypeString = "Math: ";
+                    examTypeString = "Mat. - ";
                     break;
                 case ExamType.IT:
-                    examTypeString = "IT: ";
+                    examTypeString = "Inf. - ";
                     break;
                 case ExamType.Electrotechnics:
-                    examTypeString = "Electrotechnics: ";
+                    examTypeString = "Elek. - ";
                     break;
                 case ExamType.Programming:
-                    examTypeString = "Programming: ";
+                    examTypeString = "Prog. - ";
                     break;
                 case ExamType.Graphics:
-                    examTypeString = "Graphics: ";
+                    examTypeString = "Graf. - ";
                     break;
             }
 
 
-            skills.text += examTypeString + player.LvlIncrease(player.exams_knowledge[(int)_exam.exam_types[type]]).lvl.ToString() + (type >= (_exam.exam_types.Count - 1) ? "" :  ", ");
+            skills.text += examTypeString + player.LvlIncrease(player.exams_knowledge[(int)_exam.exam_types[type]]).lvl.ToString() + (type >= (_exam.exam_types.Count - 1) ? "" :  " | ");
         }
 
         ToggleUI(false);

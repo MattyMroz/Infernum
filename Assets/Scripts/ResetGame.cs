@@ -32,7 +32,7 @@ public class ResetGame : MonoBehaviour
         
         for (int i = 0;i < exams.Length; i++)
         {
-            exams[i].Reset();
+            exams[i].ResetExam();
         }
 
         Time.ResetClock();
