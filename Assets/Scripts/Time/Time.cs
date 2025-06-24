@@ -7,10 +7,10 @@ public class Time : MonoBehaviour
 
     public static float timer;
     public static bool timeStarted = true;
-    private static bool paused = false;
-    public static int maxDays = 10;
+    private static bool paused = true;
+    public static int maxDays = 1;
 
-    private const float multiplier = (60 * 8) / 3f; // base 3
+    private const float multiplier = (60 * 8) / 0.1f; // base 3
     private readonly System.TimeSpan startTime = new System.TimeSpan(8, 0, 0);
     [SerializeField] private int days;
     [SerializeField] private string the_time;

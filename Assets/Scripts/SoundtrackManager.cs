@@ -106,6 +106,11 @@ public class SoundtrackManager : MonoBehaviour
             audioSource.Stop();
     }
 
+    public void StopAll()
+    {
+        audioSource.Stop();
+    }
+
     public void PlaySoundtrack()
     {
         audioSource.Stop();

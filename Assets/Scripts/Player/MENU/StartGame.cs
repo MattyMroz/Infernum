@@ -39,7 +39,7 @@ public class StartGame : MonoBehaviour
         player2.GetComponent<InputManager>().enabled = true;
         player2.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 
-        Time.ResumeTime();
+        //Time.ResumeTime();
         UnityEngine.Time.timeScale = 1f;
     }
 }

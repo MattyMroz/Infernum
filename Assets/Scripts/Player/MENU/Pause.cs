@@ -13,7 +13,7 @@ public class Pause : MonoBehaviour
     {
         _pauseScreen.SetActive(false);
         UnityEngine.Time.timeScale = 1f;
-        Time.ResumeTime();
+        //Time.ResumeTime();
     }
 
     void Update()

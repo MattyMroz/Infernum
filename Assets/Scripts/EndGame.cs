@@ -8,6 +8,7 @@ public class EndGame : MonoBehaviour
     [SerializeField] Player[] players;          // P1 = 0, P2 = 1 …
     [SerializeField] TextMeshProUGUI[] lines;           // jedno pole tekstowe na gracza
     [SerializeField] GameObject endPanel;
+    [SerializeField] SoundtrackManager soundtrackManager;
 
     bool finished;
 
@@ -19,6 +20,8 @@ public class EndGame : MonoBehaviour
 
     void ShowResults()
     {
+        soundtrackManager.StartCoroutine(soundtrackManager.FadeMusic(soundtrackManager.baseAudioVolume, 0f));
+
         finished = true;
         endPanel.SetActive(true);
 
@@ -26,6 +29,7 @@ public class EndGame : MonoBehaviour
 
         Time.PauseTime();
         Time.ResetClock();
+        Time.PauseTime();
 
         for (int i = 0; i < slots; i++)
         {
