@@ -145,7 +145,7 @@ public class EndOfDayManager : MonoBehaviour
                 {
                     if (state)
                     {
-                        if (disabled.Contains(s)) s.enabled = true;
+                        if (!s.enabled) s.enabled = true;
                     }
                     else
                     {

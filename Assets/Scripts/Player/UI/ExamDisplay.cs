@@ -61,8 +61,9 @@ public class ExamDisplay : Interactable
                 Close();
                 GetComponent<InputManager>().enabled = false;
                 GetComponent<Movement>().ResetVelocity(); GetComponent<Movement>().enabled = false;
-                GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-                //ToggleUI(false);
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+                GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                ToggleUI(false);
             }
 
             if (!_using && Input.GetKeyDown(takeExamButton) && player.Wisdom >= 25)

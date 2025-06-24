@@ -9,6 +9,7 @@ TagManager:
   - Exam
   - MapBounds
   - UIPanel
+  - Trash
   layers:
   - Default
   - TransparentFX

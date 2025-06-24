@@ -62,6 +62,8 @@ public class EndGame : MonoBehaviour
 
         for (int i = slots; i < lines.Length; i++)
             lines[i].text = "";
+
+        ToggleUI(false);
     }
 
     public void ResetFlag() => finished = false;
@@ -80,7 +82,7 @@ public class EndGame : MonoBehaviour
                 {
                     if (state)
                     {
-                        if (disabled.Contains(s)) s.enabled = true;
+                        if (!s.enabled) s.enabled = true;
                     }
                     else
                     {

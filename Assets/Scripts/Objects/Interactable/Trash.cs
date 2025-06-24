@@ -6,6 +6,8 @@ public class Trash : Interactable
 {
 
     [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip errorAudio;
+    [SerializeField] AudioClip useAudio;
 
     private void Awake()
     {
@@ -17,11 +19,21 @@ public class Trash : Interactable
     {
         Player playerScript = player.GetComponent<Player>();
 
-        if (this.used[playerScript.id])
-            return;
+        for(int i = 0; i < 2; i++)
+        {
+            if (this.used[i])
+            {
+                Debug.Log("???");
+                audioSource.clip = errorAudio;
+                audioSource.PlayOneShot(audioSource.clip);
+                return;
+            }
+        }
+
 
         playerScript.SearchTrash();
 
+        audioSource.clip = useAudio;
         audioSource.PlayOneShot(audioSource.clip);
 
         this.used[playerScript.id] = true;

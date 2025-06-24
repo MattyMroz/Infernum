@@ -40,7 +40,7 @@ public class InputManager : MonoBehaviour
 
                 Interactable interact_script = hit.transform.GetComponent<Interactable>();
 
-                if (interact_script.used[_player_script.id]) return;
+                if (interact_script.used[_player_script.id] && !hit.transform.CompareTag("Trash")) return;
 
                 Debug.Log(hit.transform.tag);
 
