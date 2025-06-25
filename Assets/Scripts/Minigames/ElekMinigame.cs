@@ -48,7 +48,7 @@ public class ElekMinigame : BaseMinigame
         loc.time = t.Find("Time").GetComponent<TextMeshProUGUI>();
         loc.day = t.Find("Day").GetComponent<TextMeshProUGUI>();      
 
-        loc.lbl.text = $"REAGUJ '{slot.actionKey}'";
+        loc.lbl.text = $"REAGUJ 'Num0'";
         loc.ind.color = Color.red;
         loc.active = true;
 

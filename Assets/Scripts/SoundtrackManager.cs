@@ -84,6 +84,8 @@ public class SoundtrackManager : MonoBehaviour
 
             AudioClip newAudioClip = audioClips[randomAudioIndex];
 
+            audioSource.clip = newAudioClip;
+
             audioSource.PlayOneShot(newAudioClip);
         }
 
@@ -131,6 +133,8 @@ public class SoundtrackManager : MonoBehaviour
         lastAudioClipIndex = randomAudioIndex;
 
         AudioClip newAudioClip = audioClips[randomAudioIndex];
+
+        audioSource.clip = newAudioClip;
 
         audioSource.PlayOneShot(newAudioClip);
     }
