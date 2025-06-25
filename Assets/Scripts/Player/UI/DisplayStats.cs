@@ -112,14 +112,13 @@ public class DisplayStats : MonoBehaviour
 
         for (int i = 0; i < _player.exams_knowledge.Length && i < 5; i++)
         {
-            int knowledge = _player.exams_knowledge[i];
-            int level = knowledge / 100;
+            int exp = _player.exams_knowledge[i];
 
-            int remainder = knowledge % 100;
-            int toNext = remainder == 0 ? (knowledge == 0 ? 100 : 0) : 100 - remainder;
+            /* wywołujemy funkcję z Playera */
+            var (lvl, expLeft, divide) = _player.LvlIncrease(exp);
 
-            Lvl.text += level.ToString() + '\n';
-            NextLvl.text += toNext.ToString() + '\n';
+            Lvl.text += lvl.ToString() + '\n';
+            NextLvl.text += (divide - expLeft).ToString() + '\n';  // ile brakuje do następnego
         }
 
     }
