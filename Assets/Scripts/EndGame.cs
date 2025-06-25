@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class EndGame : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class EndGame : MonoBehaviour
     [SerializeField] Exams examsRoot;
     [SerializeField] Player[] players;          // P1 = 0, P2 = 1 …
     [SerializeField] TextMeshProUGUI[] lines;           // jedno pole tekstowe na gracza
+    [SerializeField] TextMeshProUGUI winWho;
     [SerializeField] GameObject endPanel;
     [SerializeField] SoundtrackManager soundtrackManager;
 
@@ -18,7 +20,7 @@ public class EndGame : MonoBehaviour
 
     void Update()
     {
-        if (!finished && Time.Days >= lastDay)
+        if (!finished && Time.Days >= Time.maxDays) // git gud
             ShowResults();
     }
 
@@ -45,6 +47,7 @@ public class EndGame : MonoBehaviour
         Time.ResetClock();
         Time.PauseTime();
 
+        int[] playerPoints = new int[players.Length];
         for (int i = 0; i < slots; i++)
         {
             Player p = players[i];
@@ -53,9 +56,29 @@ public class EndGame : MonoBehaviour
             int totalPts = 0;
             foreach (var ex in examsRoot.exams)
             {
-                if (id < ex.grade.Length)
-                    totalPts += Mathf.RoundToInt(ex.grade[id] * ex.exams_ects);
+                if (ex.grade[id] > 2)
+                {
+                    if (id < ex.grade.Length)
+                        totalPts += Mathf.RoundToInt(ex.grade[id] * ex.exams_ects);
+                }
+
+               
             }
+
+            int totalMinusPoints = 0;
+            foreach (var ex in examsRoot.exams) 
+            {
+                if(ex.grade[id] <= 2)
+                {
+                    if (id < ex.grade.Length)
+                        totalMinusPoints += Mathf.RoundToInt(2 * ex.exams_ects);
+                }
+            }
+
+
+            totalPts -= totalMinusPoints;
+
+            playerPoints[i] = totalPts;
 
             lines[i].text = $"{p.player_name}:  {totalPts} pkt";
         }
@@ -63,7 +86,23 @@ public class EndGame : MonoBehaviour
         for (int i = slots; i < lines.Length; i++)
             lines[i].text = "";
 
-        ToggleUI(false);
+
+        if (playerPoints[0] > playerPoints[1])
+        {
+            winWho.text = $"{players[0].player_name} wygrał!";
+        }
+        else if (playerPoints[0] < playerPoints[1])
+        {
+            winWho.text = $"{players[1].player_name} wygrał!";
+        }
+        else
+        {
+            winWho.text = "Remis!";
+        }
+
+
+
+            ToggleUI(false);
     }
 
     public void ResetFlag() => finished = false;

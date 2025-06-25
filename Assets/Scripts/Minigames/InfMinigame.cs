@@ -20,7 +20,7 @@ public class InfMinigame : BaseMinigame
         public Vector2 vel;
         public int zoneDir = -1;
         public float secTimer;
-        public TextMeshProUGUI lvl, exp, time, day;          // ← ➊
+        public TextMeshProUGUI lvl, exp, time, day, name;          // ← ➊
     }
 
     private readonly Local[] l = { new Local(), new Local() };
@@ -41,6 +41,7 @@ public class InfMinigame : BaseMinigame
         Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Inf));
 
         var t = slot.panel.transform;
+        loc.name = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
         loc.playArea = t.Find("NotPlayArea/PlayArea").GetComponent<RectTransform>();
         loc.notArea = t.Find("NotPlayArea").GetComponent<Image>();
         loc.ball = t.Find("NotPlayArea/Ball").GetComponent<Image>();
@@ -120,9 +121,10 @@ public class InfMinigame : BaseMinigame
         var p = slots[i].player;
         var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
 
+        l[i].name.text = p.name;
         l[i].lvl.text = r.lvl.ToString();
         l[i].exp.text = $"{r.exp}/{r.divide}";
         l[i].time.text = Time.Time_now;
-        l[i].day.text = $"Dzień: {Time.Days}";             // ← ➌
+        l[i].day.text = $"Dzień: {Time.Days + 1}"; 
     }
 }

@@ -23,7 +23,7 @@ public class MathMinigame : BaseMinigame
     {
         public bool active;
         public TMP_InputField input;
-        public TextMeshProUGUI numTxt, lvl, exp, time, day;
+        public TextMeshProUGUI numTxt, lvl, exp, time, day, name;
         public int random;
         public PlayerSlot slot;
     }
@@ -58,6 +58,7 @@ public class MathMinigame : BaseMinigame
 
         // Podpinamy UI tego gracza
         var t = s.slot.panel.transform;
+        s.name = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
         s.input = t.Find("InputNumber").GetComponent<TMP_InputField>();
         s.numTxt = t.Find("DisplayNumber").GetComponent<TextMeshProUGUI>();
         s.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
@@ -151,10 +152,12 @@ public class MathMinigame : BaseMinigame
     {
         var p = l[i].slot.player;
         var res = p.LvlIncrease(p.exams_knowledge[KNOWLEDGE_IDX]);
+
+        l[i].name.text = p.name;
         l[i].lvl.text = res.lvl.ToString();
         l[i].exp.text = $"{res.exp} / {res.divide}";
         l[i].time.text = Time.Time_now;
-        l[i].day.text = $"Dzień: {Time.Days}";
+        l[i].day.text = $"Dzień: {Time.Days + 1}";
     }
 
     // Hook z base minigame

@@ -20,7 +20,7 @@ public class GraphMinigame : BaseMinigame
     {
         public bool active, ready;
         public KeyCode[] combo;
-        public TextMeshProUGUI keysTxt, lvl, exp, time, day;  // ← ➊
+        public TextMeshProUGUI keysTxt, lvl, exp, time, day, name;  // ← ➊
     }
 
     private readonly Local[] l = { new Local(), new Local() };
@@ -34,6 +34,8 @@ public class GraphMinigame : BaseMinigame
 
     private void StartSession(int i)
     {
+
+
         cur = i;
         var slot = slots[i];
         var loc = l[i];
@@ -41,6 +43,7 @@ public class GraphMinigame : BaseMinigame
         Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Graph));
 
         var t = slot.panel.transform;
+        loc.name = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
         loc.keysTxt = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
         loc.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
         loc.exp = t.Find("DisplayExp").GetComponent<TextMeshProUGUI>();
@@ -106,9 +109,10 @@ public class GraphMinigame : BaseMinigame
         var p = slots[i].player;
         var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
 
+        l[i].name.text = p.name;
         l[i].lvl.text = r.lvl.ToString();
         l[i].exp.text = $"{r.exp}/{r.divide}";
         l[i].time.text = Time.Time_now;
-        l[i].day.text = $"Dzień: {Time.Days}";             // ← ➌
+        l[i].day.text = $"Dzień: {Time.Days + 1}"; 
     }
 }

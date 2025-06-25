@@ -17,7 +17,7 @@ public class ElekMinigame : BaseMinigame
     {
         public bool active, ready, reacted;
         public Image ind;
-        public TextMeshProUGUI lbl, lvl, exp, time, day;   // ← ➊ DODANE „day”
+        public TextMeshProUGUI lbl, lvl, exp, time, day, name;   // ← ➊ DODANE „day”
         public Coroutine co;
         public float go;
     }
@@ -40,6 +40,7 @@ public class ElekMinigame : BaseMinigame
         Boot(slot.player.gameObject, slot.player.GetConfig(MinigameID.Elek));
 
         var t = slot.panel.transform;
+        loc.name = t.Find("PlayerName").GetComponent<TextMeshProUGUI>();
         loc.ind = t.Find("Image").GetComponent<Image>();
         loc.lbl = t.Find("DisplayKeys").GetComponent<TextMeshProUGUI>();
         loc.lvl = t.Find("DisplayLvl").GetComponent<TextMeshProUGUI>();
@@ -109,9 +110,10 @@ public class ElekMinigame : BaseMinigame
         var p = slots[i].player;
         var r = p.LvlIncrease(p.exams_knowledge[KNOW_IDX]);
 
+        l[i].name.text = p.name;
         l[i].lvl.text = r.lvl.ToString();
         l[i].exp.text = $"{r.exp}/{r.divide}";
         l[i].time.text = Time.Time_now;
-        l[i].day.text = $"Dzień: {Time.Days}";      
+        l[i].day.text = $"Dzień: {Time.Days + 1}";      
     }
 }

@@ -9,6 +9,7 @@ public class WhatAmILookingAt : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] TextMeshProUGUI objectNameText;
+    [SerializeField] GameObject background;
     [SerializeField] GameObject[] uiPanels;          // przypisz w Inspectorze
                                                      // (lub usuñ [SerializeField] – patrz Start)
 
@@ -28,16 +29,26 @@ public class WhatAmILookingAt : MonoBehaviour
 
         bool uiVisible = AnyPanelActive();
         objectNameText.gameObject.SetActive(!uiVisible);
+        background.SetActive(!uiVisible);
 
         if (uiVisible) return;
 
+        background.SetActive(false);
+
         string objName = "";
         foreach (var hit in Physics2D.OverlapCircleAll(transform.position, detectionRadius, detectionLayer))
+        {
             if (hit.GetComponent<Interactable>())
             {
                 objName = hit.GetComponent<Interactable>().displayName;
+                background.SetActive(true);
                 break;
             }
+            else
+            {
+                background.SetActive(false);
+            }
+        }
 
         objectNameText.text = objName;
     }
