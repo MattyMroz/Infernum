@@ -41,6 +41,10 @@ public abstract class BaseMinigame : Interactable
         {
             Debug.LogWarning("Panel został wyłączony poza systemem. Zamykanie minigry...");
             Close();
+            playerMovement.ResetVelocity();
+            playerMovement.enabled = false;
+
+            ToggleUI(player, false);
         }
 
         if (Input.GetKeyDown(exitKey) && active)
@@ -54,8 +58,11 @@ public abstract class BaseMinigame : Interactable
         panel.SetActive(true);
 
         if (playerMovement) { playerMovement.ResetVelocity(); playerMovement.enabled = false; }
-        if (playerRb) playerRb.bodyType = RigidbodyType2D.Static;
-
+        if (playerRb)
+        {
+            playerRb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            playerRb.bodyType = RigidbodyType2D.Dynamic;
+        }
         enduranceCoroutine = StartCoroutine(DrainEndurance());
         OnOpen();
     }
@@ -67,8 +74,11 @@ public abstract class BaseMinigame : Interactable
         panel.SetActive(false);
 
         if (playerMovement) { playerMovement.ResetVelocity(); playerMovement.enabled = true; }
-        if (playerRb) playerRb.bodyType = RigidbodyType2D.Dynamic;
-
+        if (playerRb)
+        {
+            playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            playerRb.bodyType = RigidbodyType2D.Dynamic;
+        }
         if (enduranceCoroutine != null)
             StopCoroutine(enduranceCoroutine);
 
@@ -96,7 +106,7 @@ public abstract class BaseMinigame : Interactable
             // 2️⃣  zwykła obsługa włącz / wyłącz
             if (state)
             {
-                if (disabled.Contains(mb)) mb.enabled = true;
+                if (!mb.enabled) mb.enabled = true;
             }
             else
             {
